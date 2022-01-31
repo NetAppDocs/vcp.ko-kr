@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: concept_vcp_product_overview.html 
+summary: 구성 요소 및 중요 URL을 비롯하여 플러그인에 대한 고급 정보 
+keywords: netapp, vcp, element, vcenter plugin, plug-in 
+---
+= vCenter Server용 NetApp Element 플러그인 제품 개요
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, vcp, element, vcenter plugin, plug-in
+
+
+[role="lead"]
+VCP(NetApp Element Plug-in for vCenter Server)는 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.
+
+플러그인 사용자 인터페이스를 사용하여 클러스터를 검색 및 구성하고, 클러스터 용량의 스토리지를 관리, 모니터링 및 할당하여 데이터 저장소 및 가상 데이터 저장소(가상 볼륨용)를 구성할 수 있습니다. 클러스터는 호스트 및 관리자에게 가상 IP 주소로 표시되는 단일 로컬 그룹으로 네트워크에 표시됩니다. 또한 다양한 작업을 수행하는 동안 발생할 수 있는 이벤트에 대한 오류 및 경고 메시지를 포함하여 실시간 보고를 통해 클러스터 활동을 모니터링할 수 있습니다.
+
+
+
+== 플러그인과 관련된 NetApp 구성요소
+
+* * 등록 유틸리티 *: 를 관리할 수 있는 도구입니다 link:vcp_concept_qossioc.html["QoSSIOC를 참조하십시오"] vCenter를 통한 서비스 및 플러그인 등록
+* * 관리 서비스 *: vCenter 플러그인용 QoSSIOC 서비스를 포함하는 마이크로서비스 플러그인 업그레이드는 관리 서비스 번들의 일부로 릴리스됩니다.
++
+
+TIP: 에 대해 자세히 알아보십시오 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["관리 서비스 릴리스"^].
+
+* * 관리 노드(mNode) *: 하나 이상의 Element 소프트웨어 기반 스토리지 클러스터와 병렬로 실행되는 가상 머신입니다. Element 11.3 릴리스 현재 관리 서비스는 관리 노드에서 호스팅되므로 주요 릴리스 이외의 특정 소프트웨어 서비스를 더 빠르게 업데이트할 수 있습니다.
+
+
+
+
+== 공통 URL
+
+vSphere 외에도 vCenter 플러그인과 함께 사용하는 몇 가지 일반적인 URL이 있습니다.
+
+[cols="2*"]
+|===
+| URL | 설명 
+
+
+| https://[management 노드 IP 주소]:9443 | vSphere Web Client에 vCenter 플러그인 패키지를 등록합니다. 
+
+
+| https://[management 노드 IP 주소] : 442 | 관리 노드별 UI에서 네트워크 및 클러스터 설정에 액세스하고 시스템 테스트 및 유틸리티를 활용합니다. https://docs.netapp.com/us-en/hci/docs/task_mnode_access_ui.html["자세한 정보."^] 
+
+
+| 'https://[management node ip address]'를 선택합니다 | NetApp 하이브리드 클라우드 제어에 액세스하여 관리 서비스를 업그레이드하거나 설치를 확장, 모니터링 및 관리하십시오. https://docs.netapp.com/us-en/hci/docs/task_hci_getstarted.html["자세한 정보."^] 
+
+
+| 'https://[management node ip address]/mnode' | 관리 노드의 REST API UI를 사용하여 관리 서비스를 수동으로 업데이트하거나 자산을 관리합니다. https://docs.netapp.com/us-en/hci/docs/task_mnode_access_ui.html["자세한 정보."^] 
+
+
+| "https://[storage cluster mVIP address]" | NetApp Element 소프트웨어 UI에 액세스합니다. 
+|===
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* http://mysupport.netapp.com/hci/resources["NetApp HCI 리소스 페이지를 참조하십시오"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+* link:vcp_concept_config_extension_point.html["NetApp Element 구성 확장점"]
+* link:vcp_concept_management_extension_point.html["NetApp Element 구성 확장점"]
+

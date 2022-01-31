@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: vcp_concept_linkedmode.html 
+summary:  
+keywords: netapp, vcp, element, plugin, plug-in, linked mode 
+---
+= 연결 모드 및 플러그인
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+vCenter Server용 NetApp Element 플러그인을 사용하여 vCenter 연결 모드를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리할 수 있습니다.
+
+대상 vCenter 웹 클라이언트에 로그인한 경우에만 Element 플러그인에서 스토리지 클러스터를 관리할 수 있습니다.
+
+vSphere 연결 모드 환경에서 스토리지 클러스터 관리를 설정하려면 다음 절차를 사용하여 스토리지 클러스터를 수동으로 추가할 수 있습니다.
+
+.단계
+. 플러그인을 사용할 연결 모드 환경의 각 vCenter Server에 플러그인을 등록합니다.
+. 연결된 각 vCenter Server에 대해 vSphere Web Client에 한 번 로그인합니다.
++
+로그인하면 웹 클라이언트에 플러그인 설치가 시작됩니다.
+
+. 스토리지 클러스터를 관리할 대상 vCenter의 웹 클라이언트에 로그인합니다.
+. 스토리지 클러스터를 Element 플러그인 인벤토리에 추가합니다.
+
+
+연결 모드 및 스토리지 클러스터1과 스토리지 클러스터2에 vCenter1 및 vCenter2가 있습니다. vCenter1에서 cluster2를 관리하기 위해 cluster1 및 vCenter2를 관리하려고 합니다. 스토리지 클러스터 관리를 설정하려면 각 vCenter Server에 플러그인을 등록한 후 다음 단계를 수행합니다.
+
+. vCenter1 웹 클라이언트에 로그인합니다.
+. vCenter1 웹 클라이언트에서 cluster1을 관리하려면 Element 플러그인 인벤토리에 cluster1을 추가합니다.
+. vCenter2 웹 클라이언트에 로그인합니다.
+. vCenter2 웹 클라이언트에서 cluster2를 관리하려면 Element 플러그인 인벤토리에 cluster2를 추가합니다.
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

@@ -1,0 +1,288 @@
+---
+sidebar: sidebar 
+permalink: vcp_task_clusters_manage.html 
+summary: 플러그인을 사용하여 스토리지 클러스터에 노드를 추가할 수 있습니다. 
+keywords: netapp, cluster, vcp, vcenter, element 
+---
+= 클러스터 관리
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 소프트웨어를 실행하는 클러스터를 편집하고, SSH 구성을 관리하고, 보호 도메인 모니터링을 설정하고, 클러스터를 종료할 수 있습니다.
+
+.무엇을 &#8217;필요로 할거야
+* 하나 이상의 클러스터가 있어야 합니다 link:vcp_task_getstarted.html#add-storage-clusters-for-use-with-the-plug-in["추가되었습니다"].
++
+
+NOTE: NetApp Element 관리 확장 지점 기능을 사용하려면 하나 이상의 클러스터를 추가해야 합니다.
+
+* 클러스터에 대한 현재 전체 클러스터 관리자 사용자 자격 증명
+* 방화벽 규칙을 사용하면 TCP 포트 443 및 8443에서 vCenter와 클러스터 MVIP 간의 개방형 네트워크 통신을 사용할 수 있습니다.
+
+
+.옵션
+* <<View cluster details>>
+* <<Edit a cluster profile>>
+* <<Remove a cluster profile>>
+* <<Enable Encryption at Rest>>
+* <<Disable Encryption at Rest>>
+* <<Enable SSH>>
+* <<Change the SSH time limit>>
+* <<Disable SSH>>
+* <<Set protection domain monitoring>>
+* <<Shut down a cluster>>
+* <<Expand your NetApp HCI infrastructure>>
+
+
+
+
+== 클러스터 세부 정보를 봅니다
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 편집할 클러스터를 선택합니다.
+. 작업 * 을 선택합니다.
+. 세부 정보 * 를 선택합니다.
+. 모든 클러스터에 대해 다음 정보를 검토하십시오.
++
+** * 클러스터 이름 *: 클러스터의 이름입니다.
+** * vCenter IP 주소 *: 클러스터가 할당된 vCenter Server의 IP 주소 또는 FQDN입니다.
+** * 고유 ID *: 클러스터의 고유 ID입니다.
+** * 관리 가상 IP *: 관리 가상 IP 주소(MVIP).
+** * 스토리지 가상 *: 스토리지 가상 IP 주소(SVIP).
+** * 상태 *: 클러스터의 상태입니다.
+** * VVol *: 클러스터의 VVol 기능 상태입니다.
+
+
+. 개별 클러스터에 대한 추가 세부 정보 검토:
++
+** * MVIP 노드 ID *: 마스터 MVIP 주소가 있는 노드입니다.
+** * SVIP 노드 ID *: 마스터 SVIP 주소가 있는 노드입니다.
+** 요소 버전 *: 클러스터가 실행 중인 NetApp Element 소프트웨어 버전입니다.
+** * VASA 2 Status *: Element 클러스터의 VASA Provider 상태입니다.
+** * VASA Provider URL *: 해당되는 경우 Element 클러스터에 설정된 VASA Provider의 URL입니다.
+** * 저장된 암호화 상태 *: 가능한 값:
++
+*** 활성화: 저장된 암호화 사용 중입니다.
+*** Enabled(활성화): 저장된 데이터 암호화가 활성화됩니다.
+*** 해제: 저장된 암호화 사용 안 함.
+*** Disabled(비활성화): 저장된 데이터 암호화가 비활성화됩니다.
+
+
+** * 통합 노드 *: 데이터베이스 앙상블의 일부인 노드의 IP입니다.
+** * 페어링 대상 *: 로컬 클러스터와 페어링된 추가 클러스터의 이름입니다.
+** * SSH 상태 *: 보안 셸의 상태입니다. 활성화된 경우 남은 시간이 표시됩니다.
+
+
+
+
+
+
+== 클러스터 프로필을 편집합니다
+
+NetApp Element 구성 확장 지점에서 클러스터 사용자 ID 및 암호를 변경할 수 있습니다.
+
+
+NOTE: 이 절차에서는 플러그인이 사용하는 클러스터 관리자 사용자 이름과 암호를 변경하는 방법에 대해 설명합니다. 플러그인에서 클러스터 관리자 자격 증명을 변경할 수 없습니다. 을 참조하십시오 https://docs.netapp.com/us-en/element-software/storage/concept_system_manage_manage_cluster_administrator_users.html["클러스터 관리자 사용자 계정 관리"^] 클러스터 관리자 계정의 자격 증명을 변경하는 지침은 을 참조하십시오.
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. 편집 * 을 선택합니다.
+. 다음 중 하나를 변경합니다.
++
+** 사용자 ID: 클러스터 관리자 이름입니다.
+** 암호: 클러스터 관리자 암호입니다.
++
+
+NOTE: 클러스터를 추가한 후에는 클러스터의 IP 주소 또는 FQDN을 변경할 수 없습니다. 또한 추가된 클러스터에 대해 할당된 연결된 모드 vCenter Server를 변경할 수 없습니다. 클러스터 주소 또는 관련 vCenter Server를 변경하려면 클러스터를 제거하고 다시 추가해야 합니다.
+
+
+
+. OK * 를 선택합니다.
+
+
+
+
+== 클러스터 프로필을 제거합니다
+
+NetApp Element 구성 확장 지점을 사용하여 vCenter 플러그인에서 더 이상 관리하지 않으려는 클러스터의 프로필을 제거할 수 있습니다.
+
+연결된 모드 그룹을 설정하고 클러스터를 다른 vCenter Server에 재할당하려는 경우 클러스터 프로필을 제거하고 다른 연결된 vCenter Server IP를 사용하여 다시 추가할 수 있습니다.
+
+
+NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 제거할 클러스터를 선택합니다.
+. 작업 * 을 선택합니다.
+. 제거 * 를 선택합니다.
+. 작업을 확인합니다.
+
+
+
+
+== 저장 시 암호화 사용
+
+NetApp Element 구성 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 활성화할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+.단계
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 유휴 데이터 암호화를 활성화할 클러스터를 선택합니다.
+. 작업 * 을 선택합니다.
+. 결과 메뉴에서 * EAR 활성화 * 를 클릭합니다.
+. 작업을 확인합니다.
+
+
+
+
+== 저장된 암호화 사용 안 함
+
+NetApp Element 구성 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 비활성화할 수 있습니다.
+
+.단계
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터의 확인란을 선택합니다.
+. 작업 * 을 클릭합니다.
+. 결과 메뉴에서 * Disable Ear * 를 클릭합니다.
+. 작업을 확인합니다.
+
+
+
+
+== SSH를 활성화합니다
+
+NetApp Element 구성 확장 지점을 사용하여 SSH(Secure Shell) 세션을 수동으로 활성화할 수 있습니다. NetApp 기술 지원 엔지니어는 SSH를 설정하여 결정 기간 동안 스토리지 노드에 액세스하여 문제를 해결할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. SSH 활성화 * 를 선택합니다.
+. SSH 세션이 활성화되는 기간을 최대 720까지 시간 단위로 입력합니다.
++
+
+NOTE: 계속하려면 값을 입력해야 합니다.
+
+. 예 * 를 선택합니다.
+
+
+
+
+== SSH 시간 제한을 변경합니다
+
+SSH 세션의 새 기간을 입력할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. SSH 변경 * 을 선택합니다.
++
+이 대화 상자에는 SSH 세션의 남은 시간이 표시됩니다.
+
+. SSH 세션의 새 기간을 최대 720까지 몇 시간 단위로 입력합니다.
++
+
+NOTE: 계속하려면 값을 입력해야 합니다.
+
+. 예 * 를 선택합니다.
+
+
+
+
+== SSH를 해제합니다
+
+NetApp Element 구성 확장 지점을 사용하여 스토리지 클러스터의 노드에 대한 SSH(Secure Shell) 액세스를 수동으로 해제할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. SSH * 비활성화 를 선택합니다.
+. 예 * 를 선택합니다.
+
+
+
+
+== 보호 도메인 모니터링을 설정합니다
+
+를 수동으로 활성화할 수 있습니다 link:vcp_concept_protection_domains.html["보호 도메인 모니터링"] NetApp Element 구성 확장점 사용. 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다.
+
+.무엇을 &#8217;필요로 할거야
+* 보호 도메인 모니터링을 사용하려면 선택한 클러스터를 Element 11.0 이상 버전에서 모니터링해야 합니다. 그렇지 않으면 보호 도메인 기능을 사용할 수 없습니다.
+* 보호 도메인 기능을 사용하려면 클러스터에 노드가 2개 이상 있어야 합니다. 2노드 클러스터와의 호환성은 제공되지 않습니다.
+
+
+.단계
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. Set Protection Domain Monitoring * 을 선택합니다.
+. 장애 임계값 선택:
++
+** * 노드 *: 노드 레벨에서 하드웨어 장애가 발생할 경우 클러스터가 더 이상 중단 없는 데이터를 제공할 수 없는 임계값입니다. 노드 임계값이 시스템 기본값입니다.
+** * Chassis *: 섀시 레벨에서 하드웨어 장애가 발생했을 때 클러스터가 더 이상 중단 없는 데이터를 제공할 수 없는 임계값입니다.
+
+
+. OK * 를 선택합니다.
+
+
+모니터링 기본 설정을 설정한 후에는 에서 보호 도메인을 모니터링할 수 있습니다 link:vcp_task_reports_overview.html#reporting-overview-page-data["보고"] NetApp Element 관리 확장 지점의 탭입니다.
+
+
+
+== 클러스터를 종료합니다
+
+NetApp Element 구성 확장 지점을 사용하여 스토리지 클러스터의 모든 활성 노드를 수동으로 종료할 수 있습니다.
+
+원하는 경우 link:vcp_task_add_manage_nodes.html#restart-a-node["다시 시작합니다"] 클러스터를 종료하지 않고 NetApp Element 관리 확장 지점의 클러스터 페이지에서 모든 노드를 선택하고 다시 시작할 수 있습니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+I/O를 중지하고 모든 iSCSI 세션의 연결을 끊었습니다.
+
+.단계
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. Shutdown * 을 선택합니다.
+. 작업을 확인합니다.
+
+
+
+
+== NetApp HCI 인프라를 확장합니다
+
+NetApp HCI를 사용하여 노드를 추가하여 NetApp HCI 인프라를 수동으로 확장할 수 있습니다. NetApp Element 확장 지점에서 시스템 확장을 위한 NetApp HCI UI에 대한 링크가 제공됩니다. 시작 및 클러스터 페이지의 NetApp Element 관리 확장 지점 내에 추가 링크가 제공됩니다.
+
+
+NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
+
+.단계
+. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. 클러스터를 확인합니다.
+. 작업 * 을 선택합니다.
+. NetApp HCI * 를 확장합니다.
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

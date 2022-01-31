@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: task_vcp_unregister.html 
+summary: vCenter에서 vCenter Server용 NetApp Element 플러그인의 등록을 취소할 수 있습니다. 
+keywords: netapp, vcp, vcenter, plugin, element, unregister 
+---
+= vCenter 플러그인 등록을 취소합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, vcp, vcenter, plugin, element, unregister
+
+
+[role="lead"]
+다음 절차 중 하나를 사용하여 vCenter에서 vCenter Server용 NetApp Element 플러그인 등록을 취소할 수 있습니다.
+
+.무엇을 &#8217;필요로 할거야
+* vCenter 관리자 역할 권한을 사용하여 플러그 인을 등록 취소합니다.
+* 관리 노드의 IP 주소입니다.
+* 플러그인의 등록을 취소하는 vCenter의 URL 및 자격 증명
+
+
+vSphere 6.7 이전 버전의 경우 플러그인 등록 해제는 비활성화와 같은 효과가 있지만 로컬에 설치된 모든 관련 파일 및 폴더는 제거하지 않습니다. 모든 플러그인 파일을 제거하려면 의 지침을 참조하십시오 link:task_vcp_remove.html["플러그 인을 제거하는 중입니다"].
+
+vSphere 7.0의 경우 플러그인을 등록 해제하면 모든 파일이 자동으로 제거됩니다.
+
+.단계
+. 플러그 인을 등록 취소하려면 설치된 버전에 대한 절차를 따르십시오.
++
+** vCenter Plug-in 3.0 이상의 경우 vCenter 플러그인 등록 유틸리티를 사용하여 플러그인을 등록 취소합니다.
++
+... 등록 TCP 포트를 포함하여 브라우저에서 관리 노드의 IP 주소를 입력합니다. ' https://<ManagementNodeIP>:9443` .
+... 플러그인 등록 취소 * 로 이동합니다.
+... 다음을 입력합니다.
++
+.... 플러그인을 등록한 vCenter 서비스의 IP 주소 또는 FQDN 서버 이름입니다.
+.... vCenter 관리자 사용자 이름입니다.
+.... vCenter 관리자 암호입니다.
+
+
+... 등록 취소 * 를 선택합니다.
+
+
+** vCenter 플러그인 2.7 ~ 2.7.1의 경우:
++
+*** 브라우저에서 vCenter MOB(Managed Object Browser) 인터페이스를 사용하여 수동으로 등록을 취소합니다.
++
+.... MOB URL:'https://<vcenter>/mob` 입력합니다
+.... 컨텐츠 > 확장 관리자 > UnregisterExtension * 을 선택합니다.
+.... com.solidfire를 입력합니다.
+.... Invoke 메서드 * 를 선택합니다.
+
+
+*** PowerCLI를 사용하여 등록 취소:
++
+[listing]
+----
+Connect-VIServer -Server $vcenter -User administrator@vsphere.local -Password xxxxXXx -Force -ErrorAction Stop -SaveCredentials
+$em = Get-View ExtensionManager
+$em.ExtensionList | ft -property Key
+$em.UnregisterExtension("com.solidfire")
+$em.UpdateViewData()
+$em.ExtensionList | ft -property Key
+Disconnect-VIServer * -Confirm:$false
+----
+
+
+** vCenter 플러그인 2.6.1 이하:
++
+... 브라우저에 등록 유틸리티의 URL을 입력하거나 프로그램 디렉토리에서 유틸리티를 찾습니다.
++
+**** "https://<FDVAorManagementNodeIP>:8443`
+**** '/opt/solidfire/VCP/bin/VCP-reg.sh'
+
+
+... vCenter Plugin Register/Unregister 창에서 * Unregister * 를 선택합니다.
+
+
+
+
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

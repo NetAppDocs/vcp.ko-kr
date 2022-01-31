@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: vcp_concept_vvols.html 
+summary:  
+keywords: netapp, vvol, virtual volume, storage container, protocol endpoint, vcp, vcenter, element 
+---
+= 가상 볼륨(VVOL)
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+vSphere Virtual Volumes는 VMware의 스토리지 패러다임으로, 스토리지 시스템에서 VMware vCenter로 vSphere에 대한 스토리지 관리의 대부분을 이동합니다. VVOL(가상 볼륨)을 사용하면 개별 가상 머신의 요구사항에 따라 스토리지를 할당할 수 있습니다.
+
+
+
+== 바인딩
+
+NetApp Element 클러스터는 최적의 프로토콜 엔드포인트를 선택하고 ESXi 호스트 및 가상 볼륨을 프로토콜 끝점과 연결하는 바인딩을 생성한 다음 ESXi 호스트에 대한 바인딩을 반환합니다. 바인딩한 후 ESXi 호스트는 바인딩된 가상 볼륨에서 입출력 작업을 수행할 수 있습니다.
+
+
+
+== 프로토콜 엔드포인트
+
+VMware ESXi 호스트는 프로토콜 엔드포인트라고 하는 논리적 I/O 프록시를 사용하여 가상 볼륨과 통신합니다. ESXi 호스트는 I/O 작업을 수행하기 위해 가상 볼륨을 프로토콜 끝점에 바인딩합니다. 호스트의 가상 머신이 I/O 작업을 수행할 때 연결된 프로토콜 엔드포인트는 I/O를 페어링된 가상 볼륨으로 보냅니다.
+
+NetApp Element 클러스터의 프로토콜 엔드포인트는 SCSI 관리 논리 유닛으로 작동합니다. 각 프로토콜 엔드포인트는 클러스터에 의해 자동으로 생성됩니다. 클러스터의 모든 노드에 대해 해당하는 프로토콜 엔드포인트가 생성됩니다. 예를 들어, 4노드 클러스터에는 4개의 프로토콜 엔드포인트가 있습니다.
+
+iSCSI는 NetApp Element 소프트웨어에 대해 지원되는 유일한 프로토콜입니다. Fibre Channel 프로토콜은 지원되지 않습니다. 프로토콜 끝점은 사용자가 삭제하거나 수정할 수 없으며, 계정과 연결되어 있지 않으며, 볼륨 액세스 그룹에 추가할 수 없습니다. NetApp Element 관리 확장 포인트의 * VVol > 프로토콜 엔드포인트 * 페이지에서 프로토콜 엔드포인트 정보를 검토할 수 있습니다.
+
+
+
+== 스토리지 컨테이너
+
+스토리지 컨테이너는 NetApp Element 계정에 매핑되며 보고 및 리소스 할당에 사용되는 논리적 구문입니다. 스토리지 시스템이 가상 볼륨에 제공할 수 있는 물리적 스토리지 용량 또는 애그리게이트 스토리지 기능을 풀합니다. vSphere에서 생성된 VVOL 데이터 저장소는 개별 스토리지 컨테이너에 매핑됩니다. 단일 스토리지 컨테이너에는 기본적으로 NetApp Element 클러스터의 사용 가능한 모든 리소스가 있습니다. 멀티 테넌시에 대해 보다 세분화된 거버넌스를 필요로 하는 경우 여러 스토리지 컨테이너를 생성할 수 있습니다.
+
+스토리지 컨테이너는 기존 계정과 마찬가지로 작동하며 가상 볼륨과 기존 볼륨을 모두 포함할 수 있습니다. 클러스터당 최대 4개의 스토리지 컨테이너가 지원됩니다. VVOL 기능을 사용하려면 최소 하나의 스토리지 컨테이너가 필요합니다. NetApp Element 관리 확장 포인트의 * VVol > 저장소 컨테이너 * 페이지에서 저장소 컨테이너에 대한 세부 정보를 생성, 삭제 및 볼 수 있습니다. VVOL을 생성하는 동안 vCenter에서 스토리지 컨테이너를 검색할 수 있습니다.
+
+
+
+== VASA 공급자
+
+vSphere가 NetApp Element 클러스터의 VVol 기능을 인식하도록 하려면 vSphere 관리자가 NetApp Element VASA Provider를 vCenter에 등록해야 합니다. VASA Provider는 vSphere와 Element 클러스터 간의 대역 외 제어 경로입니다. VM 생성, vSphere에서 VM 사용 가능, vSphere에 스토리지 기능 광고 등 vSphere를 대신하여 Element 클러스터에서 요청을 실행하는 것은 IT의 책임입니다.
+
+VASA Provider는 Element 소프트웨어의 클러스터 마스터의 일부로 실행됩니다. 클러스터 마스터는 필요에 따라 클러스터의 노드로 페일오버하는 고가용성 서비스입니다. 클러스터 마스터가 페일오버되면 VASA Provider가 이를 따라 이동하여 VASA Provider의 고가용성을 보장합니다. 모든 프로비저닝 및 스토리지 관리 작업은 VASA 공급자를 사용하므로 Element 클러스터에 필요한 모든 변경 작업을 처리할 수 있습니다.
+
+
+NOTE: vCenter에 VASA 공급자를 이미 등록한 경우 최대 10개의 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 VASA39 매니페스트의 지침에 따라 에서 .tar.gz 파일을 다운로드합니다 link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab/download/62654/vasa39["NetApp 소프트웨어 다운로드"^] 사이트. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* http://mysupport.netapp.com/hci/resources["NetApp HCI 리소스 페이지를 참조하십시오"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

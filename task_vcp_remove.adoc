@@ -1,0 +1,125 @@
+---
+sidebar: sidebar 
+permalink: task_vcp_remove.html 
+summary: vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다. 
+keywords: netapp, vcp, vcenter, plugin, element, upgrade 
+---
+= vCenter 플러그인을 제거합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, vcp, vcenter, plugin, element, upgrade
+
+
+[role="lead"]
+vSphere 6.7 이하와 함께 사용되는 vCenter 플러그인 2.5 이상의 경우 vCenter Server에서 플러그인과 연결된 모든 파일을 수동으로 제거하려면 다음 프로세스를 완료해야 합니다. vSphere 7.0의 경우 플러그인을 등록 해제하면 모든 파일이 자동으로 제거됩니다.
+
+.무엇을 &#8217;필요로 할거야
+* vCenter 플러그인 2.5 이상
+* vSphere 6.7 이하
+* 있습니다 link:task_vcp_unregister.html["등록되지 않았습니다"] 기존 플러그인이며 vCSA 또는 vCenter Server에 대한 SSH, RDP 또는 기타 적절한 연결이 있습니다.
+
+
+.단계
+. vCenter Server를 실행 중인 서버에 관리자로 로그인하고 명령 프롬프트를 엽니다.
+. vCenter Server 서비스 중지:
++
+** 창:
++
+*** (플래시 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --stop vsphere-client
+----
+*** (HTML5 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --stop vsphere-client
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --stop vsphere-ui
+----
+
+
+** vCSA(vCenter Server Appliance)
++
+*** (플래시 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+service-control --stop vsphere-client
+----
+*** (HTML5 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+service-control --stop vsphere-client
+service-control --stop vsphere-ui
+----
+
+
+
+
+. 다음 위치에서 SolidFire 폴더 및 파일을 제거합니다.
++
+** (Windows의 경우) Windows 탐색기를 사용하여 C:\ProgramData\VMware와 C:\Program Files\VMware에서 SolidFire를 검색합니다.
++
+
+NOTE: ProgramData 폴더가 숨겨져 있습니다. 폴더에 액세스하려면 전체 파일 경로를 입력해야 합니다.
+
+** (vCSA의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+find / -name "*solidfire*" -exec rm -rf {} \;
+----
+
+
+. vCenter Server 서비스 시작:
++
+** 창:
++
+*** (플래시 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --start vsphere-client
+----
+*** (HTML5 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --start vsphere-client
+C:\Program Files\VMware\vCenter Server\vmon>.\vmon-cli --start vsphere-ui
+----
+
+
+** vCSA:
++
+*** (플래시 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+service-control --start vsphere-client
+----
+*** (HTML5 클라이언트의 경우) 다음 명령을 실행합니다.
++
+[listing]
+----
+service-control --start vsphere-client
+service-control --start vsphere-ui
+----
+
+
+
+
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

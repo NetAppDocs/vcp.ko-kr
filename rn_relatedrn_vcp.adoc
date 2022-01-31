@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: rn_relatedrn_vcp.html 
+summary: NetApp HCI 또는 SolidFire All-Flash 어레이 환경의 일부인 제품 또는 구성 요소에 대한 릴리즈 노트 링크를 제공합니다. 
+keywords: netapp, hci, element, vcp, vcenter plugin, storage, management services, compute firmware 
+---
+= 추가 릴리스 정보
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: hci, release notes, vcp, element, management services, firmware
+
+
+[role="lead"]
+NetApp HCI 및 Element 스토리지 환경의 다양한 구성 요소에 대한 최신 릴리즈 노트 및 이전 릴리즈 노트 링크를 찾을 수 있습니다.
+
+
+NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.
+
+
+
+== NetApp HCI
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879274["NetApp HCI 1.9P1 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876591["NetApp HCI 1.9 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873790["NetApp HCI 1.8P1 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021["NetApp HCI 1.8 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2861226["NetApp HCI 1.7P1 릴리스 정보"^]
+
+
+
+
+== NetApp Element 소프트웨어
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["NetApp Element 소프트웨어 12.3.1 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element 소프트웨어 12.3 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["NetApp Element 소프트웨어 12.2 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2865022["NetApp Element 소프트웨어 12.0 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2864256["NetApp Element 소프트웨어 11.8 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2861225["NetApp Element 소프트웨어 11.7 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2863854["NetApp Element 소프트웨어 11.5.1 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2859857["NetApp Element 소프트웨어 11.3P1 릴리스 정보"^]
+
+
+
+
+== 관리 서비스
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["관리 서비스 릴리스 정보 KB"^]
+
+
+
+
+== vCenter Server용 NetApp Element 플러그인
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter 플러그인 4.8 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["vCenter 플러그인 4.7 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874631["vCenter 플러그인 4.6 릴리스 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2873396["vCenter Plug-in 4.5 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2866569["vCenter Plug-in 4.4 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2856119["vCenter Plug-in 4.3 릴리즈 노트"^]
+
+
+
+
+== 컴퓨팅 펌웨어
+
+* https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.76.10.html["컴퓨팅 펌웨어 번들 2.76.10 릴리스 정보(최신)"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.76.html["컴퓨팅 펌웨어 번들 2.76 릴리스 정보"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html["컴퓨팅 펌웨어 번들 2.27 릴리스 정보"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_firmware_12.2.109.html["컴퓨팅 펌웨어 번들 12.2.109 릴리스 정보"^]
+
+
+
+
+== 스토리지 펌웨어
+
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["스토리지 펌웨어 번들 2.99.2 릴리스 정보(최신)"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["스토리지 펌웨어 번들 2.76 릴리스 정보"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["스토리지 펌웨어 번들 2.27 릴리스 정보"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 릴리스 정보"^]
+

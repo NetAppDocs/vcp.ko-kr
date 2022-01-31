@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: vcp_task_reports_qossioc.html 
+summary: vCenter Server용 NetApp Element 플러그인에서 선택한 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다. 
+keywords: netapp, hci, vcp, vcenter, element, monitor, report, qossioc, cluster, performance 
+---
+= QoSSIOC 이벤트를 사용하여 VM 성능 계층화를 모니터링합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS 사용 데이터 저장소가 있는 VM이 전원 또는 게스트 이벤트를 재구성하거나 실행하는 경우 QoSSIOC와 관련된 이벤트를 볼 수 있습니다.
+
+vCenter Server용 NetApp Element 플러그인의 NetApp Element 구성 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.
+
+QoSSIOC 이벤트는 로컬에서 추가된 클러스터에서 표시됩니다. 연결된 모드 환경에서 클러스터가 로컬로 추가된 vSphere Web Client에 로그인하여 해당 클러스터의 QoSSIOC 이벤트를 확인합니다.
+
+
+NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+
+.무엇을 &#8217;필요로 할거야
+* 하나 이상의 클러스터를 추가하고 실행해야 합니다.
+* QoSSIOC 서비스는 플러그인의 QoSSIOC 설정 페이지를 사용하여 실행 여부를 구성하고 확인해야 합니다.
+* 하나 이상의 데이터 저장소에 QoSSIOC 자동화가 활성화되어 있어야 합니다.
+
+
+.단계
+. vCenter 플러그인에서 * NetApp Element 구성 * 을 선택합니다.
+. QoSSIOC 이벤트 * 를 선택합니다.
+
+
+
+
+== QoSSIOC 이벤트 데이터
+
+* * 날짜 *: QoSSIOC 이벤트의 날짜 및 시간입니다.
+* * 데이터 저장소 이름 *: 사용자 정의 데이터 저장소 이름입니다.
+* * 클러스터 IP *: 이벤트가 발생한 데이터 저장소가 포함된 클러스터의 IP 주소입니다.
+* * 볼륨 ID *: 연결된 볼륨에 대해 시스템에서 생성한 ID입니다.
+* * 최소 IOPS *: 볼륨의 현재 최소 IOPS QoS 설정입니다.
+* * 최대 IOPS *: 볼륨의 현재 최대 IOPS QoS 설정입니다.
+* * 버스트 IOPS *: 볼륨의 현재 최대 버스트 QoS 설정.
+* * 버스트 시간 *: 버스트 허용 시간.
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

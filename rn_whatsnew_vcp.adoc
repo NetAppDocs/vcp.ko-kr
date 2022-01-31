@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: rn_whatsnew_vcp.html 
+summary: 이 버전의 vCenter Server용 NetApp Element 플러그인의 새로운 기능에 대해 알아보십시오. 
+keywords: netapp, vcp, vcenter, plugin, element, new, whats new 
+---
+= vCenter Server용 NetApp Element 플러그인의 새로운 기능
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, vcp, vcenter, plugin, element, new, whats new
+
+
+[role="lead"]
+vCenter Server 4.8용 NetApp Element 플러그인에는 보안 개선 사항, 메모리 활용도 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.
+
+vCenter Server 4.8용 NetApp Element 플러그인은 관리 서비스 2.19 릴리스와 함께 사용할 수 있습니다.
+
+
+
+== vCenter Server 4.7용 NetApp Element 플러그인
+
+vCenter Server 4.7용 NetApp Element 플러그인에는 에서 향상된 기능을 더욱 개발할 수 있는 중요한 보안 개선 사항이 포함되어 있습니다 https://security.netapp.com/advisory/ntap-20210315-0001/["최신 관리 서비스 2.17.56 패치"] 놓습니다.
+
+버전 4.7을 사용하는 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 2의 구성 요소를 지원합니다.
+
+vCenter Server 4.7용 NetApp Element 플러그인은 관리 서비스의 2.18 릴리스와 함께 사용할 수 있습니다.
+
+
+
+== vCenter Server용 NetApp Element 플러그인 4.6
+
+버전 4.6을 사용하는 이 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 1의 구성 요소를 지원합니다.
+
+vCenter Server 4.6용 NetApp Element 플러그인은 관리 서비스의 2.16 릴리스와 함께 사용할 수 있습니다.
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* link:reference_earlier_versions.html["이전 버전의 NetApp Element 플러그인 설명서"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB"^]
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

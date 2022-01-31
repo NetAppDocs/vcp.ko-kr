@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: vcp_concept_qossioc.html 
+summary:  
+keywords: netapp, quality of service, volume performance, sioc, storage I/O control, vcp 
+---
+= QoSSIOC를 참조하십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 (https://docs.netapp.com/us-en/hci/docs/concept_hci_performance.html["QoS를 참조하십시오"^]) 스토리지 I/O 제어 기준 ) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.
+
+QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다. QoSSIOC 서비스는 모든 SIOC 예약 또는 공유의 합계 및 IOPS 한도를 사용하여 각 데이터 저장소의 기본 볼륨에 대한 최소 및 최대 QoS를 결정합니다. 구성 가능한 버스트 인자도 사용할 수 있습니다.
+
+QoSSIOC 자동화를 사용하기 전에 다음 항목을 고려해야 합니다.
+
+* QoSSIOC 자동화 및 https://docs.netapp.com/us-en/hci/docs/concept_hci_performance.html#qos-policies["QoS 정책"^] 함께 사용하면 안 됩니다. QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.
+* QoSSIOC는 가상 데스크톱 또는 특수한 키오스크 유형의 VM과 같이 매일 또는 하루에 여러 번 재부팅, 전원 켜기 또는 전원 끄기와 같은 가벼운 사용 VM에 가장 적합합니다.
+* QoSSIOC는 재부팅되지 않고 동일한 스토리지 액세스 권한이 필요한 데이터베이스, 애플리케이션 또는 인프라 서버와 같이 서비스 환경에 적합하지 않습니다. QoS 정책은 이러한 환경에 가장 적합합니다.
+* QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가상 볼륨(VVol)과 작동하지 않습니다.
+
+
+
+NOTE: VMDK에 대한 SIOC 설정이 기본 공유 수준인 Normal과 기본 IOPS 제한 Unlimited인 경우 공유 및 제한 IOPS 값은 기본 볼륨의 총 QoS에 영향을 줍니다. VMDK에 대한 SIOC 설정이 기본 레벨이 아닌 경우 SIOC 공유는 최소 QoS 및 SIOC IOPS 제한에 영향을 미하므로 기본 볼륨에 대해 최대 QoS에 영향을 미칩니다.
+
+
+TIP: vSphere API를 통해 예약 값을 설정할 수 있습니다. VMDK에 대해 예약 값을 설정하면 공유가 무시되고 예약 값이 대신 사용됩니다.
+
+
+TIP: https://activeiq.solidfire.com["SolidFire Active IQ"^] 최적의 구성과 QoS 설정 설정을 위한 조언을 제공하는 QoS 권장 사항 페이지가 있습니다.
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

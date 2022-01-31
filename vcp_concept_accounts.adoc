@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: vcp_concept_accounts.html 
+summary:  
+keywords: netapp, vcp, element, plugin, plug-in, account 
+---
+= 사용자 계정
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 계정은 NetApp Element 소프트웨어 기반 네트워크의 스토리지 리소스에 대한 액세스를 제어합니다. 볼륨을 생성하기 전에 최소 하나의 사용자 계정이 필요합니다.
+
+볼륨을 생성하면 계정에 할당됩니다. 가상 볼륨을 생성한 경우 해당 계정은 스토리지 컨테이너입니다. 이 계정에는 할당된 볼륨에 액세스하는 데 필요한 CHAP 인증이 포함되어 있습니다.
+
+계정에는 최대 2000개의 볼륨이 할당될 수 있지만 볼륨은 하나의 계정에만 속할 수 있습니다.
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

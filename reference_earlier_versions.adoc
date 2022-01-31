@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference_earlier_versions.html 
+keywords: documentation, earlier, previous, versions 
+summary: 설명서는 vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다. 
+---
+= 이전 버전의 NetApp Element 플러그인 설명서
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: documentation, earlier, previous, versions
+
+
+[role="lead"]
+vCenter Server용 NetApp Element 플러그인 버전 4.8 이전 버전에도 설명서가 제공됩니다.
+
+
+NOTE: 여기 link:index.html["설명서 링크"] vCenter Server용 NetApp Element 플러그인 버전 4.8의 경우 버전 4.6과 4.7도 포함됩니다.
+
+[cols="4*"]
+|===
+| 버전 | 플러그인 릴리즈 노트 | 관리 서비스 릴리스 정보 | 사용 설명서 
+
+
+| 4.7 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["PDF를 참조하십시오"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["2.18.91"^] | link:index.html["링크"] 
+
+
+| 4.6 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2874631["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/NetApp_Hybrid_Cloud_Control_and_Management_Services_2.17.56_Release_Notes["2.17.56KB"^] | link:index.html["링크"] 
+
+
+| 4.5 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2873396["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.14.60_Release_Notes["2.14.60KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2872843["PDF를 참조하십시오"^] 
+
+
+| 4.4 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2866569["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.11.34_Release_Notes["2.11.34KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2870280["PDF를 참조하십시오"^] 
+
+
+| 4.3 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2856119["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.0.725_Release_Notes["2.0.725KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2860023["PDF를 참조하십시오"^]참고: 이 책은 Element 소프트웨어 11.3/NetApp HCI 1.6에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다.참고: 이 책은 Element 소프트웨어 11.5/NetApp HCI 1.7의 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다참고: 이 책은 Element 소프트웨어 11.7/NetApp HCI 1.7P1에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다 
+|===

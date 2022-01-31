@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task_vcp_upgrades.html 
+summary: vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다. 
+keywords: netapp, vcp, vcenter, plugin, element, upgrade 
+---
+= 플러그인을 업그레이드합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: netapp, vcp, vcenter, plugin, element, upgrade
+
+
+[role="lead"]
+설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. vCenter Server 4.8용 NetApp Element 플러그인은 관리 서비스 번들의 일부로 요소 및 NetApp HCI 릴리스 외부에서 사용할 수 있습니다.
+
+플러그인을 업그레이드하려면 해당 제품의 업그레이드 설명서에 있는 지침을 따르십시오.
+
+* https://docs.netapp.com/us-en/hci/docs/task_vcp_upgrade_plugin.html["NetApp HCI 시스템을 업그레이드합니다"^]
+* https://docs.netapp.com/us-en/element-software/upgrade/task_vcp_upgrade_plugin.html["SolidFire All-Flash 스토리지 시스템을 업그레이드하십시오"^]
+
+
+[discrete]
+== 자세한 내용을 확인하십시오
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter 플러그인 4.8 릴리즈 노트"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트"^]
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* http://mysupport.netapp.com/hci/resources["NetApp HCI 리소스 페이지를 참조하십시오"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+
