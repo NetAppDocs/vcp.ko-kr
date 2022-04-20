@@ -6,6 +6,7 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, cluster, performa
 ---
 = 보고 옵션으로 시스템 성능을 모니터링합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

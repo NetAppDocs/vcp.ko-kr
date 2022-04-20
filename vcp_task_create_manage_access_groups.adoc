@@ -6,6 +6,7 @@ keywords: netapp, storage, access groups, vcp, vcenter, element
 ---
 = 볼륨 액세스 그룹을 생성하고 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

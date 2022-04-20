@@ -6,6 +6,7 @@ keywords: netapp, qos policy, quality of service, qos policies, vcp, vcenter, el
 ---
 = 볼륨 QoS 정책 생성 및 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

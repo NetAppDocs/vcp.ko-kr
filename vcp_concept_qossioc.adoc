@@ -6,6 +6,7 @@ keywords: netapp, quality of service, volume performance, sioc, storage I/O cont
 ---
 = QoSSIOC를 참조하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -13,7 +14,7 @@ keywords: netapp, quality of service, volume performance, sioc, storage I/O cont
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 (https://docs.netapp.com/us-en/hci/docs/concept_hci_performance.html["QoS를 참조하십시오"^]) 스토리지 I/O 제어 기준 ) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.
+vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 (https://docs.netapp.com/us-en/hci/docs/concept_hci_performance.html["QoS를 참조하십시오"^]) 스토리지 I/O 제어 기준 (https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-7686FEC3-1FAC-4DA7-B698-B808C44E5E96.html["SIOC"^]) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.
 
 QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다. QoSSIOC 서비스는 모든 SIOC 예약 또는 공유의 합계 및 IOPS 한도를 사용하여 각 데이터 저장소의 기본 볼륨에 대한 최소 및 최대 QoS를 결정합니다. 구성 가능한 버스트 인자도 사용할 수 있습니다.
 

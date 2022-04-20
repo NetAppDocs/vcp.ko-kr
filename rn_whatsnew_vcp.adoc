@@ -6,6 +6,7 @@ keywords: netapp, vcp, vcenter, plugin, element, new, whats new
 ---
 = vCenter Server용 NetApp Element 플러그인의 새로운 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

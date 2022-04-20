@@ -6,6 +6,7 @@ keywords: netapp, storage, accounts, vcp, vcenter, element
 ---
 = 사용자 계정을 만들고 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

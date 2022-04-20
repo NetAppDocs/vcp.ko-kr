@@ -2,10 +2,11 @@
 sidebar: sidebar 
 permalink: vcp_task_configure_manage_vvols.html 
 summary: 클러스터에서 프로비저닝된 스토리지에 대한 가상 볼륨을 설정할 수 있습니다. 
-keywords: netapp, set up vvol, configure vvol, virtual volume, vcp, vcenter, element 
+keywords: netapp, set up vvol, configure vvol, virtual volume, vcp, vcenter, element, vasa provider 
 ---
 = 가상 볼륨을 구성 및 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -13,7 +14,7 @@ keywords: netapp, set up vvol, configure vvol, virtual volume, vcp, vcenter, ele
 
 
 [role="lead"]
-VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상 볼륨(VVol)"] NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. , , 및 NetApp Element 관리 확장 지점의 호스트
+VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상 볼륨(VVol)"] NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. link:vcp_concept_vvols.html#storage-containers["스토리지 컨테이너"], link:vcp_concept_vvols.html#protocol-endpoints["프로토콜 엔드포인트"], 및 NetApp Element 관리 확장 지점의 호스트
 
 .무엇을 &#8217;필요로 할거야
 * VVol 호환성을 가진 ESXi 6.5 이상 환경에 연결된 NetApp Element 10 이상 클러스터를 사용하고 있습니다.
@@ -81,6 +82,9 @@ vCenter가 클러스터의 VVol 기능을 인식할 수 있도록 NetApp Element
 
 
 IMPORTANT: 둘 이상의 vCenter 인스턴스에 NetApp Element VASA 공급자를 등록하지 마십시오. NetApp Element VASA Provider는 vCenter가 SSL을 처리하는 방식에 제한이 있으므로 단일 vCenter에만 등록할 수 있습니다. 단일 vCenter에는 여러 NetApp Element 클러스터가 있을 수 있지만 vCenter의 두 인스턴스 간에 클러스터를 공유할 수는 없습니다.
+
+
+IMPORTANT: 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
 
 
 NOTE: vCenter에 VASA 공급자를 이미 등록한 경우 최대 10개의 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 VASA39 매니페스트의 지침에 따라 에서 .tar.gz 파일을 다운로드합니다 link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab/download/62654/vasa39["NetApp 소프트웨어 다운로드"] 사이트. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.

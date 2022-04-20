@@ -6,6 +6,7 @@ keywords: netapp, hci, vcp, vcenter, element, protect, snapshots, schedule
 ---
 = 스냅샷 스케줄을 생성합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

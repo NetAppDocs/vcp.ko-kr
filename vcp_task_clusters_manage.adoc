@@ -6,6 +6,7 @@ keywords: netapp, cluster, vcp, vcenter, element
 ---
 = 클러스터 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

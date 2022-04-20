@@ -6,6 +6,7 @@ summary: 설명서는 vCenter Server용 NetApp Element 플러그인 버전 4.6 �
 ---
 = 이전 버전의 NetApp Element 플러그인 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -36,5 +37,5 @@ NOTE: 여기 link:index.html["설명서 링크"] vCenter Server용 NetApp Elemen
 | 4.4 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2866569["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.11.34_Release_Notes["2.11.34KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2870280["PDF를 참조하십시오"^] 
 
 
-| 4.3 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2856119["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.0.725_Release_Notes["2.0.725KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2860023["PDF를 참조하십시오"^]참고: 이 책은 Element 소프트웨어 11.3/NetApp HCI 1.6에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다.참고: 이 책은 Element 소프트웨어 11.5/NetApp HCI 1.7의 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다참고: 이 책은 Element 소프트웨어 11.7/NetApp HCI 1.7P1에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다 
+| 4.3 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2856119["PDF를 참조하십시오"^] | https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_2.0.725_Release_Notes["2.0.725KB"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2860023["PDF를 참조하십시오"^]참고: 이 책은 Element 소프트웨어 11.3/NetApp HCI 1.6에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다.https://library.netapp.com/ecm/ecm_download_file/ECMLP2860878["PDF를 참조하십시오"^]참고: 이 책은 Element 소프트웨어 11.5/NetApp HCI 1.7의 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다https://library.netapp.com/ecm/ecm_download_file/ECMLP2863783["PDF를 참조하십시오"^]참고: 이 책은 Element 소프트웨어 11.7/NetApp HCI 1.7P1에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다 
 |===

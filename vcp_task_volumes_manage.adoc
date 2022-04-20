@@ -6,6 +6,7 @@ keywords: netapp, volumes, vcp, vcenter, element,
 ---
 = 볼륨 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -272,7 +273,7 @@ IMPORTANT: QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 
 
 NOTE: 클론 복제된 볼륨은 소스 볼륨에서 볼륨 액세스 그룹 구성원 자격을 상속하지 않습니다.
 
-운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"] 및.
+운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"] 및 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["중복 VMFS 데이터 저장소 관리"].
 
 .단계
 . NetApp Element 관리 > 관리 * 를 선택합니다.

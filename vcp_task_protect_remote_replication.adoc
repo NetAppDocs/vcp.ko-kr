@@ -6,6 +6,7 @@ keywords: netapp, hci, vcp, vcenter, element, protect, replication, remote, clus
 ---
 = 클러스터 간에 원격 복제를 수행합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

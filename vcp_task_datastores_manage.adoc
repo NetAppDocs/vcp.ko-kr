@@ -6,6 +6,7 @@ keywords: netapp, datastore, vcp, vcenter, element
 ---
 = 데이터 저장소를 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -73,7 +74,7 @@ NOTE: 새 데이터 저장소를 생성하려면 접속된 호스트가 하나 �
 . 볼륨 구성 * 창에서 기존 볼륨을 선택하고 다음 단계를 진행하거나 새 데이터 저장소에 대한 새 볼륨을 생성합니다.
 +
 
-NOTE: 기존 볼륨을 선택하여 새 데이터 저장소를 생성하면 기존 데이터가 손실됩니다. 기존 VMFS 볼륨에 대해서는 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"^] 및.
+NOTE: 기존 볼륨을 선택하여 새 데이터 저장소를 생성하면 기존 데이터가 손실됩니다. 기존 VMFS 볼륨에 대해서는 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"^] 및 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["중복 VMFS 데이터 저장소 관리"^].
 
 +
 .. 데이터 저장소를 백업하는 볼륨의 이름을 입력합니다.

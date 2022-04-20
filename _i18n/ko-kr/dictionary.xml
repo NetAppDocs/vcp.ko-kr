@@ -1835,8 +1835,6 @@
   <block id="ab91dd7f95968fffd00546428fa0ec61" category="paragraph">NetApp HCI를 사용하여 노드를 추가하여 NetApp HCI 인프라를 수동으로 확장할 수 있습니다. NetApp Element 확장 지점에서 시스템 확장을 위한 NetApp HCI UI에 대한 링크가 제공됩니다. 시작 및 클러스터 페이지의 NetApp Element 관리 확장 지점 내에 추가 링크가 제공됩니다.</block>
   <block id="18a2913d457d149d724c285bb0b5ecf6" category="list-text">NetApp HCI * 를 확장합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="8b1a6c95fed8363998ed5d7eae965f1a" category="inline-link-macro">관리 서비스 공지 2.19.48(VCP 4.8.34)</block>
   <block id="48e73a938758f852ecf42def2ae2a2ec" category="list-text"><block ref="48e73a938758f852ecf42def2ae2a2ec" category="inline-link-macro-rx"></block></block>
   <block id="9fb45d65282cc3f96e819596e5e394dd" category="inline-link-macro">관리 서비스 공지 2.18.91(VCP 4.7.10)</block>
@@ -2045,8 +2043,6 @@
   <block id="61993b64115728d8f5ac3de889d7d5cd" category="cell">인증서가 3일 이내에 만료되거나 이미 만료되었습니다.</block>
   <block id="42a775dbc829e1685b50072b5c687f36" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 SSL 인증서가 만료되기 전에 업데이트하십시오. 업데이트된 SSL 인증서를 제공하려면 "UpdateIdpConfiguration" API 메서드와 RefreshCertificateExpirationTime = true"를 사용합니다.</block>
   <block id="308f88c7343bcde5928afc202705f02e" category="list-text">* 비일관성 BondModes *: VLAN 장치의 연결 모드가 누락되었습니다. 이 고장은 예상 본드 모드와 현재 사용 중인 본드 모드를 표시합니다.</block>
-  <block id="34abef81b9a8ce278ef3ade37200f6a4" category="list-text">* 비일관성 InterfaceConfiguration *: 인터페이스 구성이 일치하지 않습니다.</block>
-  <block id="5b0166feabda67b3040f6239ee1f1e40" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 스토리지 클러스터의 노드 인터페이스가 일관되게 구성되어 있는지 확인하십시오.</block>
   <block id="c4b0c56cdcb13f6eb48c16acd3406015" category="list-text">* 비일관성 *: 이 클러스터 고장은 다음 조건 중 하나를 나타냅니다.</block>
   <block id="9c1485d86c325377a29a8d89037f06b2" category="list-text">Bond1G 불일치: Bond1G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</block>
   <block id="b9c6a0b1df2e02b3cef9f3c2de4ae589" category="list-text">Bond10G 불일치: Bond10G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</block>
@@ -2425,4 +2421,18 @@
   <block id="9c17578111f04071be2db36d040281bf" category="sidebar">플러그 인 등록을 취소합니다</block>
   <block id="faa169d4c778c54064b635053ab306a2" category="sidebar">플러그인을 제거합니다</block>
   <block id="5612baf51d00a05f0290357c97294f8d" category="sidebar">플러그인 문제를 해결합니다</block>
+  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
 </blocks>

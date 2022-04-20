@@ -6,6 +6,7 @@ keywords: netapp, storage, inititators, vcp, vcenter, element
 ---
 = 이니시에이터를 생성 및 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ keywords: netapp, hci, vcp, vcenter, element, protect, snapshots, clone, backup,
 ---
 = vCenter Server에서 볼륨 스냅샷을 생성하고 관리합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

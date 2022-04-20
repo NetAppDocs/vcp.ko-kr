@@ -6,6 +6,7 @@ keywords: netapp, nodes, create, manage, delete, view vcp, vcenter, element
 ---
 = 노드 추가 및 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

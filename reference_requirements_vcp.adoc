@@ -6,6 +6,7 @@ keywords: netapp, hci, kubernetes, on premise, cloud services
 ---
 = vCenter Server용 Element 플러그인의 요구 사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

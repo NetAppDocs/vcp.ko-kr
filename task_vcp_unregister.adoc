@@ -6,6 +6,7 @@ keywords: netapp, vcp, vcenter, plugin, element, unregister
 ---
 = vCenter 플러그인 등록을 취소합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
