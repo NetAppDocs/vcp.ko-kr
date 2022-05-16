@@ -54,6 +54,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
+* link:media/mgmt_svcs_2.20_notice.pdf["관리 서비스 공지 2.20.69(VCP 4.9.14)"^]
 * link:media/mgmt_svcs_2.19_notice.pdf["관리 서비스 공지 2.19.48(VCP 4.8.34)"^]
 * link:media/mgmt_svcs_2.18_notice.pdf["관리 서비스 공지 2.18.91(VCP 4.7.10)"^]
 * link:media/mgmt_svcs_2.17.56_notice.pdf["관리 서비스 공지 2.17.56(VCP 4.6.32)"^]

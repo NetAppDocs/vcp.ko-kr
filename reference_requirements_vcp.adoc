@@ -20,7 +20,7 @@ vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 
 
 == VMware vSphere 사전 요구 사항
 
-vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터와 iSCSI 네트워킹이 구성된 vCenter 및 ESXi를 비롯한 VMware vSphere 7.0 또는 6.7이 필요합니다.
+vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터와 iSCSI 네트워킹이 구성된 vCenter 및 ESXi를 포함한 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.
 
 
 
@@ -29,15 +29,17 @@ vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어
 플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
 
 * vSphere 7.0 및 7.0 업데이트 1 - vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소 포함
++
+
+IMPORTANT: VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Server용 NetApp Element 플러그인의 모든 버전이 배포되지 않습니다. 이 문제를 해결하려면 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["이 KB 문서를 참조하십시오"^].
+
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.7 및 6.7 업데이트 1 및 3
 +
 
 IMPORTANT: 플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. Flash/Flex용 버전 6.7 U2 vSphere Web Client와 호환됩니다.
 
+* vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5
 
-
-
-IMPORTANT: 이 플러그인은 VMware vCenter Server 6.5와 호환되지 않습니다.
 
 
 

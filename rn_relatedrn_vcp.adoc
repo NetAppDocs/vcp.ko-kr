@@ -24,7 +24,8 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == NetApp HCI
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879274["NetApp HCI 1.9P1 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882194["NetApp HCI 1.10 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879274["NetApp HCI 1.9P1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876591["NetApp HCI 1.9 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873790["NetApp HCI 1.8P1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021["NetApp HCI 1.8 릴리스 정보"^]
@@ -35,7 +36,8 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == NetApp Element 소프트웨어
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["NetApp Element 소프트웨어 12.3.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element 소프트웨어 12.3 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["NetApp Element 소프트웨어 12.2 릴리스 정보"^]
@@ -57,6 +59,7 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == vCenter Server용 NetApp Element 플러그인
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["vCenter 플러그인 4.9 릴리즈 노트"^] _신규 _
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter 플러그인 4.8 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["vCenter 플러그인 4.7 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2874631["vCenter 플러그인 4.6 릴리스 정보"^]
@@ -69,7 +72,7 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == 컴퓨팅 펌웨어
 
-* https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.76.10.html["컴퓨팅 펌웨어 번들 2.76.10 릴리스 정보(최신)"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.146.html["컴퓨팅 펌웨어 번들 2.146 릴리스 정보"^] _신규 _
 * https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.76.html["컴퓨팅 펌웨어 번들 2.76 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html["컴퓨팅 펌웨어 번들 2.27 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_firmware_12.2.109.html["컴퓨팅 펌웨어 번들 12.2.109 릴리스 정보"^]
@@ -79,7 +82,8 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == 스토리지 펌웨어
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["스토리지 펌웨어 번들 2.99.2 릴리스 정보(최신)"^]
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["스토리지 펌웨어 번들 2.146 릴리스 정보"^] _신규 _
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["스토리지 펌웨어 번들 2.99.2 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["스토리지 펌웨어 번들 2.76 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["스토리지 펌웨어 번들 2.27 릴리스 정보"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07 릴리스 정보"^]

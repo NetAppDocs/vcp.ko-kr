@@ -888,7 +888,6 @@
   <block id="618bdc2067940be634fb648432588c93" category="paragraph">NetApp HCI 및 Element 스토리지 환경의 다양한 구성 요소에 대한 최신 릴리즈 노트 및 이전 릴리즈 노트 링크를 찾을 수 있습니다.</block>
   <block id="2b25aeb8c7f6b5acc086216f641291e8" category="admonition">NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.</block>
   <block id="54866f3f5260905d8cc6b998d85fee46" category="inline-link">NetApp HCI 1.9P1 릴리스 정보</block>
-  <block id="5f123fb5072e8736326c928e2de971af" category="list-text"><block ref="9676fc811bea74225536cdd128daebc0" category="inline-link-rx"></block> _신규 _</block>
   <block id="ad486ba7980ca0df1937d7f26f4ce12b" category="inline-link">NetApp HCI 1.9 릴리스 정보</block>
   <block id="633cc64117e19d8cdd0def00cc27e8f5" category="list-text"><block ref="633cc64117e19d8cdd0def00cc27e8f5" category="inline-link-rx"></block></block>
   <block id="93c90752aba7edbf5a9fd2d0543c08d3" category="inline-link">NetApp HCI 1.8P1 릴리스 정보</block>
@@ -899,7 +898,6 @@
   <block id="4eed15839b8c708f78b2b696364ff0aa" category="list-text"><block ref="4eed15839b8c708f78b2b696364ff0aa" category="inline-link-rx"></block></block>
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">NetApp Element 소프트웨어</block>
   <block id="56570048e2475ec7b64ee91388743714" category="inline-link">NetApp Element 소프트웨어 12.3.2 릴리스 정보</block>
-  <block id="3903fc6a9f0bcbe1f49608f5110cf661" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block> _신규 _</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">NetApp Element 소프트웨어 12.3.1 릴리스 정보</block>
   <block id="9add94ad0bafb6a0c0977e09efa22b79" category="list-text"><block ref="9add94ad0bafb6a0c0977e09efa22b79" category="inline-link-rx"></block></block>
   <block id="325c4db41bea4b4c5bc841d336b08e32" category="inline-link">NetApp Element 소프트웨어 12.3 릴리스 정보</block>
@@ -933,8 +931,6 @@
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter Plug-in 4.3 릴리즈 노트</block>
   <block id="b2a1b69fb08bccdb5677884b0a061505" category="list-text"><block ref="b2a1b69fb08bccdb5677884b0a061505" category="inline-link-rx"></block></block>
   <block id="ff87ebe2c25e682bd61568ba1a06d717" category="section-title">컴퓨팅 펌웨어</block>
-  <block id="b8a3e041719b8e9752b150f5cd409639" category="inline-link">컴퓨팅 펌웨어 번들 2.76.10 릴리스 정보(최신)</block>
-  <block id="b95832f9e97293e5970c119813d12f8c" category="list-text"><block ref="b95832f9e97293e5970c119813d12f8c" category="inline-link-rx"></block></block>
   <block id="7a02f75af06b21c7f1cfccabab836899" category="inline-link">컴퓨팅 펌웨어 번들 2.76 릴리스 정보</block>
   <block id="6c8926cd2660fe1426832a40f7e78bff" category="list-text"><block ref="6c8926cd2660fe1426832a40f7e78bff" category="inline-link-rx"></block></block>
   <block id="add6cf39bf48bd4bb95153935993051e" category="inline-link">컴퓨팅 펌웨어 번들 2.27 릴리스 정보</block>
@@ -942,8 +938,6 @@
   <block id="3a155d4e218deae857aac98fd3d2be2c" category="inline-link">컴퓨팅 펌웨어 번들 12.2.109 릴리스 정보</block>
   <block id="564b18336879036fad235824c42003f6" category="list-text"><block ref="564b18336879036fad235824c42003f6" category="inline-link-rx"></block></block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">스토리지 펌웨어</block>
-  <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보(최신)</block>
-  <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">스토리지 펌웨어 번들 2.76 릴리스 정보</block>
   <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
   <block id="f0334c1f59f95a0173885c35e98f843f" category="inline-link">스토리지 펌웨어 번들 2.27 릴리스 정보</block>
@@ -1056,7 +1050,6 @@
   <block id="8ba7fe73aadae9fb529486bc9631d061" category="doc">vCenter 플러그인 문제를 해결합니다</block>
   <block id="b9c4493f6395cc941c764ec3521cba13" category="paragraph">vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.</block>
   <block id="acb74ddc623ba3a90ff6c3e1e72aabb5" category="list-text"><block ref="20d8460084a0c9948d2cc36d92e5943a" category="inline-xref-macro-rx"></block></block>
-  <block id="adee7899128d267f13a11c68d161c1f4" category="list-text"><block ref="07fa342623c29f24475338282827edaa" category="inline-xref-macro-rx"></block></block>
   <block id="720a88aac85bd38e5f77600c434fa172" category="list-text"><block ref="d08f3f2eb111725a9e38a4e29e363ebe" category="inline-xref-macro-rx"></block></block>
   <block id="095c464a72d772c972dffda935226c8f" category="list-text"><block ref="f2afcbdd747e2c0ac83150466ba1452e" category="inline-xref-macro-rx"></block></block>
   <block id="0e77b072d97a1a77d7ce7648f6ff3e6b" category="list-text"><block ref="425e693d2e8aa6dd4d79c902e1163b89" category="inline-xref-macro-rx"></block></block>
@@ -1092,13 +1085,10 @@
   <block id="f5ef2add32b483d327d0279cc4f351d0" category="list-text">플러그인을 다운로드할 수 없는 경우 MOB 레코드의 'serverThumbprint'를 브라우저에 표시된 ZIP URL의 인증서 SHA-1과 비교합니다.</block>
   <block id="01ec9cc7ac910aacebaa037dd5d7eeea" category="list-text">MOB의 등록 레코드에 올바르지 않거나 오래된 URL 또는 SHA-1이 있는 경우 플러그 인을 등록 취소하고 플러그인을 다시 등록합니다.</block>
   <block id="e51e6aa350cea8bdfbbbbc81ea5492ec" category="list-text">문제가 지속되고 ZIP에 도달할 수 없는 경우 ZIP URL을 검사하여 사용된 관리 노드 주소에 문제가 있는지 확인합니다. 경우에 따라 ZIP 파일을 다운로드할 수 있도록 플러그인의 등록 유틸리티를 사용하여 URL을 사용자 지정해야 할 수도 있습니다.</block>
-  <block id="4b3f9c6de81a8dc90f7429b2464c6b39" category="section-title">VMware vCenter Server 6.7U1에서 VCP 4.8 업그레이드 후 오류</block>
-  <block id="ac1d7f2400d2aa38888bfc6cc2a28d59" category="paragraph">VMware vCenter Server 6.7U1을 사용하여 VCP 4.8로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.</block>
   <block id="bbcde54d38a7d044c3b8a3ec056f932f" category="list-text">클러스터는 * 클러스터 * 섹션에 나열되지 않습니다.</block>
   <block id="cec85f10ae66451b3af081cbc5ca7e20" category="list-text">NetApp Element 구성의 * 클러스터 및 QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.</block>
   <block id="aa8746d5b71402972581bdd84dcc2484" category="paragraph">클러스터 및 QoSSIOC 설정을 복원합니다.</block>
   <block id="c3a78f82feea7790e45dc2b8ff202ad6" category="list-text">vCenter에서 로그아웃합니다.</block>
-  <block id="1b3bf198be8d42e344e87e814638c35e" category="list-text">로그아웃한 후 2-3분 정도 기다린 다음 다시 로그인합니다.</block>
   <block id="42fe583841480643befc86660359cc97" category="list-text">현재 vSphere Client 보기에서 새로 고침 아이콘을 선택합니다.</block>
   <block id="d0027b340b133639d43317fb35d13a94" category="list-text">예를 들어 Ctrl+F5를 사용하여 캐시를 해제하고 브라우저를 새로 고칩니다.</block>
   <block id="389eaf94a0ef26f9ba0cba36b0fb8069" category="list-text">클러스터 및 QoSSIOC 설정이 복원되는지 확인합니다.</block>
@@ -1453,7 +1443,6 @@
   <block id="a551db227a426bdfb177aee6f63574b3" category="list-text"><block ref="a551db227a426bdfb177aee6f63574b3" category="inline-link-macro-rx"></block></block>
   <block id="2eaa7103b033431a2a869178996c6af4" category="summary">vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다.</block>
   <block id="8fbfd26ed5e6497365d351c8f25fa303" category="doc">플러그인을 업그레이드합니다</block>
-  <block id="11de79fb56eb3a529489d5598250cfa1" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. vCenter Server 4.8용 NetApp Element 플러그인은 관리 서비스 번들의 일부로 요소 및 NetApp HCI 릴리스 외부에서 사용할 수 있습니다.</block>
   <block id="230c0803a12f9d38853bdccc853eaabd" category="paragraph">플러그인을 업그레이드하려면 해당 제품의 업그레이드 설명서에 있는 지침을 따르십시오.</block>
   <block id="056947baa0d57b8ea8db9699e2b2d650" category="inline-link">NetApp HCI 시스템을 업그레이드합니다</block>
   <block id="8205746f5d5236ad86d4993e15eed883" category="list-text"><block ref="8205746f5d5236ad86d4993e15eed883" category="inline-link-rx"></block></block>
@@ -1855,13 +1844,11 @@
   <block id="36fb791a39c0dcf9d768ea535ca51db9" category="doc">vCenter Server용 Element 플러그인의 요구 사항</block>
   <block id="e6934e0cf4466efe40dba8ffce55213b" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구 사항을 충족하는지 확인해야 합니다</block>
   <block id="d495047561c1a08074d3afeeb5b5d172" category="section-title">VMware vSphere 사전 요구 사항</block>
-  <block id="f69d59b3c086e91cd1005a1ff37e9c51" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터와 iSCSI 네트워킹이 구성된 vCenter 및 ESXi를 비롯한 VMware vSphere 7.0 또는 6.7이 필요합니다.</block>
   <block id="3903fd261f224ad8af888f893eb71a5e" category="section-title">플러그인에서 지원하는 VMware vSphere 버전</block>
   <block id="39bb4a890cda10e989012ed844843a1a" category="paragraph">플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.</block>
   <block id="f91a10eb569e37e963d1fe4559054eaf" category="list-text">vSphere 7.0 및 7.0 업데이트 1 - vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소 포함</block>
   <block id="8bc5dd01570b8e30ab647a98f1b5c995" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.7 및 6.7 업데이트 1 및 3</block>
   <block id="f72c3688e3e7a685ff88f8a7c360f844" category="admonition">플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. Flash/Flex용 버전 6.7 U2 vSphere Web Client와 호환됩니다.</block>
-  <block id="45d51a6416ad3562026999aeda3b30f2" category="admonition">이 플러그인은 VMware vCenter Server 6.5와 호환되지 않습니다.</block>
   <block id="bcc539df8c871d5ecc3798cf0bf4e50a" category="section-title">vSphere 6.0 지원이 종료됩니다</block>
   <block id="dec3ff704eae83bc704f10747ef72261" category="inline-link">제품 공산품</block>
   <block id="56e21e285d29ac3707d9de62d9f702c6" category="admonition">VMware vSphere 6.0은 2020년 3월 12일에 지원 종료 상태에 도달했습니다. NetApp HCI 1.8 및 Element 12부터는 vSphere 6.0이 더 이상 지원되지 않습니다. 자세한 내용은 다음을 참조하십시오<block ref="f606560fd089580031ad7289c0774bc4" category="inline-link-rx"></block>.</block>
@@ -2343,9 +2330,7 @@
   <block id="52e7476805407c69dfb1ca1d5fe1f4a3" category="list-text">* 타겟 IQN *: 볼륨의 IQN입니다.</block>
   <block id="34c9899592aa84ae9d63e133472f2483" category="list-text">* 만든 날짜 *: 세션이 설정된 날짜입니다.</block>
   <block id="41bebb27febffbe684d395967a3074fb" category="summary">설명서는 vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다.</block>
-  <block id="c60c64f416bf22b6e140eb52525d5b01" category="paragraph">vCenter Server용 NetApp Element 플러그인 버전 4.8 이전 버전에도 설명서가 제공됩니다.</block>
   <block id="b1859080f20e43589e23a4f60292cbd0" category="inline-link-macro">설명서 링크</block>
-  <block id="76fd0d53661e4e34cc3d7eadc5c43294" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> vCenter Server용 NetApp Element 플러그인 버전 4.8의 경우 버전 4.6과 4.7도 포함됩니다.</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">버전</block>
   <block id="8c4acbc2063657214fc1de03ee31a0df" category="cell">플러그인 릴리즈 노트</block>
   <block id="fefb29e781716d4ae47b68c416f147bf" category="cell">관리 서비스 릴리스 정보</block>
@@ -2435,4 +2420,39 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="4af68147a22cc3d80f4eb4f02b5b14a7" category="inline-link">NetApp HCI 1.10 릴리스 정보</block>
+  <block id="9203ca429e11584ecc455e2f24e8ab6b" category="list-text"><block ref="2485371e710ec4ea8989c22e13c02067" category="inline-link-rx"></block> _신규 _</block>
+  <block id="9676fc811bea74225536cdd128daebc0" category="list-text"><block ref="9676fc811bea74225536cdd128daebc0" category="inline-link-rx"></block></block>
+  <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element 소프트웨어 12.5 릴리스 정보</block>
+  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _신규 _</block>
+  <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
+  <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
+  <block id="e2b4747c263485de7011e8018c523cdd" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block> _신규 _</block>
+  <block id="278e17511dfc12c355dd5120b3cdcf38" category="inline-link">컴퓨팅 펌웨어 번들 2.146 릴리스 정보</block>
+  <block id="cba86f04115d75e398ba32a033e63c37" category="list-text"><block ref="e15eb9592751e0df97c69e856ffc178a" category="inline-link-rx"></block> _신규 _</block>
+  <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보</block>
+  <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _신규 _</block>
+  <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보</block>
+  <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
+  <block id="c69dd8e231cb332d435e16f994fd7554" category="paragraph">vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5를 복구합니다.</block>
+  <block id="3d2039a8d9f11f2c45ac874bd124fff9" category="paragraph">vCenter Server 4.9용 NetApp Element 플러그인은 관리 서비스의 2.20 릴리스와 함께 사용할 수 있습니다.</block>
+  <block id="d75c92bfa55428c6b64a5ed842bd1c4f" category="section-title">vCenter Server 4.8용 NetApp Element 플러그인</block>
+  <block id="f4d1c8d40eb0f3218515e3964884fa3a" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. vCenter Server 4.9용 NetApp Element 플러그인은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
+  <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
+  <block id="00bbf849ee83f2b3ea6c67bb7bd6c6f8" category="inline-link-macro">관리 서비스 공지 2.20.69(VCP 4.9.14)</block>
+  <block id="4f621beaeb83de8a0b0ba929468cc66b" category="list-text"><block ref="4f621beaeb83de8a0b0ba929468cc66b" category="inline-link-macro-rx"></block></block>
+  <block id="72dd8e5a69dc69c30ab77812bc60a30a" category="paragraph">vCenter Server용 NetApp Element 플러그인 버전 4.9 이전의 릴리즈에도 설명서가 제공됩니다.</block>
+  <block id="df1060b968703e2f658f230d3bfc2731" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> vCenter Server용 NetApp Element 플러그인 버전 4.9의 경우 버전 4.6, 4.7 및 4.8도 포함됩니다.</block>
+  <block id="4fb437564892944d73f87c822342e2bb" category="cell">4.8</block>
+  <block id="9657d5b90fbd5e27f1c8767497a4fb05" category="cell"><block ref="9657d5b90fbd5e27f1c8767497a4fb05" category="inline-link-rx"></block></block>
+  <block id="8529c9d3fea72c00afc0f7df4eb01ec3" category="inline-link">2.19.48</block>
+  <block id="3925c91470a691b6f203bf45547db752" category="cell"><block ref="3925c91470a691b6f203bf45547db752" category="inline-link-rx"></block></block>
+  <block id="f4d94d40028683ce25805c5d1a4dee3a" category="list-text"><block ref="694ef8309bed0c46a62f8e27179c5966" category="inline-xref-macro-rx"></block></block>
+  <block id="365507e62817c98e2023c3394222d3e6" category="section-title">VMware vCenter Server 6.7U1을 사용하여 VCP 4.8 이상 업그레이드 후 오류가 발생했습니다</block>
+  <block id="58d3f106a203fd36b8a0fdfa5b0bac36" category="paragraph">VMware vCenter Server 6.7U1을 사용하여 VCP 4.8 이상으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.</block>
+  <block id="a6568301ea8af8e996ab5850a7e6e134" category="list-text">로그아웃한 후 3-5분 정도 기다린 다음 다시 로그인합니다.</block>
+  <block id="1b2251a8b564e729b01c309f91a786a0" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터와 iSCSI 네트워킹이 구성된 vCenter 및 ESXi를 포함한 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
+  <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">이 KB 문서를 참조하십시오</block>
+  <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Server용 NetApp Element 플러그인의 모든 버전이 배포되지 않습니다. 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
+  <block id="2ca516a34cb5ec652761d2350d5a513e" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5</block>
 </blocks>
