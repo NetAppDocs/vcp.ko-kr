@@ -29,7 +29,7 @@ vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 �
 
 
 
-=== 설정 작업
+== 설정 작업
 
 * link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["QoSSIOC 설정을 구성합니다"]
 * <<Enabling QoSSIOC automation on datastores>>
@@ -37,7 +37,7 @@ vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 �
 
 
 
-=== 관리합니다
+== 관리합니다
 
 * link:vcp_task_reports_qossioc.html["QoSSIOC 이벤트를 사용하여 VM 성능 계층화를 모니터링합니다"^]
 * <<Edit QoSSIOC settings>>

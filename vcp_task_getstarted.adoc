@@ -14,7 +14,7 @@ keywords: netapp, hci, vcp, vcenter, element, install, setup
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인(VCP)의 최신 버전을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 사용하여 플러그인에 액세스할 수 있습니다.
+vCenter Server용 NetApp Element 플러그인의 최신 버전을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.
 
 설치가 완료되면 스토리지 입출력 제어(QoSSIOC) 서비스와 vCenter 플러그인의 기타 서비스를 기반으로 서비스 품질을 사용할 수 있습니다.
 

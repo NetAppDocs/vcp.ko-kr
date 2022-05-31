@@ -23,7 +23,7 @@ VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상
 
 
 
-=== 설정 작업
+== 설정 작업
 
 vCenter Server용 NetApp Element 플러그인에서 가상 볼륨(VVol)을 사용하려면 초기 구성 단계를 수행해야 합니다.
 
@@ -35,7 +35,7 @@ vCenter Server용 NetApp Element 플러그인에서 가상 볼륨(VVol)을 사�
 
 
 
-=== 관리합니다
+== 관리합니다
 
 * <<Monitor virtual volume resources>>
 * <<Create a VVol datastore for a storage container>>

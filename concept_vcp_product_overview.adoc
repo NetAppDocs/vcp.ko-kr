@@ -15,7 +15,7 @@ keywords: netapp, vcp, element, vcenter plugin, plug-in
 
 
 [role="lead"]
-VCP(NetApp Element Plug-in for vCenter Server)는 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.
+vCenter Server용 NetApp Element 플러그인은 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.
 
 플러그인 사용자 인터페이스를 사용하여 클러스터를 검색 및 구성하고, 클러스터 용량의 스토리지를 관리, 모니터링 및 할당하여 데이터 저장소 및 가상 데이터 저장소(가상 볼륨용)를 구성할 수 있습니다. 클러스터는 호스트 및 관리자에게 가상 IP 주소로 표시되는 단일 로컬 그룹으로 네트워크에 표시됩니다. 또한 다양한 작업을 수행하는 동안 발생할 수 있는 이벤트에 대한 오류 및 경고 메시지를 포함하여 실시간 보고를 통해 클러스터 활동을 모니터링할 수 있습니다.
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: 'VMware vSphere 인터페이스의 플러그인인 VCP(vCenter Server용 NetApp Element 플러그인)를 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.' 
+summary: VMware vSphere 인터페이스의 플러그인인 vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다. 
 keywords: netapp, vcp, on premise, hybrid cloud control, hcc 
 ---
 = vCenter Server용 NetApp Element 플러그인 설명서
@@ -14,7 +14,7 @@ keywords: netapp, vcp, on premise, hybrid cloud control, hcc
 
 
 [role="lead"]
-VCP(vCenter Server용 NetApp Element 플러그인)는 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있도록 VMware vSphere 인터페이스에 대한 플러그인을 제공합니다.
+vCenter Server용 NetApp Element 플러그인은 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있도록 VMware vSphere 인터페이스에 대한 플러그인을 제공합니다.
 
 이 설명서를 사용하여 플러그인에 대해 알아보고 사용할 수 있습니다. 이 설명서는 4.6 이상 버전을 다룹니다. 이전 버전의 플러그인에 대해서는 를 참조하십시오 link:reference_earlier_versions.html["이 페이지"].
 

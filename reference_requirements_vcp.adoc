@@ -14,7 +14,7 @@ keywords: netapp, hci, kubernetes, on premise, cloud services
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구 사항을 충족하는지 확인해야 합니다
+vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.
 
 
 
@@ -39,6 +39,10 @@ IMPORTANT: VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Serv
 IMPORTANT: 플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. Flash/Flex용 버전 6.7 U2 vSphere Web Client와 호환됩니다.
 
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5
++
+
+IMPORTANT: 이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.
+
 
 
 
