@@ -125,7 +125,7 @@ homepage:
     - title: 새로운 소식
       url: "/rn_whatsnew_vcp.html"
     - title: 릴리스 정보
-      url: "/rn_relatedrn.html"
+      url: "/rn_relatedrn_vcp.html"
   - title: SolidFire All-Flash 스토리지 시스템을 활용할 수 있습니다
     links:
     - title: Element 플러그인을 업그레이드합니다

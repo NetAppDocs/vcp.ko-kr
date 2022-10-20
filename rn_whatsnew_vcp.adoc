@@ -30,7 +30,7 @@ Element vCenter 플러그인 4.9는 관리 서비스의 2.20.69 릴리즈와 함
 
 == vCenter Server 4.8용 NetApp Element 플러그인
 
-Element vCenter 플러그인 4.7.8에는 보안 개선 사항, 메모리 사용률 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.
+Element vCenter 플러그인 4.8에는 보안 개선 사항, 메모리 활용도 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.
 
 Element vCenter 플러그인 4.8은 관리 서비스의 2.19 릴리즈와 함께 사용할 수 있습니다.
 

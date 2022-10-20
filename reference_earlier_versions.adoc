@@ -17,7 +17,7 @@ summary: 문서는 VMware vCenter Server용 NetApp Element 플러그인 버전 4
 VMware vCenter Server용 NetApp Element 플러그인 버전 4.10 이전의 릴리즈에도 설명서가 제공됩니다.
 
 
-NOTE: 여기 link:index.html["설명서 링크"] Element vCenter 플러그인 4.10의 경우 버전 4.9, 4.6, 4.7 및 4.8도 포함됩니다.
+NOTE: 여기 link:index.html["설명서 링크"] Element vCenter 플러그인 4.10의 경우, 버전 4.6, 4.7, 4.8 및 4.9도 포함됩니다.
 
 [cols="4*"]
 |===
