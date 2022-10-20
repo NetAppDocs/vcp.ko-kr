@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: vcp_task_reports_event_logs.html 
-summary: NetApp Element Plug-in for vCenter Server에서 클러스터에서 수행된 작업과 오류를 나타내는 클러스터 장애를 나열하는 이벤트 로그를 검토합니다. 
+summary: NetApp Element Plug-in for VMware vCenter Server에서 클러스터에서 수행된 작업과 오류를 나타내는 클러스터 장애를 나열하는 이벤트 로그를 검토합니다. 
 keywords: netapp, hci, vcp, vcenter, element, monitor, report, event, log, cluster, performance 
 ---
 = 문제 해결을 위해 이벤트 로그를 모니터링합니다
@@ -90,7 +90,8 @@ NOTE: 시스템은 이벤트 로그에 읽기 전용 API 명령을 기록하지 
 * * vasaProviderEvent *: VASA(vSphere APIs for Storage Awareness) Provider와 관련된 이벤트입니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

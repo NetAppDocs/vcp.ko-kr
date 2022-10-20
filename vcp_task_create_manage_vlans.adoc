@@ -16,10 +16,10 @@ keywords: netapp, VLANs, create, manage, delete, view vcp, vcenter, element
 [role="lead"]
 클러스터 구성에 새 가상 네트워크를 추가하여 NetApp Element 소프트웨어를 실행하는 클러스터에 멀티 테넌트 환경을 연결하고 vCenter 플러그인을 사용하여 가상 네트워크를 관리할 수 있습니다.
 
-* <<Create a virtual network>>
-* <<View virtual network details>>
-* <<Edit a virtual network>>
-* <<Delete a virtual network>>
+*  a virtual network
+*  virtual network details
+*  a virtual network
+*  a virtual network
 
 
 

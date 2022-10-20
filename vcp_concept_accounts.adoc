@@ -20,7 +20,8 @@ keywords: netapp, vcp, element, plugin, plug-in, account
 
 계정에는 최대 2000개의 볼륨이 할당될 수 있지만 볼륨은 하나의 계정에만 속할 수 있습니다.
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

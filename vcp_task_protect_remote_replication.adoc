@@ -29,11 +29,11 @@ NetApp Element 소프트웨어를 실행하는 클러스터의 경우 실시간 
 NOTE: NetApp은 데이터 복제 시 WAN 가속기 어플라이언스를 사용하지 않았습니다. 이러한 어플라이언스는 데이터를 복제하는 두 클러스터 간에 구축될 경우 압축 및 중복 제거를 방해할 수 있습니다. 프로덕션 환경에 배포하기 전에 WAN 가속기 어플라이언스의 효과를 완벽하게 검증해야 합니다.
 
 .단계
-. <<Pair clusters>>
-. <<Pair volumes>>
-. <<Validate volume replication>>
-. <<Delete a volume relationship after replication>>
-. <<Manage volume relationships>>
+.  clusters
+.  volumes
+.  volume replication
+.  a volume relationship after replication
+.  volume relationships
 
 
 
@@ -58,8 +58,8 @@ NOTE: 클러스터 페어링은 관리 네트워크의 노드 간에 완벽하�
 
 다음 방법 중 하나를 선택합니다.
 
-* <<Pair clusters using known credentials>>
-* <<Pair clusters with a pairing key>>
+*  clusters using known credentials
+*  clusters with a pairing key
 
 
 
@@ -70,7 +70,7 @@ NOTE: 클러스터 페어링은 관리 네트워크의 노드 간에 완벽하�
 
 클러스터를 페어링하기 전에 클러스터 관리자 사용자 이름 및 암호를 사용하여 클러스터 액세스를 인증합니다.
 
-MVIP를 알 수 없거나 클러스터에 액세스할 수 없는 경우 페어링 키를 생성하여 클러스터를 페어링하고 키를 사용하여 두 클러스터를 페어링할 수 있습니다. 자세한 내용은 을 참조하십시오 <<Pair clusters with a pairing key>>.
+MVIP를 알 수 없거나 클러스터에 액세스할 수 없는 경우 페어링 키를 생성하여 클러스터를 페어링하고 키를 사용하여 두 클러스터를 페어링할 수 있습니다. 자세한 내용은 을 참조하십시오  clusters with a pairing key.
 
 .단계
 . 로컬 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * > * 보호 * 를 선택합니다.
@@ -82,8 +82,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . Create Cluster Pairing * 을 선택합니다.
 . 다음 중 하나를 선택합니다.
 +
-** * 등록된 클러스터 *: 페어링의 원격 클러스터가 vCenter Server용 NetApp Element 플러그인의 동일한 인스턴스에서 제어되는 경우 이 옵션을 선택합니다.
-** * 자격 증명 클러스터 *: 원격 클러스터에 vCenter Server용 NetApp Element 플러그인 구성 외부의 자격 증명이 있는 경우 이 옵션을 선택합니다.
+** * Registered Cluster *: 페어링의 원격 클러스터가 Element vCenter 플러그인의 동일한 인스턴스에 의해 제어되는 경우 이 옵션을 선택합니다.
+** * 자격 증명 클러스터 *: 원격 클러스터에 Element vCenter 플러그인 구성 이외의 자격 증명이 있는 경우 이 옵션을 선택합니다.
 
 
 . Registered Cluster * 를 선택한 경우 사용 가능한 클러스터 목록에서 클러스터를 선택하고 * Pair * 를 클릭합니다.
@@ -173,14 +173,14 @@ NOTE: 다음 단계로 진행하기 전에 로딩 스피너가 사라질 때까�
 
 다음 방법 중 하나를 사용하여 볼륨을 페어링할 수 있습니다.
 
-* <<Pair volumes using known credentials>>: 두 클러스터에 대해 알려진 자격 증명을 사용합니다
-* <<Pair volumes using a pairing key>>: 소스 클러스터에서만 클러스터 자격 증명을 사용할 수 있는 경우 페어링 키를 사용합니다.
-* <<Create target volumes and pair them with local volumes>>: 두 클러스터에 대한 자격 증명을 알고 있는 경우 원격 클러스터에서 복제 타겟 볼륨을 생성하여 소스 클러스터와 페어링합니다.
+*  volumes using known credentials: 두 클러스터에 대해 알려진 자격 증명을 사용합니다
+*  volumes using a pairing key: 소스 클러스터에서만 클러스터 자격 증명을 사용할 수 있는 경우 페어링 키를 사용합니다.
+*  target volumes and pair them with local volumes: 두 클러스터에 대한 자격 증명을 알고 있는 경우 원격 클러스터에서 복제 타겟 볼륨을 생성하여 소스 클러스터와 페어링합니다.
 
 
 볼륨 페어링 관계가 설정되면 복제 대상이 되는 볼륨을 확인해야 합니다.
 
-* <<Assign a replication source and target to paired volumes>>
+*  a replication source and target to paired volumes
 
 
 .무엇을 &#8217;필요로 할거야
@@ -213,9 +213,9 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . 볼륨 페어링 * 을 선택합니다.
 . 다음 중 하나를 선택합니다.
 +
-** * 볼륨 생성 *: 원격 클러스터에서 복제 타겟 볼륨을 생성하려면 이 옵션을 선택합니다. 이 방법은 vCenter Server용 NetApp Element 플러그인으로 제어되는 원격 클러스터에서만 사용할 수 있습니다.
-** * 볼륨 선택 *: 대상 볼륨의 원격 클러스터가 vCenter Server용 NetApp Element 플러그인으로 제어되는 경우 이 옵션을 선택합니다.
-** * 볼륨 ID *: 타겟 볼륨의 원격 클러스터에 vCenter Server용 NetApp Element 플러그인 구성 외부의 알려진 자격 증명이 있는 경우 이 옵션을 선택합니다.
+** * 볼륨 생성 *: 원격 클러스터에서 복제 타겟 볼륨을 생성하려면 이 옵션을 선택합니다. 이 방법은 Element vCenter 플러그인으로 제어되는 원격 클러스터에서만 사용할 수 있습니다.
+** * 볼륨 선택 *: 대상 볼륨에 대한 원격 클러스터가 Element vCenter 플러그인으로 제어되는 경우 이 옵션을 선택합니다.
+** * 볼륨 ID *: 타겟 볼륨의 원격 클러스터에 Element vCenter 플러그인 구성 이외의 알려진 자격 증명이 있는 경우 이 옵션을 선택합니다.
 
 
 . 복제 모드 선택:
@@ -481,7 +481,7 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 
 복제가 완료되고 볼륨 페어링 관계가 더 이상 필요하지 않으면 볼륨 관계를 삭제할 수 있습니다.
 
-을 참조하십시오 <<Delete a volume pair>>.
+을 참조하십시오  a volume pair.
 
 
 
@@ -489,10 +489,10 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 
 복제 일시 중지, 볼륨 페어링 되돌리기, 복제 모드 변경, 볼륨 쌍 삭제, 클러스터 쌍 삭제 등 다양한 방법으로 볼륨 관계를 관리할 수 있습니다.
 
-* <<Pause replication>>
-* <<Change the mode of replication>>
-* <<Delete a volume pair>>
-* <<Delete a cluster pair>>
+*  replication
+*  the mode of replication
+*  a volume pair
+*  a cluster pair
 
 
 
@@ -610,8 +610,8 @@ NetApp Element 관리 구성 지점에서 보호 탭의 볼륨 쌍 페이지에�
 
 볼륨 상태 열에 페어링 및 진행 메시지가 표시됩니다.
 
-* <<Volume pairing messages>>
-* <<Volume pairing warnings>>
+*  pairing messages
+*  pairing warnings
 
 
 
@@ -651,7 +651,8 @@ NetApp Element 관리 구성 지점에서 보호 탭의 볼륨 쌍 페이지에�
 * * StoppedMisConfigured*: 영구적인 구성 오류가 감지되었습니다. 원격 볼륨이 제거되었거나 페어링되지 않았습니다. 수정 조치가 가능하지 않습니다. 새 페어링을 설정해야 합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

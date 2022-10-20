@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_vcp_remove.html 
-summary: vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다. 
+summary: VMware vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다. 
 keywords: netapp, vcp, vcenter, plugin, element, upgrade 
 ---
 = vCenter 플러그인을 제거합니다
@@ -11,7 +11,6 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 :icons: font
 :linkattrs: 
 :imagesdir: ../media/
-:keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 
 [role="lead"]
@@ -118,7 +117,8 @@ service-control --start vsphere-ui
 
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

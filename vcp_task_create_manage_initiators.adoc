@@ -19,10 +19,10 @@ keywords: netapp, storage, inititators, vcp, vcenter, element
 이니시에이터를 생성, 편집 및 삭제할 수 있으며 친숙한 별칭을 제공하여 관리 및 볼륨 액세스를 간소화할 수 있습니다. 볼륨 액세스 그룹에 이니시에이터를 추가하면 해당 이니시에이터가 그룹의 모든 볼륨에 액세스할 수 있도록 설정합니다.
 
 .옵션
-* <<Create an initiator>>
-* <<Edit an initiator>>
-* <<Add initiators to an access group>>
-* <<Delete an initiator>>
+*  an initiator
+*  an initiator
+*  initiators to an access group
+*  an initiator
 
 
 
@@ -137,7 +137,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . 작업을 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

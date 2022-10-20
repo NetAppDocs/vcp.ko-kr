@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: vcp_task_reports_volume_performance.html 
-summary: vCenter Server용 NetApp Element 플러그인의 보고 탭에 있는 볼륨 성능 페이지에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다. 
+summary: VMware vCenter Server용 NetApp Element 플러그인의 보고 탭에 있는 볼륨 성능 페이지에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다. 
 keywords: netapp, hci, vcp, vcenter, element, monitor, report, event, log, cluster, performance 
 ---
 = 볼륨 성능을 모니터링합니다
@@ -52,7 +52,8 @@ NetApp Element 관리 확장 지점의 보고 탭에서 선택한 클러스터�
 * * 평균 IO 크기 *: 최근 500밀리초 동안 볼륨에 대한 최근 입출력의 평균 크기(바이트)입니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -4,9 +4,10 @@ permalink: vcp_task_getstarted.html
 summary: Element 스토리지와 함께 사용할 vCenter Server용 Element 플러그인을 설치하고 구성할 수 있습니다. 
 keywords: netapp, hci, vcp, vcenter, element, install, setup 
 ---
-= vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
+= VMware vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
 :hardbreaks:
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Plug-in_for_vCenter_server/mNode_Status_shows_as_%27Network_Down%27_or_%27Down%27_in_the_mNode_Settings_tab_of_the_Element_Plugin_for_vCenter_(VCP)
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -14,21 +15,21 @@ keywords: netapp, hci, vcp, vcenter, element, install, setup
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인의 최신 버전을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.
+최신 버전의 VMware vCenter Server용 NetApp Element 플러그인을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.
 
 설치가 완료되면 스토리지 입출력 제어(QoSSIOC) 서비스와 vCenter 플러그인의 기타 서비스를 기반으로 서비스 품질을 사용할 수 있습니다.
 
 각 단계를 읽고 완료하여 플러그인을 설치하고 사용을 시작합니다.
 
-* <<Prepare for installation>>
-* <<Install the management node>>
-* <<Register the plug-in with vCenter>>
-* <<Modify vCenter properties for a dark site HTTP server>>
-* <<Access the plug-in and verify successful installation>>
-* <<Add storage clusters for use with the plug-in>>
-* <<Configure QoSSIOC settings using the plug-in>>
-* <<Configure user accounts>>
-* <<Create datastores and volumes>>
+*  for installation
+*  the management node
+*  the plug-in with vCenter
+*  vCenter properties for a dark site HTTP server
+*  the plug-in and verify successful installation
+*  storage clusters for use with the plug-in
+*  QoSSIOC settings using the plug-in
+*  user accounts
+*  datastores and volumes
 
 
 
@@ -65,7 +66,7 @@ vSphere Web Client에 vCenter 플러그인 패키지를 구축하려면 패키�
 연결 모드 환경의 경우 MOB 데이터를 동기화하여 플러그인을 업그레이드할 수 있도록 환경의 각 vCenter Server에 플러그인을 등록해야 합니다. vSphere Web Client가 플러그인이 등록되지 않은 vCenter Server에 연결되면 클라이언트에 플러그인이 표시되지 않습니다.
 
 
-NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+NOTE: Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
 .단계
 . 등록 TCP 포트를 포함하여 브라우저에서 관리 노드의 IP 주소를 입력합니다.
@@ -107,7 +108,7 @@ NOTE: 입력한 사용자 이름과 암호 자격 증명은 vCenter 관리자 �
 ** (사내 서버/다크 사이트의 경우) 플러그인 ZIP에 대한 사용자 지정 URL입니다.
 +
 
-NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 * 를 참조하십시오 <<Modify vCenter properties for a dark site HTTP server,다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다>>.
+NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 * 를 참조하십시오  vCenter properties for a dark site HTTP server,다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다.
 
 
 
@@ -290,7 +291,7 @@ IMPORTANT: vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 
 [NOTE]
 ====
 *** 클러스터의 호스트는 각 vCenter Server 에서만 사용할 수 있습니다. 선택한 vCenter Server가 원하는 호스트에 액세스할 수 있는지 확인합니다. 나중에 다른 호스트를 사용하도록 결정한 경우 클러스터를 제거하고 다른 vCenter Server에 재할당한 다음 다시 추가할 수 있습니다.
-*** vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+*** Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
 
 ====
@@ -345,7 +346,8 @@ QoSSIOC 서비스를 활성화한 후 개별 데이터 저장소에서 QoSSIOC �
 
 생성할 수 있습니다 link:vcp_task_datastores_manage.html#create-a-datastore["데이터 저장소 및 Element 볼륨"] 스토리지 할당을 시작합니다.
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -17,11 +17,11 @@ keywords: netapp, hci, vcp, vcenter, element, protect, snapshots, clone, backup,
 관련 볼륨 세트의 그룹 스냅샷을 생성하여 각 볼륨의 메타데이터 시점 복사본을 보존할 수 있습니다. 그룹 스냅샷을 백업 또는 롤백으로 사용하여 볼륨 그룹의 상태를 원하는 시점으로 복원할 수 있습니다.
 
 .옵션
-* <<Create a group snapshot>>
-* <<View group snapshot details>>
-* <<Clone volumes from a group snapshot>>
-* <<Roll back volumes to a group snapshot>>
-* <<Delete a group snapshot>>
+*  a group snapshot
+*  group snapshot details
+*  volumes from a group snapshot
+*  back volumes to a group snapshot
+*  a group snapshot
 
 
 
@@ -182,7 +182,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 사용할 클러스터�
 . 작업을 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: vcp_reference_reports_alert_errors.html 
-summary: 다음은 vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다. 
+summary: 다음은 VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다. 
 keywords: netapp, hci, vcp, vcenter, element, monitor, report, alert, cluster, performance 
 ---
 = 시스템 알림 목록
@@ -568,7 +568,8 @@ NOTE: 고장에 대한 자세한 내용은 세부 정보 제목을 참조하십�
 
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

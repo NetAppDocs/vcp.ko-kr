@@ -15,22 +15,22 @@ keywords: netapp, hci, vcp, vcenter, element, troubleshoot, monitor, report, ale
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.
+VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.
 
-* <<Plug-in registration successful but icons do not appear in web client>>
-* <<Errors after NetApp Element Plug-in for vCenter Server 4.8 or later upgrade with VMware vCenter Server 6.7U1>>
-* <<Error registering plug-in using Registration UI>>
-* <<Error updating plug-in using Registration UI>>
-* <<Error message that NetApp extension cannot be upgraded>>
-* <<Removing plug-in completes successfully but icons remain>>
-* <<Plug-in cannot be unregistered or removed after admin password change>>
-* <<Plug-in management tasks fail or volumes are not accessible to ESXi host>>
-* <<Failure occurs during vCenter Plug-in use on Firefox 59.0.2 browsers>>
-* <<Delete datastore operation fails>>
-* <<Cluster pair cannot connect using a pairing key>>
-* <<Error message for QoSSIOC status>>
-* <<QoSSIOC service shown as available but is unavailable>>
-* <<QoSSIOC is enabled for datastore but unavailable>>
+*  registration successful but icons do not appear in web client
+*  after NetApp Element Plug-in for VMware vCenter Server 4.8 or later upgrade with VMware vCenter Server 6.7U1
+*  registering plug-in using Registration UI
+*  updating plug-in using Registration UI
+*  message that NetApp extension cannot be upgraded
+*  plug-in completes successfully but icons remain
+*  cannot be unregistered or removed after admin password change
+*  management tasks fail or volumes are not accessible to ESXi host
+*  occurs during vCenter Plug-in use on Firefox 59.0.2 browsers
+*  datastore operation fails
+*  pair cannot connect using a pairing key
+*  message for QoSSIOC status
+*  service shown as available but is unavailable
+*  is enabled for datastore but unavailable
 
 
 
@@ -81,9 +81,9 @@ NOTE: 연결할 수 없거나 잘못된 URL을 수정해야 할 수 있습니다
 
 
 
-== VMware vCenter Server 6.7U1을 사용하여 vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다
+== VMware vCenter Server 6.7U1을 사용하여 VMware vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다
 
-VMware vCenter Server 6.7U1을 사용하여 vCenter Server 4.8 이상용 NetApp Element 플러그인으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.
+VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이상으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.
 
 * 클러스터는 * 클러스터 * 섹션에 나열되지 않습니다.
 * NetApp Element 구성의 * 클러스터 및 QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.

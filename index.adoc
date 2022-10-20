@@ -1,41 +1,11 @@
 ---
+layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-summary: VMware vSphere 인터페이스의 플러그인인 vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다. 
-keywords: netapp, vcp, on premise, hybrid cloud control, hcc 
+lead: NetApp Element Plug-in for VMware vCenter Server provides a plug-in to the VMware vSphere interface so that you can manage and monitor storage clusters running NetApp Element software. You can use this documentation to learn about and use the plug-in. This documentation addresses Element vCenter plug-in 4.6 and later. For versions 4.5 and earlier, see the earlier versions of the documentation. 
+summary: VMware vSphere 인터페이스의 플러그인인 VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다. 
 ---
-= vCenter Server용 NetApp Element 플러그인 설명서
-:hardbreaks:
+= VMware vCenter Server용 NetApp Element 플러그인 설명서
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
 
-[role="lead"]
-vCenter Server용 NetApp Element 플러그인은 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있도록 VMware vSphere 인터페이스에 대한 플러그인을 제공합니다.
-
-이 설명서를 사용하여 플러그인에 대해 알아보고 사용할 수 있습니다. 이 설명서는 4.6 이상 버전을 다룹니다. 이전 버전의 플러그인에 대해서는 를 참조하십시오 link:reference_earlier_versions.html["이 페이지"].
-
-
-
-== 새로운 기능 알아보기
-
-* link:rn_whatsnew_vcp.html["vCenter Server용 NetApp Element 플러그인의 새로운 기능"]
-* http://docs.netapp.com/sfe-122/index.jsp["NetApp Element 소프트웨어의 새로운 기능"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["Element 소프트웨어 및 NetApp HCI용 관리 서비스의 새로운 기능"^]
-
-
-
-
-== vCenter Server용 NetApp Element 플러그인을 시작합니다
-
-* link:vcp_task_getstarted.html["vCenter Server용 NetApp Element 플러그인 설치 및 구축 개요"]
-* link:concept_vcp_product_overview.html["플러그인과 관련된 개념을 이해합니다"]
-
-
-[discrete]
-== 자세한 내용을 확인하십시오
-
-https://www.netapp.com/support-and-training/documentation/["NetApp 제품 설명서"^]

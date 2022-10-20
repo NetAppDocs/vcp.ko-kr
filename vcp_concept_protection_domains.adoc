@@ -22,7 +22,8 @@ keywords: netapp, vcp, element, plugin, plug-in, protection, domain
 
 섀시 도메인은 장애 복구 기능을 위해 노드 도메인보다 잠재적 용량 리소스를 더 많이 필요로 합니다. 보호 도메인 임계값이 초과되면 클러스터에서 더 이상 장애 발생 시 복구할 수 있는 용량이 부족하고 데이터 가용성 역시 중단되지 않습니다.
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_vcp_unregister.html 
-summary: vCenter에서 vCenter Server용 NetApp Element 플러그인의 등록을 취소할 수 있습니다. 
+summary: vCenter에서 VMware vCenter Server용 NetApp Element 플러그인의 등록을 취소할 수 있습니다. 
 keywords: netapp, vcp, vcenter, plugin, element, unregister 
 ---
 = vCenter 플러그인 등록을 취소합니다
@@ -11,11 +11,10 @@ keywords: netapp, vcp, vcenter, plugin, element, unregister
 :icons: font
 :linkattrs: 
 :imagesdir: ../media/
-:keywords: netapp, vcp, vcenter, plugin, element, unregister
 
 
 [role="lead"]
-다음 절차 중 하나를 사용하여 vCenter에서 vCenter Server용 NetApp Element 플러그인 등록을 취소할 수 있습니다.
+다음 절차 중 하나를 사용하여 vCenter에서 VMware vCenter Server용 NetApp Element 플러그인 등록을 취소할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
 * vCenter 관리자 역할 권한을 사용하여 플러그 인을 등록 취소합니다.
@@ -83,7 +82,8 @@ Disconnect-VIServer * -Confirm:$false
 
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

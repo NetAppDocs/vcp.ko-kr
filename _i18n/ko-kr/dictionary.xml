@@ -64,13 +64,10 @@
   <block id="ccbf129be5d03e330f8d78e42fbdc537" category="list-text">삭제할 VLAN의 확인란을 선택합니다.</block>
   <block id="d5e6af1fd8ded16ac6d7700584a8025a" category="list-text">결과 메뉴에서 * 삭제 * 를 클릭합니다.</block>
   <block id="ad5a54b96d86e967dc2a014c681f9377" category="list-text">작업을 확인합니다.</block>
-  <block id="642e3c299da1d2f9a868bcc2f9e9aaed" category="summary">vCenter Server용 NetApp Element 플러그인에서 선택한 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다.</block>
   <block id="ede89c99984c1e44df31ac3dff737de0" category="doc">QoSSIOC 이벤트를 사용하여 VM 성능 계층화를 모니터링합니다</block>
   <block id="a037c5e3dec00f6111957ad7cf6dc3fc" category="paragraph">QoS 사용 데이터 저장소가 있는 VM이 전원 또는 게스트 이벤트를 재구성하거나 실행하는 경우 QoSSIOC와 관련된 이벤트를 볼 수 있습니다.</block>
-  <block id="7068932078afcb79cce905f3cfb101a4" category="paragraph">vCenter Server용 NetApp Element 플러그인의 NetApp Element 구성 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.</block>
   <block id="78e61a5beb0ae053da8019e13bbefcb5" category="paragraph">QoSSIOC 이벤트는 로컬에서 추가된 클러스터에서 표시됩니다. 연결된 모드 환경에서 클러스터가 로컬로 추가된 vSphere Web Client에 로그인하여 해당 클러스터의 QoSSIOC 이벤트를 확인합니다.</block>
   <block id="4c0d90c9ada6ab81f16f3446180ab3a1" category="inline-link-macro">vCenter 연결 모드</block>
-  <block id="9fdb639b750d5db855a8b30b956f7e52" category="admonition">vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
   <block id="2b39b8bb48e01459e34037072a056457" category="list-text">하나 이상의 클러스터를 추가하고 실행해야 합니다.</block>
   <block id="463ba440dcce8f5eae3c520f4c9da6ef" category="list-text">QoSSIOC 서비스는 플러그인의 QoSSIOC 설정 페이지를 사용하여 실행 여부를 구성하고 확인해야 합니다.</block>
   <block id="67216e28bdbf08ea86bd3a29c80bf10d" category="list-text">하나 이상의 데이터 저장소에 QoSSIOC 자동화가 활성화되어 있어야 합니다.</block>
@@ -91,7 +88,6 @@
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">SolidFire 및 요소 리소스 페이지입니다</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
   <block id="d34caa8a134a9bb6d2b2e136ea384646" category="summary">Element 스토리지와 함께 사용할 vCenter Server용 Element 플러그인을 설치하고 구성할 수 있습니다.</block>
-  <block id="2abfacd3d0325353cbe289faa9d0d3b1" category="doc">vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</block>
   <block id="3b2dba24ae0f2d994973f682cf057acb" category="paragraph">설치가 완료되면 스토리지 입출력 제어(QoSSIOC) 서비스와 vCenter 플러그인의 기타 서비스를 기반으로 서비스 품질을 사용할 수 있습니다.</block>
   <block id="19eee5d48732221f909bed55ec2189ea" category="paragraph">각 단계를 읽고 완료하여 플러그인을 설치하고 사용을 시작합니다.</block>
   <block id="8ca97483283de86de2176888cfb57571" category="list-text"><block ref="82e85dc19dbabef95eaeba5a68a4e800" category="inline-xref-macro-rx"></block></block>
@@ -248,8 +244,6 @@
   <block id="8b7c5dadb202334eeece4c393bb6d9e1" category="list-text">Cluster Pairs * 하위 탭을 선택합니다.</block>
   <block id="b031d446eb7eb18775e0ef1a3cc51f6b" category="list-text">Create Cluster Pairing * 을 선택합니다.</block>
   <block id="36ddaebda56a8c215a8dfff5eb57566d" category="list-text">다음 중 하나를 선택합니다.</block>
-  <block id="80e8d75c4324c1d1767063203681c9c0" category="list-text">* 등록된 클러스터 *: 페어링의 원격 클러스터가 vCenter Server용 NetApp Element 플러그인의 동일한 인스턴스에서 제어되는 경우 이 옵션을 선택합니다.</block>
-  <block id="ebfc8015033c426b65819cb46af1cb34" category="list-text">* 자격 증명 클러스터 *: 원격 클러스터에 vCenter Server용 NetApp Element 플러그인 구성 외부의 자격 증명이 있는 경우 이 옵션을 선택합니다.</block>
   <block id="f02f842da3c4a3a7a6ebd2a9ee601377" category="list-text">Registered Cluster * 를 선택한 경우 사용 가능한 클러스터 목록에서 클러스터를 선택하고 * Pair * 를 클릭합니다.</block>
   <block id="14610ed78c98397f2f6333870c87b9d7" category="list-text">자격 있는 클러스터 * 를 선택한 경우 다음을 수행합니다.</block>
   <block id="6b3a7de325b16dd1afda64f2b5d849aa" category="list-text">원격 클러스터 MVIP 주소를 입력합니다.</block>
@@ -305,9 +299,6 @@
   <block id="8a4b381c1df809955fda68523d22b427" category="list-text">Active * 뷰에서 페어링할 볼륨의 확인란을 선택합니다.</block>
   <block id="7c2e81318825c1b1e517a212224ce662" category="list-text">작업 * 을 선택합니다.</block>
   <block id="8ec6c374153e47c09712f56d55fa6d8a" category="list-text">볼륨 페어링 * 을 선택합니다.</block>
-  <block id="38905b6466c98aeb0ab786631e01e9a7" category="list-text">* 볼륨 생성 *: 원격 클러스터에서 복제 타겟 볼륨을 생성하려면 이 옵션을 선택합니다. 이 방법은 vCenter Server용 NetApp Element 플러그인으로 제어되는 원격 클러스터에서만 사용할 수 있습니다.</block>
-  <block id="001249e55e85aa782c26652016b4f934" category="list-text">* 볼륨 선택 *: 대상 볼륨의 원격 클러스터가 vCenter Server용 NetApp Element 플러그인으로 제어되는 경우 이 옵션을 선택합니다.</block>
-  <block id="7db5c521bdad12bdcde04c7703db4c52" category="list-text">* 볼륨 ID *: 타겟 볼륨의 원격 클러스터에 vCenter Server용 NetApp Element 플러그인 구성 외부의 알려진 자격 증명이 있는 경우 이 옵션을 선택합니다.</block>
   <block id="88f5525f18454ba4a5cfd90a3f527f08" category="list-text">복제 모드 선택:</block>
   <block id="7ac25b3c5916a2c7ab6bddaf3be763ff" category="list-text">* 실시간(동기식) *: 쓰기가 소스 클러스터와 타겟 클러스터 모두에서 커밋된 후 클라이언트에 인식됩니다.</block>
   <block id="51d79aba05a6efc6e17fb053c66a4481" category="list-text">* 실시간(비동기식) *: 소스 클러스터에서 커밋된 쓰기가 클라이언트에 확인됩니다.</block>
@@ -455,7 +446,6 @@
   <block id="9803678e197bd8cc0124e8ca7af68dba" category="list-text">* PausedVolumeSizeMismatch *: 타겟 볼륨이 소스 볼륨보다 작습니다.</block>
   <block id="72cacbd7272c0a213eda6683c012534e" category="list-text">* PausedXCopy *: 소스 볼륨에 SCSI XCOPY 명령이 실행됩니다. 복제를 다시 시작하려면 명령을 완료해야 합니다. 메시지는 페어의 소스 끝에만 표시됩니다.</block>
   <block id="e3cab9c5c32acc4b4216fefd04b7621c" category="list-text">* StoppedMisConfigured*: 영구적인 구성 오류가 감지되었습니다. 원격 볼륨이 제거되었거나 페어링되지 않았습니다. 수정 조치가 가능하지 않습니다. 새 페어링을 설정해야 합니다.</block>
-  <block id="97f28349c085bb41aafee397f2fe161d" category="summary">vCenter Server용 NetApp Element 플러그인의 보고 탭에 있는 볼륨 성능 페이지에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
   <block id="ce77715626079095fa554aca4f19278b" category="doc">볼륨 성능을 모니터링합니다</block>
   <block id="8fb56fcf5bc6ffb8a8e4daef63b58be3" category="paragraph">NetApp Element 관리 확장 지점의 보고 탭에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
   <block id="a856253964d3447555bdfc5def4a5ba3" category="list-text">vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.</block>
@@ -572,7 +562,6 @@
   <block id="76bfd1c529ea49798576621b83b32cc5" category="list-text">* 섀시 레벨 * 은 섀시를 공유하는 노드별로 각 보호 도메인을 정의합니다.</block>
   <block id="1fe57b848826a66ff0b53490608665d4" category="paragraph">섀시 도메인은 장애 복구 기능을 위해 노드 도메인보다 잠재적 용량 리소스를 더 많이 필요로 합니다. 보호 도메인 임계값이 초과되면 클러스터에서 더 이상 장애 발생 시 복구할 수 있는 용량이 부족하고 데이터 가용성 역시 중단되지 않습니다.</block>
   <block id="799c7a7e8a296591856f1cfd78f68e3d" category="doc">연결 모드 및 플러그인</block>
-  <block id="8a6865cfe151df75b8bd946dc97b82dd" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 vCenter 연결 모드를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리할 수 있습니다.</block>
   <block id="b6183ce9c4e8eb00aca6382fa0b9133d" category="paragraph">대상 vCenter 웹 클라이언트에 로그인한 경우에만 Element 플러그인에서 스토리지 클러스터를 관리할 수 있습니다.</block>
   <block id="0d4feab6027cad30793ce2dadc6e4fde" category="paragraph">vSphere 연결 모드 환경에서 스토리지 클러스터 관리를 설정하려면 다음 절차를 사용하여 스토리지 클러스터를 수동으로 추가할 수 있습니다.</block>
   <block id="91e17858e171c728ce382e4d503b66bc" category="list-text">플러그인을 사용할 연결 모드 환경의 각 vCenter Server에 플러그인을 등록합니다.</block>
@@ -585,9 +574,7 @@
   <block id="686eb72e50fdf6e66f191bfc6cd63d86" category="list-text">vCenter1 웹 클라이언트에서 cluster1을 관리하려면 Element 플러그인 인벤토리에 cluster1을 추가합니다.</block>
   <block id="cc02c1a474fd0061edf9cb89e5207e4b" category="list-text">vCenter2 웹 클라이언트에 로그인합니다.</block>
   <block id="fc1711098d513e4eacdd203c03109df1" category="list-text">vCenter2 웹 클라이언트에서 cluster2를 관리하려면 Element 플러그인 인벤토리에 cluster2를 추가합니다.</block>
-  <block id="11075cf941eed996186deedee75df4dd" category="summary">vCenter Server용 NetApp Element 플러그인을 사용하여 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="doc">볼륨 관리</block>
-  <block id="ecfb0a8ffbda3429540d1052d7e39ff7" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 사용자 계정의 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
   <block id="25ab49abcab6d6f4f83310b723c2610b" category="list-text"><block ref="81e9b8d2b04b8286dbcdd825a801f2cd" category="inline-xref-macro-rx"></block></block>
   <block id="9cdd3450ee2975b8c73908414246db31" category="list-text"><block ref="a25732b89c146b345c79430b35e8a307" category="inline-xref-macro-rx"></block></block>
   <block id="94bc1590d09107027873035bc52540b9" category="list-text"><block ref="6debe3c456f781e50a6162aaf9b90ee1" category="inline-xref-macro-rx"></block></block>
@@ -916,7 +903,6 @@
   <block id="3e6c92d2b92c58fc4bfb9dd99511b0d9" category="section-title">관리 서비스</block>
   <block id="cea7258c9465c44d2b95e7bda9cdf2cd" category="inline-link">관리 서비스 릴리스 정보 KB</block>
   <block id="710e1f328ffefdd8944003db8a5e3dca" category="list-text"><block ref="710e1f328ffefdd8944003db8a5e3dca" category="inline-link-rx"></block></block>
-  <block id="a881a0468246e93ae6e2c5bccd78758e" category="section-title">vCenter Server용 NetApp Element 플러그인</block>
   <block id="3b34803433d83528840d8e729af0e8bc" category="inline-link">vCenter 플러그인 4.8 릴리즈 노트</block>
   <block id="c561b7d92736e6c451a661a0a5da7586" category="list-text"><block ref="c561b7d92736e6c451a661a0a5da7586" category="inline-link-rx"></block></block>
   <block id="8cf0a7fd902364db0eaa5ec60ad654f3" category="inline-link">vCenter 플러그인 4.7 릴리즈 노트</block>
@@ -945,9 +931,7 @@
   <block id="24786d5c66286f468be80b26d8f4126b" category="list-text"><block ref="24786d5c66286f468be80b26d8f4126b" category="inline-link-rx"></block></block>
   <block id="b09eb920a64137dbce6a7d244810c278" category="summary">NetApp HCI 또는 SolidFire All-Flash 어레이 환경의 일부인 제품 또는 구성 요소에 대한 릴리즈 노트 링크를 제공합니다.</block>
   <block id="7350e80ebee797a0d2d2bdec4d4240b2" category="doc">추가 릴리스 정보</block>
-  <block id="796c97723baf4ac93400c9ea5a832be4" category="summary">vCenter에서 vCenter Server용 NetApp Element 플러그인의 등록을 취소할 수 있습니다.</block>
   <block id="a5c32cc8adf2bbc488449723953d85c9" category="doc">vCenter 플러그인 등록을 취소합니다</block>
-  <block id="04bf44ca284038997f9f620444b76a6c" category="paragraph">다음 절차 중 하나를 사용하여 vCenter에서 vCenter Server용 NetApp Element 플러그인 등록을 취소할 수 있습니다.</block>
   <block id="55477b2699e6a17485b69a178c7e2060" category="list-text">vCenter 관리자 역할 권한을 사용하여 플러그 인을 등록 취소합니다.</block>
   <block id="2ec6f218bc83c2a96b3b46b4129035ce" category="list-text">관리 노드의 IP 주소입니다.</block>
   <block id="fed10c03fd9268ddc7b341e40d9c715c" category="list-text">플러그인의 등록을 취소하는 vCenter의 URL 및 자격 증명</block>
@@ -973,23 +957,13 @@
   <block id="4b34f8cffb3b975cbb6367514ddb1221" category="list-text">"https://&lt;FDVAorManagementNodeIP&gt;:8443`</block>
   <block id="b097dd7fc0edd773a7b1a7329a5f3c7d" category="list-text">'/opt/solidfire/VCP/bin/VCP-reg.sh'</block>
   <block id="7d98cbc5103cb7d15ecf2436f9705068" category="list-text">vCenter Plugin Register/Unregister 창에서 * Unregister * 를 선택합니다.</block>
-  <block id="bd607b66858d9331643c0e3529eef009" category="summary">이 버전의 vCenter Server용 NetApp Element 플러그인의 새로운 기능에 대해 알아보십시오.</block>
-  <block id="27e0892481776817839fc398f00de350" category="doc">vCenter Server용 NetApp Element 플러그인의 새로운 기능</block>
-  <block id="19d7fd1174be86185b720fea9ff20172" category="paragraph">vCenter Server 4.8용 NetApp Element 플러그인에는 보안 개선 사항, 메모리 활용도 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.</block>
-  <block id="a4bdf0d2fea25fcb0a7523212aa31626" category="paragraph">vCenter Server 4.8용 NetApp Element 플러그인은 관리 서비스 2.19 릴리스와 함께 사용할 수 있습니다.</block>
-  <block id="0c6401f3a6e4115c47e9c1a72d14ab9e" category="section-title">vCenter Server 4.7용 NetApp Element 플러그인</block>
   <block id="4ffb98b73fd3c97c4d4ff0bb0a71e369" category="inline-link">최신 관리 서비스 2.17.56 패치</block>
-  <block id="63dc0610fa4f17ed41a534fecd0529dc" category="paragraph">vCenter Server 4.7용 NetApp Element 플러그인에는 에서 향상된 기능을 더욱 개발할 수 있는 중요한 보안 개선 사항이 포함되어 있습니다<block ref="b1233a0bfa93edf062561cc29a402448" category="inline-link-rx"></block> 놓습니다.</block>
   <block id="b43e19e2999292fbebfa71878760ddf9" category="paragraph">버전 4.7을 사용하는 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 2의 구성 요소를 지원합니다.</block>
-  <block id="cfae351f326ceb749aee846597a3c182" category="paragraph">vCenter Server 4.7용 NetApp Element 플러그인은 관리 서비스의 2.18 릴리스와 함께 사용할 수 있습니다.</block>
-  <block id="b61ed991cc99953d3625ddb1c6d83fe1" category="section-title">vCenter Server용 NetApp Element 플러그인 4.6</block>
   <block id="b3c55f61c0343a8d0687443fcb2ee32b" category="paragraph">버전 4.6을 사용하는 이 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 1의 구성 요소를 지원합니다.</block>
-  <block id="067b5ca0a9450ba646649fef4c0235cf" category="paragraph">vCenter Server 4.6용 NetApp Element 플러그인은 관리 서비스의 2.16 릴리스와 함께 사용할 수 있습니다.</block>
   <block id="8346ef1c36db2bf9a822b4aeeee94bae" category="inline-link-macro">이전 버전의 NetApp Element 플러그인 설명서</block>
   <block id="068ab208a628859c5ab110db6b19f0a7" category="list-text"><block ref="068ab208a628859c5ab110db6b19f0a7" category="inline-link-macro-rx"></block></block>
   <block id="b0b80e0d5cbad416355ae85ab0ebf880" category="inline-link">하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB</block>
   <block id="ece24339f7b21cf020a31ebc63f91461" category="list-text"><block ref="ece24339f7b21cf020a31ebc63f91461" category="inline-link-rx"></block></block>
-  <block id="15adcb8fc79c6c55cf8d2a75935ba347" category="summary">vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류를 제공하는 알림을 모니터링합니다.</block>
   <block id="c43e1a6fe05e8e062fd6f20d567418b7" category="doc">시스템 경고를 모니터링합니다</block>
   <block id="0c6adbd553f999b0d46fa7bc420c6148" category="paragraph">클러스터의 실행 상태를 나타내는 정보, 경고 또는 오류와 같은 경고를 모니터링할 수 있습니다.</block>
   <block id="46187ebd73e618b6a92da8ad2b55a01d" category="inline-link-macro">시스템 알림 목록</block>
@@ -1017,8 +991,6 @@
   <block id="ae378687e3d3d98a9463f329392fc5af" category="list-text">* 해결 날짜 *: 이 제목은 해결된 필터 보기에서만 볼 수 있습니다. 고장이 해결된 날짜 및 시간입니다.</block>
   <block id="35f4da78a5c0fb57358c0c8b605339a4" category="list-text">문제가 해결되었는지 확인하려면 해결 보기에서 확인합니다.</block>
   <block id="4c6cd659db938d5cbee99926e944c0c2" category="summary">데이터 복사본을 필요한 곳에 생성 및 저장할 수 있습니다.</block>
-  <block id="a2032b979709fecc026754efd8bf42b4" category="doc">vCenter Server용 NetApp Element 플러그인을 사용하여 데이터를 보호합니다</block>
-  <block id="e7ad655e76d0878a1ef52377d18799fb" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 데이터 복제본을 필요한 위치에 생성 및 저장할 수 있습니다. 이렇게 하려면 볼륨 및 그룹 스냅샷을 생성 및 관리하고, 스냅샷 일정을 설정하고, 원격 클러스터 간 복제를 위한 볼륨 및 클러스터 쌍 관계를 생성할 수 있습니다.</block>
   <block id="6cd36ac1d98ce41780a3b7a3411e4421" category="inline-link-macro">볼륨 스냅샷을 생성하고 관리합니다</block>
   <block id="70666656b0b64449ce1d639839d5881b" category="list-text"><block ref="70666656b0b64449ce1d639839d5881b" category="inline-link-macro-rx"></block></block>
   <block id="f3ed62774a4b2aaa15e7b35cf13a87c0" category="inline-link-macro">그룹 스냅샷을 생성하고 관리합니다</block>
@@ -1026,26 +998,9 @@
   <block id="efa573e4cdda7b7e763206305b25b53a" category="inline-link-macro">스냅샷 스케줄을 생성합니다</block>
   <block id="64bc135916cba16e734b4f31c90db2dd" category="list-text"><block ref="64bc135916cba16e734b4f31c90db2dd" category="inline-link-macro-rx"></block></block>
   <block id="25481d37815a111f9abf24f64de7b1a3" category="list-text"><block ref="25481d37815a111f9abf24f64de7b1a3" category="inline-link-macro-rx"></block></block>
-  <block id="da3eb0bd8c882a21931739ac39ce915a" category="doc">vCenter Server용 NetApp Element 플러그인 설명서</block>
-  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">이 페이지</block>
-  <block id="5979504be2becb67db87e13e509a7d28" category="paragraph">이 설명서를 사용하여 플러그인에 대해 알아보고 사용할 수 있습니다. 이 설명서는 4.6 이상 버전을 다룹니다. 이전 버전의 플러그인에 대해서는 를 참조하십시오 <block ref="91c87596fc037a8f70c0c6d4d9eefb80" category="inline-link-macro-rx"></block>.</block>
-  <block id="1fde0727b387439572ade83eecff4f68" category="section-title">새로운 기능 알아보기</block>
-  <block id="4b5d4f8cd970e2294bf23857c624e502" category="inline-link-macro">vCenter Server용 NetApp Element 플러그인의 새로운 기능</block>
-  <block id="cfc9c8770d25010f41003115c8e331fc" category="list-text"><block ref="cfc9c8770d25010f41003115c8e331fc" category="inline-link-macro-rx"></block></block>
-  <block id="858ea7ae6467e65992f082751f2c1cdf" category="inline-link">NetApp Element 소프트웨어의 새로운 기능</block>
-  <block id="47a6fb4f63295db68d0db29dfccadb19" category="list-text"><block ref="47a6fb4f63295db68d0db29dfccadb19" category="inline-link-rx"></block></block>
-  <block id="b48280edf0d594cf201ccb90a2be085a" category="inline-link">Element 소프트웨어 및 NetApp HCI용 관리 서비스의 새로운 기능</block>
-  <block id="58f7c22bc1d1916c5b767a3c62f98a49" category="list-text"><block ref="58f7c22bc1d1916c5b767a3c62f98a49" category="inline-link-rx"></block></block>
-  <block id="0f8b3a72c982229fb35d7e0707cdea1b" category="section-title">vCenter Server용 NetApp Element 플러그인을 시작합니다</block>
-  <block id="174fe26fdae36bf2a420b95516b0c8cc" category="inline-link-macro">vCenter Server용 NetApp Element 플러그인 설치 및 구축 개요</block>
-  <block id="0db523b02fc57506542cb0c13d30e156" category="list-text"><block ref="0db523b02fc57506542cb0c13d30e156" category="inline-link-macro-rx"></block></block>
-  <block id="1fcad952b4f3b21cf06b08329940222d" category="inline-link-macro">플러그인과 관련된 개념을 이해합니다</block>
-  <block id="1a2020cdc6ffff5af315124fb4161930" category="list-text"><block ref="1a2020cdc6ffff5af315124fb4161930" category="inline-link-macro-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link">NetApp 제품 설명서</block>
-  <block id="854eabf79b65c478387570fb11e721ca" category="paragraph"><block ref="854eabf79b65c478387570fb11e721ca" category="inline-link-rx"></block></block>
   <block id="62041574de0029aba9e05f0f4721e22b" category="summary">플러그인과 관련된 몇 가지 일반적인 문제 및 해결 단계에 대해 알아볼 수 있습니다.</block>
   <block id="8ba7fe73aadae9fb529486bc9631d061" category="doc">vCenter 플러그인 문제를 해결합니다</block>
-  <block id="b9c4493f6395cc941c764ec3521cba13" category="paragraph">vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.</block>
   <block id="acb74ddc623ba3a90ff6c3e1e72aabb5" category="list-text"><block ref="20d8460084a0c9948d2cc36d92e5943a" category="inline-xref-macro-rx"></block></block>
   <block id="720a88aac85bd38e5f77600c434fa172" category="list-text"><block ref="d08f3f2eb111725a9e38a4e29e363ebe" category="inline-xref-macro-rx"></block></block>
   <block id="095c464a72d772c972dffda935226c8f" category="list-text"><block ref="f2afcbdd747e2c0ac83150466ba1452e" category="inline-xref-macro-rx"></block></block>
@@ -1192,8 +1147,6 @@
   <block id="53c3fa82359c8c96c0034060741a24ad" category="list-text">* VVol *: 가상 볼륨과 관련 저장소 컨테이너, 프로토콜 엔드포인트 및 바인딩을 관리합니다.</block>
   <block id="ca55ce9e6e52d3c2adce10bd8af25702" category="inline-link-macro">NetApp Element 구성 확장점</block>
   <block id="c384eab57dc664d0f5f58e4f009f0b6a" category="list-text"><block ref="c384eab57dc664d0f5f58e4f009f0b6a" category="inline-link-macro-rx"></block></block>
-  <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link-macro">vCenter Server용 NetApp Element 플러그인 개요</block>
-  <block id="4edecfeb69ec8a77c0bf8f61fa93ec9b" category="list-text"><block ref="4edecfeb69ec8a77c0bf8f61fa93ec9b" category="inline-link-macro-rx"></block></block>
   <block id="f9afea55877f979e108bf4a0590c27fb" category="summary">클러스터에서 프로비저닝된 스토리지에 대한 가상 볼륨을 설정할 수 있습니다.</block>
   <block id="e000d6bae52c59f08c549e2d73406725" category="doc">가상 볼륨을 구성 및 관리합니다</block>
   <block id="3481204db7a808589b179ef2dca4bca8" category="inline-link-macro">가상 볼륨(VVol)</block>
@@ -1298,7 +1251,6 @@
   <block id="2cba0418081682c60cb059c99673eb08" category="doc">QoSSIOC를 참조하십시오</block>
   <block id="8f2db90dd4a6fbd95ba8f0bc54fd6b27" category="inline-link">QoS를 참조하십시오</block>
   <block id="04efbb67b1e72aad855e6baf225a8cbf" category="inline-link">SIOC</block>
-  <block id="3510d433b96b16e2efddc5f73de5299c" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 <block ref="93ca324be2348cd998a8e30867cdba0f" category="inline-link-rx"></block>) 스토리지 I/O 제어 기준 <block ref="bb0ee5f2944d3d4a12da5f2b10b4a8ee" category="inline-link-rx"></block>) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.</block>
   <block id="affc039cf444c3d43a8cf970e6075013" category="paragraph">QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다. QoSSIOC 서비스는 모든 SIOC 예약 또는 공유의 합계 및 IOPS 한도를 사용하여 각 데이터 저장소의 기본 볼륨에 대한 최소 및 최대 QoS를 결정합니다. 구성 가능한 버스트 인자도 사용할 수 있습니다.</block>
   <block id="ec3cac6eddaf02d641b96508d210b5a6" category="paragraph">QoSSIOC 자동화를 사용하기 전에 다음 항목을 고려해야 합니다.</block>
   <block id="5d3dc5027d4c65e064d60bbd5c0b05a5" category="inline-link">QoS 정책</block>
@@ -1310,7 +1262,6 @@
   <block id="0f748c280a3e841f3180e2af96f2b63d" category="admonition">vSphere API를 통해 예약 값을 설정할 수 있습니다. VMDK에 대해 예약 값을 설정하면 공유가 무시되고 예약 값이 대신 사용됩니다.</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="inline-link">SolidFire Active IQ</block>
   <block id="5fca20943e154f5cd73069bcac84613a" category="admonition"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 최적의 구성과 QoS 설정 설정을 위한 조언을 제공하는 QoS 권장 사항 페이지가 있습니다.</block>
-  <block id="c35e0bfbe02dde65a05431d52f7b1cad" category="summary">NetApp Element Plug-in for vCenter Server에서 클러스터에서 수행된 작업과 오류를 나타내는 클러스터 장애를 나열하는 이벤트 로그를 검토합니다.</block>
   <block id="d55f311611471edc8c19245150fe521a" category="doc">문제 해결을 위해 이벤트 로그를 모니터링합니다</block>
   <block id="ff358436482474621e6ac46a72fc9106" category="paragraph">발생할 수 있는 클러스터 오류와 함께 선택한 클러스터에서 수행된 작업에 대한 이벤트 로그를 검토할 수 있습니다. 대부분의 오류는 시스템에서 자동으로 해결됩니다. 다른 고장은 수동 개입이 필요할 수 있습니다.</block>
   <block id="5c7a491a200531c146dd653dfbd64486" category="list-text">Reporting * &gt; * Event Log * 를 선택합니다.</block>
@@ -1412,7 +1363,6 @@
   <block id="6f99fa9b2e1f4893851a8aeb82d171f9" category="list-text">제거 * 를 선택합니다.</block>
   <block id="315cd19b17f3a6a462676019d1396e2f" category="paragraph">클러스터에서 제거된 노드는 모두 보류 중인 노드 목록에 표시됩니다.</block>
   <block id="8b710eb0ebaac0c35674ae1c9c754eee" category="summary">구성 요소 및 중요 URL을 비롯하여 플러그인에 대한 고급 정보</block>
-  <block id="611b38304efb753d34df34a9140e4202" category="doc">vCenter Server용 NetApp Element 플러그인 제품 개요</block>
   <block id="9e97d876f6a693d4ad4db055db1db1bb" category="paragraph">플러그인 사용자 인터페이스를 사용하여 클러스터를 검색 및 구성하고, 클러스터 용량의 스토리지를 관리, 모니터링 및 할당하여 데이터 저장소 및 가상 데이터 저장소(가상 볼륨용)를 구성할 수 있습니다. 클러스터는 호스트 및 관리자에게 가상 IP 주소로 표시되는 단일 로컬 그룹으로 네트워크에 표시됩니다. 또한 다양한 작업을 수행하는 동안 발생할 수 있는 이벤트에 대한 오류 및 경고 메시지를 포함하여 실시간 보고를 통해 클러스터 활동을 모니터링할 수 있습니다.</block>
   <block id="91ae58120158deb321e7550967f2607c" category="section-title">플러그인과 관련된 NetApp 구성요소</block>
   <block id="06486be9d31ded4257171bb2bbafac97" category="list-text">* 등록 유틸리티 *: 를 관리할 수 있는 도구입니다 <block ref="9caa5f082ea3f70abbd00439813f098a" category="inline-link-macro-rx"></block> vCenter를 통한 서비스 및 플러그인 등록</block>
@@ -1437,7 +1387,6 @@
   <block id="066e8c37353c7ec59955c8fd1f13b916" category="cell">NetApp Element 소프트웨어 UI에 액세스합니다.</block>
   <block id="231da7daa5d76816ec0c3ece71f7be38" category="list-text"><block ref="231da7daa5d76816ec0c3ece71f7be38" category="inline-link-macro-rx"></block></block>
   <block id="a551db227a426bdfb177aee6f63574b3" category="list-text"><block ref="a551db227a426bdfb177aee6f63574b3" category="inline-link-macro-rx"></block></block>
-  <block id="2eaa7103b033431a2a869178996c6af4" category="summary">vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다.</block>
   <block id="8fbfd26ed5e6497365d351c8f25fa303" category="doc">플러그인을 업그레이드합니다</block>
   <block id="230c0803a12f9d38853bdccc853eaabd" category="paragraph">플러그인을 업그레이드하려면 해당 제품의 업그레이드 설명서에 있는 지침을 따르십시오.</block>
   <block id="056947baa0d57b8ea8db9699e2b2d650" category="inline-link">NetApp HCI 시스템을 업그레이드합니다</block>
@@ -1493,9 +1442,7 @@
   <block id="17214f3da5f4fde025ab6bff02b1e131" category="list-text">* QoSSIOC 이벤트 *: 감지된 모든 QoSSIOC 이벤트에 대한 정보를 표시합니다.</block>
   <block id="7859d016cf7f2b5a5e2abf89cdedf206" category="list-text">* 정보 *: 플러그인 버전 정보를 표시하고 서비스 번들 다운로드 옵션을 제공합니다.</block>
   <block id="d05470d1480aa89ff09b30647c509081" category="list-text"><block ref="d05470d1480aa89ff09b30647c509081" category="inline-link-macro-rx"></block></block>
-  <block id="4b430a6cb04a9733f434af40c39ab7dc" category="summary">vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 봅니다.</block>
   <block id="268b7f69a76bac76b7a2d89e6d7decf7" category="doc">개요 페이지에서 전체 클러스터 상태를 모니터링합니다</block>
-  <block id="8f0516f185b5bc195ca4a98506b55b14" category="paragraph">전체 용량, 효율성 및 성능을 포함하여 선택한 클러스터에 대한 고급 클러스터 정보를 vCenter Server용 NetApp Element 플러그인의 NetApp Element 관리 확장 지점에 있는 보고 탭의 개요 페이지에서 볼 수 있습니다.</block>
   <block id="666100731b84805384ac0e0c18db937a" category="list-text">보고 * 를 선택합니다.</block>
   <block id="d9841821a8ecc6a4a5be1f5fa000c5ad" category="list-text">개요 페이지에서 데이터를 모니터링합니다.</block>
   <block id="4f7f614aae330b699fbb948346082683" category="section-title">보고 개요 페이지 데이터</block>
@@ -1536,7 +1483,6 @@
   <block id="c2ec6c8bc8ee9f0f7446988de6f2e0f2" category="list-text">* 쓰기 *: 클러스터에 대한 쓰기 작업(MB/s)입니다.</block>
   <block id="c62f244589b9b5f8dc9417ec9051db9b" category="list-text">* 성능 활용률 *: 사용 중인 클러스터 IOPS의 비율입니다. 예를 들어, 100K IOPS에서 실행되는 250K IOPS 클러스터는 40%의 소비량으로 표시됩니다.</block>
   <block id="6baba9ea1f49e8f0d2e63e8b18f41850" category="doc">보고 옵션으로 시스템 성능을 모니터링합니다</block>
-  <block id="4041cc633d1196b855ef1a2e77f18781" category="paragraph">vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 볼 수 있습니다.</block>
   <block id="bb7424d4b554e480f39339135637d31a" category="paragraph">vCenter 플러그인을 사용하면 다음과 같은 방법으로 클러스터 구성 요소 및 성능을 모니터링할 수 있습니다.</block>
   <block id="0d18723cba38f64cdb3b6b4f40ff4390" category="list-text"><block ref="0d18723cba38f64cdb3b6b4f40ff4390" category="inline-link-macro-rx"></block></block>
   <block id="f84a3482d59b87ebbbd4f9d2b2ce0760" category="list-text"><block ref="f84a3482d59b87ebbbd4f9d2b2ce0760" category="inline-link-macro-rx"></block></block>
@@ -1550,7 +1496,6 @@
   <block id="f6d0014439c726b0116712a3ffd8c5d8" category="paragraph">플러그인으로 제어되는 개별 볼륨 및 데이터 저장소에 대해 QoSSIOC 자동화를 설정할 수 있습니다. <block ref="9caa5f082ea3f70abbd00439813f098a" category="inline-link-macro-rx"></block> 자동 서비스 품질입니다 <block ref="93ca324be2348cd998a8e30867cdba0f" category="inline-link-rx"></block>) 스토리지 I/O 제어 기준 <block ref="bb0ee5f2944d3d4a12da5f2b10b4a8ee" category="inline-link-rx"></block>) 표준 데이터 저장소에 있는 모든 VM의 설정입니다.</block>
   <block id="a91ce041264ebc6a50a4b0a10cb5b1c0" category="paragraph">관리 노드의 QoSSIOC 서비스는 vCenter와 통신하고 데이터 저장소의 VM 활동을 모니터링합니다. QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다. QoSSIOC는 옵션 기능이며 스토리지 클러스터를 관리하기 위한 플러그인에는 필요하지 않습니다.</block>
   <block id="3b58a2a4a4583ae6acd92f6a6d4dda3e" category="admonition">VVol(가상 볼륨) 기능을 활성화하거나 QoSSIOC 설정 페이지를 사용하여 VVol을 vSphere에 사용할 수 없습니다. 자세한 내용은 vCenter Server용 Element Plug-in 설명서를 참조하십시오.</block>
-  <block id="814693da503ff5c1d279ac7c538acadb" category="paragraph">연결 모드의 경우 vCenter Server용 NetApp Element 플러그인은 단일 vCenter Server에서 제공하는 QoSSIOC 설정을 사용하여 모든 vCenter Server를 등록합니다.</block>
   <block id="f274a68c547aa9470e2add6130e74aad" category="paragraph">vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.</block>
   <block id="11e1d0a99febe81ab0baabe85f2e1358" category="inline-link-macro">QoSSIOC 설정을 구성합니다</block>
   <block id="0342385d7fd740b0d51c74a4c15f16aa" category="list-text"><block ref="0342385d7fd740b0d51c74a4c15f16aa" category="inline-link-macro-rx"></block></block>
@@ -1592,7 +1537,6 @@
   <block id="fc1f04f54cb29f2e711eda9113d6c26f" category="paragraph">프로세스가 완료된 후 * QoSSIOC Status * (QoSSIOC 상태) 필드에 "Not configured(구성되지 않음)"가 표시됩니다.</block>
   <block id="1560d818a9caa158941285d6827b7e83" category="list-text">등록 TCP 포트를 포함한 브라우저에 관리 노드의 IP 주소를 입력합니다. 'https://[management node ip]:9443'</block>
   <block id="ba6300af11b5a4032c95f45da0076d07" category="paragraph">등록 유틸리티 UI에 플러그인의 * QoSSIOC 서비스 자격 증명 관리 * 페이지가 표시됩니다.</block>
-  <block id="3cd2edc33d7ba37ef9f1a7d7c7d3b9ee" category="image-alt">VCP 등록 유틸리티 메뉴</block>
   <block id="c880c687c6ebd121eea870eafc327571" category="list-text">* 이전 암호 *: QoSSIOC 서비스의 현재 암호입니다. 아직 비밀번호를 지정하지 않은 경우 SolidFire의 기본 비밀번호를 입력합니다.</block>
   <block id="fd025fb94f752aafec2c7562a97406d7" category="list-text">* 새 암호 *: QoSSIOC 서비스의 새 암호입니다.</block>
   <block id="8b0382d997ff2afbb32482791a17e518" category="list-text">* 암호 확인 *: 새 암호를 다시 입력합니다.</block>
@@ -1820,28 +1764,9 @@
   <block id="ab91dd7f95968fffd00546428fa0ec61" category="paragraph">NetApp HCI를 사용하여 노드를 추가하여 NetApp HCI 인프라를 수동으로 확장할 수 있습니다. NetApp Element 확장 지점에서 시스템 확장을 위한 NetApp HCI UI에 대한 링크가 제공됩니다. 시작 및 클러스터 페이지의 NetApp Element 관리 확장 지점 내에 추가 링크가 제공됩니다.</block>
   <block id="18a2913d457d149d724c285bb0b5ecf6" category="list-text">NetApp HCI * 를 확장합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="8b1a6c95fed8363998ed5d7eae965f1a" category="inline-link-macro">관리 서비스 공지 2.19.48(VCP 4.8.34)</block>
-  <block id="48e73a938758f852ecf42def2ae2a2ec" category="list-text"><block ref="48e73a938758f852ecf42def2ae2a2ec" category="inline-link-macro-rx"></block></block>
-  <block id="9fb45d65282cc3f96e819596e5e394dd" category="inline-link-macro">관리 서비스 공지 2.18.91(VCP 4.7.10)</block>
-  <block id="4c92abb8eb776e4564eeeb62ddf3c4f1" category="list-text"><block ref="4c92abb8eb776e4564eeeb62ddf3c4f1" category="inline-link-macro-rx"></block></block>
-  <block id="4dc58eed88195e2dee9ef97cb0900fcc" category="inline-link-macro">관리 서비스 공지 2.17.56(VCP 4.6.32)</block>
-  <block id="0196879d93022a26ceefd49b7e838e01" category="list-text"><block ref="0196879d93022a26ceefd49b7e838e01" category="inline-link-macro-rx"></block></block>
-  <block id="2916cda094e8e99dde87d679e5faf4af" category="inline-link-macro">관리 서비스 공지 2.17.52(VCP 4.6.29)</block>
-  <block id="fbf4e666bb4ba7b1e84fcb083caedbde" category="list-text"><block ref="fbf4e666bb4ba7b1e84fcb083caedbde" category="inline-link-macro-rx"></block></block>
-  <block id="3e7b640ad20b44c0dc8fac94c0950302" category="inline-link-macro">관리 서비스 공지 2.16(VCP 4.6.29)</block>
-  <block id="3aea219ac9c53ac5429be5345020032f" category="list-text"><block ref="3aea219ac9c53ac5429be5345020032f" category="inline-link-macro-rx"></block></block>
-  <block id="d4771ef289c9be15770d7434653c2259" category="inline-link-macro">관리 서비스 공지 2.14(VCP 4.5.42)</block>
-  <block id="593e8df2628bb7763a5d5e50380a566e" category="list-text"><block ref="593e8df2628bb7763a5d5e50380a566e" category="inline-link-macro-rx"></block></block>
-  <block id="8905ab1c0ad30471bfb792d567577041" category="inline-link-macro">관리 서비스 참고 사항 2.13(VCP 4.5.42)</block>
-  <block id="2846c3f19d7f88064cf9ab224f72285b" category="list-text"><block ref="2846c3f19d7f88064cf9ab224f72285b" category="inline-link-macro-rx"></block></block>
-  <block id="d3fd8f720b6d6e4fea8273c72a7bbcc7" category="inline-link-macro">관리 서비스 공지 2.11(VCP 4.4.72)</block>
-  <block id="433d8841859937488869f2cc991a4b8b" category="list-text"><block ref="433d8841859937488869f2cc991a4b8b" category="inline-link-macro-rx"></block></block>
-  <block id="9459fc441d720f61992ad5e9bf384bf2" category="summary">vCenter Server용 NetApp Element 플러그인을 사용하기 전에 제품 설치 및 사용을 위한 사전 요구 사항을 이해해야 합니다.</block>
-  <block id="36fb791a39c0dcf9d768ea535ca51db9" category="doc">vCenter Server용 Element 플러그인의 요구 사항</block>
   <block id="d495047561c1a08074d3afeeb5b5d172" category="section-title">VMware vSphere 사전 요구 사항</block>
   <block id="3903fd261f224ad8af888f893eb71a5e" category="section-title">플러그인에서 지원하는 VMware vSphere 버전</block>
   <block id="39bb4a890cda10e989012ed844843a1a" category="paragraph">플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.</block>
-  <block id="f91a10eb569e37e963d1fe4559054eaf" category="list-text">vSphere 7.0 및 7.0 업데이트 1 - vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소 포함</block>
   <block id="8bc5dd01570b8e30ab647a98f1b5c995" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.7 및 6.7 업데이트 1 및 3</block>
   <block id="f72c3688e3e7a685ff88f8a7c360f844" category="admonition">플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. Flash/Flex용 버전 6.7 U2 vSphere Web Client와 호환됩니다.</block>
   <block id="bcc539df8c871d5ecc3798cf0bf4e50a" category="section-title">vSphere 6.0 지원이 종료됩니다</block>
@@ -1854,7 +1779,6 @@
   <block id="6097767d5284ad92b9817d634b124ea9" category="list-text">vSphere HTML5 Web Client 및 Flash Web Client에는 결합할 수 없는 별도의 데이터베이스가 있습니다. 한 클라이언트에 추가된 클러스터는 다른 클라이언트에서는 표시되지 않습니다. 두 클라이언트를 모두 사용하려면 둘 다에 클러스터를 추가합니다.</block>
   <block id="f25217168759b8431aaa5a81dc3c79e0" category="section-title">NetApp Element 지원</block>
   <block id="a372a7d61c700df48d7798fa1a851391" category="paragraph">플러그인은 다음과 같은 주요 버전을 지원합니다.</block>
-  <block id="418b9d1d4745cffc1fc743ed4085a99a" category="list-text">Element 12.x, SolidFire 엔터프라이즈 SDS 포함</block>
   <block id="daf70ceab54c76a1510ce068ac5ba320" category="list-text">요소 11.x</block>
   <block id="7375651611f00991b648b4a9ae04736e" category="section-title">네트워크 포트 요구 사항</block>
   <block id="71860c77c6745379b0d44304d66b6a13" category="inline-link-macro">페이지</block>
@@ -1902,7 +1826,6 @@
   <block id="44f15faa4af221989f437b18bc7e295b" category="section-title">QoS 정책을 삭제합니다</block>
   <block id="2bee85af6914f0a5879c7c12bf441e01" category="paragraph">QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 정책에 의해 이전에 정의된 QoS 값을 개별 볼륨 QoS로 유지합니다. 삭제된 QoS 정책과의 연결이 제거됩니다.</block>
   <block id="4294f5a888e74bc44950b71dce1c2b12" category="list-text">삭제할 QoS 정책의 확인란을 선택합니다.</block>
-  <block id="9e842d315952ae984239b0fa7126609b" category="summary">다음은 vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다.</block>
   <block id="6a5552fc8afece3128d2d5c9991af883" category="paragraph">시스템은 NetApp Element 관리 확장 포인트의 * 보고 &gt; 경고 * 페이지에 각 경고와 함께 오류 코드를 보고합니다. 오류 코드를 사용하면 시스템에서 어떤 구성 요소가 경고를 발생했고 경고가 발생한 이유를 확인할 수 있습니다.</block>
   <block id="d93fdf8ab834ec550b9295e94912501e" category="paragraph">다음 목록에서는 다양한 유형의 시스템 경고를 간략하게 설명합니다.</block>
   <block id="b77a61cd6988e6c08982332968c82546" category="list-text">* authenticationServiceFault *: 하나 이상의 클러스터 노드의 인증 서비스가 예상대로 작동하지 않습니다.</block>
@@ -2190,7 +2113,6 @@
   <block id="7d795c95947b850be82f3517f86bc773" category="list-text">삭제할 스냅샷 스케줄의 확인란을 선택합니다.</block>
   <block id="6bde8427d243711530e47035165075a8" category="summary">플러그인을 사용하여 Element 볼륨에 생성된 관리 데이터 저장소를 추가할 수 있습니다.</block>
   <block id="1b8a04f09ff55290753a17988fd53c2a" category="doc">데이터 저장소를 관리합니다</block>
-  <block id="0d9901e7503a2b6356c4e4a4a9c3a9ee" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 Element 볼륨이 백업하는 데이터 저장소를 관리할 수 있습니다. 데이터 저장소를 생성, 확장, 클론 복제, 공유 또는 삭제할 수 있습니다. 또한 VAAI UNMAP을 사용하여 클러스터가 씬 프로비저닝된 VMFS 데이터 저장소에서 확보된 블록 공간을 재확보할 수 있습니다.</block>
   <block id="fee03a90bfc424cd6ea94a6cc22746e8" category="list-text">데이터 저장소를 생성하고 관리하려면 먼저 사용자 계정을 하나 이상 생성해야 합니다.</block>
   <block id="93913e23ba02c21815deeb2ea4293435" category="inline-link-macro">설정을 구성합니다</block>
   <block id="37c4aea1ac4ddac0e76d2634315d1fca" category="list-text">데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 해야 합니다 <block ref="a2268bd3bd8fc6322025e8fd369c9e4c" category="inline-link-macro-rx"></block> NetApp Element 구성 확장 포인트의 QoSSIOC 설정 페이지</block>
@@ -2324,7 +2246,6 @@
   <block id="007e03bd8cc6abc05094bf81f1cd3310" category="list-text">* 대상 IP *: 볼륨을 호스팅하는 노드의 IP 주소입니다.</block>
   <block id="52e7476805407c69dfb1ca1d5fe1f4a3" category="list-text">* 타겟 IQN *: 볼륨의 IQN입니다.</block>
   <block id="34c9899592aa84ae9d63e133472f2483" category="list-text">* 만든 날짜 *: 세션이 설정된 날짜입니다.</block>
-  <block id="41bebb27febffbe684d395967a3074fb" category="summary">설명서는 vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다.</block>
   <block id="b1859080f20e43589e23a4f60292cbd0" category="inline-link-macro">설명서 링크</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">버전</block>
   <block id="8c4acbc2063657214fc1de03ee31a0df" category="cell">플러그인 릴리즈 노트</block>
@@ -2419,41 +2340,138 @@
   <block id="9203ca429e11584ecc455e2f24e8ab6b" category="list-text"><block ref="2485371e710ec4ea8989c22e13c02067" category="inline-link-rx"></block> _신규 _</block>
   <block id="9676fc811bea74225536cdd128daebc0" category="list-text"><block ref="9676fc811bea74225536cdd128daebc0" category="inline-link-rx"></block></block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element 소프트웨어 12.5 릴리스 정보</block>
-  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _신규 _</block>
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
-  <block id="e2b4747c263485de7011e8018c523cdd" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block> _신규 _</block>
   <block id="278e17511dfc12c355dd5120b3cdcf38" category="inline-link">컴퓨팅 펌웨어 번들 2.146 릴리스 정보</block>
   <block id="cba86f04115d75e398ba32a033e63c37" category="list-text"><block ref="e15eb9592751e0df97c69e856ffc178a" category="inline-link-rx"></block> _신규 _</block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보</block>
   <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _신규 _</block>
   <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보</block>
   <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
-  <block id="c69dd8e231cb332d435e16f994fd7554" category="paragraph">vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5를 복구합니다.</block>
-  <block id="3d2039a8d9f11f2c45ac874bd124fff9" category="paragraph">vCenter Server 4.9용 NetApp Element 플러그인은 관리 서비스의 2.20 릴리스와 함께 사용할 수 있습니다.</block>
   <block id="d75c92bfa55428c6b64a5ed842bd1c4f" category="section-title">vCenter Server 4.8용 NetApp Element 플러그인</block>
-  <block id="f4d1c8d40eb0f3218515e3964884fa3a" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. vCenter Server 4.9용 NetApp Element 플러그인은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
-  <block id="00bbf849ee83f2b3ea6c67bb7bd6c6f8" category="inline-link-macro">관리 서비스 공지 2.20.69(VCP 4.9.14)</block>
-  <block id="4f621beaeb83de8a0b0ba929468cc66b" category="list-text"><block ref="4f621beaeb83de8a0b0ba929468cc66b" category="inline-link-macro-rx"></block></block>
-  <block id="72dd8e5a69dc69c30ab77812bc60a30a" category="paragraph">vCenter Server용 NetApp Element 플러그인 버전 4.9 이전의 릴리즈에도 설명서가 제공됩니다.</block>
-  <block id="df1060b968703e2f658f230d3bfc2731" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> vCenter Server용 NetApp Element 플러그인 버전 4.9의 경우 버전 4.6, 4.7 및 4.8도 포함됩니다.</block>
   <block id="4fb437564892944d73f87c822342e2bb" category="cell">4.8</block>
   <block id="9657d5b90fbd5e27f1c8767497a4fb05" category="cell"><block ref="9657d5b90fbd5e27f1c8767497a4fb05" category="inline-link-rx"></block></block>
   <block id="8529c9d3fea72c00afc0f7df4eb01ec3" category="inline-link">2.19.48</block>
   <block id="3925c91470a691b6f203bf45547db752" category="cell"><block ref="3925c91470a691b6f203bf45547db752" category="inline-link-rx"></block></block>
   <block id="a6568301ea8af8e996ab5850a7e6e134" category="list-text">로그아웃한 후 3-5분 정도 기다린 다음 다시 로그인합니다.</block>
-  <block id="1b2251a8b564e729b01c309f91a786a0" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터와 iSCSI 네트워킹이 구성된 vCenter 및 ESXi를 포함한 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">이 KB 문서를 참조하십시오</block>
-  <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 vCenter Server용 NetApp Element 플러그인의 모든 버전이 배포되지 않습니다. 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
   <block id="2ca516a34cb5ec652761d2350d5a513e" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5</block>
-  <block id="3776cabfc1e5de80754f6a7326176bc3" category="paragraph">vCenter Server용 NetApp Element 플러그인의 최신 버전을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.</block>
-  <block id="263d69f97c8aa479bf562041d0ee1b59" category="paragraph">vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.</block>
   <block id="8ba5447ae975da458ad42dd041c1bfc0" category="admonition">이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.</block>
-  <block id="f14c1ae36f4b42cd84da13b89b1cee9b" category="paragraph">vCenter Server용 NetApp Element 플러그인은 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
-  <block id="956eb6424f0e4cc0d9ebe3ca4f191929" category="list-text"><block ref="bd48483000f1e49cbc8d729d4af3c16c" category="inline-xref-macro-rx"></block></block>
-  <block id="012f5aa94203f2e32b0291bda6db013c" category="section-title">VMware vCenter Server 6.7U1을 사용하여 vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다</block>
-  <block id="d19589096d9aa3305cfd13188e934c21" category="paragraph">VMware vCenter Server 6.7U1을 사용하여 vCenter Server 4.8 이상용 NetApp Element 플러그인으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.</block>
-  <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">VMware vSphere 인터페이스의 플러그인인 vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
-  <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">vCenter Server용 NetApp Element 플러그인은 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있도록 VMware vSphere 인터페이스에 대한 플러그인을 제공합니다.</block>
+  <block id="19f896759122e1f164b08da5c97303fd" category="summary">NetApp Element Plug-in for VMware vCenter Server에서 클러스터에서 수행된 작업과 오류를 나타내는 클러스터 장애를 나열하는 이벤트 로그를 검토합니다.</block>
+  <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
+  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
+  <block id="1953a2d6d8fb71b3d3f05d7ab9aa523c" category="inline-link-macro">관리 서비스 공지 2.20.69(VMware vCenter Server 4.9.14용 NetApp Element 플러그인)</block>
+  <block id="ba9eae25d558175b3670fa75219d16c1" category="list-text"><block ref="ba9eae25d558175b3670fa75219d16c1" category="inline-link-macro-rx"></block></block>
+  <block id="c6df14aa71e88712620087ef3c0051b8" category="inline-link-macro">관리 서비스 공지 2.19.48(vCenter Server 4.8.34용 NetApp Element 플러그인)</block>
+  <block id="9fd39b76002ba897bb7f2798062dd085" category="list-text"><block ref="9fd39b76002ba897bb7f2798062dd085" category="inline-link-macro-rx"></block></block>
+  <block id="e9ddfae2256b1bb9c9a0f68ff44e48e4" category="inline-link-macro">관리 서비스 공지 2.18.91(vCenter Server 4.7.10용 NetApp Element 플러그인)</block>
+  <block id="fd082478be94d13e97e62e3f3f795941" category="list-text"><block ref="fd082478be94d13e97e62e3f3f795941" category="inline-link-macro-rx"></block></block>
+  <block id="30d92c8789efab57b790dee431c18297" category="inline-link-macro">관리 서비스 공지 2.17.56(vCenter Server용 NetApp Element 플러그인 4.6.32)</block>
+  <block id="159171d6deceb49b698f0e825e2dcbc0" category="list-text"><block ref="159171d6deceb49b698f0e825e2dcbc0" category="inline-link-macro-rx"></block></block>
+  <block id="87a0fdd7b9534808231b4d6ab471ebf1" category="inline-link-macro">관리 서비스 공지 2.17.52(vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
+  <block id="c60bfba5a7f27b590160ee0a6110ceed" category="list-text"><block ref="c60bfba5a7f27b590160ee0a6110ceed" category="inline-link-macro-rx"></block></block>
+  <block id="770994475f57b3ce3e40618e8d3e1705" category="inline-link-macro">관리 서비스 참고 사항 2.16(vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
+  <block id="6906a04b525fc75f5efe6486e751be6d" category="list-text"><block ref="6906a04b525fc75f5efe6486e751be6d" category="inline-link-macro-rx"></block></block>
+  <block id="1cb251dcf63c7c6b0f0f032152675c8b" category="inline-link-macro">관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항</block>
+  <block id="f85c490ca21b5f7fefac2c50acf9bbc6" category="list-text"><block ref="f85c490ca21b5f7fefac2c50acf9bbc6" category="inline-link-macro-rx"></block></block>
+  <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)</block>
+  <block id="cec503a733d11d28f5cfcc218bf7e140" category="list-text"><block ref="cec503a733d11d28f5cfcc218bf7e140" category="inline-link-macro-rx"></block></block>
+  <block id="d9f3c0c9eb340c8261bfa8b95bd04b9a" category="inline-link-macro">관리 서비스 공지 2.11(vCenter Server 4.4.72용 NetApp Element 플러그인)</block>
+  <block id="5a7b6af19a3e043296cd2f7ad26a4e45" category="list-text"><block ref="5a7b6af19a3e043296cd2f7ad26a4e45" category="inline-link-macro-rx"></block></block>
+  <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">NetApp Element 소프트웨어 12.7 릴리스 정보</block>
+  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _신규 _</block>
+  <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
+  <block id="1de1fa776d5e13c615b89966caf040ca" category="section-title">VMware vCenter Server용 NetApp Element 플러그인</block>
+  <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter 플러그인 4.10 릴리즈 노트</block>
+  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _신규 _</block>
+  <block id="af0303f5d07cda64604644ac8608eabd" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 <block ref="93ca324be2348cd998a8e30867cdba0f" category="inline-link-rx"></block>) 스토리지 I/O 제어 기준 <block ref="bb0ee5f2944d3d4a12da5f2b10b4a8ee" category="inline-link-rx"></block>) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.</block>
+  <block id="177259bf399e56131535817a5b3d056c" category="summary">문서는 VMware vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다.</block>
+  <block id="51e42727247460a0bec3c65c38a8231b" category="doc">이전 버전의 VMware vCenter Server용 NetApp Element 플러그인 설명서</block>
+  <block id="fa1dfaacd9c58d6fa24c3cd804696883" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인 버전 4.10 이전의 릴리즈에도 설명서가 제공됩니다.</block>
+  <block id="0b94915d96bdf913ca5fd03ffc778f0e" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 4.10의 경우 버전 4.9, 4.6, 4.7 및 4.8도 포함됩니다.</block>
+  <block id="622fbbcf746903b903f2af5462c8550a" category="cell">4.9</block>
+  <block id="f751fbabf8051844c49362e0317859f4" category="cell"><block ref="f751fbabf8051844c49362e0317859f4" category="inline-link-rx"></block></block>
+  <block id="b9cf34af101112b6fe1d9cb0084bf6d5" category="inline-link">2.20.69</block>
+  <block id="5794a440d05a5dcbcf77aed8fc304a96" category="cell"><block ref="5794a440d05a5dcbcf77aed8fc304a96" category="inline-link-rx"></block></block>
+  <block id="0fc8e7b7f795ce33c6e2864a2ab8efab" category="summary">NetApp Element Plug-in for VMware vCenter Server에서 선택한 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다.</block>
+  <block id="90ceb2725b7a568b0b7d53711c6985c6" category="paragraph">NetApp Element vCenter Server용 NetApp Element 플러그인의 구성 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.</block>
+  <block id="6735f3147a84072935a66d5ee4cba3c8" category="admonition">Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="4376614e44aee58bcb5b464e37f653bd" category="summary">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
+  <block id="ba45308f1d586697de5a2613412594d6" category="paragraph">VMware vCenter Serverr용 NetApp Element 플러그인을 사용하여 사용자 계정의 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
+  <block id="2e21a75f0172e364fdbd1484eb5046cb" category="summary">VMware vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다.</block>
+  <block id="d6e863df4cb2baca4ec0a31356870241" category="paragraph">설치에 설명된 단계에 따라 VMware vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. Element vCenter 플러그인 4.10은 관리 서비스 번들의 일부로 Element 소프트웨어 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
+  <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
+  <block id="c525ffb7ac26e605d251a5d7b5283d5d" category="doc">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 데이터를 보호합니다</block>
+  <block id="295677223735c27b8f769e36504d00f4" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 데이터 복제본을 필요한 위치에 생성 및 저장할 수 있습니다. 이렇게 하려면 볼륨 및 그룹 스냅샷을 생성 및 관리하고, 스냅샷 일정을 설정하고, 원격 클러스터 간 복제를 위한 볼륨 및 클러스터 쌍 관계를 생성할 수 있습니다.</block>
+  <block id="a43682c16170c0daeb4b61bea847cf50" category="summary">다음은 VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다.</block>
+  <block id="54a42634d580de7f407c8a5db3ecb280" category="summary">NetApp Element Plug-in for VMware vCenter Server를 사용하기 전에 제품 설치 및 사용을 위한 사전 요구 사항을 이해해야 합니다.</block>
+  <block id="cb06d1227bb1236adf952ff5f5ffde34" category="doc">VMware vCenter Server용 NetApp Element 플러그인 요구 사항</block>
+  <block id="a7d3dde6b1975bac709fda9052ae145a" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.</block>
+  <block id="0a17c7cca46191582570013339ad71ef" category="paragraph">Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
+  <block id="8bb0a675e2ae63d09c6c36d5bb66f1b5" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1 및 2</block>
+  <block id="1ea81b2a1a5af8aa2bbc471d319704d1" category="list-text">vSphere 7.0 업데이트 3 - Spring Framework 4를 사용하는 vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함합니다</block>
+  <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 Element 플러그인이 배포되지 않습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
+  <block id="429fd9d2f4200d22b8b22feb099cb9f4" category="list-text">요소 12.x</block>
+  <block id="982d568c018d387b3488391a993db10a" category="list-text">* Registered Cluster *: 페어링의 원격 클러스터가 Element vCenter 플러그인의 동일한 인스턴스에 의해 제어되는 경우 이 옵션을 선택합니다.</block>
+  <block id="c026e3e32a324be0de1c3bce27593184" category="list-text">* 자격 증명 클러스터 *: 원격 클러스터에 Element vCenter 플러그인 구성 이외의 자격 증명이 있는 경우 이 옵션을 선택합니다.</block>
+  <block id="7e780c6cad6828d83bdf47ed66df0c3c" category="list-text">* 볼륨 생성 *: 원격 클러스터에서 복제 타겟 볼륨을 생성하려면 이 옵션을 선택합니다. 이 방법은 Element vCenter 플러그인으로 제어되는 원격 클러스터에서만 사용할 수 있습니다.</block>
+  <block id="b513884c301d711c0d69d128bdc41f1b" category="list-text">* 볼륨 선택 *: 대상 볼륨에 대한 원격 클러스터가 Element vCenter 플러그인으로 제어되는 경우 이 옵션을 선택합니다.</block>
+  <block id="5030f510b398a3114c9079ffb48135e4" category="list-text">* 볼륨 ID *: 타겟 볼륨의 원격 클러스터에 Element vCenter 플러그인 구성 이외의 알려진 자격 증명이 있는 경우 이 옵션을 선택합니다.</block>
+  <block id="0102bf6b6fe5dc913e207122726f5d30" category="paragraph">연결 모드의 경우 Element vCenter 플러그인은 단일 vCenter Server에서 제공하는 QoSSIOC 설정을 사용하여 모든 vCenter Server를 등록합니다.</block>
+  <block id="f24eae8643c6cb1d0006da935aedec3b" category="image-alt">vCenter Server용 NetApp Element 플러그인 등록 유틸리티 메뉴</block>
+  <block id="4c4722e5324c9cd449ccd55ff6c40753" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 vCenter 연결 모드를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리할 수 있습니다.</block>
+  <block id="e1595aba7650be0c4b402c998ad1c5ed" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 실행 상태를 나타내는 정보, 경고 또는 오류를 모니터링할 수 있습니다.</block>
+  <block id="d21eb641630f2fbe2737ceec55154371" category="doc">VMware vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</block>
+  <block id="a7dbf346e712ae6e21c15681462b415f" category="paragraph">최신 버전의 VMware vCenter Server용 NetApp Element 플러그인을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.</block>
+  <block id="169c2e8ca40df6aaefeb2f88a3a0791d" category="doc">VMware vCenter Server용 NetApp Element 플러그인 제품 개요</block>
+  <block id="aac2194ee6e04f48729b889da7441b8c" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인은 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
+  <block id="51f311566f32302efc2fbbc6302900da" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 봅니다.</block>
+  <block id="67072320f5169240d02469527b184433" category="paragraph">NetApp Element Plug-in for VMware vCenter Server의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 볼 수 있습니다.</block>
+  <block id="2b0c828f14aa63b395df1a30c61d61a1" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 Element 볼륨이 백업하는 데이터 저장소를 관리할 수 있습니다. 데이터 저장소를 생성, 확장, 클론 복제, 공유 또는 삭제할 수 있습니다. 또한 VAAI UNMAP을 사용하여 클러스터가 씬 프로비저닝된 VMFS 데이터 저장소에서 확보된 블록 공간을 재확보할 수 있습니다.</block>
+  <block id="bd8fb42cceeb576c1e2d18b77946eed5" category="admonition">NetApp Element Plug-in for VMware vCenter Server를 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="b24c943e5c24047127dea66291cfe9e7" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 탭에 있는 볼륨 성능 페이지에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
+  <block id="c22121750a7295f0a0efe2d585d7a948" category="summary">이 버전의 VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능에 대해 알아보십시오.</block>
+  <block id="66651251ffc02faf1ed89440cd38f351" category="doc">VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능</block>
+  <block id="25254260c83de85b427dcd94f7c337e5" category="paragraph">vCenter Server 4.10용 NetApp Element 플러그인에는 보안 취약점을 비롯한 해결된 문제가 포함되어 있어 업그레이드 중에 발생하는 중단을 크게 줄이고 일부 환경에서 일상적인 운영을 개선할 수 있습니다. 플러그인 버전 4.10에서는 온라인 도움말 링크가 이 링크로 전환되었습니다 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block>. 플러그인 내에서 온라인 도움말 링크에 액세스하려면 네트워크에 액세스할 수 있어야 합니다.</block>
+  <block id="1614d1f32c2461293d78d48916983c1c" category="paragraph">Element vCenter 플러그인 4.10은 관리 서비스의 2.21.61 릴리즈와 함께 사용할 수 있습니다.</block>
+  <block id="e6d3d1619eb4fdac2775643fea2a6c05" category="section-title">vCenter Server 4.9용 NetApp Element 플러그인</block>
+  <block id="be2443c4720bed9c69fd7e827839e61c" category="paragraph">VMware vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5에 대한 복원 지원을 제공합니다.</block>
+  <block id="d186d1a54781fe84473dd5d36734fed7" category="paragraph">Element vCenter 플러그인 4.9는 관리 서비스의 2.20.69 릴리즈와 함께 사용할 수 있습니다.</block>
+  <block id="cbc0df0d0811f264690cee9b3ba10fcc" category="paragraph">Element vCenter 플러그인 4.7.8에는 보안 개선 사항, 메모리 사용률 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.</block>
+  <block id="537ead2e0cdece5a8f74b676b2a76ecc" category="paragraph">Element vCenter 플러그인 4.8은 관리 서비스의 2.19 릴리즈와 함께 사용할 수 있습니다.</block>
+  <block id="2d11279b1331356298fd619891de0ffa" category="section-title">VMware vCenter Server 4.7용 NetApp Element 플러그인</block>
+  <block id="518d3755563da4f104451562701d56eb" category="paragraph">Element vCenter 플러그인 4.7에는 에서 향상된 기능을 더욱 개발할 수 있는 중요한 보안 개선 사항이 포함되어 있습니다<block ref="b1233a0bfa93edf062561cc29a402448" category="inline-link-rx"></block> 놓습니다.</block>
+  <block id="3c6aed0f37a9d3e025c0d369363e99bf" category="paragraph">Element vCenter 플러그인 4.7은 관리 서비스의 2.18 릴리즈와 함께 사용할 수 있습니다.</block>
+  <block id="e414ac316c65e7ad77077a83fdacb5cf" category="section-title">VMware vCenter Server용 NetApp Element 플러그인 4.6</block>
+  <block id="f91a1dbcfbda3cae56acbe505dc321b1" category="paragraph">Element vCenter 플러그인 4.6은 관리 서비스의 2.16 릴리스와 함께 사용할 수 있습니다.</block>
+  <block id="baf751cfa98ca2f74ceb6948fcda780b" category="inline-link-macro">VMware vCenter Server용 NetApp Element 플러그인 개요</block>
+  <block id="63cc63082dc63dbd2008d199a2bbc40f" category="list-text"><block ref="63cc63082dc63dbd2008d199a2bbc40f" category="inline-link-macro-rx"></block></block>
+  <block id="8c685412580675b6fc94b6d9884c2190" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.</block>
+  <block id="f379f8e66e1db17bdc8c224d43f3435a" category="list-text"><block ref="59dc4ba83e500318a7037078449a4c75" category="inline-xref-macro-rx"></block></block>
+  <block id="c3441035a5fc5df8f56c371510235cc0" category="section-title">VMware vCenter Server 6.7U1을 사용하여 VMware vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다</block>
+  <block id="41c092fb7a927ae7d39aa5ea193ab8a5" category="paragraph">VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이상으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.</block>
+  <block id="c9a65a128a505a58d4d567963f8c5eef" category="summary">VMware vCenter Server용 NNetApp Element Plug-in의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 봅니다.</block>
+  <block id="698d667d11b7e38537ec61866ca4211e" category="paragraph">전체 용량, 효율성 및 성능을 포함하여 선택한 클러스터에 대한 고급 클러스터 정보를 보려면 VMware vCenter Server용 NetApp Element 플러그인 의 NetApp Element 관리 확장 지점에서 보고 탭의 개요 페이지에서 확인하십시오.</block>
+  <block id="2152f196efbe56dd4b6ed7ebdf60184e" category="summary">vCenter에서 VMware vCenter Server용 NetApp Element 플러그인의 등록을 취소할 수 있습니다.</block>
+  <block id="0e2cb9099b297835fc679a9e70a9f01b" category="paragraph">다음 절차 중 하나를 사용하여 vCenter에서 VMware vCenter Server용 NetApp Element 플러그인 등록을 취소할 수 있습니다.</block>
+  <block id="7c385748f57d5138e7a7e04224b0094d" category="summary">VMware vSphere 인터페이스의 플러그인인 VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
+  <block id="64224a57594a94e207c3cc3f117b9b4c" category="doc">VMware vCenter Server용 NetApp Element 플러그인 설명서</block>
+  <block id="96c1d0016bb846b8879188911653c245" category="sidebar">VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="4b983fff716674f120176e09551dd445" category="sidebar">제품 개요</block>
+  <block id="5aa6ea991a62f7c634596fc6b1987052" category="sidebar">플러그인을 설치하고 구축합니다</block>
+  <block id="2f1a3e62508d88ddc31f1aa72a8334d4" category="sidebar">학습</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
+  <block id="09a3438150481f613a24e724fafccaaa" category="sidebar">SolidFire All-Flash 스토리지 시스템을 활용할 수 있습니다</block>
+  <block id="9865b5273461f1ab63ecaf59f6b927cc" category="sidebar">Element 플러그인을 업그레이드합니다</block>
+  <block id="d87f618eb943f8de574b757f14b99436" category="sidebar">vSphere 구성 요소를 업그레이드합니다</block>
+  <block id="d887d215a23ce16c6ede6d757f7f0c7d" category="sidebar">NetApp HCI 시스템</block>
+  <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">이전 버전</block>
+  <block id="3e8da9d34bce644aabb9492338eee5e7" category="sidebar">NetApp Element 플러그인 설명서 4.5 이전 버전</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
+  <block id="102fa0b3d48f5eb07a14f36cdde32296" category="sidebar">SolidFire 및 요소 문서 리소스</block>
+  <block id="e832d6528eba00e46f3e6d6ad9b8258b" category="sidebar">NetApp HCI 문서 리소스</block>
+  <block id="f5409f597000de172b3e43bc31e32407" category="sidebar">NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB</block>
 </blocks>

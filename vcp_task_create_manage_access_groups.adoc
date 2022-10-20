@@ -19,11 +19,11 @@ A link:https://docs.netapp.com/us-en/hci/docs/concept_hci_volume_access_groups.h
 볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 파이버 채널 WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 파이버 채널 네트워크 액세스를 설정합니다.
 
 .옵션
-* <<Create an access group>>
-* <<Edit an access group>>
-* <<Add volumes to an access group>>
-* <<Remove volumes from an access group>>
-* <<Delete an access group>>
+*  an access group
+*  an access group
+*  volumes to an access group
+*  volumes from an access group
+*  an access group
 
 
 
@@ -151,7 +151,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . 작업을 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

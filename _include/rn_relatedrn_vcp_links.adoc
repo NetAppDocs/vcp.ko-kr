@@ -23,7 +23,8 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == NetApp Element 소프트웨어
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["NetApp Element 소프트웨어 12.7 릴리스 정보"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["NetApp Element 소프트웨어 12.3.1 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["NetApp Element 소프트웨어 12.3 릴리스 정보"^]
@@ -44,9 +45,10 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 
 
-== vCenter Server용 NetApp Element 플러그인
+== VMware vCenter Server용 NetApp Element 플러그인
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["vCenter 플러그인 4.9 릴리즈 노트"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884458["vCenter 플러그인 4.10 릴리즈 노트"^] _신규 _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["vCenter 플러그인 4.9 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["vCenter 플러그인 4.8 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876748["vCenter 플러그인 4.7 릴리즈 노트"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2874631["vCenter 플러그인 4.6 릴리스 정보"^]

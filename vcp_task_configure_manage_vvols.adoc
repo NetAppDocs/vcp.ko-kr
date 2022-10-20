@@ -28,18 +28,18 @@ VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상
 vCenter Server용 NetApp Element 플러그인에서 가상 볼륨(VVol)을 사용하려면 초기 구성 단계를 수행해야 합니다.
 
 .단계
-. <<Enable virtual volumes functionality on the NetApp Element cluster>>
-. <<Register the VASA provider with vCenter>>
-. <<Create a storage container and associated VVol datastore>>
+.  virtual volumes functionality on the NetApp Element cluster
+.  the VASA provider with vCenter
+.  a storage container and associated VVol datastore
 
 
 
 
 == 관리합니다
 
-* <<Monitor virtual volume resources>>
-* <<Create a VVol datastore for a storage container>>
-* <<Delete a storage container>>
+*  virtual volume resources
+*  a VVol datastore for a storage container
+*  a storage container
 
 
 
@@ -65,7 +65,7 @@ NOTE: VVol 기능이 활성화되면 Element 클러스터가 VASA Provider를 �
 . 선택한 클러스터에 대해 * Actions * 를 선택합니다.
 . 결과 메뉴에서 * Details * 를 선택합니다.
 . VASA Provider URL * 필드에서 VASA Provider URL을 복사합니다. 이 URL을 사용하여 vCenter에 VASA Provider를 등록합니다.
-. 을 참조하십시오 <<Register the VASA provider with vCenter>> 다음 단계를 참조하십시오.
+. 을 참조하십시오  the VASA provider with vCenter 다음 단계를 참조하십시오.
 
 
 
@@ -112,7 +112,7 @@ NOTE: vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 �
 
 NOTE: 공급자를 처음 등록한 후 필요에 따라 스토리지 공급자를 새로 고쳐 공급자의 현재 상태를 표시합니다. 또한 공급자가 * NetApp Element 구성 > 클러스터 * 에서 활성화되어 있는지 확인할 수도 있습니다. 사용 중인 클러스터에 대해 * 작업 * 을 선택하고 * 세부 정보 * 를 클릭합니다.
 
-. 을 참조하십시오 <<Create a storage container and associated VVol datastore>> 다음 단계를 참조하십시오.
+. 을 참조하십시오  a storage container and associated VVol datastore 다음 단계를 참조하십시오.
 
 
 
@@ -169,9 +169,9 @@ NOTE: vCenter 연결 모드를 사용하는 경우 클러스터가 할당된 vCe
 
 플러그인의 NetApp Element 관리 확장 지점에서 가상 볼륨 구성 요소 성능 및 설정을 검토할 수 있습니다.
 
-* <<Monitoring VVols>>
-* <<Monitoring storage containers>>
-* <<Monitoring protocol endpoints>>
+*  VVols
+*  storage containers
+*  protocol endpoints
 
 
 
@@ -236,7 +236,7 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 
 == 스토리지 컨테이너용 VVOL 데이터 저장소를 생성합니다
 
-스토리지 컨테이너를 생성한 후에는 vCenter의 NetApp Element 클러스터에서 스토리지 컨테이너를 나타내는 가상 볼륨 데이터 저장소도 생성해야 합니다. 이 절차는 에서 데이터 저장소를 생성하는 대신 사용할 수 있습니다 <<Create a storage container and associated VVol datastore,저장소 컨테이너를 생성합니다>> 마법사. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 VVOL 데이터 저장소를 생성해야 합니다.
+스토리지 컨테이너를 생성한 후에는 vCenter의 NetApp Element 클러스터에서 스토리지 컨테이너를 나타내는 가상 볼륨 데이터 저장소도 생성해야 합니다. 이 절차는 에서 데이터 저장소를 생성하는 대신 사용할 수 있습니다  a storage container and associated VVol datastore,저장소 컨테이너를 생성합니다 마법사. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 VVOL 데이터 저장소를 생성해야 합니다.
 
 .무엇을 &#8217;필요로 할거야
 * 가상 환경의 기존 스토리지 컨테이너
@@ -284,7 +284,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . 저장소 컨테이너 * 하위 탭의 저장소 컨테이너 목록을 새로 고쳐 저장소 컨테이너가 제거되었는지 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -23,7 +23,7 @@ QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가�
 
 NOTE: VVol(가상 볼륨) 기능을 활성화하거나 QoSSIOC 설정 페이지를 사용하여 VVol을 vSphere에 사용할 수 없습니다. 자세한 내용은 vCenter Server용 Element Plug-in 설명서를 참조하십시오.
 
-연결 모드의 경우 vCenter Server용 NetApp Element 플러그인은 단일 vCenter Server에서 제공하는 QoSSIOC 설정을 사용하여 모든 vCenter Server를 등록합니다.
+연결 모드의 경우 Element vCenter 플러그인은 단일 vCenter Server에서 제공하는 QoSSIOC 설정을 사용하여 모든 vCenter Server를 등록합니다.
 
 vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.
 
@@ -32,7 +32,7 @@ vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 �
 == 설정 작업
 
 * link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["QoSSIOC 설정을 구성합니다"]
-* <<Enabling QoSSIOC automation on datastores>>
+*  QoSSIOC automation on datastores
 
 
 
@@ -40,10 +40,10 @@ vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 �
 == 관리합니다
 
 * link:vcp_task_reports_qossioc.html["QoSSIOC 이벤트를 사용하여 VM 성능 계층화를 모니터링합니다"^]
-* <<Edit QoSSIOC settings>>
-* <<Change the QoSSIOC service password>>
-* <<Disable QoSSIOC automation for a datastore>>
-* <<Clear QoSSIOC settings>>
+*  QoSSIOC settings
+*  the QoSSIOC service password
+*  QoSSIOC automation for a datastore
+*  QoSSIOC settings
 
 
 
@@ -136,7 +136,7 @@ NOTE: 관리 노드에 대해 유효한 QoSSIOC 설정을 구성한 후에는 �
 * 관리 노드의 전원이 켜져 있습니다.
 
 
-이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다 <<Edit QoSSIOC settings,QoSSIOC 설정>> NetApp Element 구성 확장 포인트의 페이지입니다.
+이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다  QoSSIOC settings,QoSSIOC 설정 NetApp Element 구성 확장 포인트의 페이지입니다.
 
 .단계
 . NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
@@ -151,7 +151,7 @@ NOTE: 관리 노드에 대해 유효한 QoSSIOC 설정을 구성한 후에는 �
 등록 유틸리티 UI에 플러그인의 * QoSSIOC 서비스 자격 증명 관리 * 페이지가 표시됩니다.
 
 +
-image::vcp_registration_ui_qossioc.png[VCP 등록 유틸리티 메뉴]
+image::vcp_registration_ui_qossioc.png[vCenter Server용 NetApp Element 플러그인 등록 유틸리티 메뉴]
 
 . 다음 정보를 입력합니다.
 +
@@ -215,7 +215,8 @@ mNode(Element 스토리지 관리 노드)에 대한 QoSSIOC 구성 세부 정보
 
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

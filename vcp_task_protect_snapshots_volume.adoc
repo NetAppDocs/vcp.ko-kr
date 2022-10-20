@@ -19,12 +19,12 @@ keywords: netapp, hci, vcp, vcenter, element, protect, snapshots, clone, backup,
 스냅샷을 사용하여 스냅샷을 생성한 시점의 상태로 볼륨을 롤백할 수 있습니다. 그러나 스냅숏은 볼륨 메타데이터의 복제본이므로 마운트하거나 쓸 수 없습니다.
 
 .옵션
-* <<Create a volume snapshot>>
-* <<View volume snapshot details>>
-* <<Clone a volume from a snapshot>>
-* <<Roll back a volume to a snapshot>>
-* <<Back up a volume snapshot to an external object store>>
-* <<Delete a volume snapshot>>
+*  a volume snapshot
+*  volume snapshot details
+*  a volume from a snapshot
+*  back a volume to a snapshot
+*  up a volume snapshot to an external object store
+*  a volume snapshot
 
 
 
@@ -179,9 +179,9 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 사용할 클러스터�
 
 외부 개체 저장소에 스냅샷을 백업할 때 읽기/쓰기 작업을 허용하는 개체 저장소에 대한 연결이 있어야 합니다.
 
-* <<Back up a volume snapshot to an Amazon S3 object store>>
-* <<Back up a volume snapshot to an OpenStack Swift object store>>
-* <<Back up a volume snapshot to a cluster running Element software>>
+*  up a volume snapshot to an Amazon S3 object store
+*  up a volume snapshot to an OpenStack Swift object store
+*  up a volume snapshot to a cluster running Element software
 
 
 
@@ -334,7 +334,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 사용할 클러스터�
 . 작업을 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

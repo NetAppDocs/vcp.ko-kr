@@ -27,17 +27,17 @@ NOTE: NetApp Element 관리 확장 지점 기능을 사용하려면 하나 이�
 
 
 .옵션
-* <<View cluster details>>
-* <<Edit a cluster profile>>
-* <<Remove a cluster profile>>
-* <<Enable Encryption at Rest>>
-* <<Disable Encryption at Rest>>
-* <<Enable SSH>>
-* <<Change the SSH time limit>>
-* <<Disable SSH>>
-* <<Set protection domain monitoring>>
-* <<Shut down a cluster>>
-* <<Expand your NetApp HCI infrastructure>>
+*  cluster details
+*  a cluster profile
+*  a cluster profile
+*  Encryption at Rest
+*  Encryption at Rest
+*  SSH
+*  the SSH time limit
+*  SSH
+*  protection domain monitoring
+*  down a cluster
+*  your NetApp HCI infrastructure
 
 
 
@@ -116,7 +116,7 @@ NetApp Element 구성 확장 지점을 사용하여 vCenter 플러그인에서 �
 연결된 모드 그룹을 설정하고 클러스터를 다른 vCenter Server에 재할당하려는 경우 클러스터 프로필을 제거하고 다른 연결된 vCenter Server IP를 사용하여 다시 추가할 수 있습니다.
 
 
-NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+NOTE: NetApp Element Plug-in for VMware vCenter Server를 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
 . NetApp Element 구성 > 클러스터 * 를 선택합니다.
 . 제거할 클러스터를 선택합니다.
@@ -281,7 +281,8 @@ NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사�
 . NetApp HCI * 를 확장합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

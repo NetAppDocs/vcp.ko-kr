@@ -2,27 +2,29 @@
 sidebar: sidebar 
 permalink: reference_earlier_versions.html 
 keywords: documentation, earlier, previous, versions 
-summary: 설명서는 vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다. 
+summary: 문서는 VMware vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다. 
 ---
-= 이전 버전의 NetApp Element 플러그인 설명서
+= 이전 버전의 VMware vCenter Server용 NetApp Element 플러그인 설명서
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ../media/
-:keywords: documentation, earlier, previous, versions
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인 버전 4.9 이전의 릴리즈에도 설명서가 제공됩니다.
+VMware vCenter Server용 NetApp Element 플러그인 버전 4.10 이전의 릴리즈에도 설명서가 제공됩니다.
 
 
-NOTE: 여기 link:index.html["설명서 링크"] vCenter Server용 NetApp Element 플러그인 버전 4.9의 경우 버전 4.6, 4.7 및 4.8도 포함됩니다.
+NOTE: 여기 link:index.html["설명서 링크"] Element vCenter 플러그인 4.10의 경우 버전 4.9, 4.6, 4.7 및 4.8도 포함됩니다.
 
 [cols="4*"]
 |===
 | 버전 | 플러그인 릴리즈 노트 | 관리 서비스 릴리스 정보 | 사용 설명서 
+
+
+| 4.9 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["PDF를 참조하십시오"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2881904["2.20.69"] | link:index.html["링크"] 
 
 
 | 4.8 | https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["PDF를 참조하십시오"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP2879296["2.19.48"^] | link:index.html["링크"] 

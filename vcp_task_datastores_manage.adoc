@@ -14,7 +14,7 @@ keywords: netapp, datastore, vcp, vcenter, element
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인을 사용하여 Element 볼륨이 백업하는 데이터 저장소를 관리할 수 있습니다. 데이터 저장소를 생성, 확장, 클론 복제, 공유 또는 삭제할 수 있습니다. 또한 VAAI UNMAP을 사용하여 클러스터가 씬 프로비저닝된 VMFS 데이터 저장소에서 확보된 블록 공간을 재확보할 수 있습니다.
+NetApp Element Plug-in for VMware vCenter Server를 사용하여 Element 볼륨이 백업하는 데이터 저장소를 관리할 수 있습니다. 데이터 저장소를 생성, 확장, 클론 복제, 공유 또는 삭제할 수 있습니다. 또한 VAAI UNMAP을 사용하여 클러스터가 씬 프로비저닝된 VMFS 데이터 저장소에서 확보된 블록 공간을 재확보할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
 * 데이터 저장소를 생성하고 관리하려면 먼저 사용자 계정을 하나 이상 생성해야 합니다.
@@ -23,13 +23,13 @@ vCenter Server용 NetApp Element 플러그인을 사용하여 Element 볼륨이 
 
 
 .옵션
-* <<Create a datastore>>
-* <<View the datastore list>>
-* <<Extend a datastore>>
-* <<Clone a datastore>>
-* <<Share a datastore>>
-* <<Perform VAAI UNMAP>>
-* <<Delete a datastore>>
+*  a datastore
+*  the datastore list
+*  a datastore
+*  a datastore
+*  a datastore
+*  VAAI UNMAP
+*  a datastore
 
 
 
@@ -471,7 +471,8 @@ NOTE: 볼륨을 유지하고 나중에 다른 데이터 저장소에 연결하�
 . 예 * 를 선택합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

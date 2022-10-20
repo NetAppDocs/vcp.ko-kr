@@ -21,11 +21,11 @@ keywords: netapp, hci, vcp, vcenter, element, protect, snapshots, schedule
 
 NOTE: 일정은 UTC + 0 시간으로 생성됩니다. 표준 시간대를 기준으로 스냅샷이 실행될 실제 시간을 조정해야 할 수 있습니다.
 
-* <<Create a snapshot schedule>>
-* <<View snapshot schedule details>>
-* <<Edit a snapshot schedule>>
-* <<Copy a snapshot schedule>>
-* <<Delete a snapshot schedule>>
+*  a snapshot schedule
+*  snapshot schedule details
+*  a snapshot schedule
+*  a snapshot schedule
+*  a snapshot schedule
 
 
 
@@ -170,7 +170,8 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 . 작업을 확인합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

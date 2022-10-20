@@ -4,7 +4,7 @@ permalink: vcp_task_protect_overview.html
 summary: 데이터 복사본을 필요한 곳에 생성 및 저장할 수 있습니다. 
 keywords: netapp, vcp, vcenter, element, protect, data 
 ---
-= vCenter Server용 NetApp Element 플러그인을 사용하여 데이터를 보호합니다
+= VMware vCenter Server용 NetApp Element 플러그인을 사용하여 데이터를 보호합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ keywords: netapp, vcp, vcenter, element, protect, data
 
 
 [role="lead"]
-vCenter Server용 NetApp Element 플러그인을 사용하여 데이터 복제본을 필요한 위치에 생성 및 저장할 수 있습니다. 이렇게 하려면 볼륨 및 그룹 스냅샷을 생성 및 관리하고, 스냅샷 일정을 설정하고, 원격 클러스터 간 복제를 위한 볼륨 및 클러스터 쌍 관계를 생성할 수 있습니다.
+NetApp Element Plug-in for VMware vCenter Server를 사용하여 데이터 복제본을 필요한 위치에 생성 및 저장할 수 있습니다. 이렇게 하려면 볼륨 및 그룹 스냅샷을 생성 및 관리하고, 스냅샷 일정을 설정하고, 원격 클러스터 간 복제를 위한 볼륨 및 클러스터 쌍 관계를 생성할 수 있습니다.
 
 .옵션
 * link:vcp_task_protect_snapshots_volume.html["볼륨 스냅샷을 생성하고 관리합니다"]
@@ -23,7 +23,8 @@ vCenter Server용 NetApp Element 플러그인을 사용하여 데이터 복제�
 * link:vcp_task_protect_remote_replication.html["클러스터 간에 원격 복제를 수행합니다"]
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

@@ -17,7 +17,7 @@ keywords: netapp, vcp, element, plugin, plug-in, config, extension point
 NetApp Element 구성 확장 지점을 사용하면 클러스터를 추가 및 관리하고, 연결 모드를 위해 스토리지 클러스터를 vCenter Server에 할당하고, QoSSIOC의 관리 노드 설정을 구성할 수 있습니다.
 
 
-NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+NOTE: NetApp Element Plug-in for VMware vCenter Server를 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
 
 NOTE: vSphere Web Client는 설치된 vSphere 버전에 따라 다음 이미지에 표시된 것과 약간 다를 수 있습니다.
@@ -33,11 +33,12 @@ NetApp Element 구성 확장 지점에서는 다음 탭을 사용할 수 있습�
 * * 정보 *: 플러그인 버전 정보를 표시하고 서비스 번들 다운로드 옵션을 제공합니다.
 
 
-[discrete]
+
+
 == 자세한 내용을 확인하십시오
 
 * link:vcp_concept_management_extension_point["NetApp Element 관리 확장 포인트"]
-* link:concept_vcp_product_overview.html["vCenter Server용 NetApp Element 플러그인 개요"]
+* link:concept_vcp_product_overview.html["VMware vCenter Server용 NetApp Element 플러그인 개요"]
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
 * https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
 
