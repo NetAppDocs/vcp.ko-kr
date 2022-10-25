@@ -2474,4 +2474,5 @@
   <block id="f5409f597000de172b3e43bc31e32407" category="sidebar">NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB</block>
   <block id="11c89ff1a6e1a8fdbe820874038b12c8" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 4.10의 경우, 버전 4.6, 4.7, 4.8 및 4.9도 포함됩니다.</block>
   <block id="8e929e82af0bc25d8adcd4def2eab9a9" category="paragraph">Element vCenter 플러그인 4.8에는 보안 개선 사항, 메모리 활용도 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.</block>
+  <block id="858ea7ae6467e65992f082751f2c1cdf" category="sidebar">NetApp Element 소프트웨어의 새로운 기능</block>
 </blocks>
