@@ -17,9 +17,13 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report
 전체 용량, 효율성 및 성능을 포함하여 선택한 클러스터에 대한 고급 클러스터 정보를 보려면 VMware vCenter Server용 NetApp Element 플러그인 의 NetApp Element 관리 확장 지점에서 보고 탭의 개요 페이지에서 확인하십시오.
 
 .단계
-. vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.
-. 보고 * 를 선택합니다.
-. 개요 페이지에서 데이터를 모니터링합니다.
+. vCenter 플러그인에서 * Reporting * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 보고 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 보고 * 를 선택합니다.
+
+
+. 개요 * 페이지의 데이터를 모니터링합니다.
 
 
 

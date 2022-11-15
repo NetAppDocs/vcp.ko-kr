@@ -14,9 +14,9 @@ keywords: netapp, storage, access groups, vcp, vcenter, element
 
 
 [role="lead"]
-A link:https://docs.netapp.com/us-en/hci/docs/concept_hci_volume_access_groups.html["볼륨 액세스 그룹"^] 는 사용자가 iSCSI 이니시에이터 또는 Fibre Channel 이니시에이터를 사용하여 액세스할 수 있는 볼륨의 모음입니다.
+A link:https://docs.netapp.com/us-en/hci/docs/concept_hci_volume_access_groups.html["볼륨 액세스 그룹"] 사용자가 iSCSI 이니시에이터 또는 FC 이니시에이터를 사용하여 액세스할 수 있는 볼륨 모음입니다.
 
-볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 파이버 채널 WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 파이버 채널 네트워크 액세스를 설정합니다.
+볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 FC WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 FC 네트워크 액세스를 설정합니다.
 
 .옵션
 *  an access group
@@ -33,7 +33,12 @@ A link:https://docs.netapp.com/us-en/hci/docs/concept_hci_volume_access_groups.h
 하나 이상의 이니시에이터를 사용하여 볼륨 액세스 그룹을 생성할 수 있습니다. 볼륨 액세스 그룹의 볼륨에 파이버 채널(WWPN) 또는 iSCSI(IQN) 클라이언트 이니시에이터를 매핑하면 네트워크와 볼륨 간의 데이터 I/O 보안을 유지할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -57,10 +62,15 @@ NOTE: 볼륨 액세스 그룹이 생성된 후 이니시에이터를 추가하�
 
 == 액세스 그룹을 편집합니다
 
-볼륨 액세스 그룹 이름을 편집하거나 NetApp Element 관리 확장 지점에서 이니시에이터를 추가 또는 제거할 수 있습니다.
+플러그인 확장 지점에서 볼륨 액세스 그룹 이름을 편집하거나 이니시에이터를 추가 또는 제거할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -79,7 +89,7 @@ NOTE: 이니시에이터를 제거하는 경우 휴지통 아이콘을 클릭하
 
 
 
-. 확인 * 을 클릭합니다.
+. OK * 를 선택합니다.
 
 
 
@@ -95,7 +105,12 @@ NOTE: 이니시에이터를 제거하는 경우 휴지통 아이콘을 클릭하
 
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -119,7 +134,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 
 IMPORTANT: 액세스 그룹에서 볼륨을 제거하면 볼륨에 대한 호스트 액세스가 중단될 수 있습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -136,10 +156,15 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 
 == 액세스 그룹을 삭제합니다
 
-NetApp Element 관리 확장 지점을 사용하여 볼륨 액세스 그룹을 삭제할 수 있습니다. 그룹을 삭제하기 전에 이니시에이터 ID를 삭제하거나 볼륨 액세스 그룹에서 볼륨을 분리하지 않아도 됩니다. 액세스 그룹을 삭제하면 볼륨에 대한 그룹 액세스가 중단됩니다.
+플러그인 확장 지점을 사용하여 볼륨 액세스 그룹을 삭제할 수 있습니다. 그룹을 삭제하기 전에 이니시에이터 ID를 삭제하거나 볼륨 액세스 그룹에서 볼륨을 분리하지 않아도 됩니다. 액세스 그룹을 삭제하면 볼륨에 대한 그룹 액세스가 중단됩니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.

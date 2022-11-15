@@ -16,13 +16,17 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, qossioc, cluster,
 [role="lead"]
 QoS 사용 데이터 저장소가 있는 VM이 전원 또는 게스트 이벤트를 재구성하거나 실행하는 경우 QoSSIOC와 관련된 이벤트를 볼 수 있습니다.
 
-NetApp Element vCenter Server용 NetApp Element 플러그인의 구성 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.
+vCenter Server용 NetApp Element 플러그인의 플러그인 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.
 
 QoSSIOC 이벤트는 로컬에서 추가된 클러스터에서 표시됩니다. 연결된 모드 환경에서 클러스터가 로컬로 추가된 vSphere Web Client에 로그인하여 해당 클러스터의 QoSSIOC 이벤트를 확인합니다.
 
+[NOTE]
+====
+* Element vCenter 플러그인 5.0부터 사용할 수 있습니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"]NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대해 별도의 관리 노드에서 Element 플러그인을 등록합니다.
+* vCenter Server 4.10 이전 버전용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
-NOTE: Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
 
+====
 .무엇을 &#8217;필요로 할거야
 * 하나 이상의 클러스터를 추가하고 실행해야 합니다.
 * QoSSIOC 서비스는 플러그인의 QoSSIOC 설정 페이지를 사용하여 실행 여부를 구성하고 확인해야 합니다.
@@ -30,8 +34,12 @@ NOTE: Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCent
 
 
 .단계
-. vCenter 플러그인에서 * NetApp Element 구성 * 을 선택합니다.
-. QoSSIOC 이벤트 * 를 선택합니다.
+. vSphere Web Client에서 * QoSSIOC Events * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 구성 > QoSSIOC 이벤트 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 > QoSSIOC 이벤트 * 를 선택합니다.
+
+
 
 
 

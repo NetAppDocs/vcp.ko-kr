@@ -52,7 +52,11 @@ vCenter 플러그인을 사용하면 다음 작업을 완료하여 QoSSIOC를 �
 
 플러그인에 QoSSIOC 서비스를 활성화한 후 데이터 저장소의 QoSSIOC 자동화를 활성화하고 가상 머신 디스크(VMDK) 성능 수준을 사용자 지정할 수 있습니다.
 
-있습니다 link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["QoSSIOC 서비스 설정을 구성했습니다"] QoSSIOC 설정 페이지 및 * QoSSIOC 상태 * 필드에 '위로'가 표시됩니다.
+QoSSIOC 설정 페이지에서 QoSSIOC 서비스 설정을 구성하고 * QoSSIOC 상태 * 필드가 표시됩니다 `UP`.
+
+* link:vcp_task_getstarted_5_0.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 5.0 이상을 사용하여 설정을 구성합니다"]
+* link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다"]
+
 
 QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가상 볼륨(VVol)과 작동하지 않습니다. QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다.
 
@@ -60,7 +64,12 @@ QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가�
 IMPORTANT: QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 정책에 관계없이 모든 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -100,8 +109,13 @@ TIP: 기본적으로 최대 SIOC 디스크 공유는 Unlimited로 설정됩니�
 활성 요소 관리 노드의 QoSSIOC 및 vCenter 자격 증명을 변경할 수 있습니다.
 
 .단계
-. NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
-. 작업 * 을 클릭합니다.
+. vSphere Web Client에서 * QoSSIOC 설정 * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 구성 > QoSSIOC 설정 * 을 선택합니다.
+** Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
+
+
+. 작업 * 을 선택합니다.
 . 결과 메뉴에서 * Edit * 를 선택합니다.
 . QoSSIOC 설정 편집 * 대화 상자에서 다음 중 하나를 변경합니다.
 +
@@ -115,7 +129,7 @@ NOTE: NetApp HCI 배포의 경우 설치 중에 기본 암호가 무작위로 �
 ** * vCenter 암호 *: vCenter 관리자의 전체 관리자 역할 권한이 있는 암호입니다.
 
 
-. 확인 * 을 클릭합니다. 플러그인이 서비스와 성공적으로 통신할 수 있으면 QoSSIOC 상태 필드가 'UP'으로 표시됩니다.
+. OK * 를 선택합니다. QoSSIOC 상태 필드가 표시됩니다 `UP` 플러그인이 서비스와 성공적으로 통신할 수 있는 경우
 +
 
 NOTE: 자세한 내용은 다음을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Plug-in_for_vCenter_server/mNode_Status_shows_as_%27Network_Down%27_or_%27Down%27_in_the_mNode_Settings_tab_of_the_Element_Plugin_for_vCenter_(VCP)["KB를 클릭합니다"^] 상태가 다음 중 하나라도 해당되는 경우 문제를 해결하기 위해 * Down: QoSSIOC가 활성화되지 않았습니다. * "구성되지 않음": QoSSIOC 설정이 구성되지 않았습니다. * "네트워크 다운": vCenter가 네트워크의 QoSSIOC 서비스와 통신할 수 없습니다. mNode 및 SIOC 서비스가 여전히 실행 중일 수 있습니다.
@@ -136,11 +150,16 @@ NOTE: 관리 노드에 대해 유효한 QoSSIOC 설정을 구성한 후에는 �
 * 관리 노드의 전원이 켜져 있습니다.
 
 
-이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다  QoSSIOC settings,QoSSIOC 설정 NetApp Element 구성 확장 포인트의 페이지입니다.
+이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다  QoSSIOC settings,QoSSIOC 설정 페이지.
 
 .단계
-. NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
-. 작업 * 을 클릭합니다.
+. vSphere Web Client에서 * QoSSIOC 설정 * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 구성 > QoSSIOC 설정 * 을 선택합니다.
+** Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
+
+
+. 작업 * 을 선택합니다.
 . 결과 메뉴에서 * Clear * 를 선택합니다.
 . 작업을 확인합니다.
 +
@@ -164,16 +183,16 @@ NOTE: NetApp HCI 배포의 경우 설치 중에 기본 암호가 무작위로 �
 .. * 암호 확인 *: 새 암호를 다시 입력합니다.
 
 
-. 변경 내용 제출 * 을 클릭합니다.
+. 변경 내용 제출 * 을 선택합니다.
 +
 
 NOTE: 변경 사항을 제출하면 QoSSIOC 서비스가 자동으로 다시 시작됩니다.
 
 . vSphere 웹 클라이언트에서 * NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
-. 작업 * 을 클릭합니다.
+. 작업 * 을 선택합니다.
 . 결과 메뉴에서 * 구성 * 을 선택합니다.
 . QoSSIOC 설정 구성 * 대화 상자의 * QoSSIOC 암호 * 필드에 새 암호를 입력합니다.
-. 확인 * 을 클릭합니다.
+. OK * 를 선택합니다.
 +
 플러그인이 서비스와 성공적으로 통신할 수 있으면 * QoSSIOC Status * 필드에 "UP"이 표시됩니다.
 
@@ -186,17 +205,22 @@ NOTE: 변경 사항을 제출하면 QoSSIOC 서비스가 자동으로 다시 시
 데이터 저장소에 대한 QoSSIOC 통합을 비활성화할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
 
-. 선택한 데이터 저장소의 * QoSSIOC Automation * 열에서 버튼을 클릭합니다.
+. 선택한 데이터 저장소의 * QoSSIOC Automation * 열에서 버튼을 선택합니다.
 . QoS 및 SIOC * 활성화 확인란의 선택을 취소하여 통합을 비활성화합니다.
 +
 QoS 및 SIOC 사용 확인란의 선택을 취소하면 기본 QoS 재정의 옵션이 자동으로 해제됩니다.
 
-. 확인 * 을 클릭합니다.
+. OK * 를 선택합니다.
 
 
 
@@ -206,8 +230,13 @@ QoS 및 SIOC 사용 확인란의 선택을 취소하면 기본 QoS 재정의 옵
 mNode(Element 스토리지 관리 노드)에 대한 QoSSIOC 구성 세부 정보를 지울 수 있습니다. 새 관리 노드에 대한 자격 증명을 구성하거나 QoSSIOC 서비스 암호를 변경하기 전에 구성된 관리 노드에 대한 설정을 지워야 합니다. QoSSIOC 설정을 지우면 vCenter, 클러스터 및 데이터 저장소에서 활성 QoSSIOC가 제거됩니다.
 
 .단계
-. NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
-. 작업 * 을 클릭합니다.
+. vSphere Web Client에서 * QoSSIOC 설정 * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 구성 > QoSSIOC 설정 * 을 선택합니다.
+** Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
+
+
+. 작업 * 을 선택합니다.
 . 결과 메뉴에서 * Clear * 를 선택합니다.
 . 작업을 확인합니다.
 +

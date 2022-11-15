@@ -31,6 +31,7 @@ VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일
 *  message for QoSSIOC status
 *  service shown as available but is unavailable
 *  is enabled for datastore but unavailable
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["VMware vSphere 7.0 Update 3으로 업그레이드한 후 vCenter 플러그인 구축이 실패합니다"^]
 
 
 
@@ -39,7 +40,7 @@ VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일
 
 등록이 성공한 것으로 표시되지만 vSphere Web Client에서 플러그인 아이콘이 표시되지 않습니다.
 
-.수정 조치
+.NetApp Element vCenter 플러그인 4.10 및 그 이전 버전에 대한 수정 조치
 * vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우저를 닫고 다시 열어야 할 수 있습니다.
 * 브라우저 캐시를 지웁니다.
 * vCenter에서 Windows 관리 도구의 서비스 메뉴에서 vSphere Web Client Service를 다시 시작하거나 vCenter를 재부팅합니다.
@@ -85,8 +86,8 @@ NOTE: 연결할 수 없거나 잘못된 URL을 수정해야 할 수 있습니다
 
 VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이상으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.
 
-* 클러스터는 * 클러스터 * 섹션에 나열되지 않습니다.
-* NetApp Element 구성의 * 클러스터 및 QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.
+* 클러스터는 플러그인 확장 지점의 * 클러스터 * 섹션에 나열되지 않습니다.
+* 클러스터 * 및 * QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.
 
 
 클러스터 및 QoSSIOC 설정을 복원합니다.
@@ -97,7 +98,7 @@ VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이
 . 예를 들어 Ctrl+F5를 사용하여 캐시를 해제하고 브라우저를 새로 고칩니다.
 . 클러스터 및 QoSSIOC 설정이 복원되는지 확인합니다.
 +
-문제가 지속되면 다음을 수행해야 합니다 link:https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#add-storage-clusters-for-use-with-the-plug-in["클러스터를 다시 추가합니다"^].
+문제가 지속되면 다음을 수행해야 합니다 link:vcp_task_getstarted_5_0.html#add-storage-clusters-for-use-with-the-plug-in["Element Plug-in 5.0 이상에 대한 클러스터를 다시 추가합니다"] 또는 link:vcp_task_getstarted.html#add-storage-clusters-for-use-with-the-plug-in["Element 플러그인 4.10 이전 버전용 클러스터를 다시 추가합니다"].
 
 
 
@@ -214,7 +215,9 @@ vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우
 
 QoSSIOC 서비스 설정이 UP로 표시되지만 QoSSIOC는 사용할 수 없습니다.
 
-NetApp Element 구성 확장 포인트의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 클릭합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.
+NetApp Element 원격 플러그인 > 구성 탭의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.
+
+NetApp Element 구성 확장 지점의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.
 
 
 

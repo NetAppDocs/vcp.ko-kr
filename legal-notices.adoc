@@ -47,14 +47,15 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
+* link:media/mgmt_svcs_2.22_notice.pdf["관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)"^]
 * link:media/mgmt_svcs_2.21_notice.pdf["관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)"^]
 * link:media/mgmt_svcs_2.20_notice.pdf["관리 서비스 공지 2.20.69(VMware vCenter Server 4.9.14용 NetApp Element 플러그인)"^]
-* link:media/mgmt_svcs_2.19_notice.pdf["관리 서비스 공지 2.19.48(vCenter Server 4.8.34용 NetApp Element 플러그인)"^]
-* link:media/mgmt_svcs_2.18_notice.pdf["관리 서비스 공지 2.18.91(vCenter Server 4.7.10용 NetApp Element 플러그인)"^]
-* link:media/mgmt_svcs_2.17.56_notice.pdf["관리 서비스 공지 2.17.56(vCenter Server용 NetApp Element 플러그인 4.6.32)"^]
-* link:media/mgmt_svcs_2.17_notice.pdf["관리 서비스 공지 2.17.52(vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
-* link:media/mgmt_svcs_2.16_notice.pdf["관리 서비스 참고 사항 2.16(vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
-* link:media/mgmt_svcs_2.14_notice.pdf["관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항"^]
-* link:media/mgmt_svcs_2.13_notice.pdf["관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
-* link:media/mgmt_svcs_2.11_notice.pdf["관리 서비스 공지 2.11(vCenter Server 4.4.72용 NetApp Element 플러그인)"^]
+* link:media/mgmt_svcs_2.19_notice.pdf["관리 서비스 공지 2.19.48(VMware vCenter Server용 NetApp Element 플러그인 4.8.34)"^]
+* link:media/mgmt_svcs_2.18_notice.pdf["관리 서비스 공지 2.18.91(VMware vCenter Server 4.7.10용 NetApp Element 플러그인)"^]
+* link:media/mgmt_svcs_2.17.56_notice.pdf["관리 서비스 공지 2.17.56(VMware vCenter Server용 NetApp Element 플러그인 4.6.32)"^]
+* link:media/mgmt_svcs_2.17_notice.pdf["관리 서비스 공지 2.17.52(VMware vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
+* link:media/mgmt_svcs_2.16_notice.pdf["관리 서비스 참고 사항 2.16(VMware vCenter Server용 NetApp Element 플러그인 4.6.29)"^]
+* link:media/mgmt_svcs_2.14_notice.pdf["관리 서비스 참고 사항 2.14(VMware vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
+* link:media/mgmt_svcs_2.13_notice.pdf["관리 서비스 2.13에 대한 고지 사항(VMware vCenter Server 4.5.42용 NetApp Element 플러그인)"^]
+* link:media/mgmt_svcs_2.11_notice.pdf["관리 서비스 참고 사항 2.11(VMware vCenter Server 4.4.72용 NetApp Element 플러그인)"^]
 

@@ -16,7 +16,7 @@ keywords: netapp, qos policy, quality of service, qos policies, vcp, vcenter, el
 [role="lead"]
 QoS(서비스 품질) 정책을 사용하면 여러 볼륨에 적용할 수 있는 표준화된 서비스 품질 설정을 생성하여 저장할 수 있습니다. QoS 정책을 사용하려면 선택한 클러스터가 Element 10.0 이상이어야 합니다. 그렇지 않으면 QoS 정책 기능을 사용할 수 없습니다.
 
-NetApp Element 관리 확장 지점을 사용하여 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.
+플러그인 확장 지점을 사용하여 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.
 
 *  a QoS policy
 *  a QoS policy to volumes
@@ -35,7 +35,12 @@ QoS 정책을 생성한 후 동일한 성능이 필요한 볼륨에 적용할 �
 NOTE: QoSSIOC 자동화 및 QoS 정책을 함께 사용해서는 안 됩니다. QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -60,7 +65,12 @@ TIP: 이름 지정 모범 사례를 설명합니다. 이 기능은 사용자 환
 일괄 적용하려는 QoS 정책은 입니다  a QoS policy,작성됨.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -82,7 +92,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 수정하려는 볼륨은 입니다  a QoS policy to volumes,연결됨 QoS 정책을 사용합니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -107,7 +122,12 @@ NOTE: 기본 IOPS 값을 복원하려면 * 기본 QoS 재설정 * 을 클릭할 
 기존 QoS 정책의 이름을 변경하거나 정책과 연결된 값을 편집할 수 있습니다. QoS 정책 성능 값을 변경하면 정책에 연결된 모든 볼륨의 QoS에 영향을 줍니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -138,7 +158,12 @@ NOTE: 기본 QoS 재설정 을 클릭하여 기본 IOPS 값을 복원할 수도 
 QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 정책에 의해 이전에 정의된 QoS 값을 개별 볼륨 QoS로 유지합니다. 삭제된 QoS 정책과의 연결이 제거됩니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.

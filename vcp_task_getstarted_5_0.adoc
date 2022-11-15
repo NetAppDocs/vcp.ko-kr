@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: vcp_task_getstarted.html 
-summary: Element 스토리지와 함께 사용하기 위해 vCenter Server 4.10 이전 버전용 Element 플러그인을 설치 및 구성할 수 있습니다. 
+permalink: vcp_task_getstarted_5_0.html 
+summary: Element 스토리지와 함께 사용하도록 vCenter Server 5.0 이상에 대한 Element 플러그인을 설치 및 구성할 수 있습니다. 
 keywords: netapp, hci, vcp, vcenter, element, install, setup 
 ---
-= Element 플러그인 4.10 이하를 설치하고 구성합니다
+= vCenter Server 7.0 이상에 대해 Element Plug-in 5.0 이상을 설치하고 구성합니다
 :hardbreaks:
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Plug-in_for_vCenter_server/mNode_Status_shows_as_%27Network_Down%27_or_%27Down%27_in_the_mNode_Settings_tab_of_the_Element_Plugin_for_vCenter_(VCP)
@@ -15,7 +15,7 @@ keywords: netapp, hci, vcp, vcenter, element, install, setup
 
 
 [role="lead"]
-NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 사용하여 플러그인에 액세스할 수 있습니다.
+vCenter Server 5.0용 NetApp Element 플러그인부터 vCenter에 최신 버전의 Element 플러그인을 직접 설치하고 vSphere 웹 클라이언트를 사용하여 플러그인에 액세스할 수 있습니다.
 
 설치가 완료되면 스토리지 입출력 제어(QoSSIOC) 서비스와 vCenter 플러그인의 기타 서비스를 기반으로 서비스 품질을 사용할 수 있습니다.
 
@@ -24,7 +24,6 @@ NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직�
 *  for installation
 *  the management node
 *  the plug-in with vCenter
-*  vCenter properties for a dark site HTTP server
 *  the plug-in and verify successful installation
 *  storage clusters for use with the plug-in
 *  QoSSIOC settings using the plug-in
@@ -53,20 +52,19 @@ NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직�
 vSphere Web Client에 vCenter 플러그인 패키지를 구축하려면 패키지를 vCenter Server에 확장자로 등록해야 합니다. 등록이 완료되면 vSphere 환경에 연결된 vSphere Web Client에서 플러그인을 사용할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
-* vSphere 6.5 및 6.7의 경우 vSphere Web Client에서 로그아웃했는지 확인합니다. 이 버전의 웹 클라이언트는 로그아웃하지 않는 경우 이 프로세스 중에 발생한 업데이트를 플러그인으로 인식하지 못합니다. vSphere 7.0의 경우 웹 클라이언트에서 로그아웃할 필요가 없습니다.
 * 플러그인을 등록할 수 있는 vCenter 관리자 역할 권한이 있습니다.
-* Element 소프트웨어 11.3 이상을 실행하는 관리 노드 OVA를 배포했습니다.
+* Element 소프트웨어 12.3.x 이상을 실행하는 관리 노드 OVA를 배포했습니다.
 * 관리 노드의 전원은 IP 주소 또는 DHCP 주소가 구성되어 있습니다.
 * SSH 클라이언트 또는 웹 브라우저(Chrome 56 이상 또는 Firefox 52 이상)를 사용 중입니다.
-* 방화벽 규칙을 통해 을 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443, 8443 및 9443에서 vCenter와 스토리지 클러스터 MVIP 간 포트 9443은 등록에 사용되며 등록이 완료된 후 닫을 수 있습니다. 클러스터에서 가상 볼륨 기능을 활성화한 경우 VASA 공급자 액세스에도 TCP 포트 8444가 열려 있는지 확인합니다.
+* 방화벽 규칙을 통해 을 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443, 8443, 8333 및 9443에서 vCenter와 스토리지 클러스터 MVIP 간 포트 9443은 등록에 사용되며 등록이 완료된 후 닫을 수 있습니다. 클러스터에서 가상 볼륨 기능을 활성화한 경우 VASA 공급자 액세스에도 TCP 포트 8444가 열려 있는지 확인합니다.
 
 
 플러그인을 사용해야 하는 모든 vCenter Server에 vCenter 플러그인을 등록해야 합니다.
 
-연결 모드 환경의 경우 MOB 데이터를 동기화하여 플러그인을 업그레이드할 수 있도록 환경의 각 vCenter Server에 플러그인을 등록해야 합니다. vSphere Web Client가 플러그인이 등록되지 않은 vCenter Server에 연결되면 클라이언트에 플러그인이 표시되지 않습니다.
+연결 모드 환경의 경우 MOB 데이터를 동기화하여 플러그인을 업그레이드할 수 있도록 환경의 각 vCenter Server에 별도의 플러그인을 등록해야 합니다. vSphere Web Client가 플러그인이 등록되지 않은 vCenter Server에 연결되면 클라이언트에 플러그인이 표시되지 않습니다.
 
 
-NOTE: vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+NOTE: 사용합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"]NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대해 별도의 관리 노드에서 Element 플러그인을 등록합니다.
 
 .단계
 . 등록 TCP 포트를 포함하여 브라우저에서 관리 노드의 IP 주소를 입력합니다.
@@ -94,7 +92,7 @@ NOTE: 변경 사항을 제출하면 QoSSIOC 서비스가 자동으로 다시 시
 
 . vCenter 플러그인 등록 * 을 선택합니다.
 +
-image::vcp_registration_ui.png[등록 유틸리티 UI]
+image::vcp_remote_plugin_registration_ui.png[원격 플러그인 등록 유틸리티 UI]
 
 . 다음 정보를 입력합니다.
 +
@@ -105,11 +103,6 @@ image::vcp_registration_ui.png[등록 유틸리티 UI]
 NOTE: 입력한 사용자 이름과 암호 자격 증명은 vCenter 관리자 역할 권한이 있는 사용자의 자격 증명이어야 합니다.
 
 ** vCenter 관리자 암호입니다.
-** (사내 서버/다크 사이트의 경우) 플러그인 ZIP에 대한 사용자 지정 URL입니다.
-+
-
-NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 을 참조하십시오  vCenter properties for a dark site HTTP server,다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다.
-
 
 
 . Register * 를 선택합니다.
@@ -126,130 +119,16 @@ NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS
 .. 새 버전의 플러그인이 vCenter Server에 등록되었는지 확인하려면 * 상태 확인 * 을 선택합니다.
 
 
-. (vSphere 6.5 및 6.7 사용자의 경우) vCenter 관리자로 vSphere Web Client에 로그인합니다.
-+
-
-NOTE: 이 작업은 vSphere Web Client에서 설치를 완료합니다. vSphere에서 vCenter 플러그인 아이콘이 표시되지 않는 경우 를 참조하십시오 link:vcp_reference_troubleshoot_vcp.html#plug-in-registration-successful-but-icons-do-not-appear-in-web-client["문제 해결 설명서"].
-
 . vSphere Web Client에서 작업 모니터에서 완료된 다음 작업을 찾아 설치가 완료되었는지 확인합니다. "Download plug-in" 및 "ploy plug-in".
-
-
-
-
-== 다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다
-
-vCenter 플러그인 등록 중에 사내(다크 사이트) HTTP 서버에 대한 URL을 사용자 지정하려면 vSphere Web Client 속성 파일( webclient.properties` )을 수정해야 합니다. vCSA 또는 Windows를 사용하여 변경할 수 있습니다.
-
-NetApp Support 사이트에서 소프트웨어를 다운로드할 수 있는 권한.
-
-.vCSA를 이용한 단계
-. vCenter Server에 SSH 연결:
-+
-[listing]
-----
-Connected to service
-    * List APIs: "help api list"
-    * List Plugins: "help pi list"
-    * Launch BASH: "shell"
-Command>
-----
-. 명령 프롬프트에 '쉘'을 입력하여 루트에 액세스합니다.
-+
-[listing]
-----
-Command> shell
-Shell access is granted to root
-----
-. VMware vSphere Web Client 서비스를 중지합니다.
-+
-[listing]
-----
-service-control --stop vsphere-client
-service-control --stop vsphere-ui
-----
-. 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd /etc/vmware/vsphere-client
-----
-. webclient.properties` 파일을 편집하여 allowHttp=true를 추가합니다.
-. 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd /etc/vmware/vsphere-ui
-----
-. webclient.properties` 파일을 편집하여 allowHttp=true를 추가합니다.
-. VMware vSphere Web Client 서비스를 시작합니다.
-+
-[listing]
-----
-service-control --start vsphere-client
-service-control --start vsphere-ui
-----
-+
-
-NOTE: 등록 절차를 완료한 후 수정한 파일에서 ' allowHttp=true '를 제거할 수 있습니다.
-
-. vCenter를 재부팅합니다.
-
-
-.Windows를 사용하는 단계
-. 명령 프롬프트에서 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd c:\Program Files\VMware\vCenter Server\bin
-----
-. VMware vSphere Web Client 서비스를 중지합니다.
-+
-[listing]
-----
-service-control --stop vsphere-client
-service-control --stop vsphere-ui
-----
-. 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd c:\ProgramData\VMware\vCenterServer\cfg\vsphere-client
-----
-. webclient.properties` 파일을 편집하여 allowHttp=true를 추가합니다.
-. 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd  c:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui
-----
-. webclient.properties` 파일을 편집하여 allowHttp=true를 추가합니다.
-. 명령 프롬프트에서 디렉토리를 변경합니다.
-+
-[listing]
-----
-cd c:\Program Files\VMware\vCenter Server\bin
-----
-. VMware vSphere Web Client 서비스를 시작합니다.
-+
-[listing]
-----
-service-control --start vsphere-client
-service-control --start vsphere-ui
-----
-+
-
-NOTE: 등록 절차를 완료한 후 수정한 파일에서 ' allowHttp=true '를 제거할 수 있습니다.
-
-. vCenter를 재부팅합니다.
 
 
 
 
 == 플러그인에 액세스하여 성공적으로 설치되었는지 확인합니다
 
-설치 또는 업그레이드가 완료되면 NetApp Element 구성 및 관리 확장 지점이 vSphere 웹 클라이언트의 바로 가기 탭과 측면 패널에 나타납니다.
+설치 또는 업그레이드가 완료되면 측면 패널의 vSphere 웹 클라이언트의 바로 가기 탭에 NetApp Element 원격 플러그인 확장 지점이 나타납니다.
 
-image::vcp_plugin_icons_home_page.png[플러그인 확장 지점이 vSphere에 나타납니다]
+image::vcp_remote_plugin_icons_home_page.png[에서는 업그레이드 또는 설치 후 플러그인 확장 지점을 보여 줍니다]
 
 
 NOTE: vCenter 플러그인 아이콘이 표시되지 않으면 를 참조하십시오 link:vcp_reference_troubleshoot_vcp.html#plug-in-registration-successful-but-icons-do-not-appear-in-web-client["문제 해결 설명서"].
@@ -258,28 +137,23 @@ NOTE: vCenter 플러그인 아이콘이 표시되지 않으면 를 참조하십�
 
 == 플러그인과 함께 사용할 스토리지 클러스터를 추가합니다
 
-NetApp Element 구성 확장 지점을 사용하여 Element 소프트웨어를 실행하는 클러스터를 추가하여 플러그인으로 관리할 수 있습니다.
-
-클러스터에 연결이 설정된 후에는 NetApp Element 관리 확장 지점을 사용하여 클러스터를 관리할 수 있습니다.
+NetApp Element 원격 플러그인 확장 지점을 사용하여 Element 소프트웨어를 실행하는 클러스터를 추가하고 관리할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
 * 하나 이상의 클러스터를 사용할 수 있어야 하며 해당 IP 또는 FQDN 주소를 알고 있어야 합니다.
 * 클러스터에 대한 현재 전체 클러스터 관리자 사용자 자격 증명
-* 방화벽 규칙을 통해 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443 및 8443에서 vCenter와 클러스터 MVIP 간
+* 방화벽 규칙을 통해 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443, 8333 및 8443에서 vCenter와 클러스터 MVIP 간
 
 
 
-NOTE: NetApp Element 관리 확장 지점 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.
+NOTE: 관리 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.
 
 이 절차에서는 플러그인이 클러스터를 관리할 수 있도록 클러스터 프로필을 추가하는 방법에 대해 설명합니다. 플러그인을 사용하여 클러스터 관리자 자격 증명을 수정할 수 없습니다.
 
 을 참조하십시오 https://docs.netapp.com/us-en/element-software/storage/concept_system_manage_manage_cluster_administrator_users.html["클러스터 관리자 사용자 계정 관리"^] 클러스터 관리자 계정의 자격 증명을 변경하는 지침은 을 참조하십시오.
 
-
-IMPORTANT: vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 결합될 수 없는 별도의 데이터베이스가 있습니다. 한 클라이언트에 추가된 클러스터는 다른 클라이언트에서는 표시되지 않습니다. 두 클라이언트를 모두 사용하려면 둘 다에 클러스터를 추가합니다.
-
 .단계
-. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. NetApp Element 원격 플러그인 > 구성 > 클러스터 * 를 선택합니다.
 . Add Cluster * 를 선택합니다.
 . 다음 정보를 입력합니다.
 +
@@ -291,7 +165,7 @@ IMPORTANT: vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 
 [NOTE]
 ====
 *** 클러스터의 호스트는 각 vCenter Server 에서만 사용할 수 있습니다. 선택한 vCenter Server가 원하는 호스트에 액세스할 수 있는지 확인합니다. 나중에 다른 호스트를 사용하도록 결정한 경우 클러스터를 제거하고 다른 vCenter Server에 재할당한 다음 다시 추가할 수 있습니다.
-*** vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"] 로컬 스토리지 클러스터로만 제한됩니다.
+*** 사용합니다 link:vcp_concept_linkedmode.html["vCenter 연결 모드"]NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대해 별도의 관리 노드에서 Element 플러그인을 등록합니다.
 
 
 ====
@@ -311,7 +185,7 @@ IMPORTANT: vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 
 관리 노드에 대해 유효한 QoSSIOC 설정을 구성한 후에는 이 설정이 기본값으로 설정됩니다. QoSSIOC 설정은 새 관리 노드에 유효한 QoSSIOC 설정을 제공할 때까지 마지막으로 알려진 유효한 QoSSIOC 설정으로 되돌아갑니다. 새 관리 노드에 대한 QoSSIOC 자격 증명을 설정하기 전에 구성된 관리 노드에 대한 QoSSIOC 설정을 지워야 합니다.
 
 .단계
-. NetApp Element 구성 > QoSSIOC 설정 * 을 선택합니다.
+. NetApp Element 원격 플러그인 > 구성 > QoSSIOC 설정 * 을 선택합니다.
 . 작업 * 을 선택합니다.
 . 결과 메뉴에서 * 구성 * 을 선택합니다.
 . QoSSIOC 설정 구성 * 대화 상자에서 다음 정보를 입력합니다.
@@ -356,8 +230,7 @@ QoSSIOC 서비스를 활성화한 후 개별 데이터 저장소에서 QoSSIOC �
 
 생성할 수 있습니다 link:vcp_task_datastores_manage.html#create-a-datastore["데이터 저장소 및 Element 볼륨"] 스토리지 할당을 시작합니다.
 
-
-
+[discrete]
 == 자세한 내용을 확인하십시오
 
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]

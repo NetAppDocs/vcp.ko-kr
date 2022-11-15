@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: vcp_task_manage_cluster_overview.html 
-summary: 플러그인의 NetApp Element 관리 확장 지점을 사용하여 스토리지 클러스터를 관리할 수 있습니다. 
+summary: vCenter 플러그인 확장 지점을 사용하여 스토리지 클러스터를 관리할 수 있습니다. 
 keywords: netapp, VLANs, drives, nodes, cluster, manage create, delete, view vcp, vcenter, element 
 ---
 = 클러스터 하드웨어 및 가상 네트워크 관리 개요
@@ -14,7 +14,7 @@ keywords: netapp, VLANs, drives, nodes, cluster, manage create, delete, view vcp
 
 
 [role="lead"]
-NetApp Element 관리 확장 포인트의 클러스터 탭에서 클러스터 전체 설정을 확인 및 변경하고 드라이브, 노드 및 VLAN에 대한 클러스터별 작업을 수행할 수 있습니다.
+플러그인 확장 포인트의 클러스터 탭에서 클러스터 전체 설정을 확인 및 변경하고 드라이브, 노드 및 VLAN에 대한 클러스터별 작업을 수행할 수 있습니다.
 
 .옵션
 * link:vcp_task_add_manage_drive.html["드라이브 추가 및 관리"]

@@ -14,17 +14,31 @@ keywords: netapp, hci, kubernetes, on premise, cloud services
 
 
 [role="lead"]
-VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.
+VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하기 전에 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.
+
+[role="tabbed-block"]
+====
+.vCenter 5.0 이상을 위한 Element 플러그인
+--
+시스템이 Element vCenter 플러그인 5.0 이상의 사용 요구 사항을 충족하는지 확인합니다.
+
+Element vCenter 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 vCenter 및 ESXi가 포함된 VMware vSphere 8.0 및 7.0이 필요합니다.
+
+플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
+
+* vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함하는 vSphere 8.0
+* vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1, 2 및 3
 
 
 
-== VMware vSphere 사전 요구 사항
+IMPORTANT: VMware vSphere 6.5 및 6.7은 2022년 10월 15일에 지원 종료 상태에 도달했습니다. Element Plug-in 5.0부터는 vSphere 6.5 및 6.7이 더 이상 지원되지 않습니다. 자세한 내용은 다음을 참조하십시오 https://core.vmware.com/blog/reminder-vsphere-6567-end-general-support["기사"^].
+
+--
+.vCenter 4.10 이전 버전용 Element 플러그인
+--
+시스템이 Element vCenter 플러그인 4.10 이하의 사용 요구 사항을 충족하는지 확인합니다.
 
 Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.
-
-
-
-=== 플러그인에서 지원하는 VMware vSphere 버전
 
 플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
 
@@ -42,17 +56,16 @@ IMPORTANT: 플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 1300
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5
 +
 
-IMPORTANT: 이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.
+IMPORTANT: 이 플러그인은 vCenter 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.
 
 
 
-
-
-=== vSphere 6.0 지원이 종료됩니다
-
+.vSphere 6.0 지원이 종료됩니다
 
 IMPORTANT: VMware vSphere 6.0은 2020년 3월 12일에 지원 종료 상태에 도달했습니다. NetApp HCI 1.8 및 Element 12부터는 vSphere 6.0이 더 이상 지원되지 않습니다. 자세한 내용은 다음을 참조하십시오 https://mysupport.netapp.com/info/communications/ECMLP2863840.html["제품 공산품"].
 
+--
+====
 
 
 == vSphere 호환성 및 Best Practice

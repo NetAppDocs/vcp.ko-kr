@@ -32,7 +32,12 @@ keywords: netapp, storage, inititators, vcp, vcenter, element
 iSCSI 또는 파이버 채널 이니시에이터를 생성하고 선택적으로 별칭을 할당할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -85,7 +90,12 @@ Fibre Channel 이니시에이터 WWPN의 허용되는 형식은 ':AA:BB:CC:dd:11
 기존 이니시에이터의 별칭을 변경하거나 별칭이 없는 경우 추가할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -105,7 +115,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 액세스 그룹에 이니시에이터를 추가하여 CHAP 인증 없이 볼륨 액세스 그룹의 볼륨에 대한 액세스를 허용할 수 있습니다. 볼륨 액세스 그룹에 이니시에이터를 추가하면 해당 이니시에이터는 해당 볼륨 액세스 그룹의 모든 볼륨에 액세스할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -125,7 +140,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 더 이상 필요하지 않은 이니시에이터를 삭제할 수 있습니다. 이니시에이터를 삭제하면 연결된 볼륨 액세스 그룹에서 이니시에이터가 제거됩니다. 초기자를 사용하는 모든 연결은 연결이 재설정될 때까지 유효합니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.

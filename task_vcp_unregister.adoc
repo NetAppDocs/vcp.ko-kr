@@ -67,17 +67,6 @@ Disconnect-VIServer * -Confirm:$false
 ----
 
 
-** vCenter 플러그인 2.6.1 이하:
-+
-... 브라우저에 등록 유틸리티의 URL을 입력하거나 프로그램 디렉토리에서 유틸리티를 찾습니다.
-+
-**** "https://<FDVAorManagementNodeIP>:8443`
-**** '/opt/solidfire/VCP/bin/VCP-reg.sh'
-
-
-... vCenter Plugin Register/Unregister 창에서 * Unregister * 를 선택합니다.
-
-
 
 
 

@@ -14,7 +14,7 @@ keywords: netapp, storage, accounts, vcp, vcenter, element
 
 
 [role="lead"]
-link:vcp_concept_accounts.html["사용자 계정"^] NetApp Element 소프트웨어 기반 네트워크에서 스토리지 리소스에 대한 액세스를 제어하는 데 사용됩니다.
+link:vcp_concept_accounts.html["사용자 계정"] NetApp Element 소프트웨어 기반 네트워크에서 스토리지 리소스에 대한 액세스를 제어하는 데 사용됩니다.
 
 .옵션
 *  an account
@@ -33,7 +33,12 @@ link:vcp_concept_accounts.html["사용자 계정"^] NetApp Element 소프트웨�
 
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -67,7 +72,12 @@ NOTE: 초기자 및 대상 비밀은 달라야 합니다. 이러한 필드를 �
 관리 노드에서 영구 볼륨을 사용하는 경우 이러한 볼륨과 연결된 계정의 계정 이름을 수정하지 마십시오.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -97,7 +107,7 @@ NOTE: 자격 증명을 변경하지 않으면 자격 증명은 그대로 유지�
 
 == 계정을 삭제합니다
 
-NetApp Element 관리 확장 지점을 사용하여 사용자 계정을 삭제할 수 있습니다.
+플러그인 확장 지점을 사용하여 사용자 계정을 삭제할 수 있습니다.
 
 계정과 연결된 모든 볼륨을 삭제 및 제거하거나 볼륨을 다른 계정에 다시 할당합니다.
 
@@ -105,7 +115,12 @@ NetApp Element 관리 확장 지점을 사용하여 사용자 계정을 삭제�
 IMPORTANT: 관리 노드에서 영구 볼륨을 사용하는 경우 이러한 볼륨과 연결된 계정을 삭제하지 마십시오.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.

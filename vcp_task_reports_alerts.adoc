@@ -21,7 +21,12 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, alert, cluster, p
 문제를 해결한 후 시스템은 자체적으로 폴링하여 문제를 해결된 것으로 식별합니다. 그런 다음 해결된 날짜를 포함한 모든 경고 정보가 해결된 보기로 이동됩니다.
 
 .단계
-. vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . Reporting * > * Alerts * 를 선택합니다.
 . 다음 클러스터 알림 정보를 모니터링합니다.
 +

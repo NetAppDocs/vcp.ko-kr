@@ -23,6 +23,10 @@ VMware vCenter Server용 NetApp Element 플러그인은 VMware vSphere 웹 클�
 == 플러그인과 관련된 NetApp 구성요소
 
 * * 등록 유틸리티 *: 를 관리할 수 있는 도구입니다 link:vcp_concept_qossioc.html["QoSSIOC를 참조하십시오"] vCenter를 통한 서비스 및 플러그인 등록
++
+
+NOTE: vCenter 5.0용 Element 플러그인부터 NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대한 별도의 관리 노드에서 Element 플러그인을 등록합니다.
+
 * * 관리 서비스 *: vCenter 플러그인용 QoSSIOC 서비스를 포함하는 마이크로서비스 플러그인 업그레이드는 관리 서비스 번들의 일부로 릴리스됩니다.
 +
 
@@ -65,4 +69,5 @@ vSphere 외에도 vCenter 플러그인과 함께 사용하는 몇 가지 일반�
 * https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
 * link:vcp_concept_config_extension_point.html["NetApp Element 구성 확장점"]
 * link:vcp_concept_management_extension_point.html["NetApp Element 구성 확장점"]
+* link:vcp_concept_remote_plugin_extension_point.html["NetApp Element 원격 플러그인 확장 포인트"]
 

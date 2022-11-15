@@ -21,7 +21,6 @@
   <block id="dd49b664e7ad04677258489e2c55ce60" category="list-text">VRF를 사용하는 VLAN은 이니시에이터가 SVIP와 동일한 서브넷에 있지 않아도 되며 라우팅이 지원됩니다.</block>
   <block id="55493c265ed7e6b09769faf02173c903" category="paragraph">가상 네트워크가 추가되면 각 노드에 대한 인터페이스가 생성되고 각 노드에 가상 네트워크 IP 주소가 필요합니다. 새 가상 네트워크를 생성할 때 지정하는 IP 주소 수는 클러스터의 노드 수보다 크거나 같아야 합니다. 가상 네트워크 주소는 에서 대량으로 프로비저닝되고 개별 노드에 자동으로 할당됩니다. 클러스터의 노드에 가상 네트워크 주소를 수동으로 할당할 필요는 없습니다.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
-  <block id="d19d10c6bb16c718d29f6f3b82cca0a2" category="list-text">NetApp Element 관리 &gt; 클러스터 * 를 선택합니다.</block>
   <block id="2e0a4e14d700b1d5af0b96e64b28b8ac" category="admonition">두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.</block>
   <block id="5893fc53d1d2ad0fb381a6f8f4a5ed79" category="list-text">Network * (네트워크 *) 하위 탭을 선택합니다.</block>
   <block id="ef59d49828061da9272f0636bdd3442e" category="list-text">VLAN 생성 * 을 선택합니다.</block>
@@ -45,7 +44,6 @@
   <block id="44115a1b6232be7c194f6d6a6f34e253" category="list-text">항목 바깥쪽을 클릭하여 값을 적용합니다.</block>
   <block id="9199e2b04639c2d3dfd3c6fb9443dc29" category="list-text">OK * 를 클릭하여 VLAN을 생성합니다.</block>
   <block id="25e39ebce6870dadeaf5ff2a6a20ea8b" category="section-title">가상 네트워크 세부 정보를 봅니다</block>
-  <block id="59e85fe35105f5e22be2e2bccec1aac6" category="paragraph">NetApp Element 관리 확장 지점에서 클러스터 탭의 네트워크 페이지에서 VLAN에 대한 네트워크 정보를 볼 수 있습니다.</block>
   <block id="a843302900879d0224711ebb05a76182" category="list-text">노드 * 하위 탭을 선택합니다.</block>
   <block id="8f2e39039f155af20228577a793410a1" category="list-text">활성 * 보기를 선택합니다.</block>
   <block id="88fe9dcd6fa7c22b0993312a5b82273a" category="list-text">스토리지 클러스터의 노드 세부 정보를 봅니다.</block>
@@ -71,8 +69,6 @@
   <block id="2b39b8bb48e01459e34037072a056457" category="list-text">하나 이상의 클러스터를 추가하고 실행해야 합니다.</block>
   <block id="463ba440dcce8f5eae3c520f4c9da6ef" category="list-text">QoSSIOC 서비스는 플러그인의 QoSSIOC 설정 페이지를 사용하여 실행 여부를 구성하고 확인해야 합니다.</block>
   <block id="67216e28bdbf08ea86bd3a29c80bf10d" category="list-text">하나 이상의 데이터 저장소에 QoSSIOC 자동화가 활성화되어 있어야 합니다.</block>
-  <block id="f6803025ba0df857c01dacd15de15a37" category="list-text">vCenter 플러그인에서 * NetApp Element 구성 * 을 선택합니다.</block>
-  <block id="06238ff5d4d36614efa9a085b1fc4494" category="list-text">QoSSIOC 이벤트 * 를 선택합니다.</block>
   <block id="e8174d6dfee461aad9fbf91cdf98489c" category="section-title">QoSSIOC 이벤트 데이터</block>
   <block id="db858fb1d0a10f85870ffe7adfba4d6d" category="list-text">* 날짜 *: QoSSIOC 이벤트의 날짜 및 시간입니다.</block>
   <block id="2d7ed56204de5860f953510b1e37aa89" category="list-text">* 데이터 저장소 이름 *: 사용자 정의 데이터 저장소 이름입니다.</block>
@@ -87,7 +83,6 @@
   <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">SolidFire 및 요소 리소스 페이지입니다</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
-  <block id="d34caa8a134a9bb6d2b2e136ea384646" category="summary">Element 스토리지와 함께 사용할 vCenter Server용 Element 플러그인을 설치하고 구성할 수 있습니다.</block>
   <block id="3b2dba24ae0f2d994973f682cf057acb" category="paragraph">설치가 완료되면 스토리지 입출력 제어(QoSSIOC) 서비스와 vCenter 플러그인의 기타 서비스를 기반으로 서비스 품질을 사용할 수 있습니다.</block>
   <block id="19eee5d48732221f909bed55ec2189ea" category="paragraph">각 단계를 읽고 완료하여 플러그인을 설치하고 사용을 시작합니다.</block>
   <block id="8ca97483283de86de2176888cfb57571" category="list-text"><block ref="82e85dc19dbabef95eaeba5a68a4e800" category="inline-xref-macro-rx"></block></block>
@@ -104,7 +99,6 @@
   <block id="d8162ad7c4d202810473a2e7f5be4b2c" category="paragraph">설치를 시작하기 전에 를 검토하십시오 <block ref="baeaa02785a95d2802e91c7fc21584dc" category="inline-link-macro-rx"></block>.</block>
   <block id="5b6d06fd8eecd9b32d5242936a01f8cd" category="section-title">관리 노드를 설치합니다</block>
   <block id="497f3c7374cc7d5dcfc6c54f9e235684" category="inline-link">관리 노드를 설치합니다</block>
-  <block id="008b7b14e45ac2af34ca8ceeae298c61" category="paragraph">수동으로 할 수 있습니다<block ref="f83ec536b75e146342c1e6216e59a6a3" category="inline-link-rx"></block> NetApp Element 소프트웨어를 실행하는 클러스터의 경우, 구성에 적합한 이미지를 사용합니다.</block>
   <block id="39d054f16665efd662cb5551e7cdab2f" category="paragraph">이 수동 프로세스는 관리 노드 설치에 NetApp 배포 엔진을 사용하지 않는 SolidFire All-Flash 스토리지 관리자 및 NetApp HCI 관리자를 대상으로 합니다.</block>
   <block id="a7fdbf5c4e6666e4812cdfb978a2c18d" category="section-title">vCenter에 플러그인을 등록합니다</block>
   <block id="d08a65b61ffe84fe8a0f23ee404ca33f" category="paragraph">vSphere Web Client에 vCenter 플러그인 패키지를 구축하려면 패키지를 vCenter Server에 확장자로 등록해야 합니다. 등록이 완료되면 vSphere 환경에 연결된 vSphere Web Client에서 플러그인을 사용할 수 있습니다.</block>
@@ -135,7 +129,6 @@
   <block id="c2611280cf76890b83743a67ac6478e2" category="list-text">vCenter 관리자 암호입니다.</block>
   <block id="92d3ac74b6d30f321507464dbfb9220d" category="list-text">(사내 서버/다크 사이트의 경우) 플러그인 ZIP에 대한 사용자 지정 URL입니다.</block>
   <block id="b614f8a8d64f3390e623579bd099dd2a" category="inline-xref">다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다</block>
-  <block id="37b07c9f01c713137d9c3da2ab5d0529" category="admonition">대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 * 를 참조하십시오 <block ref="d2ed5bec20be0e8be5a97f9442c19f29" category="inline-xref-macro-rx"></block>.</block>
   <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">Register * 를 선택합니다.</block>
   <block id="b4d8ebb6dae278ffa4144cba05ae7d58" category="list-text">(선택 사항) 등록 상태 확인:</block>
   <block id="927985008389f356c5a3aa6144e58f3c" category="list-text">Registration Status * 를 선택합니다.</block>
@@ -164,19 +157,16 @@
   <block id="df36cb502904fac40b53cb9cc4cd76fc" category="section-title">플러그인에 액세스하여 성공적으로 설치되었는지 확인합니다</block>
   <block id="2131e818de9129b3fbf7becb1d171106" category="paragraph">설치 또는 업그레이드가 완료되면 NetApp Element 구성 및 관리 확장 지점이 vSphere 웹 클라이언트의 바로 가기 탭과 측면 패널에 나타납니다.</block>
   <block id="30d0c7e4c616a7c812acb385ce1158eb" category="image-alt">플러그인 확장 지점이 vSphere에 나타납니다</block>
-  <block id="5ee7dd83ed85a8bcc08c281c24e4da60" category="admonition">vCenter 플러그인 아이콘이 표시되지 않으면 를 참조하십시오 <block ref="fe8ddf0323e6cee4658194f2ebc6a4f6" category="inline-link-macro-rx"></block>.</block>
   <block id="4347ede819157a203679f129df45d402" category="section-title">플러그인과 함께 사용할 스토리지 클러스터를 추가합니다</block>
   <block id="54f9fee5e51d6b644599d81e07d89174" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 Element 소프트웨어를 실행하는 클러스터를 추가하여 플러그인으로 관리할 수 있습니다.</block>
   <block id="ff5f33d94f584d07bf6c1cc9e1c0fd6c" category="paragraph">클러스터에 연결이 설정된 후에는 NetApp Element 관리 확장 지점을 사용하여 클러스터를 관리할 수 있습니다.</block>
   <block id="cc102d4d7dca4547d837e47afe4d07ec" category="list-text">하나 이상의 클러스터를 사용할 수 있어야 하며 해당 IP 또는 FQDN 주소를 알고 있어야 합니다.</block>
   <block id="57df8875d4bbaa1636e9d76055022b2f" category="list-text">클러스터에 대한 현재 전체 클러스터 관리자 사용자 자격 증명</block>
   <block id="6a8239be0045d6970eef311b36e2764b" category="list-text">방화벽 규칙을 통해 열 수 있습니다 <block ref="659e4cbd51cb8dba5a95e3f7e2eb854a" category="inline-link-macro-rx"></block> TCP 포트 443 및 8443에서 vCenter와 클러스터 MVIP 간</block>
-  <block id="139d25304338523e94a9baaef8361464" category="admonition">NetApp Element 관리 확장 지점 기능을 사용하려면 하나 이상의 클러스터를 추가해야 합니다.</block>
   <block id="e36af56c585143da4f7ec2e551a073b4" category="paragraph">이 절차에서는 플러그인이 클러스터를 관리할 수 있도록 클러스터 프로필을 추가하는 방법에 대해 설명합니다. 플러그인을 사용하여 클러스터 관리자 자격 증명을 수정할 수 없습니다.</block>
   <block id="31bac8d09b84c52c53944e596e74329c" category="inline-link">클러스터 관리자 사용자 계정 관리</block>
   <block id="0309823e9ae91db98032e590442dedb1" category="paragraph">을 참조하십시오<block ref="5d916bc6c1468cb9b274ae3db15d6dd5" category="inline-link-rx"></block> 클러스터 관리자 계정의 자격 증명을 변경하는 지침은 을 참조하십시오.</block>
   <block id="77b4798d092722f9e9012e7b4945c7a8" category="admonition">vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 결합될 수 없는 별도의 데이터베이스가 있습니다. 한 클라이언트에 추가된 클러스터는 다른 클라이언트에서는 표시되지 않습니다. 두 클라이언트를 모두 사용하려면 둘 다에 클러스터를 추가합니다.</block>
-  <block id="1d45d52d686f586643b0239443417292" category="list-text">NetApp Element 구성 * &gt; * 클러스터 * 를 선택합니다.</block>
   <block id="790c4cdfe42cc811c89bb5064f650268" category="list-text">Add Cluster * 를 선택합니다.</block>
   <block id="7203406d1f62cabfe63a8be644974122" category="list-text">* IP 주소/FQDN *: 클러스터 MVIP 주소를 입력합니다.</block>
   <block id="a043f94645f45e7d08b405546e6c01cd" category="list-text">* 사용자 ID *: 클러스터 관리자 사용자 이름을 입력합니다.</block>
@@ -198,9 +188,7 @@
   <block id="65f72105c8eac4133f65e860a7673a84" category="list-text">* QoSSIOC 암호 *: Element QoSSIOC 서비스의 암호입니다. QoSSIOC 서비스 기본 암호는 SolidFire입니다. 사용자 지정 암호를 만들지 않은 경우 등록 유틸리티 UI('https://[management node IP]:9443')에서 만들 수 있습니다.</block>
   <block id="bbf245717bbf4beb394b424cc95d9ea8" category="list-text">* vCenter 사용자 ID *: 전체 관리자 역할 권한이 있는 vCenter 관리자의 사용자 이름입니다.</block>
   <block id="923230f5f1040a80034468b15292c0fb" category="list-text">* vCenter 암호 *: vCenter 관리자의 전체 관리자 역할 권한이 있는 암호입니다.</block>
-  <block id="1fb35afb2a93cabe93aa14a5033f7c4d" category="list-text">확인 * 을 클릭합니다. 플러그인이 서비스와 성공적으로 통신할 수 있으면 * QoSSIOC Status * 필드에 "UP"이 표시됩니다.</block>
   <block id="ab57fd0432e25d5b3013133a1c910d56" category="inline-link">KB를 클릭합니다</block>
-  <block id="d30fb8e148486fa7953b670129181359" category="admonition">자세한 내용은 다음을 참조하십시오<block ref="73c985feae38ab11c72c32983286b317" category="inline-link-rx"></block> 상태가 다음 중 하나라도 해당되는 경우 문제를 해결하기 위해 * Down: QoSSIOC가 활성화되지 않았습니다. * "구성되지 않음": QoSSIOC 설정이 구성되지 않았습니다. * "네트워크 다운": vCenter가 네트워크의 QoSSIOC 서비스와 통신할 수 없습니다. mNode 및 SIOC 서비스가 여전히 실행 중일 수 있습니다.</block>
   <block id="321a492f7aecad70a8ff98d40adec29d" category="paragraph">QoSSIOC 서비스를 활성화한 후 개별 데이터 저장소에서 QoSSIOC 성능을 구성할 수 있습니다.</block>
   <block id="817368f24847303544562bd914f6a445" category="section-title">사용자 계정을 구성합니다</block>
   <block id="f88fc4daa9c86ffbec392f2da132aa13" category="inline-link-macro">사용자 계정</block>
@@ -240,7 +228,6 @@
   <block id="7c5a7ac2cf91aa47ff3d691189d951cf" category="paragraph">한 클러스터의 MVIP를 사용하여 다른 클러스터와의 연결을 설정하여 실시간 복제를 위해 두 클러스터를 페어링할 수 있습니다. 이 방법을 사용하려면 두 클러스터 모두에서 클러스터 관리자 액세스 권한이 필요합니다.</block>
   <block id="1a76fdaf98f92e166cf7d54bb7c8ba61" category="paragraph">클러스터를 페어링하기 전에 클러스터 관리자 사용자 이름 및 암호를 사용하여 클러스터 액세스를 인증합니다.</block>
   <block id="b120ea605d2585af791d532cd9e14882" category="paragraph">MVIP를 알 수 없거나 클러스터에 액세스할 수 없는 경우 페어링 키를 생성하여 클러스터를 페어링하고 키를 사용하여 두 클러스터를 페어링할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="899e2933c6a45aa4d52ae5a26def6966" category="inline-xref-macro-rx"></block>.</block>
-  <block id="6c1cde3320826aa88e88baddc4bde823" category="list-text">로컬 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="8b7c5dadb202334eeece4c393bb6d9e1" category="list-text">Cluster Pairs * 하위 탭을 선택합니다.</block>
   <block id="b031d446eb7eb18775e0ef1a3cc51f6b" category="list-text">Create Cluster Pairing * 을 선택합니다.</block>
   <block id="36ddaebda56a8c215a8dfff5eb57566d" category="list-text">다음 중 하나를 선택합니다.</block>
@@ -251,7 +238,6 @@
   <block id="54d6312156e887347cc61184f6e92a28" category="list-text">클러스터 관리자 암호를 입력합니다.</block>
   <block id="9ba7ddd037970be50b3cd64b3d150c15" category="list-text">페어링 시작 * 을 선택합니다.</block>
   <block id="212a66c0c1e138d6bf39ed51926c185a" category="list-text">작업이 완료되고 클러스터 쌍 페이지가 표시되면 클러스터 쌍이 연결되어 있는지 확인합니다.</block>
-  <block id="feff88d8a881ad18d5a3974b520c7b10" category="list-text">(선택 사항) 원격 클러스터에서 * NetApp Element 관리 * &gt; * 보호 * &gt; * 클러스터 쌍 * 을 선택하거나 Element 웹 UI를 사용하여 클러스터 쌍이 연결되었는지 확인합니다.</block>
   <block id="1cb5df98499ff651505c4c9b30618ded" category="section-title">클러스터를 페어링 키와 페어링합니다</block>
   <block id="60dd53abab3462d30e63b9ff8c68a0f5" category="paragraph">원격 클러스터가 아닌 로컬 클러스터에 대한 Cluster Admin 액세스 권한이 있는 경우 페어링 키를 사용하여 클러스터를 페어링할 수 있습니다. 로컬 클러스터에서 페어링 키가 생성된 후 원격 사이트의 클러스터 관리자에게 안전하게 전송되어 연결을 설정하고 실시간 복제를 위해 클러스터 페어링을 완료합니다.</block>
   <block id="1267d7d33f08075bcf4cc2bce07aa08b" category="inline-link">클러스터 페어링을 시작하거나 완료합니다</block>
@@ -264,14 +250,12 @@
   <block id="0723d76ce41acd3900d835c910d36e02" category="list-text">원격 클러스터 사이트에서 클러스터 관리자가 페어링 키를 액세스할 수 있도록 합니다.</block>
   <block id="0c048af65837d3109ccfc91aa6141776" category="admonition">클러스터 페어링 키에는 원격 복제를 위한 볼륨 연결을 허용하는 MVIP 버전, 사용자 이름, 암호 및 데이터베이스 정보가 포함되어 있습니다. 이 키는 안전한 방식으로 취급해야 하며 사용자 이름 또는 암호에 우발적이거나 안전하지 않은 액세스를 허용하는 방식으로 저장되지 않아야 합니다.</block>
   <block id="3b45bfe94576df02917f1340ddcb7dee" category="admonition">페어링 키의 문자를 수정하지 마십시오. 키를 수정하면 키가 무효화됩니다.</block>
-  <block id="270fd4793fe03bcc167c1c2312dd5780" category="list-text">원격 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="f0d8fd514839eba93276d22353ff7ec2" category="admonition">Element UI를 사용하여 페어링을 완료할 수도 있습니다.</block>
   <block id="6ba20a4c5a7f92ed834820c4573ef21e" category="list-text">클러스터 페어링 완료 * 를 선택합니다.</block>
   <block id="1236f9410a67a79a4be2728aedd43b0a" category="admonition">다음 단계로 진행하기 전에 로딩 스피너가 사라질 때까지 기다리십시오. 페어링 프로세스 중에 예기치 않은 오류가 발생하면 로컬 및 원격 클러스터에서 구성되지 않은 클러스터 쌍을 확인하고 수동으로 삭제한 다음 다시 페어링을 수행합니다.</block>
   <block id="17f64f964f51c35704ece8af3e67b847" category="list-text">로컬 클러스터의 페어링 키를 * 클러스터 페어링 키 * 필드에 붙여 넣습니다.</block>
   <block id="87d4c70ff2b1beb69f56f7886068fac9" category="list-text">클러스터 페어링 * 을 선택합니다.</block>
   <block id="de3c21b8e44f9444693d80892b58c2cb" category="list-text">작업이 완료되고 * 클러스터 쌍 * 페이지가 표시되면 클러스터 쌍이 연결되어 있는지 확인합니다.</block>
-  <block id="07521a5ab97eecc73c045f190064ab50" category="list-text">클러스터 쌍이 연결되었는지 확인하려면 원격 클러스터에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택하거나 Element UI를 사용하십시오.</block>
   <block id="577128a4e6cfcd92620f526e4801fcfc" category="section-title">클러스터 쌍 연결을 확인합니다</block>
   <block id="8dc9eef3aa253a202229f64a5f5c2a40" category="paragraph">클러스터 페어링이 완료된 후 클러스터 쌍 연결을 확인하여 복제가 성공했는지 확인할 수 있습니다.</block>
   <block id="a424cd419bf8d3646e4838b3f6d1e316" category="list-text">로컬 클러스터에서 * 데이터 보호 * &gt; * 클러스터 쌍 * 을 선택합니다.</block>
@@ -294,7 +278,6 @@
   <block id="5e664610aae0289e363c77ef3388af3a" category="list-text">볼륨이 포함된 클러스터가 페어링되었는지 확인합니다.</block>
   <block id="d7ee0416f009e7f4bcf56820917196cf" category="list-text">이 프로세스 중에 새 볼륨을 생성하려는 경우가 아니면 원격 볼륨 ID를 알고 있습니다.</block>
   <block id="9ff8a012c2a6cc2bea0639f3f7143f86" category="list-text">로컬 볼륨을 소스로 설정하려면 볼륨의 액세스 모드가 읽기/쓰기로 설정되어 있는지 확인합니다.</block>
-  <block id="5468a405f97cedd527fb8aca681be34a" category="list-text">로컬 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * &gt; * 관리 * 를 선택합니다.</block>
   <block id="b98ad927559524f1094ade8a57e2f583" category="list-text">볼륨 * 하위 탭을 선택합니다.</block>
   <block id="8a4b381c1df809955fda68523d22b427" category="list-text">Active * 뷰에서 페어링할 볼륨의 확인란을 선택합니다.</block>
   <block id="7c2e81318825c1b1e517a212224ce662" category="list-text">작업 * 을 선택합니다.</block>
@@ -335,7 +318,6 @@
   <block id="acd5ac0c2f6fc4fc4eda66c3c8015fda" category="admonition">이렇게 하면 페어링을 위한 텍스트 키가 생성되고 로컬 클러스터에 구성되지 않은 볼륨 쌍이 생성됩니다. 이렇게 하지 않으면 볼륨 쌍을 수동으로 삭제해야 합니다.</block>
   <block id="20418dc668f5bc72ad321fed212dae2f" category="list-text">페어링 키를 클립보드에 복사합니다.</block>
   <block id="8725c6cfac74e59f89502b966490e653" category="admonition">볼륨 페어링 키는 안전한 방식으로 취급해야 하며 실수로 또는 비보안 액세스를 허용하는 방식으로 보관해서는 안 됩니다.</block>
-  <block id="1287ca33e51fe24dc601642f3aaf3a12" category="list-text">원격 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * &gt; * 관리 * 를 선택합니다.</block>
   <block id="36651339b63108b32ca470c850803918" category="list-text">Active * (활성 *) 보기에서 페어링할 볼륨의 확인란을 선택합니다.</block>
   <block id="4befa67cb42a6f7c9b436abe71bb8ade" category="list-text">다른 클러스터의 페어링 키를 * 페어링 키 * 상자에 붙여 넣습니다.</block>
   <block id="fffc24a9daced5c1d3db5cc75cc80978" category="list-text">페어링 완료 * 를 선택합니다.</block>
@@ -363,18 +345,14 @@
   <block id="dcc0cdfe51d7725851d0a5970c8fb61a" category="paragraph">이 절차에서는 로컬 및 원격 사이트에서 vCenter를 사용하여 두 클러스터 간에 소스 및 복제 볼륨을 할당하는 방법에 대해 설명합니다. vCenter 플러그인에서 제어하지 않는 볼륨의 경우 또는 를 사용할 수 있습니다<block ref="6ac578c516d4375f2115018827b1cc2f" category="inline-link-rx"></block> Element 웹 UI 사용</block>
   <block id="eee0917ed3fc1d050ec307ada6e010cb" category="paragraph">복제 소스 볼륨에 읽기/쓰기 계정 액세스 권한이 있습니다. 복제 타겟 볼륨은 복제 소스에서 읽기/쓰기로 액세스할 수만 있습니다.</block>
   <block id="4684bf66ce44548d0eaf68d135167b17" category="paragraph">* 모범 사례 *: 타겟 볼륨에는 데이터가 없어야 하며 크기, 512e 설정 및 QoS 구성과 같은 소스 볼륨의 정확한 특성이 있어야 합니다. 타겟 볼륨의 크기는 소스 볼륨과 같거나 더 클 수 있지만 크기는 작을 수 없습니다.</block>
-  <block id="bbc77b4c7052381d268cca050b07545f" category="list-text">vCenter Server의 * NetApp Element Management * 확장 지점에서 복제 소스로 사용할 페어링된 볼륨이 포함된 클러스터를 선택합니다.</block>
-  <block id="5d6a28f0167eaff34c7828dc90fb0b38" category="list-text">NetApp Element 관리 * &gt; * 관리 * 를 선택합니다.</block>
   <block id="388ff14c6557e4aa19b47495b8568d84" category="list-text">Active * (활성 *) 보기에서 편집할 볼륨의 확인란을 선택합니다.</block>
   <block id="071ef8ace6c74c9a1515550077974172" category="list-text">편집 * 을 선택합니다.</block>
   <block id="39b1a5f1696eb1e9f73b40980f88ca6f" category="list-text">액세스 드롭다운 목록에서 * 읽기/쓰기 * 를 선택합니다.</block>
   <block id="015bb42d8cb25e312437ad02551e8147" category="admonition">소스 및 타겟 할당을 반대로 전환하는 경우 이 작업을 수행하면 새 복제 타겟이 할당될 때까지 볼륨 페어가 PausedMisConfigured를 표시합니다. 액세스를 변경하면 볼륨 복제가 일시 중지되고 데이터 전송이 중지됩니다. 두 사이트에서 이러한 변경 내용을 조정했는지 확인합니다.</block>
-  <block id="67eba5d1a9b9083a8aaf1db216548c3d" category="list-text">NetApp Element 관리 * 확장 지점에서 복제 대상으로 사용할 페어링된 볼륨이 포함된 클러스터를 선택합니다.</block>
   <block id="4ed2064e5bba76308005e1a10f239fd2" category="list-text">Active * (활성 *) 보기에서 편집할 볼륨의 확인란을 선택합니다.</block>
   <block id="8948dd8eec7ba7025dc9574998b51437" category="list-text">Access * 드롭다운 목록에서 * Replication Target * 을 선택합니다.</block>
   <block id="2f7a12218839ccf441ce505e521188df" category="section-title">볼륨 복제를 확인합니다</block>
   <block id="e21376a2877db5d4832395b7bfcf824c" category="paragraph">볼륨이 복제된 후에는 소스 볼륨과 타겟 볼륨이 활성 상태인지 확인해야 합니다. 활성 상태인 경우 볼륨이 페어링되고 데이터가 소스에서 타겟 볼륨으로 전송되고 데이터가 동기화됩니다.</block>
-  <block id="b1cf3186c2a794a2e7ef5aefae1e9bb8" category="list-text">페어링의 클러스터 중 하나에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="38c46d1f73096ebdbe4afe64fa1c7edf" category="list-text">Volume Pairs * 하위 탭을 선택합니다.</block>
   <block id="2754d225b36df6fd57d4a233e63c3eea" category="list-text">볼륨 상태가 활성인지 확인합니다.</block>
   <block id="0ada25fd11726e12b3586f0698b87f69" category="section-title">복제 후 볼륨 관계를 삭제합니다</block>
@@ -388,7 +366,6 @@
   <block id="c95a05c7b687f6420b86cd228e614472" category="list-text"><block ref="d98955abc3664e99c6711ad277ca4f64" category="inline-xref-macro-rx"></block></block>
   <block id="4c40407bd9a94669fb7323b7262002e8" category="section-title">복제를 일시 중지합니다</block>
   <block id="676f4357ad764dae7f90c2fff85fd2a0" category="paragraph">볼륨 쌍 속성을 편집하여 복제를 수동으로 일시 중지할 수 있습니다.</block>
-  <block id="e7578699b73a6f8b7b4b3cf14e804df1" category="list-text">NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="75831afcb6ed58398f5dec0d4fd412b9" category="list-text">편집할 볼륨 쌍의 확인란을 선택합니다.</block>
   <block id="8a02976dcfe16adb8b9a59eddfb827f1" category="list-text">복제 프로세스를 수동으로 일시 중지하거나 시작합니다.</block>
   <block id="02b3fb5de3d8229b36d94a1528a13345" category="admonition">볼륨 복제를 수동으로 일시 중지하거나 다시 시작하면 데이터 전송이 중단되거나 다시 시작됩니다. 두 사이트에서 이러한 변경 내용을 조정했는지 확인합니다.</block>
@@ -419,12 +396,10 @@
   <block id="7a82959d61c172c083441c60d5f8bf54" category="admonition">이 작업을 수행하면 로컬 클러스터에서 클러스터 쌍만 삭제됩니다. 페어링 관계를 완전히 제거하려면 원격 클러스터에서 클러스터 쌍 끝을 수동으로 삭제해야 합니다.</block>
   <block id="3560599ffc4eb506583258c26d47e4fb" category="list-text">클러스터 페어링에서 원격 클러스터의 단계를 반복합니다.</block>
   <block id="e9242bc5452e29bb067c104c8fb2d510" category="section-title">볼륨 페어링 메시지 및 경고</block>
-  <block id="24bc866b5cb311d8ccb160c6e071a5a0" category="paragraph">NetApp Element 관리 구성 지점에서 보호 탭의 볼륨 쌍 페이지에서 페어링되었거나 페어링 진행 중인 볼륨에 대한 정보를 볼 수 있습니다.</block>
   <block id="6773c05020575bb39693d6e282a47ba1" category="paragraph">볼륨 상태 열에 페어링 및 진행 메시지가 표시됩니다.</block>
   <block id="e0c8a8a294eb20b5cd381eab33ead9d3" category="list-text"><block ref="ffbb50b3a3c11caabd068dd229a35a51" category="inline-xref-macro-rx"></block></block>
   <block id="85d14c93a3b2d93d244848fc161b2cbd" category="list-text"><block ref="c271a7cae0b9c83c8f7695ab2f9039d4" category="inline-xref-macro-rx"></block></block>
   <block id="ea1d7e73f15535e9f25b1c513fce1d86" category="section-title">볼륨 페어링 메시지</block>
-  <block id="6ee0fc168d001e22c81b2374f40d12dc" category="paragraph">NetApp Element 관리 구성 지점에서 보호 탭의 볼륨 쌍 페이지에서 초기 페어링 프로세스 중에 메시지를 볼 수 있습니다. 이러한 메시지는 볼륨 상태 열에 표시되며 페어링의 소스 및 대상 끝 모두에 표시될 수 있습니다.</block>
   <block id="4410a65db589b1adbd3a2d9328b9ba84" category="list-text">* PausedDisconnected *: 소스 복제 또는 동기화 RPC 시간이 초과되었습니다. 원격 클러스터에 대한 연결이 끊어졌습니다. 클러스터에 대한 네트워크 연결을 확인합니다.</block>
   <block id="6f8b73a2634bcfed7f7fedffdf24027e" category="list-text">* ResumingConnected**: 이제 원격 복제 동기화가 활성화됩니다. 동기화 프로세스를 시작하고 데이터를 기다리는 중입니다.</block>
   <block id="ecb8f4843893a9baad8fa5923ade616e" category="list-text">* ResumingRSync**: 볼륨 메타데이터의 단일 나선형 복사본이 페어링된 클러스터에 만들어집니다.</block>
@@ -434,7 +409,6 @@
   <block id="c0580e5cf9f2077fea6bb701ad8f7dce" category="list-text">* 유휴 *: 복제 작업이 발생하지 않습니다.</block>
   <block id="0b7eb6dc40e68d6127f2ef3476565fc6" category="paragraph">* 이 프로세스는 타겟 볼륨에 의해 구동되며 소스 볼륨에 표시되지 않을 수 있습니다.</block>
   <block id="5cd76fc209216a5fe693c8a8a6f8ce6c" category="section-title">볼륨 페어링 경고</block>
-  <block id="4212da664a81676e34e3f200152e34b7" category="paragraph">NetApp Element 관리 구성 지점에서 보호 탭의 볼륨 쌍 페이지에서 볼륨을 페어링한 후 경고 메시지를 볼 수 있습니다. 이러한 메시지는 볼륨 상태 열에 표시되며 페어링의 소스 및 대상 끝 모두에 표시될 수 있습니다.</block>
   <block id="8646697632a57af3df356381f3d0a0b9" category="paragraph">달리 명시되지 않는 한 이러한 메시지는 페어링의 소스 및 타겟 끝에 모두 표시될 수 있습니다.</block>
   <block id="5f4e207c1d8916a008e4bf988749a401" category="list-text">* PausedClusterFull *: 타겟 클러스터가 가득 차서 소스 복제 및 대량 데이터 전송을 계속할 수 없습니다. 메시지는 페어의 소스 끝에만 표시됩니다.</block>
   <block id="35e73210b0bb791c0422fbec1d7fc18c" category="list-text">* PausedExcededMaxSnapshotCount *: 타겟 볼륨에 이미 최대 수의 스냅샷이 있으며 추가 스냅샷을 복제할 수 없습니다.</block>
@@ -447,9 +421,6 @@
   <block id="72cacbd7272c0a213eda6683c012534e" category="list-text">* PausedXCopy *: 소스 볼륨에 SCSI XCOPY 명령이 실행됩니다. 복제를 다시 시작하려면 명령을 완료해야 합니다. 메시지는 페어의 소스 끝에만 표시됩니다.</block>
   <block id="e3cab9c5c32acc4b4216fefd04b7621c" category="list-text">* StoppedMisConfigured*: 영구적인 구성 오류가 감지되었습니다. 원격 볼륨이 제거되었거나 페어링되지 않았습니다. 수정 조치가 가능하지 않습니다. 새 페어링을 설정해야 합니다.</block>
   <block id="ce77715626079095fa554aca4f19278b" category="doc">볼륨 성능을 모니터링합니다</block>
-  <block id="8fb56fcf5bc6ffb8a8e4daef63b58be3" category="paragraph">NetApp Element 관리 확장 지점의 보고 탭에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
-  <block id="a856253964d3447555bdfc5def4a5ba3" category="list-text">vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.</block>
-  <block id="2f25754cc3330800c4b628bfee599f18" category="list-text">보고 * &gt; * 볼륨 성능 * 을 선택합니다.</block>
   <block id="41a7803ba2ba16b22ea8010700320d2a" category="list-text">페이지의 데이터 새로 고침 빈도를 변경하려면 * 모든 목록 새로 고침 * 을 클릭하고 값을 선택합니다.</block>
   <block id="975a9e5dd4173d55583463733eb9a604" category="paragraph">클러스터의 볼륨이 1,000개 미만인 경우 기본 업데이트 간격은 10초입니다. 그렇지 않으면 기본값은 60초입니다. Never 값을 선택하면 자동 페이지 새로 고침이 비활성화됩니다.</block>
   <block id="c8167ab551063de4a09f0582d24a76fc" category="section-title">볼륨 성능 데이터</block>
@@ -479,10 +450,8 @@
   <block id="1d1b6a79686b7cde445990699d6b74ca" category="section-title">프로토콜 엔드포인트</block>
   <block id="14538c7e2f6a2447b7c4e198cbc082ee" category="paragraph">VMware ESXi 호스트는 프로토콜 엔드포인트라고 하는 논리적 I/O 프록시를 사용하여 가상 볼륨과 통신합니다. ESXi 호스트는 I/O 작업을 수행하기 위해 가상 볼륨을 프로토콜 끝점에 바인딩합니다. 호스트의 가상 머신이 I/O 작업을 수행할 때 연결된 프로토콜 엔드포인트는 I/O를 페어링된 가상 볼륨으로 보냅니다.</block>
   <block id="9a4ab691d01ad6a90e904949ef75ee99" category="paragraph">NetApp Element 클러스터의 프로토콜 엔드포인트는 SCSI 관리 논리 유닛으로 작동합니다. 각 프로토콜 엔드포인트는 클러스터에 의해 자동으로 생성됩니다. 클러스터의 모든 노드에 대해 해당하는 프로토콜 엔드포인트가 생성됩니다. 예를 들어, 4노드 클러스터에는 4개의 프로토콜 엔드포인트가 있습니다.</block>
-  <block id="8622c5bb6626ccaa5b28dd7c7b34424e" category="paragraph">iSCSI는 NetApp Element 소프트웨어에 대해 지원되는 유일한 프로토콜입니다. Fibre Channel 프로토콜은 지원되지 않습니다. 프로토콜 끝점은 사용자가 삭제하거나 수정할 수 없으며, 계정과 연결되어 있지 않으며, 볼륨 액세스 그룹에 추가할 수 없습니다. NetApp Element 관리 확장 포인트의 * VVol &gt; 프로토콜 엔드포인트 * 페이지에서 프로토콜 엔드포인트 정보를 검토할 수 있습니다.</block>
   <block id="6a2ad71d13ffcb23f490e2cac940aebb" category="section-title">스토리지 컨테이너</block>
   <block id="1fe52d003a40ebd5274b71c188fe965c" category="paragraph">스토리지 컨테이너는 NetApp Element 계정에 매핑되며 보고 및 리소스 할당에 사용되는 논리적 구문입니다. 스토리지 시스템이 가상 볼륨에 제공할 수 있는 물리적 스토리지 용량 또는 애그리게이트 스토리지 기능을 풀합니다. vSphere에서 생성된 VVOL 데이터 저장소는 개별 스토리지 컨테이너에 매핑됩니다. 단일 스토리지 컨테이너에는 기본적으로 NetApp Element 클러스터의 사용 가능한 모든 리소스가 있습니다. 멀티 테넌시에 대해 보다 세분화된 거버넌스를 필요로 하는 경우 여러 스토리지 컨테이너를 생성할 수 있습니다.</block>
-  <block id="2c6cfe4d123152e9a6f046eee120440d" category="paragraph">스토리지 컨테이너는 기존 계정과 마찬가지로 작동하며 가상 볼륨과 기존 볼륨을 모두 포함할 수 있습니다. 클러스터당 최대 4개의 스토리지 컨테이너가 지원됩니다. VVOL 기능을 사용하려면 최소 하나의 스토리지 컨테이너가 필요합니다. NetApp Element 관리 확장 포인트의 * VVol &gt; 저장소 컨테이너 * 페이지에서 저장소 컨테이너에 대한 세부 정보를 생성, 삭제 및 볼 수 있습니다. VVOL을 생성하는 동안 vCenter에서 스토리지 컨테이너를 검색할 수 있습니다.</block>
   <block id="cc7378d924a7a641ed80e623576e3981" category="section-title">VASA 공급자</block>
   <block id="a59c51fc1ad210c1bec14d4848238667" category="paragraph">vSphere가 NetApp Element 클러스터의 VVol 기능을 인식하도록 하려면 vSphere 관리자가 NetApp Element VASA Provider를 vCenter에 등록해야 합니다. VASA Provider는 vSphere와 Element 클러스터 간의 대역 외 제어 경로입니다. VM 생성, vSphere에서 VM 사용 가능, vSphere에 스토리지 기능 광고 등 vSphere를 대신하여 Element 클러스터에서 요청을 실행하는 것은 IT의 책임입니다.</block>
   <block id="01ef303b25d3281cb33cd13014af3226" category="paragraph">VASA Provider는 Element 소프트웨어의 클러스터 마스터의 일부로 실행됩니다. 클러스터 마스터는 필요에 따라 클러스터의 노드로 페일오버하는 고가용성 서비스입니다. 클러스터 마스터가 페일오버되면 VASA Provider가 이를 따라 이동하여 VASA Provider의 고가용성을 보장합니다. 모든 프로비저닝 및 스토리지 관리 작업은 VASA 공급자를 사용하므로 Element 클러스터에 필요한 모든 변경 작업을 처리할 수 있습니다.</block>
@@ -500,7 +469,6 @@
   <block id="caba5859d8a5830210ab32116e96cb50" category="section-title">그룹 스냅샷을 생성합니다</block>
   <block id="62211e5c27c46cffd8e648e2d27c4a09" category="paragraph">즉시 볼륨 그룹의 스냅샷을 생성하거나 스케줄을 생성하여 볼륨 그룹의 향후 스냅샷을 자동화할 수 있습니다. 단일 그룹 스냅샷은 한 번에 최대 32개의 볼륨을 일관되게 스냅샷할 수 있습니다.</block>
   <block id="3a0c0ab4f47856973290b01dd440fb5f" category="paragraph">나중에 그룹 스냅샷의 복제 설정 또는 보존 기간을 변경할 수 있습니다. 지정한 보존 기간은 새 간격을 입력할 때 시작됩니다. 보존 기간을 설정할 때 현재 시간에 시작되는 기간을 선택할 수 있습니다(스냅샷 생성 시간으로부터 보존이 계산되지 않음). 분, 시간 및 일 단위로 간격을 지정할 수 있습니다.</block>
-  <block id="633e2c9ffd2a20244bcf590c4a5bab8c" category="list-text">vCenter 플러그인에서 * NetApp Element 관리 * &gt; * 관리 * 를 선택합니다.</block>
   <block id="b81198177f9162f783a4b8766abb1f2d" category="admonition">두 개 이상의 클러스터가 추가된 경우 사용할 클러스터가 탐색 모음에서 선택되었는지 확인합니다.</block>
   <block id="3c3b1b9b07390de7894db8fbf3032287" category="list-text">볼륨 * 하위 탭을 클릭합니다.</block>
   <block id="09828bbd43b0e5290006a3bdf8cd10ca" category="list-text">Active * 보기에서 스냅숏에 사용할 볼륨의 확인란을 선택합니다.</block>
@@ -520,7 +488,6 @@
   <block id="e27d746e9771886c4494d3b4b0e406d5" category="list-text">(선택 사항) 예약된 스냅샷을 주기적으로 반복하려면 * recurrent Schedule * 에 대한 확인란을 선택합니다.</block>
   <block id="96fbebfac07609ac0a56f340edd98e9d" category="section-title">그룹 스냅샷 세부 정보를 봅니다</block>
   <block id="2e46c97d27094b41d9fa817440eca1be" category="paragraph">스냅샷이 추가되었는지 확인할 수 있습니다.</block>
-  <block id="94f6aa239f53fe40df75297f71b0f422" category="list-text">vCenter 플러그인에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="765de62ea4584e058f0661733cdba08e" category="list-text">그룹 스냅샷 * 하위 탭을 클릭합니다.</block>
   <block id="c121e5061954ec5857e64d29429b2fae" category="list-text">스냅샷 세부 정보를 확인합니다.</block>
   <block id="84da6acfd10db402762f6e37befc5849" category="list-text">* Create date *: 그룹 스냅샷이 생성된 날짜 및 시간입니다.</block>
@@ -561,10 +528,7 @@
   <block id="d3aa0229608e48b638ce6da6bee6fdb7" category="list-text">* 노드 레벨 * 은 개별 노드별로 각 보호 도메인을 정의하며, 각 노드는 잠재적으로 섀시 전체에 위치합니다.</block>
   <block id="76bfd1c529ea49798576621b83b32cc5" category="list-text">* 섀시 레벨 * 은 섀시를 공유하는 노드별로 각 보호 도메인을 정의합니다.</block>
   <block id="1fe57b848826a66ff0b53490608665d4" category="paragraph">섀시 도메인은 장애 복구 기능을 위해 노드 도메인보다 잠재적 용량 리소스를 더 많이 필요로 합니다. 보호 도메인 임계값이 초과되면 클러스터에서 더 이상 장애 발생 시 복구할 수 있는 용량이 부족하고 데이터 가용성 역시 중단되지 않습니다.</block>
-  <block id="799c7a7e8a296591856f1cfd78f68e3d" category="doc">연결 모드 및 플러그인</block>
-  <block id="b6183ce9c4e8eb00aca6382fa0b9133d" category="paragraph">대상 vCenter 웹 클라이언트에 로그인한 경우에만 Element 플러그인에서 스토리지 클러스터를 관리할 수 있습니다.</block>
   <block id="0d4feab6027cad30793ce2dadc6e4fde" category="paragraph">vSphere 연결 모드 환경에서 스토리지 클러스터 관리를 설정하려면 다음 절차를 사용하여 스토리지 클러스터를 수동으로 추가할 수 있습니다.</block>
-  <block id="91e17858e171c728ce382e4d503b66bc" category="list-text">플러그인을 사용할 연결 모드 환경의 각 vCenter Server에 플러그인을 등록합니다.</block>
   <block id="58ac558cf97424514dc4281b13503a9e" category="list-text">연결된 각 vCenter Server에 대해 vSphere Web Client에 한 번 로그인합니다.</block>
   <block id="c4cc76bc9ec18ff5bf06879832a4ba84" category="paragraph">로그인하면 웹 클라이언트에 플러그인 설치가 시작됩니다.</block>
   <block id="a87ae6e15ccb731ab64b5c012e2ae079" category="list-text">스토리지 클러스터를 관리할 대상 vCenter의 웹 클라이언트에 로그인합니다.</block>
@@ -600,8 +564,6 @@
   <block id="583a507297d5493a73c45b0bc85515a9" category="list-text">사용자 지정 설정 * 에서 IOPS에 대한 사용자 지정 최소, 최대 및 버스트 값을 설정하거나 기본 QoS 값을 사용합니다.</block>
   <block id="58941cd77b80a07e29dc7875cb94798e" category="admonition">QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 스토리지 액세스가 필요한 데이터베이스, 애플리케이션 또는 인프라 서버와 같은 서비스 환경에 가장 적합합니다. 맞춤형 QoSSIOC 자동화는 가상 데스크톱 또는 특수한 키오스크 유형의 VM과 같이 매일 또는 하루에 여러 번 재부팅, 전원 켜기 또는 전원 끄기와 같은 가벼운 사용 VM에 가장 적합합니다. QoSSIOC 자동화 및 QoS 정책을 함께 사용해서는 안 됩니다. 데이터 저장소 QoSSIOC 설정을 활성화하면 볼륨 레벨의 모든 QoS 설정이 재정의됩니다. 최대 또는 버스트 IOPS 값이 20,000 IOPS 이상인 볼륨은 단일 볼륨에서 이러한 IOPS 수준을 달성하기 위해 큐 길이가 크거나 여러 세션이 필요할 수 있습니다.</block>
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">볼륨 세부 정보를 봅니다</block>
-  <block id="42b6e093288a6616c1d182d24fd66b7b" category="paragraph">NetApp Element 관리 확장 지점에서 클러스터의 모든 활성 볼륨에 대한 일반 정보를 검토할 수 있습니다. 효율성, 성능, QoS, 관련 스냅샷 등 각 액티브 볼륨의 세부 정보를 확인할 수도 있습니다.</block>
-  <block id="5c4c4bb28a5036f3b53059039209560e" category="list-text">NetApp Element 관리 &gt; 관리 * 를 선택합니다.</block>
   <block id="b1ca76f87b556ba8f8d5e27d36e4a01d" category="list-text">둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.</block>
   <block id="6c4930cd0c87ca9ae05f248fb8a576ab" category="list-text">볼륨 * 하위 탭을 클릭합니다.</block>
   <block id="1542787dac7d2d2ee9a7c571fef18fda" category="paragraph">활성 볼륨에 대한 일반 정보가 표시됩니다.</block>
@@ -704,7 +666,6 @@
   <block id="381a713d0f51b31ff1fbdb3ab89b3006" category="admonition">클론 복제된 볼륨은 소스 볼륨에서 볼륨 액세스 그룹 구성원 자격을 상속하지 않습니다.</block>
   <block id="b8a1cad4a50c9260122967b830aa2f1e" category="inline-link">VMFS 데이터 저장소 복제본 마운트</block>
   <block id="d79c3c87976b8fd24486c760b99214ec" category="inline-link">중복 VMFS 데이터 저장소 관리</block>
-  <block id="bab398090dc5cc3471c492471edad2ab" category="paragraph">운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오<block ref="e578a339e9493d9c63d57360db9fb8b0" category="inline-link-rx"></block> 및<block ref="6865dba41e05c4300a16bf14013377d9" category="inline-link-rx"></block>.</block>
   <block id="c15882785a0d876bc229f0d34454c482" category="list-text">복제할 볼륨을 선택합니다.</block>
   <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">클론 * 을 선택합니다.</block>
   <block id="834f6dbd3eb0c6b268da4538ab2d8565" category="list-text">새로 복제된 볼륨의 볼륨 이름을 입력합니다.</block>
@@ -752,13 +713,11 @@
   <block id="e3ced6658cd8f6da5ef0c1a2653c5eb2" category="list-text">(대상) 백업 볼륨을 설정합니다</block>
   <block id="a6bba03aade314dfcf7ee82602ad67d9" category="list-text">(소스) 볼륨을 백업합니다</block>
   <block id="c5e7a483905aa2c9a6b038339cb8e187" category="list-title">백업 볼륨을 설정합니다</block>
-  <block id="711830e0455c052c425af87e365c4da8" category="list-text">볼륨 백업을 배치하려는 vCenter 및 클러스터에서 * NetApp Element Management &gt; Management * 를 선택합니다.</block>
   <block id="cd367f2edd160b07add31706273eba3c" category="list-text">Restore from * 을 선택합니다.</block>
   <block id="366875e30946b0fb8cb85aea5b1797f1" category="list-text">복원 위치 * 에서 * NetApp Element * 를 선택합니다.</block>
   <block id="3b835c18be4ef3a2a0be602502576449" category="list-text">대상 볼륨에 대한 대량 볼륨 쓰기 키를 생성하려면 * Generate Key * (키 생성 *)를 클릭합니다.</block>
   <block id="59fcb9c933f25a03d89c7557b78343df" category="list-text">대용량 볼륨 쓰기 키를 클립보드에 복사하여 소스 클러스터의 이후 단계에 적용합니다.</block>
   <block id="90e9e58b3aa07c8bca9436316429414e" category="list-title">볼륨을 백업합니다</block>
-  <block id="0512c0b79dc934801672b41372452479" category="list-text">백업에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * NetApp Element 관리 &gt; 관리 * 를 선택합니다.</block>
   <block id="323ae9970138143ba2512b8a3b79dc8c" category="list-text">볼륨 백업 대상 * 에서 * NetApp Element * 를 선택합니다.</block>
   <block id="64b71c43bfa48871d83c90d55f27ee66" category="list-text">다음 데이터 형식을 사용하여 대상 클러스터와 같은 옵션을 선택합니다.</block>
   <block id="493e1420b29f6089fd1fdb38b97af444" category="list-text">원격 클러스터 MVIP * 필드에 대상 볼륨 클러스터의 관리 가상 IP 주소를 입력합니다.</block>
@@ -769,7 +728,6 @@
   <block id="32f38989cffcb2b43f52fa78ed1b4aca" category="paragraph">OpenStack Swift 또는 Amazon S3와 같은 오브젝트 저장소의 백업에서 볼륨을 복원하는 경우 원래 백업 프로세스에서 매니페스트 정보가 필요합니다. NetApp Element 기반 스토리지 시스템에서 백업된 NetApp Element 볼륨을 복원하는 경우 매니페스트 정보가 필요하지 않습니다. Swift 및 S3에서 복구하는 데 필요한 매니페스트 정보는 Reporting(보고) 탭의 Event Log(이벤트 로그)에서 찾을 수 있습니다.</block>
   <block id="3cca01513738e3ce26260870432370e1" category="section-title">Amazon S3 오브젝트 저장소 의 백업에서 볼륨을 복원합니다</block>
   <block id="63e60c1b2388bc42ec64831b7b06e788" category="paragraph">플러그인을 사용하여 Amazon S3 오브젝트 저장소의 백업에서 볼륨을 복원할 수 있습니다.</block>
-  <block id="db6b5d84c8d8ad2c1715a4a20416dea8" category="list-text">NetApp Element 관리 &gt; 보고 * 를 선택합니다.</block>
   <block id="3f603c3beac7fead96f9aa1c02f68d73" category="list-text">이벤트 로그 * 하위 탭을 선택합니다.</block>
   <block id="84dc8278b6baa9007346d4101b250ad0" category="list-text">복구할 백업을 생성한 백업 이벤트를 선택합니다.</block>
   <block id="da51b18716892a8b30b25f80b5c987f6" category="list-text">이벤트에 대해 * Details * 를 선택합니다.</block>
@@ -790,12 +748,9 @@
   <block id="1a30bc0ae512b038f3f5a2c704083007" category="list-text">(대상 클러스터) 복구에 사용할 볼륨을 선택합니다</block>
   <block id="f177d94e2c0f614f903386803c169058" category="list-text">(소스 클러스터) 볼륨을 복원합니다</block>
   <block id="89a2d55e537e509d57026a7507ccb517" category="list-title">복원에 사용할 볼륨을 선택합니다</block>
-  <block id="d8723fc40586cf20df174ceab460c148" category="list-text">볼륨을 복원하려는 vCenter 및 클러스터에서 * NetApp Element 관리 &gt; 관리 * 를 선택합니다.</block>
   <block id="bf6d814eb03630dec9e23a3a427b3311" category="list-title">볼륨을 복원합니다</block>
-  <block id="0443146f8502a5f295849a23cf336a67" category="list-text">복구에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * NetApp Element 관리 &gt; 관리 * 를 선택합니다.</block>
   <block id="aeaf36ece308cb60511e19a4d560d39c" category="list-text">다음 데이터 형식과 일치하는 백업 옵션을 선택합니다.</block>
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">볼륨을 삭제합니다</block>
-  <block id="aca21e0f528b29eef7f26ef4c530611f" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 NetApp Element 클러스터에서 하나 이상의 볼륨을 삭제할 수 있습니다.</block>
   <block id="a8b034331cfe4c49d4364900879a2dca" category="paragraph">시스템에서 삭제된 볼륨을 즉시 제거하지 않습니다. 삭제된 볼륨은 약 8시간 동안 복원할 수 있습니다.</block>
   <block id="5254fdc91a9eeca2c8a00cf366f17930" category="paragraph">시스템이 볼륨을 제거하기 전에 볼륨을 복원하거나 * Management * &gt; * Volumes * 의 삭제된 보기에서 볼륨을 수동으로 제거할 수 있습니다. 볼륨을 복원하면 볼륨이 다시 온라인 상태가 되고 iSCSI 연결이 복원됩니다.</block>
   <block id="f474075eb08397c3681f62dcf25b5f3f" category="admonition">설치 또는 업그레이드 중에 관리 서비스와 연결된 영구 볼륨이 생성되고 새 계정에 할당됩니다. 영구 볼륨을 사용하는 경우 볼륨이나 연결된 계정을 수정하거나 삭제하지 마십시오.</block>
@@ -822,8 +777,6 @@
   <block id="c9bf0b029ad3ede39b7d6cf39607a322" category="summary">플러그인을 사용하여 볼륨 액세스 그룹을 생성하고 관리할 수 있습니다.</block>
   <block id="43c95975fceac67e14abe3895f6650b5" category="doc">볼륨 액세스 그룹을 생성하고 관리합니다</block>
   <block id="1e678cda01a6edfd6a8c776103d2e15b" category="inline-link-macro">볼륨 액세스 그룹</block>
-  <block id="49c1b0b4dddf03721895d37d31dad4de" category="paragraph">A <block ref="e64b216761b70bc0cfda4bc4eab1b43a" category="inline-link-macro-rx"></block> 는 사용자가 iSCSI 이니시에이터 또는 Fibre Channel 이니시에이터를 사용하여 액세스할 수 있는 볼륨의 모음입니다.</block>
-  <block id="026b1181418b22d0d086ab8b1ee080fb" category="paragraph">볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 파이버 채널 WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 파이버 채널 네트워크 액세스를 설정합니다.</block>
   <block id="9a8af925f49d81fafe7af5c7760a9d2d" category="list-text"><block ref="57543d97a29cc33d58ce14b3298c6f06" category="inline-xref-macro-rx"></block></block>
   <block id="d9a2e1a0b080274a508aa3e2ea19b885" category="list-text"><block ref="ccaabee6671d5d96edfc9527954a4a58" category="inline-xref-macro-rx"></block></block>
   <block id="5f2e2767f1cc39ad97a918720665204b" category="list-text"><block ref="14b928912d2aef805fbbec0ef3934739" category="inline-xref-macro-rx"></block></block>
@@ -838,7 +791,6 @@
   <block id="4ec5a2e90ff6900399e5abea96356eb5" category="admonition">볼륨 액세스 그룹이 생성된 후 이니시에이터를 추가하거나 삭제할 수 있습니다.</block>
   <block id="4561f4bbd99d7c358ce9ad3c2fdb044b" category="list-text">확인 * 을 클릭하여 액세스 그룹을 생성합니다.</block>
   <block id="e603332250b9b151a5395dec1743a726" category="section-title">액세스 그룹을 편집합니다</block>
-  <block id="4f3f4f4162b25181ddd0cb069357acf7" category="paragraph">볼륨 액세스 그룹 이름을 편집하거나 NetApp Element 관리 확장 지점에서 이니시에이터를 추가 또는 제거할 수 있습니다.</block>
   <block id="0d07d6705ea7ae9dcf80851269cdc590" category="list-text">편집할 볼륨 액세스 그룹의 확인란을 선택합니다.</block>
   <block id="02a7adaefed7baa6ae2b456fb26cb403" category="list-text">결과 메뉴에서 * Edit * 를 선택합니다.</block>
   <block id="5de337594eaae8d186ce8e3b06f4fbfe" category="list-text">필요에 따라 다음을 변경합니다.</block>
@@ -860,11 +812,8 @@
   <block id="9bc00e2adf5e91338e1faa6b1504bdfb" category="list-text">액세스 그룹에서 제거 * 를 선택합니다.</block>
   <block id="e744e89ded669d4ac19883e1cce088f8" category="list-text">세부 정보를 확인하고 선택한 각 볼륨에 더 이상 액세스하지 않을 볼륨 액세스 그룹을 선택합니다.</block>
   <block id="89313961723b25e99b64b95147ff335f" category="section-title">액세스 그룹을 삭제합니다</block>
-  <block id="f91cfc31ba8bd0e4198d8a16c8cfaa3b" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 볼륨 액세스 그룹을 삭제할 수 있습니다. 그룹을 삭제하기 전에 이니시에이터 ID를 삭제하거나 볼륨 액세스 그룹에서 볼륨을 분리하지 않아도 됩니다. 액세스 그룹을 삭제하면 볼륨에 대한 그룹 액세스가 중단됩니다.</block>
   <block id="0edf7556e8e57ccc1f12422d38698c24" category="list-text">삭제할 액세스 그룹의 확인란을 선택합니다.</block>
-  <block id="94ca44276077aae54f6df6e88b103a22" category="summary">플러그인의 NetApp Element 관리 확장 지점을 사용하여 스토리지 클러스터를 관리할 수 있습니다.</block>
   <block id="e07b0a5326295e7745228add875c7c50" category="doc">클러스터 하드웨어 및 가상 네트워크 관리 개요</block>
-  <block id="052cc0eb8ed6204799d0ba3fe163f543" category="paragraph">NetApp Element 관리 확장 포인트의 클러스터 탭에서 클러스터 전체 설정을 확인 및 변경하고 드라이브, 노드 및 VLAN에 대한 클러스터별 작업을 수행할 수 있습니다.</block>
   <block id="169bc36348d833447e9ed51fe9bb69fd" category="inline-link-macro">드라이브 추가 및 관리</block>
   <block id="77b62074ca4c9c6af4a43f40da1f3ff0" category="list-text"><block ref="77b62074ca4c9c6af4a43f40da1f3ff0" category="inline-link-macro-rx"></block></block>
   <block id="fd6ce9a3655193c5558dacb1162ff5dd" category="inline-link-macro">노드 추가 및 관리</block>
@@ -952,11 +901,6 @@
   <block id="39afe46771d1f6276e3e9973c494711c" category="list-text">com.solidfire를 입력합니다.</block>
   <block id="442fd0a282b7fe9744e68d31fea0a0d8" category="list-text">Invoke 메서드 * 를 선택합니다.</block>
   <block id="10e5d13dc7f14b2e6ce3bf05f1e9cd5e" category="list-text">PowerCLI를 사용하여 등록 취소:</block>
-  <block id="34129fbeb1e745f4b8caaaef6f309345" category="list-text">vCenter 플러그인 2.6.1 이하:</block>
-  <block id="0daab13d82a3f3a79fca6ede1e80ce6d" category="list-text">브라우저에 등록 유틸리티의 URL을 입력하거나 프로그램 디렉토리에서 유틸리티를 찾습니다.</block>
-  <block id="4b34f8cffb3b975cbb6367514ddb1221" category="list-text">"https://&lt;FDVAorManagementNodeIP&gt;:8443`</block>
-  <block id="b097dd7fc0edd773a7b1a7329a5f3c7d" category="list-text">'/opt/solidfire/VCP/bin/VCP-reg.sh'</block>
-  <block id="7d98cbc5103cb7d15ecf2436f9705068" category="list-text">vCenter Plugin Register/Unregister 창에서 * Unregister * 를 선택합니다.</block>
   <block id="4ffb98b73fd3c97c4d4ff0bb0a71e369" category="inline-link">최신 관리 서비스 2.17.56 패치</block>
   <block id="b43e19e2999292fbebfa71878760ddf9" category="paragraph">버전 4.7을 사용하는 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 2의 구성 요소를 지원합니다.</block>
   <block id="b3c55f61c0343a8d0687443fcb2ee32b" category="paragraph">버전 4.6을 사용하는 이 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 1의 구성 요소를 지원합니다.</block>
@@ -1037,15 +981,11 @@
   <block id="f5ef2add32b483d327d0279cc4f351d0" category="list-text">플러그인을 다운로드할 수 없는 경우 MOB 레코드의 'serverThumbprint'를 브라우저에 표시된 ZIP URL의 인증서 SHA-1과 비교합니다.</block>
   <block id="01ec9cc7ac910aacebaa037dd5d7eeea" category="list-text">MOB의 등록 레코드에 올바르지 않거나 오래된 URL 또는 SHA-1이 있는 경우 플러그 인을 등록 취소하고 플러그인을 다시 등록합니다.</block>
   <block id="e51e6aa350cea8bdfbbbbc81ea5492ec" category="list-text">문제가 지속되고 ZIP에 도달할 수 없는 경우 ZIP URL을 검사하여 사용된 관리 노드 주소에 문제가 있는지 확인합니다. 경우에 따라 ZIP 파일을 다운로드할 수 있도록 플러그인의 등록 유틸리티를 사용하여 URL을 사용자 지정해야 할 수도 있습니다.</block>
-  <block id="bbcde54d38a7d044c3b8a3ec056f932f" category="list-text">클러스터는 * 클러스터 * 섹션에 나열되지 않습니다.</block>
-  <block id="cec85f10ae66451b3af081cbc5ca7e20" category="list-text">NetApp Element 구성의 * 클러스터 및 QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.</block>
   <block id="aa8746d5b71402972581bdd84dcc2484" category="paragraph">클러스터 및 QoSSIOC 설정을 복원합니다.</block>
   <block id="c3a78f82feea7790e45dc2b8ff202ad6" category="list-text">vCenter에서 로그아웃합니다.</block>
   <block id="42fe583841480643befc86660359cc97" category="list-text">현재 vSphere Client 보기에서 새로 고침 아이콘을 선택합니다.</block>
   <block id="d0027b340b133639d43317fb35d13a94" category="list-text">예를 들어 Ctrl+F5를 사용하여 캐시를 해제하고 브라우저를 새로 고칩니다.</block>
   <block id="389eaf94a0ef26f9ba0cba36b0fb8069" category="list-text">클러스터 및 QoSSIOC 설정이 복원되는지 확인합니다.</block>
-  <block id="b89387a58bf1412670fdff83f0b343a9" category="inline-link-macro">클러스터를 다시 추가합니다</block>
-  <block id="b7860cf0970d15cae4ff75cc6777e13e" category="paragraph">문제가 지속되면 다음을 수행해야 합니다 <block ref="2defad7184bda40da2bf8bda0cd5de7e" category="inline-link-macro-rx"></block>.</block>
   <block id="f39fd0af3a23b352b5bd435bfa95146d" category="section-title">등록 UI를 사용하여 플러그인을 등록하는 동안 오류가 발생했습니다</block>
   <block id="6284b36580a7ef6c77ff149ac04b525f" category="paragraph">등록 유틸리티를 사용할 때 vCenter Server에 플러그인을 등록하는 동안 오류가 발생했습니다. com.solidfire 키가 이미 설치되어 있습니다.</block>
   <block id="4ea1c41e395540248c6fff819ce3fc12" category="paragraph">등록 유틸리티에서 * 플러그인 등록 * 대신 * 플러그인 업데이트 * 를 사용합니다.</block>
@@ -1092,7 +1032,6 @@
   <block id="b71679eee5d6955ed941947cd099cf8c" category="list-text">SIOC 서비스에 연결할 수 없음: SIOC.LOG를 열고 관리 노드의 /OPT/solidfire/SIOC/DATA/LOG/("/var/log" 또는 이전 관리 노드의 '/var/log/solidfire/')에서 SIOC 서비스가 성공적으로 시작되었는지 확인합니다. SIOC 서비스를 시작하는 데 50초 이상 걸릴 수 있습니다. 서비스가 성공적으로 시작되지 않으면 다시 시도하십시오.</block>
   <block id="868bb634e7485d261251f49b43513549" category="section-title">QoSSIOC 서비스가 사용 가능으로 표시되지만 사용할 수 없습니다</block>
   <block id="7633da8fcb93a8a0b7606c60796457ee" category="paragraph">QoSSIOC 서비스 설정이 UP로 표시되지만 QoSSIOC는 사용할 수 없습니다.</block>
-  <block id="c52c82e92f6652ed27ee9100b65077e0" category="paragraph">NetApp Element 구성 확장 포인트의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 클릭합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.</block>
   <block id="a2e3b74e6256816515a4f4476e88e431" category="section-title">QoSSIOC는 데이터 저장소에 대해 활성화되지만 사용할 수 없습니다</block>
   <block id="076b6b32ec77565d3ec23c7e8de33942" category="paragraph">데이터 저장소에 QoSSIOC가 활성화되어 있지만 QoSSIOC는 사용할 수 없습니다.</block>
   <block id="f442137ca604e4772ca9b404bba25c87" category="paragraph">VMware SIOC가 데이터 저장소에 설정되어 있는지 확인합니다.</block>
@@ -1101,12 +1040,10 @@
   <block id="8acadeccb90bf205135348e4902b9c20" category="inline-link">이 기사를 참조하십시오</block>
   <block id="6827a947857f77989cf06bb0f67a6085" category="list-text">을 참조하십시오<block ref="fcb81063f72d7cb08144faa25942e149" category="inline-link-rx"></block> 사용자의 문제에 해당하는 수정 조치를 확인합니다.</block>
   <block id="76bcb4a408198a6676ccab6cbdeeaee5" category="summary">플러그인을 사용하여 클러스터에 드라이브를 추가하고 관리할 수 있습니다.</block>
-  <block id="784490f31ef7c7b5a1518324adf8d545" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터에 드라이브를 추가하고, 기존 드라이브를 보고, 드라이브를 제거할 수 있습니다.</block>
   <block id="48bbbbb57ccd395ce003dc16efabe6c6" category="list-text"><block ref="2eb220b21980d2096a3435c5785423b2" category="inline-xref-macro-rx"></block></block>
   <block id="6f37aedfc852aeaea45102e890955544" category="list-text"><block ref="e7c6e26a570aff32be366f4d9243cb50" category="inline-xref-macro-rx"></block></block>
   <block id="bc1eb1cbd7311f24161209e91ac50dbf" category="list-text"><block ref="f7696c0eb3e241a9fa981f6082842519" category="inline-xref-macro-rx"></block></block>
   <block id="afa0f8bfb6b2a685bfd2bc8ddf2deb71" category="section-title">사용 가능한 드라이브를 클러스터에 추가합니다</block>
-  <block id="c549cf15aeb9a724d612fb081deefc63" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터에 드라이브를 추가할 수 있습니다. 클러스터에 노드를 추가하거나 기존 노드에 새 드라이브를 설치하면 드라이브가 자동으로 "사용 가능"으로 등록됩니다. 각 드라이브가 클러스터에 참여하려면 먼저 클러스터에 드라이브를 추가해야 합니다.</block>
   <block id="cdab8120f3c61e0ae0acea82ed3b0e1c" category="paragraph">다음 조건이 충족되면 사용 가능 목록에 드라이브가 표시되지 않습니다.</block>
   <block id="f0a6ff5af9e6669a8433280d351a739a" category="list-text">드라이브는 활성, 제거, 삭제 또는 실패 상태입니다.</block>
   <block id="24a64c0d3aeddfc9cbb1edc51a57882c" category="list-text">드라이브가 속한 노드가 'Pending' 상태입니다.</block>
@@ -1116,13 +1053,11 @@
   <block id="0af59b601370edfa683c170685a31191" category="list-text">드라이브 추가 * 를 클릭합니다.</block>
   <block id="76ea3f2e0b1a18dff4cb7f2bcf384766" category="list-text">추가하려는 드라이브의 세부 정보를 검토하고 작업을 확인합니다.</block>
   <block id="f6c2363cd44cb5fac1b33c9af530a088" category="section-title">드라이브 세부 정보를 봅니다</block>
-  <block id="540e44f0b45e0ccc116eb06c730192a3" category="paragraph">NetApp Element 관리 확장 지점에서 클러스터 탭의 드라이브 페이지에 있는 활성 보기를 사용하여 클러스터의 활성 드라이브 목록을 볼 수 있습니다. 드롭다운 필터를 사용하여 사용 가능한 옵션을 선택하여 보기를 변경할 수 있습니다.</block>
   <block id="2a830e938d41d25c466035edf872712e" category="paragraph">클러스터를 처음 초기화하면 활성 드라이브 목록이 비어 있습니다. 새 클러스터를 생성한 후 클러스터에 할당되지 않고 Available 탭에 나열된 드라이브를 추가할 수 있습니다.</block>
   <block id="1459684317d20344424ba23f43789f70" category="list-text">Drives * 하위 탭을 선택합니다.</block>
   <block id="eea0d334e85371e13ef81617b9067d6a" category="list-text">시스템에서 현재 활성 상태인 드라이브의 세부 정보를 봅니다.</block>
   <block id="2b9a45b7029b4b971d1f884d28dfe232" category="paragraph">드라이브 ID, 각 드라이브의 용량 및 상태, 드라이브가 상주하는 노드에 대한 정보 등의 정보를 볼 수 있습니다.</block>
   <block id="e5aa87269e542ca978009c1a02dfdf74" category="section-title">드라이브를 분리합니다</block>
-  <block id="3d3b187caecc43d9a9e8743c713c57a5" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터에서 드라이브를 제거할 수 있습니다. 클러스터 용량을 줄이거나 서비스 수명이 거의 다 된 드라이브를 교체할 준비를 할 때 이 작업을 수행할 수 있습니다. 드라이브를 제거하면 드라이브가 오프라인 상태가 됩니다. 드라이브에서 데이터가 제거되기 전에 클러스터의 다른 드라이브로 마이그레이션됩니다. 시스템의 다른 활성 드라이브로 데이터를 마이그레이션하는 데는 용량 활용률과 클러스터의 활성 I/O에 따라 몇 분에서 한 시간까지 걸릴 수 있습니다.</block>
   <block id="d8cb492c14806c8939ce2f95fe8b318c" category="paragraph">Failed(실패) 상태의 드라이브를 제거하면 드라이브가 Available(사용 가능) 또는 Active(활성) 상태로 복귀되지 않습니다. 대신 클러스터에서 드라이브를 사용할 수 없습니다.</block>
   <block id="4e47c98dceef287087077163311714f6" category="list-text">드롭다운 목록에서 * All * 을 선택하여 전체 드라이브 목록을 봅니다.</block>
   <block id="83393ec4d6905a1137783b44cff8baad" category="list-text">다음과 같이 드라이브를 제거합니다.</block>
@@ -1130,7 +1065,6 @@
   <block id="a135152703f6936dfcf4489bd1f01bc2" category="list-text">드라이브 제거 * 를 클릭합니다.</block>
   <block id="d746ae77bd27f3cd008ca3d0f7f2ae07" category="admonition">노드를 제거하기 전에 활성 드라이브를 제거할 용량이 충분하지 않으면 드라이브 제거를 확인할 때 오류 메시지가 나타납니다.</block>
   <block id="84766b1f02c6136ddf8fac32ab4bb8d7" category="doc">NetApp Element 관리 확장 포인트</block>
-  <block id="dae217fd652bfc462ffe55a7565812e2" category="paragraph">NetApp Element 관리 확장 지점을 사용하면 클러스터를 추가 및 관리하고, 연결 모드를 위해 스토리지 클러스터를 vCenter Server에 할당하고, QoSSIOC의 관리 노드 설정을 구성할 수 있습니다.</block>
   <block id="3fd455c92daedd13049e258221d1589a" category="admonition">vSphere Web Client는 설치된 vSphere 버전에 따라 다음 이미지에 표시된 것과 약간 다를 수 있습니다.</block>
   <block id="718e841ec5c0c147632c79f6bc8f9518" category="image-alt">관리 확장 지점</block>
   <block id="c8c33b98b9fc048349897b71ae50093b" category="paragraph">클러스터 탐색 모음을 사용하면 플러그인에 추가된 클러스터 간에 빠르게 전환할 수 있습니다.</block>
@@ -1152,7 +1086,6 @@
   <block id="3481204db7a808589b179ef2dca4bca8" category="inline-link-macro">가상 볼륨(VVol)</block>
   <block id="717b431de45950fd4d33b3be4d86b6ed" category="inline-link-macro">스토리지 컨테이너</block>
   <block id="05cc2c8bead72f05794dbb7da16d6bcb" category="inline-link-macro">프로토콜 엔드포인트</block>
-  <block id="1811838958ba1c51ff7250d320bb88c8" category="paragraph">VMware vSphere를 설정할 수 있습니다 <block ref="b2c897dbc9f8f27c64e032c063a4f688" category="inline-link-macro-rx"></block> NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. <block ref="18ac2bdbb323cba4124b1b85ce340ab4" category="inline-link-macro-rx"></block>, <block ref="4bb7989fc64f274d67c358cc77d42197" category="inline-link-macro-rx"></block>, 및 NetApp Element 관리 확장 지점의 호스트</block>
   <block id="ffa8d3422d39f3e87f1081fce8eaa98f" category="list-text">VVol 호환성을 가진 ESXi 6.5 이상 환경에 연결된 NetApp Element 10 이상 클러스터를 사용하고 있습니다.</block>
   <block id="08147f825c645dfe897a2b7f0bc7e029" category="list-text">vCenter 6.5 이상을 사용하고 있습니다.</block>
   <block id="087ac0e1ccc7ab3450c29d0b18651f97" category="section-title">설정 작업</block>
@@ -1165,10 +1098,8 @@
   <block id="36490b06adc79929496865fc8661ab18" category="list-text"><block ref="e8e9b8a2918f655675f902491d2ae60f" category="inline-xref-macro-rx"></block></block>
   <block id="9bb6332b3edc7c97f42d85f4313aade1" category="list-text"><block ref="eca13ce5649600a425ab5fa193986ab4" category="inline-xref-macro-rx"></block></block>
   <block id="b08ba4b25c6138aceac3f80f644ede11" category="section-title">NetApp Element 클러스터에서 가상 볼륨 기능을 설정합니다</block>
-  <block id="40489dbf1903f5022ec0ac1376d3f3e8" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 VVOL(vSphere 가상 볼륨) 기능을 수동으로 활성화해야 합니다. Element 시스템에는 VVOL 기능이 기본적으로 비활성화되어 있으며 새 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. VVOL 기능을 활성화하는 것은 일회성 구성 작업입니다.</block>
   <block id="433b27aa19e75cd3a82c809bc27d7107" category="list-text">NetApp Element 구성 &gt; 클러스터 * 를 선택합니다.</block>
   <block id="91420ada6ccef678e55d1c5f55445f22" category="list-text">목록에서 활성화할 클러스터를 선택합니다.</block>
-  <block id="f1b158f0f574a4aef8a95d921efdedb0" category="list-text">결과 메뉴에서 * Enable VVol * 을 클릭합니다.</block>
   <block id="1d9653621649c19cf25d87be1447b58e" category="admonition">VVOL 기능을 활성화한 후에는 기능을 비활성화할 수 없습니다. vSphere 가상 볼륨 기능을 활성화하면 NetApp Element 소프트웨어 구성이 영구적으로 변경됩니다. 클러스터가 VMware ESXi VVol 호환 환경에 연결된 경우에만 VVol 기능을 활성화해야 합니다. 클러스터를 공장 출하 시 이미지로 되돌리시고 VVOL 기능을 비활성화하고 기본 설정만 복원할 수 있습니다.</block>
   <block id="63736c4a94ce30c24b0219cc05580fd8" category="list-text">Yes * 를 선택하여 가상 볼륨 구성 변경을 확인합니다.</block>
   <block id="626783048216268941981cdea8805b61" category="admonition">VVol 기능이 활성화되면 Element 클러스터가 VASA Provider를 시작하고, VASA 트래픽에 대해 포트 8444를 열고, vCenter 및 모든 ESXi 호스트에서 검색할 수 있는 프로토콜 엔드포인트를 생성합니다.</block>
@@ -1182,24 +1113,18 @@
   <block id="9f768663fc3aea365cef4b33f1fe3599" category="paragraph">이 절차에서는 vSphere 버전 6.7에서 사용할 수 있는 단계에 대해 설명합니다. vSphere 사용자 인터페이스는 설치된 vSphere 버전에 따라 약간 다를 수 있습니다. 자세한 내용은 VMware vCenter 설명서를 참조하십시오.</block>
   <block id="baa267f6bfaa89e5b3d5a78755ea2475" category="admonition">둘 이상의 vCenter 인스턴스에 NetApp Element VASA 공급자를 등록하지 마십시오. NetApp Element VASA Provider는 vCenter가 SSL을 처리하는 방식에 제한이 있으므로 단일 vCenter에만 등록할 수 있습니다. 단일 vCenter에는 여러 NetApp Element 클러스터가 있을 수 있지만 vCenter의 두 인스턴스 간에 클러스터를 공유할 수는 없습니다.</block>
   <block id="fc21fe3622f6a6e7198d2b735374be8d" category="admonition">vCenter에 VASA 공급자를 이미 등록한 경우 최대 10개의 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 VASA39 매니페스트의 지침에 따라 에서 .tar.gz 파일을 다운로드합니다 <block ref="330abc56e8586ea5b1b948740a329a51" category="inline-link-macro-rx"></block> 사이트. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.</block>
-  <block id="0fa419a8d63cc41aba83501240d8e210" category="list-text">vSphere Client Home에서 * Hosts and Clusters * 를 클릭합니다.</block>
   <block id="2f8dac593c74272785dab7a5a54ccb6e" category="list-text">NetApp Element VASA Provider를 등록할 vCenter 인스턴스를 선택합니다.</block>
   <block id="57827a442e4135255c8b4ff175180f50" category="list-text">구성 &gt; 스토리지 공급자 * 를 선택합니다.</block>
-  <block id="e28afdd2d6b4b68167c01dc0fbfb821e" category="list-text">스토리지 공급자 * 에서 추가 아이콘을 클릭합니다.</block>
   <block id="772753b80c12c00587bf015cb2a299f7" category="list-text">New Storage Provider * 대화 상자에 다음 정보를 입력합니다.</block>
   <block id="29319da4c5629ba242e29ae8a0ae5b81" category="list-text">VASA 공급자 이름입니다.</block>
   <block id="f638c830aad217e67101275b8097d832" category="list-text">VASA 공급자 URL입니다.</block>
-  <block id="d9ec6607df7603d6a156ca4cfa3c1517" category="admonition">vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 제공됩니다. 또한 클러스터 세부 정보(* NetApp Element 구성 &gt; 클러스터 *) 또는 요소 UI('https://&lt;MVIP&gt;/cluster`)의 클러스터 설정에서 URL을 찾을 수 있습니다.</block>
   <block id="cecb9047de02e5871fba36baa2d7135c" category="list-text">NetApp Element 클러스터의 관리 계정 사용자 이름입니다.</block>
   <block id="e4858d18de97fc386a1c831fdab02ab0" category="list-text">NetApp Element 클러스터의 관리 계정 암호입니다.</block>
   <block id="114575761eda397a4c0cc3ede1bac825" category="list-text">VASA Provider를 추가하려면 * OK * 를 선택합니다.</block>
   <block id="4aaf12444dd5659db99371d4af3a479a" category="list-text">메시지가 나타나면 SSL 인증서 지문을 승인합니다. 이제 NetApp Element VASA Provider가 'Connected' 상태로 등록되어야 합니다.</block>
-  <block id="ab99dda34ccedf447a665b1869661c57" category="admonition">공급자를 처음 등록한 후 필요에 따라 스토리지 공급자를 새로 고쳐 공급자의 현재 상태를 표시합니다. 또한 공급자가 * NetApp Element 구성 &gt; 클러스터 * 에서 활성화되어 있는지 확인할 수도 있습니다. 사용 중인 클러스터에 대해 * 작업 * 을 선택하고 * 세부 정보 * 를 클릭합니다.</block>
   <block id="f3bdc23860e2c00784f1d95d784116f5" category="list-text">을 참조하십시오 <block ref="3027f3a01c8f27ecbccb6012f00bfddf" category="inline-xref-macro-rx"></block> 다음 단계를 참조하십시오.</block>
   <block id="d4d727c54ca0f97b6ffdca815b65cbf1" category="section-title">스토리지 컨테이너 및 관련 VVOL 데이터 저장소를 생성합니다</block>
-  <block id="86fdd741b00fa34498d6cf58583ed33a" category="paragraph">NetApp Element 관리 확장 지점의 VVOL 탭에서 스토리지 컨테이너를 생성할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다.</block>
   <block id="fff0140e73a6277b14ffb7b24516ee3a" category="list-text">vCenter에 가상 볼륨에 대한 NetApp Element VASA Provider를 등록했습니다.</block>
-  <block id="2053967a59065d1f55fa4cead1a85ebd" category="list-text">NetApp Element 관리 &gt; VVol * 을 선택합니다.</block>
   <block id="5196024ac717567d0f02d1154f441248" category="list-text">Storage Containers * 하위 탭을 선택합니다.</block>
   <block id="6dd9e1c438ecc2a8242c3f0a32cde6f5" category="list-text">Create Storage Container * 를 선택합니다.</block>
   <block id="d7593ada456aa93d17269a11ef39bbaa" category="list-text">Create a New Storage Container * (새 저장소 컨테이너 생성 *) 대화 상자에 저장소 컨테이너 정보를 입력합니다.</block>
@@ -1213,7 +1138,6 @@
   <block id="73ad65cb8fda28fc3ecf21197c560787" category="list-text">새 저장소 컨테이너가 * 저장소 컨테이너 * 하위 탭의 목록에 나타나는지 확인합니다. NetApp Element 계정 ID는 자동으로 생성되어 저장소 컨테이너에 할당되므로 계정을 수동으로 생성할 필요가 없습니다.</block>
   <block id="3e5bbadde52d5c6381c87d52811e837b" category="list-text">연결된 데이터 저장소가 vCenter의 선택한 호스트에도 생성되었는지 확인합니다.</block>
   <block id="c675afb821ecde9e14dd6589c3e89a84" category="section-title">가상 볼륨 리소스를 모니터링합니다</block>
-  <block id="fd6333d9dbb874e5693e69e6e36754df" category="paragraph">플러그인의 NetApp Element 관리 확장 지점에서 가상 볼륨 구성 요소 성능 및 설정을 검토할 수 있습니다.</block>
   <block id="3683a4a52dd8261198f1f8c2f819bee3" category="list-text"><block ref="087ae70667346048479b0d9e7469674a" category="inline-xref-macro-rx"></block></block>
   <block id="91eff9a6a3200c02490e7c74e57e4a6f" category="list-text"><block ref="920ef72e0f9f8e12bd8cc848e97feca5" category="inline-xref-macro-rx"></block></block>
   <block id="cef8a6322558a2538d707a4b0a870849" category="list-text"><block ref="fd3ccca7d3befe444c0a3c5c3db729b5" category="inline-xref-macro-rx"></block></block>
@@ -1244,7 +1168,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">다음 * 을 선택합니다.</block>
   <block id="b3769a97db63a995528a779d72b19fc8" category="list-text">구성을 검토하고 * Finish * 를 선택하여 VVOL 데이터 저장소를 생성합니다.</block>
   <block id="1f4df56e73c4b3645015816b853c65e8" category="section-title">저장소 컨테이너를 삭제합니다</block>
-  <block id="da6bd21e3ec006d93d233aa1c423704b" category="paragraph">NetApp Element 관리 확장 지점에서 저장소 컨테이너를 삭제할 수 있습니다.</block>
   <block id="4cf89742a1d35b63b0f9f5cb026cd8bc" category="list-text">저장소 컨테이너에서 모든 볼륨이 제거되었습니다.</block>
   <block id="85c267f257b18520fd4e881825a3a448" category="list-text">삭제할 저장소 컨테이너의 확인란을 선택합니다.</block>
   <block id="cba736be12ab54d8b657576d927aa63f" category="list-text">저장소 컨테이너 * 하위 탭의 저장소 컨테이너 목록을 새로 고쳐 저장소 컨테이너가 제거되었는지 확인합니다.</block>
@@ -1316,7 +1239,6 @@
   <block id="37427fc5a8bad397ce23cc26db275d84" category="list-text">* vasaProviderEvent *: VASA(vSphere APIs for Storage Awareness) Provider와 관련된 이벤트입니다.</block>
   <block id="27c802fb2b1b7925cc7eeaab5967f0d2" category="summary">플러그인을 사용하여 클러스터 구성에서 노드를 생성하고 관리할 수 있습니다.</block>
   <block id="a1fbed8c0121823f751f068780385f84" category="inline-link">스토리지 노드</block>
-  <block id="c2e06f80da7f6b5804ad3d2a30028c9f" category="paragraph">vCenter 플러그인을 사용하여 를 추가할 수 있습니다<block ref="63488b15d8c0b0f8bf9dc0423b45e226" category="inline-link-rx"></block> 클러스터가 생성되거나 추가 스토리지가 필요한 경우 Element 소프트웨어를 실행하는 스토리지 노드는 NetApp Element 관리 확장 지점을 사용하여 추가할 수 있습니다. NetApp HCI 컴퓨팅 노드는 vSphere의 플러그인 외부에서 추가 및 관리해야 합니다.</block>
   <block id="b3138b1ca8b06e1b0fc263835842b807" category="list-text"><block ref="b5d37a3673112572cce319c9a77e0cc9" category="inline-xref-macro-rx"></block></block>
   <block id="802b5631660d545c79d24adc150aacf8" category="list-text"><block ref="6cb804218363d80796d3426489f5b2c6" category="inline-xref-macro-rx"></block></block>
   <block id="1e37fcb4690b784ba2c06b330af2106e" category="list-text"><block ref="2b986148698fde4cd3ee03d0867368a6" category="inline-xref-macro-rx"></block></block>
@@ -1327,9 +1249,7 @@
   <block id="243b6494d60b1866c1fbd722876177d3" category="list-text">추가하려는 노드가 설정, 전원 켜기 및 구성되었습니다.</block>
   <block id="79e0186823c221d872157f5b0759dc5f" category="list-text">클러스터 내 각 노드에 있는 소프트웨어의 주요 버전 번호 또는 부 버전 번호가 모두 일치해야 소프트웨어가 호환될 수 있습니다. 예를 들어, Element 9.0은 버전 9.1과 호환되지 않습니다.</block>
   <block id="3b5013950ab71766bee3fd7c69c1d2fd" category="admonition">추가하려는 노드에 클러스터에서 실행 중인 버전과 다른 NetApp Element 소프트웨어의 주 버전 또는 부 버전이 있는 경우 클러스터가 노드를 클러스터 마스터에서 실행 중인 NetApp Element 소프트웨어 버전으로 비동기적으로 업데이트합니다. 노드가 업데이트되면 자동으로 클러스터에 추가됩니다. 이 비동기 프로세스 중에 노드는 펜딩액티브 상태가 됩니다.</block>
-  <block id="cf15185b1a0345cc754414c78c5dc352" category="paragraph">노드의 전원을 처음 켤 때는 초기 구성이 필요합니다. 노드가 설정 및 구성되면 노드가 구성되었을 때 식별된 클러스터에 자동으로 등록되고 NetApp Element 관리 확장 포인트의 * 클러스터 &gt; 노드 * 페이지에서 보류 중인 노드 목록에 나타납니다.</block>
   <block id="308af774be47338e8f35a1fa620dad2d" category="paragraph">기존 클러스터에 용량을 작거나 큰 노드를 추가할 수 있습니다.</block>
-  <block id="08a430cc03de4fa592e93c4ab7fbd809" category="paragraph">이 절차는 NetApp Element 소프트웨어를 실행하는 Fibre Channel 노드 또는 스토리지 노드를 추가하는 절차와 동일합니다.</block>
   <block id="b8285a055a7672c24ffb62bf6857fea4" category="list-text">노드 * 하위 탭을 클릭합니다.</block>
   <block id="1d6df00d185be1521c43c3981f89c499" category="list-text">노드 목록을 보려면 드롭다운 목록에서 * Pending * 을 선택합니다.</block>
   <block id="68aa52388b6dc0f366e7c97c8364d211" category="list-text">하나 이상의 노드를 추가하려면 다음 단계를 수행하십시오.</block>
@@ -1338,10 +1258,8 @@
   <block id="3ec33d4db72875c84a143e9750cf081c" category="list-text">추가하려는 노드의 세부 정보를 검토하고 작업을 확인합니다.</block>
   <block id="d230c0692e07b4ff57a43756a604cd94" category="paragraph">작업이 완료되면 클러스터에 대한 액티브 노드 목록에 노드가 표시됩니다.</block>
   <block id="1fb26e285018102a44117c4997b0d9d6" category="section-title">노드 세부 정보를 봅니다</block>
-  <block id="aca82d9b27a5fe40c2872e5594526f5a" category="paragraph">클러스터 탭의 노드 페이지에서 클러스터의 노드 목록을 NetApp Element 관리 확장 지점에서 볼 수 있습니다. 활성 노드 목록을 보려면 활성 보기를 선택해야 합니다. 드롭다운 필터를 사용하여 보류 중, 펜딩활성, 모두 옵션을 선택하여 보기를 변경할 수 있습니다.</block>
   <block id="22d7257033abc210525bb71b8585e883" category="paragraph">노드 ID, 각 노드의 이름 및 상태, 구성된 IOPS, 노드 유형, 각 노드의 활성 드라이브 수, 각 노드에 대한 네트워킹 정보 등의 정보를 볼 수 있습니다.</block>
   <block id="7f1dc82d374332dee855a925be6e83e3" category="section-title">노드를 다시 시작합니다</block>
-  <block id="31abb0e95a5919763bc22d552cc9dba8" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터에서 하나 이상의 활성 노드를 다시 시작할 수 있습니다.</block>
   <block id="eacfad1499ca901255b178282af10724" category="paragraph">두 개 이상의 노드를 동시에 다시 시작하는 경우 입출력을 중지하고 모든 iSCSI 세션의 연결을 끊었습니다.</block>
   <block id="056633f97280a78a0b53f18470ad585a" category="paragraph">클러스터를 다시 시작하려면 모든 클러스터 노드를 선택하고 다시 시작할 수 있습니다.</block>
   <block id="d98cefed931537819de0b2f9849667b3" category="admonition">이 방법은 노드에서 모든 네트워킹 서비스를 다시 시작하여 네트워크 연결이 일시적으로 끊기않도록 합니다.</block>
@@ -1349,7 +1267,6 @@
   <block id="d12b0c2106484859adaa58fb0301d427" category="list-text">Active * 보기에서 다시 시작할 각 노드에 대한 확인란을 선택합니다.</block>
   <block id="f07022f87adadf12f55f40e181ebf796" category="list-text">재시작 * 을 선택합니다.</block>
   <block id="48048c421be5676de2414b58f2b6aa50" category="section-title">노드를 종료합니다</block>
-  <block id="2dc086e4f0363a929a6f212100289331" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터에서 하나 이상의 활성 노드를 종료할 수 있습니다. 클러스터를 종료하려면 모든 클러스터 노드를 선택하고 동시에 종료할 수 있습니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="admonition-title">이 작업에 대해</block>
   <block id="1e5b872ba2c47b386694e9d32d6be27c" category="list-text">Active * 뷰에서 종료할 각 노드에 대한 확인란을 선택합니다.</block>
   <block id="8093ed1f7ee8f086a8bf870495984b92" category="list-text">Shutdown * 을 선택합니다.</block>
@@ -1357,7 +1274,6 @@
   <block id="61cd542ac5ffcb86d2bd58d96750ea74" category="section-title">클러스터에서 노드를 제거합니다</block>
   <block id="349b5f66f496509850d29d8313c1052f" category="paragraph">스토리지가 더 이상 필요하지 않거나 유지보수가 필요한 경우 서비스 중단 없이 클러스터에서 노드를 제거할 수 있습니다.</block>
   <block id="5feefa666579061dbeaaff5a75ad2c68" category="paragraph">클러스터에서 노드의 모든 드라이브를 제거했습니다. 'RemoveDrives' 프로세스가 완료되고 모든 데이터가 노드에서 마이그레이션될 때까지 노드를 제거할 수 없습니다.</block>
-  <block id="7f592d3632e067960518b3d6ee6a4cd9" category="paragraph">NetApp Element 클러스터에서 Fibre Channel 접속에 Fibre Channel 노드가 2개 이상 필요합니다. 하나의 Fibre Channel 노드만 연결된 경우 모든 Fibre Channel 네트워크 트래픽이 하나의 Fibre Channel 노드에서만 계속 작동하지만, 클러스터에 다른 Fibre Channel 노드를 추가할 때까지 이벤트 로그에 경고가 트리거됩니다.</block>
   <block id="e0605596794c54782078a16e6f3531ea" category="list-text">하나 이상의 노드를 제거하려면 다음 단계를 수행하십시오.</block>
   <block id="6542f03da24583ff1799d6f4a1c344ce" category="list-text">Active * 뷰에서 제거할 각 노드에 대한 확인란을 선택합니다.</block>
   <block id="6f99fa9b2e1f4893851a8aeb82d171f9" category="list-text">제거 * 를 선택합니다.</block>
@@ -1443,8 +1359,6 @@
   <block id="7859d016cf7f2b5a5e2abf89cdedf206" category="list-text">* 정보 *: 플러그인 버전 정보를 표시하고 서비스 번들 다운로드 옵션을 제공합니다.</block>
   <block id="d05470d1480aa89ff09b30647c509081" category="list-text"><block ref="d05470d1480aa89ff09b30647c509081" category="inline-link-macro-rx"></block></block>
   <block id="268b7f69a76bac76b7a2d89e6d7decf7" category="doc">개요 페이지에서 전체 클러스터 상태를 모니터링합니다</block>
-  <block id="666100731b84805384ac0e0c18db937a" category="list-text">보고 * 를 선택합니다.</block>
-  <block id="d9841821a8ecc6a4a5be1f5fa000c5ad" category="list-text">개요 페이지에서 데이터를 모니터링합니다.</block>
   <block id="4f7f614aae330b699fbb948346082683" category="section-title">보고 개요 페이지 데이터</block>
   <block id="d281b17c5afe6041332c22ae8c2e2668" category="paragraph">보고 개요 페이지에 다음 데이터가 나타납니다.</block>
   <block id="538f3c50ca90f2b39fb0e400d67d4df4" category="list-text">* 클러스터 용량 *: 블록 스토리지, 메타데이터 및 프로비저닝된 공간에 남아 있는 용량입니다. 임계값 정보를 보려면 진행률 표시줄 위로 포인터를 이동합니다.</block>
@@ -1507,9 +1421,6 @@
   <block id="8149aad723011ca8ac50992cd6d09ef1" category="list-text"><block ref="2a1b0def77172e61d78bc2ee68da3a7b" category="inline-xref-macro-rx"></block></block>
   <block id="6d12ac9db75b913e64ab59e63e553188" category="section-title">데이터 저장소에서 QoSSIOC 자동화 활성화</block>
   <block id="8d212632817c4e7ba245d52540d6e88a" category="paragraph">플러그인에 QoSSIOC 서비스를 활성화한 후 데이터 저장소의 QoSSIOC 자동화를 활성화하고 가상 머신 디스크(VMDK) 성능 수준을 사용자 지정할 수 있습니다.</block>
-  <block id="7f5d333575c1abd26cac73f3efff8c51" category="inline-link-macro">QoSSIOC 서비스 설정을 구성했습니다</block>
-  <block id="7b9e0ffe07013fd5083e381fd9fbd75c" category="paragraph">있습니다 <block ref="944c67ad169da681ca6b870321139e37" category="inline-link-macro-rx"></block> QoSSIOC 설정 페이지 및 * QoSSIOC 상태 * 필드에 '위로'가 표시됩니다.</block>
-  <block id="098e24a79e2f03668cd124af51cd7f4c" category="paragraph">QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가상 볼륨(VVol)과 작동하지 않습니다. QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다.</block>
   <block id="c95ba07c17659cb0c5895ee43fd44cc4" category="admonition">QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 정책에 관계없이 모든 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.</block>
   <block id="b223045e7adaf313da5183bb88982ee1" category="list-text">선택한 데이터 저장소의 * QoSSIOC Automation * 열에서 상태 버튼을 클릭합니다.</block>
   <block id="d7aa1bb65b7dbcadb9ccc24261202c94" category="admonition">데이터 저장소에 QoS의 예기치 않은 변경을 방지하기 위해 다른 vCenter에서 QoSSIOC 통합이 활성화되어 있지 않은지 확인합니다.</block>
@@ -1526,13 +1437,11 @@
   <block id="afdeffce59224badc13a8821b6ec412f" category="list-text">QoSSIOC 설정 편집 * 대화 상자에서 다음 중 하나를 변경합니다.</block>
   <block id="f8bae8de9baa8395a6a8ec2d860c337f" category="list-text">* QoSSIOC 사용자 ID *: QoSSIOC 서비스의 사용자 ID입니다. QoSSIOC 서비스 기본 사용자 ID는 admin입니다. NetApp HCI의 경우 사용자 ID는 NetApp 배포 엔진을 사용하여 설치 중에 입력한 것과 같습니다.</block>
   <block id="cad792ab45ca62879a629f687945067c" category="admonition">NetApp HCI 배포의 경우 설치 중에 기본 암호가 무작위로 생성됩니다. 암호를 확인하려면 이 절차의 4를 참조하십시오<block ref="73c985feae38ab11c72c32983286b317" category="inline-link-rx"></block> 기사.</block>
-  <block id="54781b13a4285ad0cc10d8e50d05d867" category="list-text">확인 * 을 클릭합니다. 플러그인이 서비스와 성공적으로 통신할 수 있으면 QoSSIOC 상태 필드가 'UP'으로 표시됩니다.</block>
   <block id="18d6e8678d9b6ffeb8e937c46930d1ee" category="admonition">자세한 내용은 다음을 참조하십시오<block ref="73c985feae38ab11c72c32983286b317" category="inline-link-rx"></block> 상태가 다음 중 하나라도 해당되는 경우 문제를 해결하기 위해 * Down: QoSSIOC가 활성화되지 않았습니다. * "구성되지 않음": QoSSIOC 설정이 구성되지 않았습니다. * "네트워크 다운": vCenter가 네트워크의 QoSSIOC 서비스와 통신할 수 없습니다. mNode 및 SIOC 서비스가 여전히 실행 중일 수 있습니다.</block>
   <block id="fa56630b6219bb590988e3850ac6bf23" category="section-title">QoSSIOC 서비스 암호를 변경합니다</block>
   <block id="8209f42f47120008b0d3d7d32da6ae59" category="paragraph">등록 유틸리티 UI를 사용하여 관리 노드에서 QoSSIOC 서비스의 암호를 변경할 수 있습니다.</block>
   <block id="e1ea2de510fb69c3802c3b09357e3c35" category="list-text">관리 노드의 전원이 켜져 있습니다.</block>
   <block id="f42c32542c3ff238d76a4c2127b76ddb" category="inline-xref">QoSSIOC 설정</block>
-  <block id="0d8455e01cf48bc725e69efc0082ff8b" category="paragraph">이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다 <block ref="ca2b2fd8486d4adc93dbf1425e6869a9" category="inline-xref-macro-rx"></block> NetApp Element 구성 확장 포인트의 페이지입니다.</block>
   <block id="61e05bf32da0fa0fd9789baf1caaca1b" category="list-text">결과 메뉴에서 * Clear * 를 선택합니다.</block>
   <block id="fc1f04f54cb29f2e711eda9113d6c26f" category="paragraph">프로세스가 완료된 후 * QoSSIOC Status * (QoSSIOC 상태) 필드에 "Not configured(구성되지 않음)"가 표시됩니다.</block>
   <block id="1560d818a9caa158941285d6827b7e83" category="list-text">등록 TCP 포트를 포함한 브라우저에 관리 노드의 IP 주소를 입력합니다. 'https://[management node ip]:9443'</block>
@@ -1540,21 +1449,17 @@
   <block id="c880c687c6ebd121eea870eafc327571" category="list-text">* 이전 암호 *: QoSSIOC 서비스의 현재 암호입니다. 아직 비밀번호를 지정하지 않은 경우 SolidFire의 기본 비밀번호를 입력합니다.</block>
   <block id="fd025fb94f752aafec2c7562a97406d7" category="list-text">* 새 암호 *: QoSSIOC 서비스의 새 암호입니다.</block>
   <block id="8b0382d997ff2afbb32482791a17e518" category="list-text">* 암호 확인 *: 새 암호를 다시 입력합니다.</block>
-  <block id="8ecfcd4a3d0b5d33ea58263a5e5a8b1f" category="list-text">변경 내용 제출 * 을 클릭합니다.</block>
   <block id="6d5e56ccae50720ca9f434ff8a5377e1" category="admonition">변경 사항을 제출하면 QoSSIOC 서비스가 자동으로 다시 시작됩니다.</block>
   <block id="6e9c8ef1ecc795d9b7fd0cbbd291600a" category="list-text">vSphere 웹 클라이언트에서 * NetApp Element 구성 &gt; QoSSIOC 설정 * 을 선택합니다.</block>
   <block id="e9b30f2d1fccdc8f5ce1715ffeb83690" category="list-text">QoSSIOC 설정 구성 * 대화 상자의 * QoSSIOC 암호 * 필드에 새 암호를 입력합니다.</block>
   <block id="3ace73f92378bd88c4751835d1b157cf" category="paragraph">플러그인이 서비스와 성공적으로 통신할 수 있으면 * QoSSIOC Status * 필드에 "UP"이 표시됩니다.</block>
   <block id="95a783264be605055907190bec9bb29b" category="section-title">데이터 저장소에 대한 QoSSIOC 자동화를 비활성화합니다</block>
   <block id="9e44decea6e60fab9a7c251180c1be4c" category="paragraph">데이터 저장소에 대한 QoSSIOC 통합을 비활성화할 수 있습니다.</block>
-  <block id="a5916ed46e567bb95d5e2f1380c661d1" category="list-text">선택한 데이터 저장소의 * QoSSIOC Automation * 열에서 버튼을 클릭합니다.</block>
   <block id="b0e3c13d1baffdd59c60a05f1ad0d40e" category="list-text">QoS 및 SIOC * 활성화 확인란의 선택을 취소하여 통합을 비활성화합니다.</block>
   <block id="4f3712967452e14155f9ce20b7afd51b" category="paragraph">QoS 및 SIOC 사용 확인란의 선택을 취소하면 기본 QoS 재정의 옵션이 자동으로 해제됩니다.</block>
   <block id="cc4b43fbbfce7408b64b9c05e98870ba" category="section-title">QoSSIOC 설정을 지웁니다</block>
   <block id="ec5cec4b743ea330d62a06f9ea96bf90" category="paragraph">mNode(Element 스토리지 관리 노드)에 대한 QoSSIOC 구성 세부 정보를 지울 수 있습니다. 새 관리 노드에 대한 자격 증명을 구성하거나 QoSSIOC 서비스 암호를 변경하기 전에 구성된 관리 노드에 대한 설정을 지워야 합니다. QoSSIOC 설정을 지우면 vCenter, 클러스터 및 데이터 저장소에서 활성 QoSSIOC가 제거됩니다.</block>
   <block id="304409dfde6a422986bbfa38b7258895" category="doc">vCenter 플러그인을 제거합니다</block>
-  <block id="216e81580ff91eef006197f6779b4082" category="paragraph">vSphere 6.7 이하와 함께 사용되는 vCenter 플러그인 2.5 이상의 경우 vCenter Server에서 플러그인과 연결된 모든 파일을 수동으로 제거하려면 다음 프로세스를 완료해야 합니다. vSphere 7.0의 경우 플러그인을 등록 해제하면 모든 파일이 자동으로 제거됩니다.</block>
-  <block id="08a549c886605d2288d476d580625591" category="list-text">vCenter 플러그인 2.5 이상</block>
   <block id="c8b75cd98521813bb646f8e59e1660fa" category="list-text">vSphere 6.7 이하</block>
   <block id="7024db6aaf8e0fac22cd773f9b87f6bd" category="inline-link-macro">등록되지 않았습니다</block>
   <block id="a44fdaf45cc4fa8d2be9b4828a45e826" category="list-text">있습니다 <block ref="c88eee28c7f01bc8d3b0dbe781eed9dd" category="inline-link-macro-rx"></block> 기존 플러그인이며 vCSA 또는 vCenter Server에 대한 SSH, RDP 또는 기타 적절한 연결이 있습니다.</block>
@@ -1654,7 +1559,6 @@
   <block id="524238bd3a425d1fa458c42f30d477c4" category="list-text">결과 메뉴에서 * Restore from * 을 선택합니다.</block>
   <block id="b12327f8c6bf0a8b0cd8b9505aa23600" category="list-text">복원 위치 * 아래의 대화 상자에서 * NetApp Element * 를 선택합니다.</block>
   <block id="34afe5a2a12cf65ca21ea3f1e4942b67" category="list-text">대상 볼륨에 대한 대량 볼륨 쓰기 키를 생성하려면 * Generate Key * (키 생성 *)를 선택합니다.</block>
-  <block id="b400cf75fa18e6479824fb28aa961822" category="list-text">소스 클러스터가 포함된 vCenter에서 * NetApp Element 관리 * &gt; * 보호 * 를 선택합니다.</block>
   <block id="1c4ca15fb15e74093fa190455976d8ae" category="list-text">백업에 사용 중인 스냅샷의 확인란을 선택합니다.</block>
   <block id="39a9c018230a0ef2f3b6f7169782e97a" category="list-text">대화 상자의 * 볼륨 백업 대상 * 에서 * NetApp Element * 를 선택합니다.</block>
   <block id="2749f161eca1bfabc0348b6bcb6e9a13" category="list-text">다음 데이터 형식을 사용하여 * 에서 대상 클러스터와 같은 옵션을 선택합니다 *.</block>
@@ -1663,7 +1567,6 @@
   <block id="18dc2c4f49d3a0392527c695500dcb14" category="list-text">* 원격 사용자 암호 *: 원격 클러스터 암호를 입력합니다.</block>
   <block id="5a3d175c6024c1772155e3abd36a0450" category="list-text">* 대량 볼륨 쓰기 키 *: 이전에 대상 클러스터에서 생성한 키를 붙여 넣습니다.</block>
   <block id="2fc886b867029b14c756bd64fa4d24a0" category="section-title">볼륨 스냅숏을 삭제합니다</block>
-  <block id="23abff44f9ddb6c2b5926da2c8931c91" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 NetApp Element 소프트웨어를 실행하는 클러스터에서 볼륨 스냅샷을 삭제할 수 있습니다. 스냅샷을 삭제하면 시스템에서 즉시 스냅샷을 제거합니다.</block>
   <block id="603fe2bdbef337d44d356e1d84936a8c" category="paragraph">소스 클러스터에서 복제 중인 스냅샷을 삭제할 수 있습니다. 스냅샷을 삭제할 때 스냅샷이 타겟 클러스터와 동기화되는 경우 동기화 복제가 완료되고 소스 클러스터에서 스냅샷이 삭제됩니다. 스냅샷이 타겟 클러스터에서 삭제되지 않습니다.</block>
   <block id="8c9482a15b355f2a11bcd8a302881c1b" category="paragraph">타겟 클러스터에서 타겟으로 복제된 스냅샷을 삭제할 수도 있습니다. 삭제된 스냅샷은 소스 클러스터에서 스냅샷을 삭제했다는 것을 시스템이 감지할 때까지 타겟의 삭제된 스냅샷 목록에 유지됩니다. 타겟이 소스 스냅샷을 삭제했다는 것을 감지한 후 타겟은 스냅샷 복제를 중지합니다.</block>
   <block id="9d5b776e7ca85c6123a85509a7d8d3a2" category="list-text">Snapshots * 하위 탭에서 다음 보기 중 하나를 선택합니다.</block>
@@ -1672,10 +1575,6 @@
   <block id="4294641827734d7cff0e0c4f97fa8188" category="list-text">삭제할 볼륨 스냅숏의 확인란을 선택합니다.</block>
   <block id="15089086cdcde8de09b03ad13cce88ca" category="summary">플러그인을 사용하여 스토리지 클러스터에 노드를 추가할 수 있습니다.</block>
   <block id="0d9029e785d6af991e53b31b279e9aa4" category="doc">클러스터 관리</block>
-  <block id="71e9c0507e3cebd9b4e0b99c71a5e98b" category="paragraph">Element 소프트웨어를 실행하는 클러스터를 편집하고, SSH 구성을 관리하고, 보호 도메인 모니터링을 설정하고, 클러스터를 종료할 수 있습니다.</block>
-  <block id="b60ed88355ac3f6898fd8a7ab1734d06" category="inline-link-macro">추가되었습니다</block>
-  <block id="4ccd64e71dfef7fbb8f1ea80fa01c925" category="list-text">하나 이상의 클러스터가 있어야 합니다 <block ref="132d58c32ebdff57c85a2f4a8cd10ae6" category="inline-link-macro-rx"></block>.</block>
-  <block id="32c44a9a1ce51c0c788db8bff5828c93" category="list-text">방화벽 규칙을 사용하면 TCP 포트 443 및 8443에서 vCenter와 클러스터 MVIP 간의 개방형 네트워크 통신을 사용할 수 있습니다.</block>
   <block id="54d0489e4fb9453a17b8c1d683304e5b" category="list-text"><block ref="860f2ad6c3ea4f4817bcb0f14b6b25c6" category="inline-xref-macro-rx"></block></block>
   <block id="047d0798b02979d1437a03abb0c90d5b" category="list-text"><block ref="4d4f3a13c229219c2371039338f05cd4" category="inline-xref-macro-rx"></block></block>
   <block id="85c3a905a22ea18242035e8b6cde09d6" category="list-text"><block ref="8d773b09d88cafa404bb0a781d90205d" category="inline-xref-macro-rx"></block></block>
@@ -1712,7 +1611,6 @@
   <block id="eca4fb99b9a8c4564181cfaec57db742" category="list-text">* 페어링 대상 *: 로컬 클러스터와 페어링된 추가 클러스터의 이름입니다.</block>
   <block id="a974bf7ec19c6ca7b7cb8faad68b73d8" category="list-text">* SSH 상태 *: 보안 셸의 상태입니다. 활성화된 경우 남은 시간이 표시됩니다.</block>
   <block id="cb8fdc0476a16e980957b386183bc39c" category="section-title">클러스터 프로필을 편집합니다</block>
-  <block id="b2e199c1b20ea5f4bbdf1b6996a1bcdb" category="paragraph">NetApp Element 구성 확장 지점에서 클러스터 사용자 ID 및 암호를 변경할 수 있습니다.</block>
   <block id="9f6ba4a2d454b59f7e2e572398e0138a" category="admonition">이 절차에서는 플러그인이 사용하는 클러스터 관리자 사용자 이름과 암호를 변경하는 방법에 대해 설명합니다. 플러그인에서 클러스터 관리자 자격 증명을 변경할 수 없습니다. 을 참조하십시오<block ref="5d916bc6c1468cb9b274ae3db15d6dd5" category="inline-link-rx"></block> 클러스터 관리자 계정의 자격 증명을 변경하는 지침은 을 참조하십시오.</block>
   <block id="54ff6b528463dda8cc306526a323ea57" category="list-text">클러스터를 확인합니다.</block>
   <block id="f3828e7716c172413fc0f19862f8aec5" category="list-text">다음 중 하나를 변경합니다.</block>
@@ -1720,19 +1618,13 @@
   <block id="8def6438d31a03f2d26f3f456fa66b75" category="list-text">암호: 클러스터 관리자 암호입니다.</block>
   <block id="cf66ab12b7f15c5d7900e0d294dd562c" category="admonition">클러스터를 추가한 후에는 클러스터의 IP 주소 또는 FQDN을 변경할 수 없습니다. 또한 추가된 클러스터에 대해 할당된 연결된 모드 vCenter Server를 변경할 수 없습니다. 클러스터 주소 또는 관련 vCenter Server를 변경하려면 클러스터를 제거하고 다시 추가해야 합니다.</block>
   <block id="a5427d089bfc1b07d1dead6637379e7e" category="section-title">클러스터 프로필을 제거합니다</block>
-  <block id="27447dccda41d502d5574b4f46d298e7" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 vCenter 플러그인에서 더 이상 관리하지 않으려는 클러스터의 프로필을 제거할 수 있습니다.</block>
   <block id="b6cbe70a3682d96f7a2f224a2cdc9e5d" category="paragraph">연결된 모드 그룹을 설정하고 클러스터를 다른 vCenter Server에 재할당하려는 경우 클러스터 프로필을 제거하고 다른 연결된 vCenter Server IP를 사용하여 다시 추가할 수 있습니다.</block>
   <block id="8479a8ac48f590c970f1ded41ac9b4ca" category="list-text">제거할 클러스터를 선택합니다.</block>
   <block id="32488c0a8d325482a6599eaa5c63b366" category="section-title">저장 시 암호화 사용</block>
-  <block id="c2c366c834429d77b8daec5642032b9f" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 활성화할 수 있습니다.</block>
   <block id="44bf3272559de42e44cc97e837454a7a" category="list-text">유휴 데이터 암호화를 활성화할 클러스터를 선택합니다.</block>
-  <block id="2f29c70d65d2736b1ca2a3cfe7e696c3" category="list-text">결과 메뉴에서 * EAR 활성화 * 를 클릭합니다.</block>
   <block id="70b30e14378f7b0d12d50ab80fbf1a07" category="section-title">저장된 암호화 사용 안 함</block>
-  <block id="653ca78d7b5548ccbfc94e20f54cad29" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 비활성화할 수 있습니다.</block>
   <block id="f196d3fc319522f105c3ee8047a92213" category="list-text">클러스터의 확인란을 선택합니다.</block>
-  <block id="9c16e63a32bf1abc35ed7c631fccc192" category="list-text">결과 메뉴에서 * Disable Ear * 를 클릭합니다.</block>
   <block id="e7d694813a2146a3ab31b4b907988620" category="section-title">SSH를 활성화합니다</block>
-  <block id="a709a13c7ad384ac48d3d32c98a4c0f7" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 SSH(Secure Shell) 세션을 수동으로 활성화할 수 있습니다. NetApp 기술 지원 엔지니어는 SSH를 설정하여 결정 기간 동안 스토리지 노드에 액세스하여 문제를 해결할 수 있습니다.</block>
   <block id="6dc7a933239b5c72bc56e3bb13c222cb" category="list-text">SSH 활성화 * 를 선택합니다.</block>
   <block id="cea6ccf96a7b8eab98ceb2443acee4cb" category="list-text">SSH 세션이 활성화되는 기간을 최대 720까지 시간 단위로 입력합니다.</block>
   <block id="734450d7d347b0dfc9f355a9187decf8" category="admonition">계속하려면 값을 입력해야 합니다.</block>
@@ -1742,11 +1634,9 @@
   <block id="ec840def307fd99ae909c484a7f860aa" category="paragraph">이 대화 상자에는 SSH 세션의 남은 시간이 표시됩니다.</block>
   <block id="cd96cc01ba61336e64b124bb6df57626" category="list-text">SSH 세션의 새 기간을 최대 720까지 몇 시간 단위로 입력합니다.</block>
   <block id="b9bcb82dfb5532523e72796f9b9a1e81" category="section-title">SSH를 해제합니다</block>
-  <block id="d6f4efcf5bcd0ee2897aac5a8bc48e6b" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 스토리지 클러스터의 노드에 대한 SSH(Secure Shell) 액세스를 수동으로 해제할 수 있습니다.</block>
   <block id="34e61bb14b41c045eb7f299c0e6e4b9e" category="list-text">SSH * 비활성화 를 선택합니다.</block>
   <block id="aa1895831e919f6282bd2fdc2eaf5da4" category="section-title">보호 도메인 모니터링을 설정합니다</block>
   <block id="6a9916fd360cff0edd98f0f92ae94b3f" category="inline-link-macro">보호 도메인 모니터링</block>
-  <block id="2219d39acd7b2ee529616833d9497f49" category="paragraph">를 수동으로 활성화할 수 있습니다 <block ref="eb2a8f3ad2c177d2352fbc0a14b04656" category="inline-link-macro-rx"></block> NetApp Element 구성 확장점 사용. 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다.</block>
   <block id="d3b962d6d7d357eada64973561d4213c" category="list-text">보호 도메인 모니터링을 사용하려면 선택한 클러스터를 Element 11.0 이상 버전에서 모니터링해야 합니다. 그렇지 않으면 보호 도메인 기능을 사용할 수 없습니다.</block>
   <block id="1e522faf3f2c29744184206a0598c56b" category="list-text">보호 도메인 기능을 사용하려면 클러스터에 노드가 2개 이상 있어야 합니다. 2노드 클러스터와의 호환성은 제공되지 않습니다.</block>
   <block id="e04f259b38cf85b8a211c1864c15f035" category="list-text">Set Protection Domain Monitoring * 을 선택합니다.</block>
@@ -1756,16 +1646,12 @@
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="inline-link-macro">보고</block>
   <block id="8e81eca36074680feeb27e27e1c52eda" category="paragraph">모니터링 기본 설정을 설정한 후에는 에서 보호 도메인을 모니터링할 수 있습니다 <block ref="13aa0e47635e2cf5e19f028e9d099aaa" category="inline-link-macro-rx"></block> NetApp Element 관리 확장 지점의 탭입니다.</block>
   <block id="186f4f181c5fef406a9238827e55c200" category="section-title">클러스터를 종료합니다</block>
-  <block id="7b01032bd738696475aab312a3e93d8c" category="paragraph">NetApp Element 구성 확장 지점을 사용하여 스토리지 클러스터의 모든 활성 노드를 수동으로 종료할 수 있습니다.</block>
   <block id="8a7ef1c3e82395341b7000b79c239eb4" category="inline-link-macro">다시 시작합니다</block>
   <block id="cf60702c259ef2cdb1f4dcf858dc3dd7" category="paragraph">원하는 경우 <block ref="eecba8da42c83d937a557e01bb18a3bb" category="inline-link-macro-rx"></block> 클러스터를 종료하지 않고 NetApp Element 관리 확장 지점의 클러스터 페이지에서 모든 노드를 선택하고 다시 시작할 수 있습니다.</block>
   <block id="b66403b2641299b623edc6d35a257b75" category="paragraph">I/O를 중지하고 모든 iSCSI 세션의 연결을 끊었습니다.</block>
   <block id="08468b27dfb7f805f9e02b91650864dc" category="section-title">NetApp HCI 인프라를 확장합니다</block>
-  <block id="ab91dd7f95968fffd00546428fa0ec61" category="paragraph">NetApp HCI를 사용하여 노드를 추가하여 NetApp HCI 인프라를 수동으로 확장할 수 있습니다. NetApp Element 확장 지점에서 시스템 확장을 위한 NetApp HCI UI에 대한 링크가 제공됩니다. 시작 및 클러스터 페이지의 NetApp Element 관리 확장 지점 내에 추가 링크가 제공됩니다.</block>
   <block id="18a2913d457d149d724c285bb0b5ecf6" category="list-text">NetApp HCI * 를 확장합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="d495047561c1a08074d3afeeb5b5d172" category="section-title">VMware vSphere 사전 요구 사항</block>
-  <block id="3903fd261f224ad8af888f893eb71a5e" category="section-title">플러그인에서 지원하는 VMware vSphere 버전</block>
   <block id="39bb4a890cda10e989012ed844843a1a" category="paragraph">플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.</block>
   <block id="8bc5dd01570b8e30ab647a98f1b5c995" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.7 및 6.7 업데이트 1 및 3</block>
   <block id="f72c3688e3e7a685ff88f8a7c360f844" category="admonition">플러그인은 HTML5 vSphere Web Client의 버전 6.7 U2 빌드 13007421 및 업데이트 2a 이전에 릴리스된 기타 6.7 U2 빌드(빌드 13643870)와 호환되지 않습니다. Flash/Flex용 버전 6.7 U2 vSphere Web Client와 호환됩니다.</block>
@@ -1786,7 +1672,6 @@
   <block id="5ffbddc6871ea17252ba04957698f0fd" category="summary">스토리지 클러스터의 볼륨에 적용할 QoS 정책을 설정 및 수정할 수 있습니다.</block>
   <block id="50ee1f895e7e284e9dd0f8f045bc11a2" category="doc">볼륨 QoS 정책 생성 및 관리</block>
   <block id="aa59f10f28f46853d1287bf8c57a1896" category="paragraph">QoS(서비스 품질) 정책을 사용하면 여러 볼륨에 적용할 수 있는 표준화된 서비스 품질 설정을 생성하여 저장할 수 있습니다. QoS 정책을 사용하려면 선택한 클러스터가 Element 10.0 이상이어야 합니다. 그렇지 않으면 QoS 정책 기능을 사용할 수 없습니다.</block>
-  <block id="6c397232d087c40faa9d3223b8bbec14" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.</block>
   <block id="5065e2a427fab966fffb5b565b4c48a6" category="list-text"><block ref="9a5253f025f03565600537b7b0e22833" category="inline-xref-macro-rx"></block></block>
   <block id="5b4ed8c000abf903d65062f4d88ebb25" category="list-text"><block ref="116d4578e3562f8850f11e96b4cda5a8" category="inline-xref-macro-rx"></block></block>
   <block id="56ca89b23a0a59d83afdcf7fb6648863" category="list-text"><block ref="6f671cbcdadb07478fc3717e83e9d21b" category="inline-xref-macro-rx"></block></block>
@@ -1826,7 +1711,6 @@
   <block id="44f15faa4af221989f437b18bc7e295b" category="section-title">QoS 정책을 삭제합니다</block>
   <block id="2bee85af6914f0a5879c7c12bf441e01" category="paragraph">QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 정책에 의해 이전에 정의된 QoS 값을 개별 볼륨 QoS로 유지합니다. 삭제된 QoS 정책과의 연결이 제거됩니다.</block>
   <block id="4294f5a888e74bc44950b71dce1c2b12" category="list-text">삭제할 QoS 정책의 확인란을 선택합니다.</block>
-  <block id="6a5552fc8afece3128d2d5c9991af883" category="paragraph">시스템은 NetApp Element 관리 확장 포인트의 * 보고 &gt; 경고 * 페이지에 각 경고와 함께 오류 코드를 보고합니다. 오류 코드를 사용하면 시스템에서 어떤 구성 요소가 경고를 발생했고 경고가 발생한 이유를 확인할 수 있습니다.</block>
   <block id="d93fdf8ab834ec550b9295e94912501e" category="paragraph">다음 목록에서는 다양한 유형의 시스템 경고를 간략하게 설명합니다.</block>
   <block id="b77a61cd6988e6c08982332968c82546" category="list-text">* authenticationServiceFault *: 하나 이상의 클러스터 노드의 인증 서비스가 예상대로 작동하지 않습니다.</block>
   <block id="5598b7fb635d67383dc9570babc8e530" category="paragraph">* 해결 방법 *: NetApp 지원 팀에 지원 문의</block>
@@ -2087,7 +1971,6 @@
   <block id="fa8a11a3fbd98ac622690c2c068f7704" category="list-text">스케줄 세부 정보를 확인합니다.</block>
   <block id="cd1e7264baf1efb1c06cc35c5eb871ef" category="section-title">스냅샷 스케줄을 편집합니다</block>
   <block id="137df0ce7a4a6a2376333f43ec13a1f2" category="paragraph">기존 스냅샷 스케줄을 수정할 수 있습니다. 수정 후 다음 번에 스케줄이 실행될 때 업데이트된 속성이 사용됩니다. 원래 스케줄에 의해 생성된 모든 스냅샷은 스토리지 시스템에 남아 있습니다.</block>
-  <block id="f4027f833086ab01fb6c5e0852cfcd48" category="list-text">NetApp Element 관리 &gt; 보호 * 를 선택합니다.</block>
   <block id="d0897e446e98da9060fab4d257e475e2" category="list-text">Schedules * 하위 탭을 클릭합니다.</block>
   <block id="6b43f5ff1462e19af863d2306500f6e5" category="list-text">편집할 스냅샷 스케줄의 확인란을 선택합니다.</block>
   <block id="bb39fff2eb8773eefa2b1c5d63790e8b" category="list-text">볼륨 ID CSV * 필드에서 스냅샷 작업에 현재 포함되어 있는 단일 볼륨 ID 또는 쉼표로 구분된 볼륨 ID 목록을 수정합니다.</block>
@@ -2114,8 +1997,6 @@
   <block id="6bde8427d243711530e47035165075a8" category="summary">플러그인을 사용하여 Element 볼륨에 생성된 관리 데이터 저장소를 추가할 수 있습니다.</block>
   <block id="1b8a04f09ff55290753a17988fd53c2a" category="doc">데이터 저장소를 관리합니다</block>
   <block id="fee03a90bfc424cd6ea94a6cc22746e8" category="list-text">데이터 저장소를 생성하고 관리하려면 먼저 사용자 계정을 하나 이상 생성해야 합니다.</block>
-  <block id="93913e23ba02c21815deeb2ea4293435" category="inline-link-macro">설정을 구성합니다</block>
-  <block id="37c4aea1ac4ddac0e76d2634315d1fca" category="list-text">데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 해야 합니다 <block ref="a2268bd3bd8fc6322025e8fd369c9e4c" category="inline-link-macro-rx"></block> NetApp Element 구성 확장 포인트의 QoSSIOC 설정 페이지</block>
   <block id="37419db5e50042d352253cecf836a895" category="list-text"><block ref="34003bdb989a43da64b5c273e212da20" category="inline-xref-macro-rx"></block></block>
   <block id="41464326defbd3227db493b7f9b5031c" category="list-text"><block ref="fa5885490eb04f662ba4df5cb2f3597a" category="inline-xref-macro-rx"></block></block>
   <block id="9e1be1c76c27e033f8e76dd7f8534b0e" category="list-text"><block ref="b6303606861f5d90b3af8100307a6b90" category="inline-xref-macro-rx"></block></block>
@@ -2125,7 +2006,6 @@
   <block id="23b081e2c4ea680f5f8a6e9d000547ca" category="list-text"><block ref="f1db34a1e025f6da80e53874daaca648" category="inline-xref-macro-rx"></block></block>
   <block id="381ca050cbf88b622b16bd201291815e" category="admonition">vSphere에서 작업 모니터링을 사용하여 데이터 저장소 작업을 완료한 후 모니터링할 수 있습니다.</block>
   <block id="484cebc53125766b84254b2ca0899b9c" category="section-title">데이터 저장소를 생성합니다</block>
-  <block id="8223449a9eccdf88e8a01a38b7df9eb0" category="paragraph">NetApp Element 관리 확장에서 데이터 저장소를 생성할 수 있습니다.</block>
   <block id="26209b1fcbdf8600aee5bc08ddf8f12d" category="list-text">vCenter Server에 하나 이상의 호스트가 접속되어 있어야 합니다.</block>
   <block id="1a5a6ffdbdf4bf7b0de8b3313b815f1d" category="admonition">vCenter 연결 모드를 사용하는 경우 올바른 vCenter Server에 클러스터를 추가했는지 확인합니다.</block>
   <block id="1966e0e760a1c36aee6ee0728a167536" category="list-text">Datastore 페이지에서 * Create Datastore * 를 선택합니다.</block>
@@ -2152,14 +2032,11 @@
   <block id="a0826c08331388a2dd05f5ea15d6c57f" category="list-text">호스트 액세스 구성 * 창에서 사용 가능한 호스트 이니시에이터(IQN 또는 WWPN)를 이전 창에서 선택한 볼륨 액세스 그룹에 연결합니다. 호스트 이니시에이터가 이미 볼륨 액세스 그룹에 연결되어 있는 경우 필드는 해당 이니시에이터에 대해 읽기 전용입니다. 호스트 이니시에이터에 볼륨 액세스 그룹 연결이 없으면 이니시에이터 옆의 목록에서 옵션을 선택합니다.</block>
   <block id="651241502266cc2bc76076ecdab2204b" category="list-text">QoSSIOC 자동화를 활성화하려면 * QoS 및 SIOC 사용 * 을 선택한 다음 QoSSIOC 설정을 구성합니다.</block>
   <block id="10b6a4d532d851e6a13a28d0c16cc183" category="admonition">QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.</block>
-  <block id="60e2ad1d6767c7ef7e6905a5adee3470" category="inline-link-macro">QoSSIOC 설정을 구성합니다</block>
-  <block id="d954979b9cb22b00a8a8095aaae3ff73" category="paragraph">QoSSIOC 서비스를 사용할 수 없는 경우 먼저 <block ref="9f771952c873ab4814a69e75267e7453" category="inline-link-macro-rx"></block>.</block>
   <block id="f4848aa44c4c41781a02d706b3cb8201" category="admonition">버스트 계수는 VMDK에 대한 IOPS 제한(SIOC) 설정의 배수입니다. 기본값을 변경하는 경우 버스트 인수 값에 VMDK에 대한 IOPS 제한을 곱할 때 요소 볼륨의 최대 버스트 제한을 초과하지 않는 버스트 비율 값을 사용해야 합니다.</block>
   <block id="a9cbb2e80157c018de9f97084ebf813b" category="admonition">기본적으로 최대 SIOC 디스크 공유는 '무제한'으로 설정됩니다. VDI와 같은 대규모 VM 환경에서는 클러스터의 최대 IOPS가 오버 커밋될 수 있습니다. QoSSIOC를 활성화할 때는 항상 기본 QoS 재정의 를 선택하고 IOPS 제한 옵션을 적절한 값으로 설정하십시오.</block>
   <block id="22ab0cfd5baac15c4de5e9496847686a" category="list-text">선택 사항을 확인하고 * Finish * 를 클릭합니다.</block>
   <block id="67eb8201d9ec8237b38aaee253202d74" category="list-text">작업의 진행률을 보려면 vSphere에서 작업 모니터링을 사용하십시오. 데이터 저장소가 목록에 나타나지 않으면 보기를 새로 고칩니다.</block>
   <block id="4f4fff756b14bfc0043859ea459eba27" category="section-title">데이터 저장소 목록을 봅니다</block>
-  <block id="a8f6ec84bde84ea1a965b420095187e6" category="paragraph">NetApp Element 관리 확장 지점에서 데이터 저장소 페이지에서 사용 가능한 데이터 저장소를 볼 수 있습니다.</block>
   <block id="42a95f3bc225c02cf5d95baa312d0841" category="admonition">둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.</block>
   <block id="822b6f9d63753d97d8c1305e83154502" category="list-text">데이터 저장소 목록을 검토합니다.</block>
   <block id="bbb6518db622797c90eb2bb71c9f1523" category="admonition">여러 볼륨(혼합 데이터 저장소)에 걸쳐 있는 데이터 저장소가 표시되지 않습니다. 데이터 저장소 보기에는 선택한 NetApp Element 클러스터의 ESXi 호스트에서 사용할 수 있는 데이터 저장소만 표시됩니다.</block>
@@ -2176,7 +2053,6 @@
   <block id="b0ed1a6d8d255281c99593099b2cd3bc" category="list-text">"사용 안 함": QoSSIOC가 활성화되지 않았습니다.</block>
   <block id="29fad8dd33b102385099b252ffcab54d" category="list-text">Max exceeded: Volume Max QoS가 지정된 제한 값을 초과했습니다.</block>
   <block id="1269da27c6f7c4261eeb96f73578f544" category="section-title">데이터 저장소를 확장합니다</block>
-  <block id="e6d00b5aa55a3b00f0b2ab5cf3ad632b" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 데이터 저장소를 확장하여 볼륨 크기를 늘릴 수 있습니다. 데이터 저장소를 확장하면 해당 데이터 저장소와 관련된 VMFS 볼륨도 확장됩니다.</block>
   <block id="9767bb6edc4fe21b0a14561c1b9c1cfa" category="list-text">Datastores 페이지에서 확장할 데이터 저장소에 대한 확인란을 선택합니다.</block>
   <block id="260eeb6d1d80ae4aa0eb0b0447a7bd87" category="list-text">결과 메뉴에서 * Extend * 를 선택합니다.</block>
   <block id="63b0bed71f5ff86f0a921446bd87799d" category="list-text">New Datastore Size 필드에 새 데이터 저장소에 필요한 크기를 입력하고 GB 또는 GiB를 선택합니다.</block>
@@ -2200,12 +2076,10 @@
   <block id="932d4a85bca15b99b19c5e699762a6da" category="list-text">호스트 액세스 구성 * 창에서 사용 가능한 호스트 이니시에이터(IQN 또는 WWPN)를 이전 창에서 선택한 볼륨 액세스 그룹에 연결합니다.</block>
   <block id="af68ddc4d0709dbfde0ac018c920ac91" category="paragraph">호스트 이니시에이터가 이미 볼륨 액세스 그룹에 연결되어 있는 경우 필드는 해당 이니시에이터에 대해 읽기 전용입니다. 호스트 이니시에이터에 볼륨 액세스 그룹 연결이 없으면 이니시에이터 옆의 드롭다운 목록에서 옵션을 선택합니다.</block>
   <block id="f00ef1f5213bd0f9b653f13e9e80f0e1" category="list-text">QoSSIOC 자동화를 활성화하려면 * QoS 및 SIOC 사용 * 상자를 선택한 다음 QoSSIOC 설정을 구성합니다.</block>
-  <block id="88850b4ef97e702af2b1bbd8b7cfbf1c" category="paragraph">QoSSIOC 서비스를 사용할 수 없는 경우 먼저 NetApp Element 구성 확장 지점에서 QoSSIOC 설정 페이지에서 설정을 구성해야 합니다.</block>
   <block id="8cd943f52f3bd6d2e733f1046f950711" category="admonition">버스트 계수는 VMDK에 대한 IOPS 제한(SIOC) 설정의 배수입니다. 기본값을 변경하는 경우 버스트 비율 값에 VMDK에 대한 IOPS 제한을 곱할 때 NetApp Element 볼륨의 최대 버스트 제한을 초과하지 않는 버스트 비율 값을 사용해야 합니다.</block>
   <block id="5aa4e7def2a89f4f85736e5f89b20737" category="list-text">* 선택 사항 *: * 기본 QoS 재정의 * 를 선택하고 설정을 구성합니다.</block>
   <block id="93fa039934d458299739652d690e523a" category="list-text">선택 사항을 확인하고 * Finish * 를 선택합니다.</block>
   <block id="2cb2be36c1f3b7548e35f2489ab31e61" category="section-title">데이터 저장소를 공유합니다</block>
-  <block id="6c9537b0af6d0bc8cfc57726bb31975a" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 하나 이상의 호스트와 데이터 저장소를 공유할 수 있습니다.</block>
   <block id="d7a1e2933a565e3ac7858c1d69518fa9" category="paragraph">데이터 저장소는 동일한 데이터 센터 내의 호스트 사이에서만 공유할 수 있습니다.</block>
   <block id="63acff36c2e42ceff61b7edc862e50db" category="list-text">선택한 데이터 센터 아래에 둘 이상의 호스트가 있어야 합니다.</block>
   <block id="822a35e75a50b8be88ceb3702a15ad61" category="list-text">Datastores * 페이지에서 공유할 데이터 저장소의 확인란을 선택합니다.</block>
@@ -2229,11 +2103,9 @@
   <block id="a96209dbbd077a22bc1c068baec0a078" category="list-text">호스트 사용자 이름과 암호를 입력합니다.</block>
   <block id="b8cf7ed738a29d1071dd4774986820dc" category="list-text">선택 사항을 확인하고 * OK * 를 선택합니다.</block>
   <block id="b23c0d1300af82713608ff50bd4b5049" category="section-title">데이터 저장소를 삭제합니다</block>
-  <block id="64497b3ee5b681d2b7f0182906457583" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 데이터 저장소를 삭제할 수 있습니다. 이 작업을 수행하면 삭제할 데이터 저장소의 VM과 연결된 모든 파일이 영구적으로 삭제됩니다. 플러그인은 등록된 VM이 포함된 데이터 저장소를 삭제하지 않습니다.</block>
   <block id="076697fc8071f84673250985399126aa" category="list-text">datastores * 페이지에서 삭제할 데이터 저장소의 확인란을 선택합니다.</block>
   <block id="061aaf39a070acd7a88b540ee533563b" category="list-text">(선택 사항) 데이터 저장소와 연결된 NetApp Element 볼륨을 삭제하려면 * Delete associated volume * (연결된 볼륨 삭제 *) 확인란을 선택합니다.</block>
   <block id="a0fee81ba9c10f374ac8c7c2d6a047c4" category="admonition">볼륨을 유지하고 나중에 다른 데이터 저장소에 연결하도록 선택할 수도 있습니다.</block>
-  <block id="8f890cacf4794536fdea8b70fc3d5e89" category="list-text">Reporting * &gt; * iSCSI Sessions * 를 선택합니다.</block>
   <block id="ab889c0f870cde4a471f0e3a8a25925b" category="section-title">iSCSI 세션 데이터</block>
   <block id="ca047cced0de5736f9f073735e3d233d" category="list-text">* 노드 *: 볼륨의 기본 메타데이터 파티션을 호스팅하는 노드입니다.</block>
   <block id="b06d2569fa81d467403239d5fbc5bd57" category="list-text">* 계정 *: 볼륨을 소유한 계정의 이름입니다. 값이 비어 있으면 대시(-)가 표시됩니다.</block>
@@ -2279,7 +2151,6 @@
   <block id="e0b3e00c8ede6394a2f91fbc4f3c0b40" category="cell"><block ref="af6ea15134520eeae3bd7394659b0b2f" category="inline-link-rx"></block>참고: 이 책은 Element 소프트웨어 11.3/NetApp HCI 1.6에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다.<block ref="23822845d02ea4fff52cbd63e5d2747c" category="inline-link-rx"></block>참고: 이 책은 Element 소프트웨어 11.5/NetApp HCI 1.7의 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다<block ref="7a8413a62eb5966c6aa89457ad7daa14" category="inline-link-rx"></block>참고: 이 책은 Element 소프트웨어 11.7/NetApp HCI 1.7P1에 대한 업데이트된 관리 노드 업그레이드 절차에 대해 설명합니다</block>
   <block id="7e6804427b6e39789b1a282736e90b46" category="summary">플러그인을 사용하여 사용자 계정을 만들고 관리할 수 있습니다.</block>
   <block id="bd6dca3f6f8d28ce081bb3957040368d" category="doc">사용자 계정을 만들고 관리합니다</block>
-  <block id="254d84c1e79f220f2eeadc64b5924a02" category="paragraph"><block ref="f5c48e85f9806e4c64d9f138cc449780" category="inline-link-macro-rx"></block> NetApp Element 소프트웨어 기반 네트워크에서 스토리지 리소스에 대한 액세스를 제어하는 데 사용됩니다.</block>
   <block id="3412a6edf080f1a50d150bff869f3f63" category="list-text"><block ref="67727cdfcdf8454cd172e09fb9aca0cd" category="inline-xref-macro-rx"></block></block>
   <block id="3425273350b593004a27807eef888437" category="list-text"><block ref="c31194760f5b695ff1ea7cc608ff344d" category="inline-xref-macro-rx"></block></block>
   <block id="cd93513d64c6d6959e7d022f866129d5" category="list-text"><block ref="a56321edd021b945639593db06db7789" category="inline-xref-macro-rx"></block></block>
@@ -2302,13 +2173,11 @@
   <block id="72e4e3df0141e09fab8d0e23700dc1e5" category="list-text">노드 세션 인증에 사용되는 이니시에이터 암호 또는 타겟 암호 자격 증명을 편집합니다.</block>
   <block id="59eb5e0137fec4eb4902b713fd23c0fd" category="admonition">자격 증명을 변경하지 않으면 자격 증명은 그대로 유지됩니다. 자격 증명 필드를 비워 두면 새 암호가 생성됩니다.</block>
   <block id="7168d3c290a4e520538280cb01130d0e" category="section-title">계정을 삭제합니다</block>
-  <block id="084ba7c7d125f845224fe2ad3a856a65" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 사용자 계정을 삭제할 수 있습니다.</block>
   <block id="dfb29ee1a7b82627bd39682c56b94d8d" category="paragraph">계정과 연결된 모든 볼륨을 삭제 및 제거하거나 볼륨을 다른 계정에 다시 할당합니다.</block>
   <block id="823133d2c680b39fec7b1008b1b0de64" category="admonition">관리 노드에서 영구 볼륨을 사용하는 경우 이러한 볼륨과 연결된 계정을 삭제하지 마십시오.</block>
   <block id="6abe832decbad73ac8671dfb705a7646" category="list-text">삭제할 계정의 확인란을 선택합니다.</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
-  <block id="d4eb4c725f599d253c9232568333e094" category="sidebar">연결 모드 및 vCenter 플러그인</block>
   <block id="6432b0f49db5c1b83fbc6ce806da11df" category="sidebar">구축 전 요구 사항</block>
   <block id="599bf02fc8774ce96678e83b0e06ec54" category="sidebar">vCenter 플러그인을 사용하여 스토리지를 관리합니다</block>
   <block id="c077177f79a8baa119224257ba919d1b" category="sidebar">액세스 그룹을 생성하고 관리합니다</block>
@@ -2322,7 +2191,6 @@
   <block id="9c17578111f04071be2db36d040281bf" category="sidebar">플러그 인 등록을 취소합니다</block>
   <block id="faa169d4c778c54064b635053ab306a2" category="sidebar">플러그인을 제거합니다</block>
   <block id="5612baf51d00a05f0290357c97294f8d" category="sidebar">플러그인 문제를 해결합니다</block>
-  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
@@ -2337,15 +2205,12 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="4af68147a22cc3d80f4eb4f02b5b14a7" category="inline-link">NetApp HCI 1.10 릴리스 정보</block>
-  <block id="9203ca429e11584ecc455e2f24e8ab6b" category="list-text"><block ref="2485371e710ec4ea8989c22e13c02067" category="inline-link-rx"></block> _신규 _</block>
   <block id="9676fc811bea74225536cdd128daebc0" category="list-text"><block ref="9676fc811bea74225536cdd128daebc0" category="inline-link-rx"></block></block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">NetApp Element 소프트웨어 12.5 릴리스 정보</block>
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter 플러그인 4.9 릴리즈 노트</block>
   <block id="278e17511dfc12c355dd5120b3cdcf38" category="inline-link">컴퓨팅 펌웨어 번들 2.146 릴리스 정보</block>
-  <block id="cba86f04115d75e398ba32a033e63c37" category="list-text"><block ref="e15eb9592751e0df97c69e856ffc178a" category="inline-link-rx"></block> _신규 _</block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">스토리지 펌웨어 번들 2.146 릴리스 정보</block>
-  <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _신규 _</block>
   <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">스토리지 펌웨어 번들 2.99.2 릴리스 정보</block>
   <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
   <block id="d75c92bfa55428c6b64a5ed842bd1c4f" category="section-title">vCenter Server 4.8용 NetApp Element 플러그인</block>
@@ -2357,57 +2222,32 @@
   <block id="a6568301ea8af8e996ab5850a7e6e134" category="list-text">로그아웃한 후 3-5분 정도 기다린 다음 다시 로그인합니다.</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">이 KB 문서를 참조하십시오</block>
   <block id="2ca516a34cb5ec652761d2350d5a513e" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 6.5</block>
-  <block id="8ba5447ae975da458ad42dd041c1bfc0" category="admonition">이 플러그인은 VMware vCenter Server 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.</block>
   <block id="19f896759122e1f164b08da5c97303fd" category="summary">NetApp Element Plug-in for VMware vCenter Server에서 클러스터에서 수행된 작업과 오류를 나타내는 클러스터 장애를 나열하는 이벤트 로그를 검토합니다.</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">관리 서비스 공지 2.21.61(VMware vCenter Server용 NetApp Element 플러그인 4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="1953a2d6d8fb71b3d3f05d7ab9aa523c" category="inline-link-macro">관리 서비스 공지 2.20.69(VMware vCenter Server 4.9.14용 NetApp Element 플러그인)</block>
   <block id="ba9eae25d558175b3670fa75219d16c1" category="list-text"><block ref="ba9eae25d558175b3670fa75219d16c1" category="inline-link-macro-rx"></block></block>
-  <block id="c6df14aa71e88712620087ef3c0051b8" category="inline-link-macro">관리 서비스 공지 2.19.48(vCenter Server 4.8.34용 NetApp Element 플러그인)</block>
-  <block id="9fd39b76002ba897bb7f2798062dd085" category="list-text"><block ref="9fd39b76002ba897bb7f2798062dd085" category="inline-link-macro-rx"></block></block>
-  <block id="e9ddfae2256b1bb9c9a0f68ff44e48e4" category="inline-link-macro">관리 서비스 공지 2.18.91(vCenter Server 4.7.10용 NetApp Element 플러그인)</block>
-  <block id="fd082478be94d13e97e62e3f3f795941" category="list-text"><block ref="fd082478be94d13e97e62e3f3f795941" category="inline-link-macro-rx"></block></block>
-  <block id="30d92c8789efab57b790dee431c18297" category="inline-link-macro">관리 서비스 공지 2.17.56(vCenter Server용 NetApp Element 플러그인 4.6.32)</block>
-  <block id="159171d6deceb49b698f0e825e2dcbc0" category="list-text"><block ref="159171d6deceb49b698f0e825e2dcbc0" category="inline-link-macro-rx"></block></block>
-  <block id="87a0fdd7b9534808231b4d6ab471ebf1" category="inline-link-macro">관리 서비스 공지 2.17.52(vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
-  <block id="c60bfba5a7f27b590160ee0a6110ceed" category="list-text"><block ref="c60bfba5a7f27b590160ee0a6110ceed" category="inline-link-macro-rx"></block></block>
-  <block id="770994475f57b3ce3e40618e8d3e1705" category="inline-link-macro">관리 서비스 참고 사항 2.16(vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
-  <block id="6906a04b525fc75f5efe6486e751be6d" category="list-text"><block ref="6906a04b525fc75f5efe6486e751be6d" category="inline-link-macro-rx"></block></block>
-  <block id="1cb251dcf63c7c6b0f0f032152675c8b" category="inline-link-macro">관리 서비스 2.14(vCenter Server 4.5.42용 NetApp Element 플러그인)에 대한 고지 사항</block>
-  <block id="f85c490ca21b5f7fefac2c50acf9bbc6" category="list-text"><block ref="f85c490ca21b5f7fefac2c50acf9bbc6" category="inline-link-macro-rx"></block></block>
-  <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">관리 서비스 2.13에 대한 고지 사항(vCenter Server 4.5.42용 NetApp Element 플러그인)</block>
-  <block id="cec503a733d11d28f5cfcc218bf7e140" category="list-text"><block ref="cec503a733d11d28f5cfcc218bf7e140" category="inline-link-macro-rx"></block></block>
-  <block id="d9f3c0c9eb340c8261bfa8b95bd04b9a" category="inline-link-macro">관리 서비스 공지 2.11(vCenter Server 4.4.72용 NetApp Element 플러그인)</block>
-  <block id="5a7b6af19a3e043296cd2f7ad26a4e45" category="list-text"><block ref="5a7b6af19a3e043296cd2f7ad26a4e45" category="inline-link-macro-rx"></block></block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">NetApp Element 소프트웨어 12.7 릴리스 정보</block>
   <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _신규 _</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="1de1fa776d5e13c615b89966caf040ca" category="section-title">VMware vCenter Server용 NetApp Element 플러그인</block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter 플러그인 4.10 릴리즈 노트</block>
-  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _신규 _</block>
   <block id="af0303f5d07cda64604644ac8608eabd" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인을 사용하면 서비스 품질을 자동으로 자동으로 자동으로 설정할 수 있습니다 <block ref="93ca324be2348cd998a8e30867cdba0f" category="inline-link-rx"></block>) 스토리지 I/O 제어 기준 <block ref="bb0ee5f2944d3d4a12da5f2b10b4a8ee" category="inline-link-rx"></block>) 표준 데이터 저장소에 있는 모든 VM의 설정입니다. 모든 표준 데이터 저장소에 대해 활성화할 수 있는 QoS 및 SIOC 통합(QoSSIOC)은 연결된 모든 VM에서 모든 SIOC 설정을 검사합니다.</block>
   <block id="177259bf399e56131535817a5b3d056c" category="summary">문서는 VMware vCenter Server용 NetApp Element 플러그인 버전 4.6 이전의 릴리스에 대해 제공됩니다.</block>
   <block id="51e42727247460a0bec3c65c38a8231b" category="doc">이전 버전의 VMware vCenter Server용 NetApp Element 플러그인 설명서</block>
-  <block id="fa1dfaacd9c58d6fa24c3cd804696883" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인 버전 4.10 이전의 릴리즈에도 설명서가 제공됩니다.</block>
   <block id="622fbbcf746903b903f2af5462c8550a" category="cell">4.9</block>
   <block id="f751fbabf8051844c49362e0317859f4" category="cell"><block ref="f751fbabf8051844c49362e0317859f4" category="inline-link-rx"></block></block>
   <block id="b9cf34af101112b6fe1d9cb0084bf6d5" category="inline-link">2.20.69</block>
-  <block id="5794a440d05a5dcbcf77aed8fc304a96" category="cell"><block ref="5794a440d05a5dcbcf77aed8fc304a96" category="inline-link-rx"></block></block>
   <block id="0fc8e7b7f795ce33c6e2864a2ab8efab" category="summary">NetApp Element Plug-in for VMware vCenter Server에서 선택한 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다.</block>
-  <block id="90ceb2725b7a568b0b7d53711c6985c6" category="paragraph">NetApp Element vCenter Server용 NetApp Element 플러그인의 구성 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.</block>
-  <block id="6735f3147a84072935a66d5ee4cba3c8" category="admonition">Element vCenter 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
   <block id="4376614e44aee58bcb5b464e37f653bd" category="summary">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
   <block id="ba45308f1d586697de5a2613412594d6" category="paragraph">VMware vCenter Serverr용 NetApp Element 플러그인을 사용하여 사용자 계정의 볼륨을 클론 복제, 백업 또는 복원합니다. 또한 클러스터의 각 볼륨을 관리하고 볼륨 액세스 그룹에서 볼륨을 추가 또는 제거할 수 있습니다.</block>
   <block id="2e21a75f0172e364fdbd1484eb5046cb" category="summary">VMware vCenter Server용 최신 NetApp Element 플러그인으로 업그레이드합니다.</block>
-  <block id="d6e863df4cb2baca4ec0a31356870241" category="paragraph">설치에 설명된 단계에 따라 VMware vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. Element vCenter 플러그인 4.10은 관리 서비스 번들의 일부로 Element 소프트웨어 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
   <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
   <block id="c525ffb7ac26e605d251a5d7b5283d5d" category="doc">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 데이터를 보호합니다</block>
   <block id="295677223735c27b8f769e36504d00f4" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 데이터 복제본을 필요한 위치에 생성 및 저장할 수 있습니다. 이렇게 하려면 볼륨 및 그룹 스냅샷을 생성 및 관리하고, 스냅샷 일정을 설정하고, 원격 클러스터 간 복제를 위한 볼륨 및 클러스터 쌍 관계를 생성할 수 있습니다.</block>
   <block id="a43682c16170c0daeb4b61bea847cf50" category="summary">다음은 VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다.</block>
   <block id="54a42634d580de7f407c8a5db3ecb280" category="summary">NetApp Element Plug-in for VMware vCenter Server를 사용하기 전에 제품 설치 및 사용을 위한 사전 요구 사항을 이해해야 합니다.</block>
   <block id="cb06d1227bb1236adf952ff5f5ffde34" category="doc">VMware vCenter Server용 NetApp Element 플러그인 요구 사항</block>
-  <block id="a7d3dde6b1975bac709fda9052ae145a" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하려면 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.</block>
-  <block id="0a17c7cca46191582570013339ad71ef" category="paragraph">Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
   <block id="8bb0a675e2ae63d09c6c36d5bb66f1b5" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1 및 2</block>
   <block id="1ea81b2a1a5af8aa2bbc471d319704d1" category="list-text">vSphere 7.0 업데이트 3 - Spring Framework 4를 사용하는 vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함합니다</block>
   <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">VMware vCenter Server 7.0 U3으로 업그레이드하면 Element 플러그인이 배포되지 않습니다. Spring Framework 4를 사용하여 이 문제를 해결하려면 을 참조하십시오<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>.</block>
@@ -2421,27 +2261,20 @@
   <block id="f24eae8643c6cb1d0006da935aedec3b" category="image-alt">vCenter Server용 NetApp Element 플러그인 등록 유틸리티 메뉴</block>
   <block id="4c4722e5324c9cd449ccd55ff6c40753" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 vCenter 연결 모드를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리할 수 있습니다.</block>
   <block id="e1595aba7650be0c4b402c998ad1c5ed" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 실행 상태를 나타내는 정보, 경고 또는 오류를 모니터링할 수 있습니다.</block>
-  <block id="d21eb641630f2fbe2737ceec55154371" category="doc">VMware vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</block>
-  <block id="a7dbf346e712ae6e21c15681462b415f" category="paragraph">최신 버전의 VMware vCenter Server용 NetApp Element 플러그인을 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 통해 플러그인에 액세스할 수 있습니다.</block>
   <block id="169c2e8ca40df6aaefeb2f88a3a0791d" category="doc">VMware vCenter Server용 NetApp Element 플러그인 제품 개요</block>
   <block id="aac2194ee6e04f48729b889da7441b8c" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인은 VMware vSphere 웹 클라이언트 UI(사용자 인터페이스)와 통합된 웹 기반 툴입니다. 이 플러그인은 VMware vSphere를 위한 확장 및 대체 확장 가능한 사용자 친화적인 인터페이스로 * NetApp Element 소프트웨어 * 소프트웨어를 실행하는 스토리지 클러스터를 관리하고 모니터링할 수 있습니다.</block>
   <block id="51f311566f32302efc2fbbc6302900da" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 봅니다.</block>
   <block id="67072320f5169240d02469527b184433" category="paragraph">NetApp Element Plug-in for VMware vCenter Server의 보고 페이지를 사용하여 클러스터의 구성 요소 및 성능에 대한 정보를 볼 수 있습니다.</block>
   <block id="2b0c828f14aa63b395df1a30c61d61a1" category="paragraph">NetApp Element Plug-in for VMware vCenter Server를 사용하여 Element 볼륨이 백업하는 데이터 저장소를 관리할 수 있습니다. 데이터 저장소를 생성, 확장, 클론 복제, 공유 또는 삭제할 수 있습니다. 또한 VAAI UNMAP을 사용하여 클러스터가 씬 프로비저닝된 VMFS 데이터 저장소에서 확보된 블록 공간을 재확보할 수 있습니다.</block>
-  <block id="bd8fb42cceeb576c1e2d18b77946eed5" category="admonition">NetApp Element Plug-in for VMware vCenter Server를 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
   <block id="b24c943e5c24047127dea66291cfe9e7" category="summary">VMware vCenter Server용 NetApp Element 플러그인의 보고 탭에 있는 볼륨 성능 페이지에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
   <block id="c22121750a7295f0a0efe2d585d7a948" category="summary">이 버전의 VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능에 대해 알아보십시오.</block>
   <block id="66651251ffc02faf1ed89440cd38f351" category="doc">VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능</block>
-  <block id="25254260c83de85b427dcd94f7c337e5" category="paragraph">vCenter Server 4.10용 NetApp Element 플러그인에는 보안 취약점을 비롯한 해결된 문제가 포함되어 있어 업그레이드 중에 발생하는 중단을 크게 줄이고 일부 환경에서 일상적인 운영을 개선할 수 있습니다. 플러그인 버전 4.10에서는 온라인 도움말 링크가 이 링크로 전환되었습니다 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block>. 플러그인 내에서 온라인 도움말 링크에 액세스하려면 네트워크에 액세스할 수 있어야 합니다.</block>
   <block id="1614d1f32c2461293d78d48916983c1c" category="paragraph">Element vCenter 플러그인 4.10은 관리 서비스의 2.21.61 릴리즈와 함께 사용할 수 있습니다.</block>
   <block id="e6d3d1619eb4fdac2775643fea2a6c05" category="section-title">vCenter Server 4.9용 NetApp Element 플러그인</block>
-  <block id="be2443c4720bed9c69fd7e827839e61c" category="paragraph">VMware vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5에 대한 복원 지원을 제공합니다.</block>
   <block id="d186d1a54781fe84473dd5d36734fed7" category="paragraph">Element vCenter 플러그인 4.9는 관리 서비스의 2.20.69 릴리즈와 함께 사용할 수 있습니다.</block>
   <block id="537ead2e0cdece5a8f74b676b2a76ecc" category="paragraph">Element vCenter 플러그인 4.8은 관리 서비스의 2.19 릴리즈와 함께 사용할 수 있습니다.</block>
-  <block id="2d11279b1331356298fd619891de0ffa" category="section-title">VMware vCenter Server 4.7용 NetApp Element 플러그인</block>
   <block id="518d3755563da4f104451562701d56eb" category="paragraph">Element vCenter 플러그인 4.7에는 에서 향상된 기능을 더욱 개발할 수 있는 중요한 보안 개선 사항이 포함되어 있습니다<block ref="b1233a0bfa93edf062561cc29a402448" category="inline-link-rx"></block> 놓습니다.</block>
   <block id="3c6aed0f37a9d3e025c0d369363e99bf" category="paragraph">Element vCenter 플러그인 4.7은 관리 서비스의 2.18 릴리즈와 함께 사용할 수 있습니다.</block>
-  <block id="e414ac316c65e7ad77077a83fdacb5cf" category="section-title">VMware vCenter Server용 NetApp Element 플러그인 4.6</block>
   <block id="f91a1dbcfbda3cae56acbe505dc321b1" category="paragraph">Element vCenter 플러그인 4.6은 관리 서비스의 2.16 릴리스와 함께 사용할 수 있습니다.</block>
   <block id="baf751cfa98ca2f74ceb6948fcda780b" category="inline-link-macro">VMware vCenter Server용 NetApp Element 플러그인 개요</block>
   <block id="63cc63082dc63dbd2008d199a2bbc40f" category="list-text"><block ref="63cc63082dc63dbd2008d199a2bbc40f" category="inline-link-macro-rx"></block></block>
@@ -2472,7 +2305,344 @@
   <block id="102fa0b3d48f5eb07a14f36cdde32296" category="sidebar">SolidFire 및 요소 문서 리소스</block>
   <block id="e832d6528eba00e46f3e6d6ad9b8258b" category="sidebar">NetApp HCI 문서 리소스</block>
   <block id="f5409f597000de172b3e43bc31e32407" category="sidebar">NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB</block>
-  <block id="11c89ff1a6e1a8fdbe820874038b12c8" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 4.10의 경우, 버전 4.6, 4.7, 4.8 및 4.9도 포함됩니다.</block>
   <block id="8e929e82af0bc25d8adcd4def2eab9a9" category="paragraph">Element vCenter 플러그인 4.8에는 보안 개선 사항, 메모리 활용도 향상 및 타사 라이브러리 업그레이드가 포함되어 있습니다.</block>
   <block id="858ea7ae6467e65992f082751f2c1cdf" category="sidebar">NetApp Element 소프트웨어의 새로운 기능</block>
+  <block id="66b9d76f9d2f1678de4ba80d9c517727" category="inline-link">VMware vSphere 7.0 Update 3으로 업그레이드한 후 vCenter 플러그인 구축이 실패합니다</block>
+  <block id="b2010cfbe08400d17df7d20e56543ad4" category="list-text"><block ref="b2010cfbe08400d17df7d20e56543ad4" category="inline-link-rx"></block></block>
+  <block id="4cbb394942ec1b0daa987a067831332a" category="list-title">NetApp Element vCenter 플러그인 4.10 및 그 이전 버전에 대한 수정 조치</block>
+  <block id="41180b9d912ac0775c54f8d9b5e8f219" category="list-text">클러스터는 플러그인 확장 지점의 * 클러스터 * 섹션에 나열되지 않습니다.</block>
+  <block id="8e51bc02e420db8c01421fc5ed79d132" category="list-text">클러스터 * 및 * QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.</block>
+  <block id="9b3df7377701499fa3c2a34110caca4a" category="inline-link-macro">Element Plug-in 5.0 이상에 대한 클러스터를 다시 추가합니다</block>
+  <block id="d942f53bb7018f8a55801f617d4168be" category="inline-link-macro">Element 플러그인 4.10 이전 버전용 클러스터를 다시 추가합니다</block>
+  <block id="d43a5dd6ed0dabcc84cc97121be1df5d" category="paragraph">문제가 지속되면 다음을 수행해야 합니다 <block ref="dec66aca21129136d39edb540f5338e5" category="inline-link-macro-rx"></block> 또는 <block ref="4cfc46098095584c6125d8df7f30717a" category="inline-link-macro-rx"></block>.</block>
+  <block id="5fe88e50f88c09fd79273fc07dc9c35d" category="paragraph">NetApp Element 원격 플러그인 &gt; 구성 탭의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.</block>
+  <block id="0fa192dc2fdb28923d8429e74a3351f9" category="paragraph">NetApp Element 구성 확장 지점의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.</block>
+  <block id="02762e915121057c841797106c1e2368" category="doc">NetApp Element 원격 플러그인 확장 포인트</block>
+  <block id="3f321b21c44f9d511aeef7e8094bd5f2" category="paragraph">NetApp Element vCenter 플러그인 5.0부터는 클러스터, 노드 및 드라이브를 구성 및 관리하고 클러스터 정보를 볼 수 있는 NetApp Element 원격 플러그인 확장 지점을 사용하여 원격 요소 플러그인에 액세스할 수 있습니다.</block>
+  <block id="808ee249c974e634470017799c571da3" category="paragraph">NetApp Element 원격 플러그인 확장 지점에서는 다음 탭을 사용할 수 있습니다.</block>
+  <block id="6f838040c8e5310c491e521ede4462e6" category="list-text"><block ref="cff8b5d1baab44430cf8d64e546d83b9" category="inline-xref-macro-rx"></block></block>
+  <block id="fe04896dce545327fdc3ffeac742f64d" category="list-text"><block ref="2d746d9e0bab1c24493013a8adbfe787" category="inline-xref-macro-rx"></block></block>
+  <block id="babd22b5b72981328891ce98baeddcd0" category="list-text"><block ref="498efb1c181562561cf51a873ecf9202" category="inline-xref-macro-rx"></block></block>
+  <block id="5ec3ef4a2065434a3bb824e3b2dcb81e" category="list-text"><block ref="49ac0019839a03b9b626be93d8252be3" category="inline-xref-macro-rx"></block></block>
+  <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">시작하기</block>
+  <block id="6c434d67702a3bb88eba48c8870fd5ee" category="paragraph">시작하기 탭에는 플러그인 및 수행할 수 있는 작업에 대한 확장 지점이 있습니다. 각 페이지에서 시작 페이지를 숨기거나 * 정보 * 탭에서 복원할 수 있습니다.</block>
+  <block id="254f642527b45bc260048e30704edb39" category="section-title">구성</block>
+  <block id="99a083d1a8aaf7e639363ce46df8a6cb" category="paragraph">Configuration * (구성 *) 탭에서는 클러스터를 추가 및 관리하고 QoSSIOC의 관리 노드 설정을 구성할 수 있습니다.</block>
+  <block id="e95890b45746f6c67fa619cd249ed6c0" category="image-alt">Configuration(구성) 탭</block>
+  <block id="afb30a4920894ac793b3e52188990d76" category="paragraph">다음 탭은 * 구성 * 탭에서 사용할 수 있습니다.</block>
+  <block id="fe4dbcab9b910577e5035e97ac068dae" category="section-title">관리</block>
+  <block id="8d80ac2ae8158fcc915155e49d717ae8" category="paragraph">Management* 탭을 사용하여 다음 작업을 수행할 수 있습니다.</block>
+  <block id="ee4dd45a1af5d1ae12d2bddc809c6495" category="list-text">클러스터 정보를 봅니다</block>
+  <block id="ae4f12a9fd51bdcdee05f9cb94f9ebac" category="list-text">데이터 저장소, 볼륨, 사용자 계정, 액세스 그룹 및 이니시에이터를 관리합니다</block>
+  <block id="b6459d816d310af03f8c5f033b25e0df" category="list-text">개별 그룹 스냅샷을 관리하고 드라이브와 노드를 추가 및 관리합니다</block>
+  <block id="02fa5dda99bec712095f03107cadc8bb" category="image-alt">관리 탭</block>
+  <block id="dee7117b01583d52e67ffaf8a91a896c" category="paragraph">다음 탭은 * 관리 * 탭에서 사용할 수 있습니다.</block>
+  <block id="184880d005651c6a28f8288a8b8e5003" category="list-text">* 보고 *: 클러스터 구성 요소에 대한 정보를 표시하고 클러스터 성능 개요를 제공합니다. 탭에서 이벤트, 경고, iSCSI 세션, 실행 중인 작업 및 성능 볼륨에 대한 정보를 찾을 수도 있습니다.</block>
+  <block id="8f7f4c1ce7a4f933663d10543562b096" category="section-title">정보</block>
+  <block id="3da585634416ac7af002de86560ec479" category="paragraph">플러그인 버전 정보를 표시하고 서비스 번들 다운로드 옵션을 제공합니다.</block>
+  <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link-macro">vCenter Server용 NetApp Element 플러그인 개요</block>
+  <block id="4edecfeb69ec8a77c0bf8f61fa93ec9b" category="list-text"><block ref="4edecfeb69ec8a77c0bf8f61fa93ec9b" category="inline-link-macro-rx"></block></block>
+  <block id="8088f26fd11b6aee24aa85e21c8554c1" category="paragraph">클러스터에 드라이브를 추가하고, 기존 드라이브를 보고, 플러그인 확장 지점을 사용하여 드라이브를 제거할 수 있습니다.</block>
+  <block id="a19f2337414927a2386f0e5759652f45" category="paragraph">플러그인 확장 지점을 사용하여 클러스터에 드라이브를 추가할 수 있습니다. 클러스터에 노드를 추가하거나 기존 노드에 새 드라이브를 설치하면 드라이브가 자동으로 로 등록됩니다<block ref="78945de8de090e90045d299651a68a9b" prefix=" " category="inline-code"></block>. 각 드라이브가 클러스터에 참여하려면 먼저 클러스터에 드라이브를 추가해야 합니다.</block>
+  <block id="f52969ed7de53ed35bcdf18c7e49a448" category="list-text">vSphere Web Client에서 * Cluster * 탭을 엽니다.</block>
+  <block id="ed1c0c85efb473570e9e0b99a58d6af4" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; 클러스터 * 를 선택합니다.</block>
+  <block id="abf7eef6bed0197895c3bf534495b705" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; 클러스터 * 를 선택합니다.</block>
+  <block id="cffb1f002f64dfacc3e64e76675874ca" category="paragraph">플러그인 확장 지점에서 클러스터 탭의 드라이브 페이지에 있는 활성 보기를 사용하여 클러스터의 활성 드라이브 목록을 볼 수 있습니다. 드롭다운 필터를 사용하여 사용 가능한 옵션을 선택하여 보기를 변경할 수 있습니다.</block>
+  <block id="fbde2570c577c83970a1770f2bbb6b86" category="paragraph">플러그인 확장 지점을 사용하여 클러스터에서 드라이브를 제거할 수 있습니다. 클러스터 용량을 줄이거나 서비스 수명이 거의 다 된 드라이브를 교체할 준비를 할 때 이 작업을 수행할 수 있습니다. 드라이브를 제거하면 드라이브가 오프라인 상태가 됩니다. 드라이브에서 데이터가 제거되기 전에 클러스터의 다른 드라이브로 마이그레이션됩니다. 시스템의 다른 활성 드라이브로 데이터를 마이그레이션하는 데는 용량 활용률과 클러스터의 활성 I/O에 따라 몇 분에서 한 시간까지 걸릴 수 있습니다.</block>
+  <block id="abb08438372677f826c66c2cf08946ee" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인 5.0 이전 버전에도 설명서가 제공됩니다.</block>
+  <block id="aa6c9b02197698bcb50fa64860739d2c" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 5.0의 경우 버전 4.6, 4.7, 4.8, 4.9 및 4.10도 포함됩니다.</block>
+  <block id="30dcb9c22f4d8eee8411cf243edfe0c6" category="cell">4.10</block>
+  <block id="d4b8b3b5c408146a8aaffd739bb70e85" category="cell"><block ref="d4b8b3b5c408146a8aaffd739bb70e85" category="inline-link-rx"></block></block>
+  <block id="cdac12e8444404de524af6aed2665f45" category="inline-link">2.21.61</block>
+  <block id="493947108f90792d70b0080451b59368" category="cell"><block ref="493947108f90792d70b0080451b59368" category="inline-link-rx"></block></block>
+  <block id="562a438f33bff2259da6858dd288f400" category="cell"><block ref="562a438f33bff2259da6858dd288f400" category="inline-link-rx"></block></block>
+  <block id="35217a2ac23a8b6448931b9efc4c4f94" category="paragraph">A <block ref="2934e3adb910b5942a2e24ca276b4338" category="inline-link-macro-rx"></block> 사용자가 iSCSI 이니시에이터 또는 FC 이니시에이터를 사용하여 액세스할 수 있는 볼륨 모음입니다.</block>
+  <block id="adcd2fc490460962064733fd569fa4ea" category="paragraph">볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 FC WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 FC 네트워크 액세스를 설정합니다.</block>
+  <block id="ba5eebae5f14aac1ccd19f5057a508df" category="list-text">vSphere Web Client에서 * Management * 탭을 엽니다.</block>
+  <block id="00d5861848d4c935bdf9d8f9e8d3a493" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; 관리 * 를 선택합니다.</block>
+  <block id="26f563562e9fca03d9fee200dd5ca782" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; 관리 * 를 선택합니다.</block>
+  <block id="8dd24e4f47b78cbcad6c8014e9aaf2dc" category="paragraph">플러그인 확장 지점에서 볼륨 액세스 그룹 이름을 편집하거나 이니시에이터를 추가 또는 제거할 수 있습니다.</block>
+  <block id="d5e94feb5a7e2863836bfcbf43e3040c" category="paragraph">플러그인 확장 지점을 사용하여 볼륨 액세스 그룹을 삭제할 수 있습니다. 그룹을 삭제하기 전에 이니시에이터 ID를 삭제하거나 볼륨 액세스 그룹에서 볼륨을 분리하지 않아도 됩니다. 액세스 그룹을 삭제하면 볼륨에 대한 그룹 액세스가 중단됩니다.</block>
+  <block id="a20f6296e58ebcc988028fe8f0bc04e9" category="summary">vCenter Server용 원격 NetApp Element 플러그인 아키텍처에 대해 알아보십시오.</block>
+  <block id="70c22dd525f30cc0a04f947707191ca2" category="doc">원격 플러그인 아키텍처 개요</block>
+  <block id="d70e2fbb1f0c50d80e6563245c45884e" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인부터 플러그인 아키텍처가 로컬에서 원격으로 변경됩니다. 원격 아키텍처가 도입됨에 따라 플러그인이 더 이상 vCenter 서버 내에 구축되지 않습니다. vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 플러그인 구축은 등록된 vCenter Server에 대해 로컬로 유지됩니다.</block>
+  <block id="8f49aad217d33b1d6d765c5bb73c5aab" category="paragraph">이 페이지에서는 vCenter Server용 원격 NetApp Element 플러그인을 구축하는 방법을 설명합니다.</block>
+  <block id="6f1a08637eed2bd2bdee6dcd4a5f759b" category="paragraph">vSphere Client 원격 플러그인 아키텍처는 vCenter Server 내부에서 실행할 필요 없이 vSphere Client에 플러그인 기능을 통합하도록 설계되었습니다. 원격 플러그인 아키텍처는 플러그인 격리를 지원하고, 대규모 vSphere 환경에서 작동하는 플러그인을 스케일 아웃할 수 있도록 하며, 다음과 같은 이점을 제공합니다.</block>
+  <block id="e48c29aa733cf1bd98f73c25e6be44d6" category="list-text">플러그인은 동일한 vSphere Client에 로드되어 불안정하거나 손상된 플러그인으로 인해 발생하는 간섭으로부터 보호됩니다.</block>
+  <block id="a5dee47acf5561a559cd0ee8e79400d9" category="list-text">vCenter Server 업그레이드 전체에서 플러그인 호환성이 강력합니다.</block>
+  <block id="23f5385408076926ab7ca98425cc1aa4" category="list-text">호환되지 않는 플러그인은 vCenter Server 작업을 방해하지 않습니다.</block>
+  <block id="b304139bec0652246bd49e53776879d6" category="list-text">동일한 vSphere 환경 내에 다양한 플러그인 버전을 구축할 수 있습니다.</block>
+  <block id="ce736ec3ebf15f49841cb0ad085e6e79" category="list-text">원격 플러그인 사용자 인터페이스는 단일 백엔드 서버와만 통신해야 합니다.</block>
+  <block id="090915874374b0102baffe6c77cdf820" category="list-text">배포된 플러그인 토폴로지는 잘 정의되고 있으며 문제 해결을 지원하는 토폴로지를 쉽게 이해할 수 있습니다.</block>
+  <block id="de3079f9579c5fed13d4f4e460eae070" category="section-title">vCenter Server 상위 레벨 아키텍처용 Remote Element 플러그인</block>
+  <block id="0db3217129ec18272b5f5715d23fa6c7" category="paragraph">NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스와 함께 관리 노드 내부의 Docker 컨테이너에 원격 Element 플러그인을 구축할 수 있습니다.</block>
+  <block id="06db4b3e7eb409c2df1495a0e8cdd8fa" category="inline-image-macro">원격 플러그인 고급 아키텍처</block>
+  <block id="3bf4ee63b3991234d9028945be0adff4" category="paragraph"><block ref="3bf4ee63b3991234d9028945be0adff4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="034c451c62bba970557c5425009ce0db" category="paragraph">원격 Element 플러그인 vCenter Server, 등록 서비스 및 스토리지 I/O 제어(SIOC) 서비스는 동일한 Docker 서비스를 공유하지만 다른 포트에서 수신합니다.</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">포트</block>
+  <block id="cbcbbaf76a7eae1c51c75673e93ed055" category="cell">원격 요소 플러그인 vCenter Server</block>
+  <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="cell">8333</block>
+  <block id="1794bd9600f1857e1549d0a8ffccaef9" category="cell">등록 서비스</block>
+  <block id="7dc8b441cf4e6fe9bc806679c4579e68" category="cell">9443</block>
+  <block id="b0d91179e8218af54f9eeea4682faf28" category="cell">SIOC 서비스</block>
+  <block id="7e6b20d014d1c659e4eaf20dc2dcd7eb" category="cell">8443</block>
+  <block id="935a19789070936a14a3c8937d3a30df" category="section-title">원격 요소 플러그인 통신 경로 개요</block>
+  <block id="4683ccb7dc7ad6d2ed37fd1aa858b0cb" category="paragraph">먼저 관리 노드에서 실행되는 등록 서비스를 사용하여 vCenter Server에 원격 플러그인을 등록해야 합니다 <block ref="109a2b028cafee8eb30d1b5d201d7929" prefix="(" category="inline-code"></block>)를 클릭합니다. 등록 페이지에서 vCenter Server 사용자 이름, 암호 및 를 확인할 수 있습니다<block ref="b3568fa08e53a00f66841ed9ca2c53d4" prefix=" " category="inline-code"></block> 매니페스트 파일 경로입니다.</block>
+  <block id="0919e8ccb2d7525bd5e7c573d9867cb1" category="admonition">기본 경로는 UI에 채워집니다. 별도의 조치가 필요하지 않습니다.</block>
+  <block id="ca10c1060f8dbce44cb06366578c5647" category="paragraph">제공된 세부 정보가 정확하면 등록 서비스가 vCenter Server에 플러그인을 등록하고 플러그인 서버 데이터베이스에 vCenter 세부 정보를 입력합니다.</block>
+  <block id="e7505babd4b94358b6b9933a0a85a4b0" category="paragraph">등록이 완료되면 플러그인 서버가 를 다운로드합니다<block ref="b3568fa08e53a00f66841ed9ca2c53d4" prefix=" " category="inline-code"></block> 를 사용하여 원격 플러그인을 확장자로 구성하는 원격 플러그인 배포를 시작하고 매니페스트 파일을 만듭니다<block ref="30330632c72fde88683e6d0128535d26" prefix=" " category="inline-code"></block> 클라이언트. 배포가 완료되면 에서 * NetApp Element 원격 플러그인 * 확장 지점에 액세스할 수 있습니다<block ref="30330632c72fde88683e6d0128535d26" prefix=" " category="inline-code"></block> 웹 클라이언트.</block>
+  <block id="ed7de310eb8308765727f706fb2d5568" category="paragraph">플러그인 UI의 모든 통신은 vCenter Server를 통해 발생하며, vCenter Server는 원격 플러그인 서비스에 대한 요청을 전달하는 HTTPS 프로토콜을 사용하여 역방향 프록시 서비스를 실행합니다. 플러그인 서버는 HTTPS 기본 인증을 사용하여 SIOC 서비스와 상호 작용하고 Element Java SDK(소프트웨어 개발 키트)를 사용하는 Element 클러스터는 이러한 서비스와 상호 작용합니다.</block>
+  <block id="59760a49ec409ff2c5b1be9ecdb67330" category="summary">Element 스토리지와 함께 사용하도록 vCenter Server 5.0 이상에 대한 Element 플러그인을 설치 및 구성할 수 있습니다.</block>
+  <block id="466e21f036ce6d9f40d8c2b703698603" category="doc">vCenter Server 7.0 이상에 대해 Element Plug-in 5.0 이상을 설치하고 구성합니다</block>
+  <block id="8728b3f7d7c47d7fd65bac3eabc83cc5" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인부터 vCenter에 최신 버전의 Element 플러그인을 직접 설치하고 vSphere 웹 클라이언트를 사용하여 플러그인에 액세스할 수 있습니다.</block>
+  <block id="04d8fc016f271b568cf1a1d1083ae782" category="paragraph">수동으로 할 수 있습니다<block ref="206bb996ed133f6420d91bb80f3312b3" category="inline-link-rx"></block> NetApp Element 소프트웨어를 실행하는 클러스터의 경우, 구성에 적합한 이미지를 사용합니다.</block>
+  <block id="d0dac9771409f37205cf74b6359a36eb" category="list-text">Element 소프트웨어 12.3.x 이상을 실행하는 관리 노드 OVA를 배포했습니다.</block>
+  <block id="253af74c28d0b35848a95102791f27fd" category="list-text">방화벽 규칙을 통해 을 열 수 있습니다 <block ref="659e4cbd51cb8dba5a95e3f7e2eb854a" category="inline-link-macro-rx"></block> TCP 포트 443, 8443, 8333 및 9443에서 vCenter와 스토리지 클러스터 MVIP 간 포트 9443은 등록에 사용되며 등록이 완료된 후 닫을 수 있습니다. 클러스터에서 가상 볼륨 기능을 활성화한 경우 VASA 공급자 액세스에도 TCP 포트 8444가 열려 있는지 확인합니다.</block>
+  <block id="e5c9b2861b4a79d55c4c6fd061b65585" category="paragraph">연결 모드 환경의 경우 MOB 데이터를 동기화하여 플러그인을 업그레이드할 수 있도록 환경의 각 vCenter Server에 별도의 플러그인을 등록해야 합니다. vSphere Web Client가 플러그인이 등록되지 않은 vCenter Server에 연결되면 클라이언트에 플러그인이 표시되지 않습니다.</block>
+  <block id="8bcdbd50a9399bf2b64dc75f624b1939" category="admonition">사용합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block>NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대해 별도의 관리 노드에서 Element 플러그인을 등록합니다.</block>
+  <block id="f0b832d06d5edc14c10e5e1c1026ba96" category="image-alt">원격 플러그인 등록 유틸리티 UI</block>
+  <block id="5c6c2ef7575586449d6ec4a970496b3a" category="paragraph">설치 또는 업그레이드가 완료되면 측면 패널의 vSphere 웹 클라이언트의 바로 가기 탭에 NetApp Element 원격 플러그인 확장 지점이 나타납니다.</block>
+  <block id="2e569d11e48ca9483042fe36d64000ea" category="image-alt">에서는 업그레이드 또는 설치 후 플러그인 확장 지점을 보여 줍니다</block>
+  <block id="d193461f11dfb27b71412732360d2f32" category="admonition">vCenter 플러그인 아이콘이 표시되지 않으면 를 참조하십시오 <block ref="fe8ddf0323e6cee4658194f2ebc6a4f6" category="inline-link-macro-rx"></block>.</block>
+  <block id="e4c576dcf9b8cfc164356e80b9e26656" category="paragraph">NetApp Element 원격 플러그인 확장 지점을 사용하여 Element 소프트웨어를 실행하는 클러스터를 추가하고 관리할 수 있습니다.</block>
+  <block id="f9390778a830235e991e5e07b112856a" category="list-text">방화벽 규칙을 통해 열 수 있습니다 <block ref="659e4cbd51cb8dba5a95e3f7e2eb854a" category="inline-link-macro-rx"></block> TCP 포트 443, 8333 및 8443에서 vCenter와 클러스터 MVIP 간</block>
+  <block id="c34a23271451082a0022eb7a00ed289e" category="admonition">관리 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.</block>
+  <block id="66b6a83cb20d43e1a53af0cabb1e6e1d" category="list-text">NetApp Element 원격 플러그인 &gt; 구성 &gt; 클러스터 * 를 선택합니다.</block>
+  <block id="73562fee387ed6c5a17d51e58616a581" category="list-text">NetApp Element 원격 플러그인 &gt; 구성 &gt; QoSSIOC 설정 * 을 선택합니다.</block>
+  <block id="4bb027f11ea3fdd32821c7a091313cbd" category="paragraph">상태가 다음 중 하나일 경우 이 {url-peak} [KB^]를 참조하여 문제를 해결하십시오.</block>
+  <block id="5fda886f729cfe9f142dbd99d2b6cb09" category="list-text"><block ref="08a38277b0309070706f6652eeae9a53" prefix="" category="inline-code"></block>QoSSIOC가 활성화되지 않았습니다.</block>
+  <block id="aa265d5e490cb8a81cfc512f91c383eb" category="list-text"><block ref="ac10863a89ea5da5d78b29ab7d8d4db9" prefix="" category="inline-code"></block>QoSSIOC 설정이 구성되지 않았습니다.</block>
+  <block id="b474df170c76dcfb342270e5376869e1" category="list-text"><block ref="8e8acaa1cba651ded0d5a7427cba69ac" prefix="" category="inline-code"></block>: vCenter는 네트워크의 QoSSIOC 서비스와 통신할 수 없습니다. mNode 및 SIOC 서비스가 여전히 실행 중일 수 있습니다.</block>
+  <block id="bda418bc832f2001229eadd9cdeaa03d" category="paragraph">플러그인 확장 지점의 보고 탭에서 선택한 클러스터의 모든 볼륨에 대한 성능 정보를 볼 수 있습니다.</block>
+  <block id="50e580559681b896dda3dd2f1a75b68b" category="list-text">vCenter 플러그인에서 * Reporting * 탭을 엽니다.</block>
+  <block id="667522936c8839a59a7778b53cc6e68a" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; 보고 * 를 선택합니다.</block>
+  <block id="f0ce3dd6c4b88d5b0cbc69c5d531a3a2" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; 보고 * 를 선택합니다.</block>
+  <block id="2c1e263910d994848fed403b89dccbd0" category="list-text">볼륨 성능 * 을 선택합니다.</block>
+  <block id="78eff24e35956a856d21e25903aa9b2c" category="paragraph">NetApp Element 관리 확장 지점을 사용하여 클러스터 정보를 보고, 데이터 저장소, 볼륨, 사용자 계정, 액세스 그룹을 관리할 수 있습니다. 이니시에이터, 개별 그룹 스냅샷 관리, 드라이브 및 노드 추가 및 관리 등의 작업을 수행합니다.</block>
+  <block id="577264cf2bd321fc731d56278c703c22" category="admonition">NetApp Element Plug-in for VMware vCenter Server를 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리할 수 있습니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="94341c12e51edbf7ac6e5b4caa8737ac" category="list-text">vCenter 플러그인에서 * Management * 탭을 엽니다.</block>
+  <block id="013aff1f14a63a87888a1ec1cef40e97" category="paragraph">플러그인 확장 지점에서 클러스터의 모든 활성 볼륨에 대한 일반 정보를 검토할 수 있습니다. 효율성, 성능, QoS, 관련 스냅샷 등 각 액티브 볼륨의 세부 정보를 확인할 수도 있습니다.</block>
+  <block id="6515ee9060e70353f9e70cfdc1b81f05" category="paragraph">데이터 저장소 QoSSIOC 설정을 활성화하면 볼륨 레벨의 모든 QoS 설정이 재정의됩니다.</block>
+  <block id="ab5a2e1182407c1415e14a4d40a00d1e" category="paragraph">운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오<block ref="be550d2037a470ce38c4e9b1205adbd3" category="inline-link-rx"></block> 및<block ref="e78925c5281376a20450a24207e06cd4" category="inline-link-rx"></block>.</block>
+  <block id="4db0281ff6074c3720c0e60c2f519f67" category="list-text">볼륨 백업을 배치하려는 vCenter 및 클러스터에서 * Management * 탭을 엽니다.</block>
+  <block id="a62b6b895ee3a8cd131047be0ebb39f7" category="list-text">백업에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * Management * 탭을 엽니다.</block>
+  <block id="6f3512a5ff8ddd30db3f705929fc9002" category="list-text">볼륨을 복원하려는 vCenter 및 클러스터에서 * Management * 탭을 엽니다.</block>
+  <block id="7dcd92c8f0fbef37c9157b7e4b3d80a6" category="list-text">복구에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * Management * 탭을 엽니다.</block>
+  <block id="41850a9e782a9a5deffba88f60da5f86" category="paragraph">플러그인 확장 지점을 사용하여 NetApp Element 클러스터에서 하나 이상의 볼륨을 삭제할 수 있습니다.</block>
+  <block id="11e419c2947b7d06f69508696bb8366b" category="summary">vCenter 플러그인 확장 지점을 사용하여 스토리지 클러스터를 관리할 수 있습니다.</block>
+  <block id="3b0772681519f05a669fc19a78db2094" category="paragraph">플러그인 확장 포인트의 클러스터 탭에서 클러스터 전체 설정을 확인 및 변경하고 드라이브, 노드 및 VLAN에 대한 클러스터별 작업을 수행할 수 있습니다.</block>
+  <block id="f4c3b5c3b03a03813a4efc0d9b5c4948" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.0은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
+  <block id="9a4f689e4a76aad8186d3bc65ad401fb" category="list-text">vCenter 5.0용 Element 플러그인부터 VMware vSphere 8.0 및 7.0만 지원됩니다.</block>
+  <block id="8ca6efece2cd741765d7545cfba33f66" category="list-text">Element Plug-in for vCenter 4.x에서 5.0으로 업그레이드하면 vCenter 인스턴스에서 원격 플러그인으로 데이터를 복사할 수 없기 때문에 플러그인으로 이미 구성된 클러스터가 손실됩니다. 원격 플러그인에 클러스터를 다시 추가해야 합니다. 이는 로컬 플러그인에서 원격 플러그인으로 업그레이드할 때 한 번 수행하는 작업입니다.</block>
+  <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter Plug-in 5.0 릴리즈 노트</block>
+  <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
+  <block id="c1117ceebc72342e257fe6e0c4bc9865" category="paragraph">플러그인을 사용하여 를 추가할 수 있습니다<block ref="63488b15d8c0b0f8bf9dc0423b45e226" category="inline-link-rx"></block> 클러스터가 생성되거나 추가 스토리지가 필요한 경우 Element 소프트웨어를 실행하는 스토리지 노드를 추가할 수도 있습니다. vSphere의 플러그인 외부에 NetApp HCI 컴퓨팅 노드를 추가해야 합니다.</block>
+  <block id="0d1dfc432a3b2a4db9668b9b1172bbb7" category="paragraph">노드의 전원을 처음 켤 때는 초기 구성이 필요합니다. 노드가 설정 및 구성되면 노드가 구성되었을 때 식별된 클러스터에 자동으로 등록되고 플러그인 확장 포인트의 * 클러스터 &gt; 노드 * 페이지에서 보류 중인 노드 목록에 표시됩니다.</block>
+  <block id="a74130a14b9b69624f0f82afb9fc7f9d" category="paragraph">이 절차는 NetApp Element 소프트웨어를 실행 중인 FC 노드 또는 스토리지 노드를 추가하는 절차와 동일합니다.</block>
+  <block id="8bb125254a41a22f9cad35786cd30505" category="paragraph">플러그인 확장 지점에서 클러스터 탭의 노드 페이지에서 클러스터의 노드 목록을 볼 수 있습니다. 활성 노드 목록을 보려면 활성 보기를 선택해야 합니다. 을 선택하여 보기를 변경할 수 있습니다<block ref="2d13df6f8b5e4c5af9f87e0dc39df69d" prefix=" " category="inline-code"></block>,<block ref="fb67a264f6f097a6906401627cbebd83" prefix=" " category="inline-code"></block>, 및<block ref="b1c94ca2fbc3e78fc30069c8d0f01680" prefix=" " category="inline-code"></block> 드롭다운 필터를 사용하는 옵션입니다.</block>
+  <block id="3037da5cf9e82f0792beee331eb699ed" category="paragraph">플러그인 확장 지점을 사용하여 클러스터에서 하나 이상의 활성 노드를 다시 시작할 수 있습니다.</block>
+  <block id="cad457c741fa185de7fb9f1a3f6fd8e6" category="paragraph">플러그인 확장 지점을 사용하여 클러스터에서 하나 이상의 활성 노드를 종료할 수 있습니다. 클러스터를 종료하려면 모든 클러스터 노드를 선택하고 동시에 종료할 수 있습니다.</block>
+  <block id="7fa39cd359e8278d4b0e842abf2c1899" category="paragraph">NetApp Element 클러스터의 FC 접속에는 FC 노드가 2개 이상 필요합니다. 하나의 FC 노드만 연결된 경우 모든 FC 네트워크 트래픽이 하나의 FC 노드에서만 계속 작동하지만, 클러스터에 다른 FC 노드를 추가할 때까지 이벤트 로그에 경고가 트리거됩니다.</block>
+  <block id="bc01ab8e80900b65aafd1b1005135dbb" category="list-text">iSCSI 세션 * 을 선택합니다.</block>
+  <block id="5a5f89a97903e9c726d1fd32e90a8450" category="paragraph">vSphere 6.7 이하와 함께 사용되는 vCenter 플러그인 4.0 ~ 4.10의 경우 vCenter Server에서 플러그인과 연결된 모든 파일을 수동으로 제거하려면 다음 프로세스를 완료해야 합니다. vSphere 7.0 이상의 경우 플러그인을 등록 취소한 후에는 파일을 제거할 필요가 없습니다.</block>
+  <block id="703b4a90cb83eeedcd9f21fb666993cf" category="list-text">vCenter 플러그인 4.0 - 4.10</block>
+  <block id="13730b6c187c8aa8f92956aeb6cd01e2" category="paragraph">플러그인 확장 지점을 사용하여 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.</block>
+  <block id="15829086740e5d8d6ada7649920234b9" category="list-text">개요 * 페이지의 데이터를 모니터링합니다.</block>
+  <block id="1e001803864a5eeb813e6a85e53f7e2b" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. <block ref="2629dee4a3682efc27bf42f47699460e" category="inline-link-macro-rx"></block></block>
+  <block id="c5d233b22f0e1d750ac78f2bfaa4bf45" category="paragraph">Element vCenter 플러그인 5.0은 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 VMware vSphere 8.0, 7.0, 7.0 업데이트 1, 2 및 3을 지원합니다.</block>
+  <block id="ceec7b007b80cc66468eacb4ee0fa069" category="inline-link">관리 서비스 릴리스 정보 2.21.61</block>
+  <block id="e0527e4365aa99f086c41c1e111702c3" category="paragraph">Element vCenter 플러그인 5.0은 관리 서비스의 2.22.7 릴리즈와 함께 사용할 수 있습니다. 플러그인을 사용하지 않는 경우 다른 모든 서비스와 기능은 버전 21.21.61과 동일하므로 이 업그레이드는 선택 사항입니다. 최신 관리 서비스 업데이트에 대한 자세한 내용은 를 참조하십시오<block ref="f3a45f13dd8f4769c4d441aacd935790" category="inline-link-rx"></block>.</block>
+  <block id="4673e8d6ed0e7b93905666b7b9b828db" category="section-title">vCenter Server 4.10용 NetApp Element 플러그인</block>
+  <block id="9dcfdea515e48bba43762fa8452d7de6" category="paragraph">Element vCenter 플러그인 4.10에는 보안 취약점을 비롯하여 해결된 문제가 포함되어 있어 업그레이드 중에 발생하는 중단을 크게 줄이고 일부 환경에서 일상적인 운영을 개선할 수 있습니다. 플러그인 버전 4.10에서는 온라인 도움말 링크가 이 링크로 전환되었습니다 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block>. 플러그인 내에서 온라인 도움말 링크에 액세스하려면 네트워크에 액세스할 수 있어야 합니다.</block>
+  <block id="c69dd8e231cb332d435e16f994fd7554" category="paragraph">vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5를 복구합니다.</block>
+  <block id="0c6401f3a6e4115c47e9c1a72d14ab9e" category="section-title">vCenter Server 4.7용 NetApp Element 플러그인</block>
+  <block id="b61ed991cc99953d3625ddb1c6d83fe1" category="section-title">vCenter Server용 NetApp Element 플러그인 4.6</block>
+  <block id="8c41c261e6caa5882708210153199d1d" category="summary">Element 스토리지와 함께 사용하기 위해 vCenter Server 4.10 이전 버전용 Element 플러그인을 설치 및 구성할 수 있습니다.</block>
+  <block id="cbf7fe36aa4c431d35296b6434c41187" category="doc">Element 플러그인 4.10 이하를 설치하고 구성합니다</block>
+  <block id="5a8c1f682d825c304e5dd02c38b93e8a" category="paragraph">NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직접 설치하고 vSphere 웹 클라이언트를 사용하여 플러그인에 액세스할 수 있습니다.</block>
+  <block id="9e508b7a35b28ea8b9e349e0b5459c5d" category="admonition">vCenter Server용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="073ea352a31000144ee91ed5adb59470" category="admonition">대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 을 참조하십시오 <block ref="d2ed5bec20be0e8be5a97f9442c19f29" category="inline-xref-macro-rx"></block>.</block>
+  <block id="f6aa2fab0460e8c79aeee07ded672ece" category="admonition">NetApp Element 관리 확장 지점 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.</block>
+  <block id="1531d1917cc2ee96602fbfc4a19ddb95" category="paragraph">시스템에서 각 알림과 함께 오류 코드를 보고하여 경고를 발생시킨 구성 요소와 그 원인을 확인할 수 있습니다. 플러그인 확장 지점을 사용하여 오류 코드를 볼 수 있습니다.</block>
+  <block id="4bc6bd28cc0c503ef5a8b76a625e2676" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp 원격 플러그인 &gt; 관리 &gt; 보고 &gt; 알림 * 을 선택합니다.</block>
+  <block id="b1b72fc3251c66742cdb85c43052806b" category="list-text">Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 관리 &gt; 보고 &gt; 알림 * 을 선택합니다.</block>
+  <block id="8d14bf26468b329b6854a28f053cdb5f" category="paragraph">iSCSI는 NetApp Element 소프트웨어에 대해 지원되는 유일한 프로토콜입니다. Fibre Channel 프로토콜은 지원되지 않습니다. 프로토콜 끝점은 사용자가 삭제하거나 수정할 수 없으며, 계정과 연결되어 있지 않으며, 볼륨 액세스 그룹에 추가할 수 없습니다. 플러그인 확장 지점을 사용하여 프로토콜 엔드포인트 정보를 검토할 수 있습니다.</block>
+  <block id="464cfc2d2e4ee2410ab0c8a62f90df95" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; VVol &gt; 프로토콜 엔드포인트 * 를 선택합니다.</block>
+  <block id="0126482d909d889f5f319db887ac95fd" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; VVol &gt; 프로토콜 엔드포인트 * 를 선택합니다.</block>
+  <block id="d021259b01e1c886873f2ac20fed3e25" category="paragraph">스토리지 컨테이너는 기존 계정과 마찬가지로 작동하며 가상 볼륨과 기존 볼륨을 모두 포함할 수 있습니다. 클러스터당 최대 4개의 스토리지 컨테이너가 지원됩니다. VVOL 기능을 사용하려면 최소 하나의 스토리지 컨테이너가 필요합니다. 플러그인 확장 지점을 사용하여 스토리지 컨테이너에 대한 세부 정보를 생성, 삭제 및 볼 수 있습니다.</block>
+  <block id="02f093eb0754d902a44ac7d587163fe7" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; VVol &gt; 저장소 컨테이너 * 를 선택합니다.</block>
+  <block id="d17325c5abac06ae58c739755712457e" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; VVol &gt; Storage Containers * 를 선택합니다.</block>
+  <block id="f026e5db8cbb2bd6cf7974402c884987" category="paragraph">VVOL을 생성하는 동안 vCenter에서 스토리지 컨테이너를 검색할 수도 있습니다.</block>
+  <block id="7afdf929c19e58d487aeeef892432d9e" category="admonition">Element 소프트웨어 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.</block>
+  <block id="72ef472e28ce7788243ff528651aaedc" category="doc">연결 모드 및 vCenter 플러그인</block>
+  <block id="8775b337a59d4b9af3bc1c3a910bf056" category="open-title">vCenter 5.0 이상을 위한 Element 플러그인</block>
+  <block id="edc8a6e097a0a616799e29670fd1727c" category="paragraph">Element Plug-in 5.0부터는 NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server의 개별 관리 노드에서 Element 플러그인을 등록합니다.</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="list-title">예</block>
+  <block id="ed8f14d31321b75640df3641f1f3e1e7" category="list-text">vCenter1 등록:<block ref="c0c9cb7ddc6826e0f7a7b435702de8c1" prefix=" " category="inline-code"></block></block>
+  <block id="abde5e1877711d7fd2c206e05e749274" category="list-text">vCenter2 등록:<block ref="6508886917962a1090e11b56ef7434f1" prefix=" " category="inline-code"></block></block>
+  <block id="2687289ed9b7361a79049b0e28103b8c" category="list-text">플러그인을 사용하는 Linked Mode 환경에서 각 vCenter Server에 대한 별도의 관리 노드에서 플러그인을 등록하여 Element 플러그인을 구축합니다.</block>
+  <block id="07bde62c98d9425f751066cd3ab1425d" category="list-text">Element 플러그인을 사용합니다.</block>
+  <block id="55ff226cd0aaaa383e0f43eaee3f987a" category="list-text">연결된 모드 환경에서 vCenter Server의 웹 클라이언트에 로그인합니다.</block>
+  <block id="747c18431857d6aedb79cdb9e301ecef" category="list-text">NetApp Element 원격 플러그인 * 행에서 * 인스턴스 * 목록을 선택합니다.</block>
+  <block id="c837a20954f6e4212ffb770f04534e04" category="inline-image-macro">목록에서 인스턴스를 선택합니다</block>
+  <block id="9762c1ef739fa00771eaa6b966b28dfb" category="paragraph"><block ref="9762c1ef739fa00771eaa6b966b28dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="50fd5d254a1dc5de750bcf90b5680a2e" category="list-text">사용할 vCenter Server를 선택합니다.</block>
+  <block id="3cfb64d6061592c8af076555c7dec0f3" category="paragraph">타겟 vCenter Server를 선택한 후 해당 vCenter Server 환경에 대한 클러스터를 추가하고 관리할 수 있습니다.</block>
+  <block id="d8136275e7fe2d38f936705c83ebc5b1" category="admonition">선택한 vCenter Server와 연결된 스토리지 클러스터만 보고 관리할 수 있습니다.</block>
+  <block id="251e8c34abf8bad3f7c837565d6d29b0" category="paragraph">연결 모드 및 스토리지 클러스터1과 스토리지 클러스터2에 vCenter1 및 vCenter2가 있습니다. vCenter1에서 cluster2를 관리하기 위해 cluster1 및 vCenter2를 관리하려고 합니다.</block>
+  <block id="eb959172cfbea599b61835fa08175ddd" category="inline-image-macro">에는 vCenter 및 클러스터 토폴로지가 나와 있습니다</block>
+  <block id="b3fee9f6ce8317e49583f281e7eeef09" category="paragraph"><block ref="b3fee9f6ce8317e49583f281e7eeef09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2aadc92dae8aa10037f20c45c63e1c17" category="paragraph">각 vCenter Server에 대해 별도의 관리 노드에 플러그인을 등록한 후 스토리지 클러스터 관리를 설정합니다.</block>
+  <block id="ba89815ee908d9dfc845cfb3149d5ab2" category="list-text">vCenter1 웹 클라이언트에서 cluster1을 관리하려면 목록에서 * vCenter1 * 을 선택합니다.</block>
+  <block id="d797341b6b48ab06d8cc9deea1269ce4" category="list-text">Element 플러그인 인벤토리에 cluster1 을 추가합니다.</block>
+  <block id="72a7cd83b5d17a667d1f5e71e5e3645c" category="list-text">NetApp Element 원격 플러그인 * 행에서 * 인스턴스 * 목록을 선택합니다</block>
+  <block id="6517a4eccb70629286703cf974e680a2" category="list-text">vCenter2 웹 클라이언트에서 cluster2를 관리하려면 목록에서 * vCenter2 * 를 선택합니다.</block>
+  <block id="48bce3119f16d7e961de670aac9a0f93" category="list-text">Element 플러그인 인벤토리에 클러스터2를 추가합니다.</block>
+  <block id="6b987340a9eb8c0a19bc09737c31c68b" category="open-title">vCenter 4.10 이전 버전용 Element 플러그인</block>
+  <block id="dd874b9407feb50b5c7b881246dbe379" category="paragraph">Element Plug-in 4.10 이하 버전의 경우 대상 vCenter 웹 클라이언트에 로그인할 때만 Element 플러그인의 스토리지 클러스터를 관리할 수 있습니다.</block>
+  <block id="b20bdf214d464a5020b147f6d024270f" category="list-text">플러그인을 사용하는 연결된 모드 환경에서 각 vCenter Server에 플러그인을 등록합니다.</block>
+  <block id="67a8fb181dbd5e085fff527886473493" category="admonition">vCenter 5.0용 Element 플러그인부터 NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대한 별도의 관리 노드에서 Element 플러그인을 등록합니다.</block>
+  <block id="93e2289f97da80da1364be2c4e0d10a1" category="list-text"><block ref="93e2289f97da80da1364be2c4e0d10a1" category="inline-link-macro-rx"></block></block>
+  <block id="999fcd675ef09d5bcf48ca4b68629358" category="paragraph">QoSSIOC 설정 페이지에서 QoSSIOC 서비스 설정을 구성하고 * QoSSIOC 상태 * 필드가 표시됩니다<block ref="fbaedde498cdead4f2780217646e9ba1" prefix=" " category="inline-code"></block>.</block>
+  <block id="af72b44970b0f53f93223ac123ef17f6" category="inline-link-macro">Element vCenter 플러그인 5.0 이상을 사용하여 설정을 구성합니다</block>
+  <block id="122390a27f562fe7f6544690dfe28f01" category="list-text"><block ref="122390a27f562fe7f6544690dfe28f01" category="inline-link-macro-rx"></block></block>
+  <block id="e63b6a8ee18ab791fdc73308263d7334" category="inline-link-macro">Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다</block>
+  <block id="14837869140e24491abac75e66c5448f" category="list-text"><block ref="14837869140e24491abac75e66c5448f" category="inline-link-macro-rx"></block></block>
+  <block id="7a58b9636c327e4f53eb3a94f83073de" category="paragraph">QoSSIOC는 표준 데이터 저장소에서만 사용할 수 있습니다. 가상 볼륨(VVol)과 작동하지 않습니다. QoSSIOC는 전원 켜기 또는 끄기 이벤트, 게스트 재시작 또는 종료, 재구성 작업과 같은 가상 머신 이벤트가 발생할 때 표준 요소 볼륨에서 QoS 값을 조정합니다.</block>
+  <block id="ed286b930e1de69ce73874649eb8cd30" category="list-text">vSphere Web Client에서 * QoSSIOC 설정 * 탭을 엽니다.</block>
+  <block id="9dae8624eccc21cb7bf7a894ffbf9bf8" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 구성 &gt; QoSSIOC 설정 * 을 선택합니다.</block>
+  <block id="2d1d35ce15355d6d54a4f4916bcb9b56" category="list-text">Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 &gt; QoSSIOC 설정 * 을 선택합니다.</block>
+  <block id="c66387cd1de0480bd2c9654b23b1dc90" category="list-text">OK * 를 선택합니다. QoSSIOC 상태 필드가 표시됩니다<block ref="fbaedde498cdead4f2780217646e9ba1" prefix=" " category="inline-code"></block> 플러그인이 서비스와 성공적으로 통신할 수 있는 경우</block>
+  <block id="e9fee861a44316bc070e0889e006e893" category="paragraph">이 프로세스에서는 QoSSIOC 암호만 변경하는 방법을 설명합니다. QoSSIOC 사용자 이름을 변경하려면 에서 변경할 수 있습니다 <block ref="ca2b2fd8486d4adc93dbf1425e6869a9" category="inline-xref-macro-rx"></block> 페이지.</block>
+  <block id="7af2a7e92243549daf29f3adc3c71dda" category="list-text">선택한 데이터 저장소의 * QoSSIOC Automation * 열에서 버튼을 선택합니다.</block>
+  <block id="e9bb8b0b5e2571e151bff003f6243c99" category="paragraph">Element 소프트웨어를 실행하는 클러스터를 편집하고, SSH 구성을 관리하고, 보호 도메인 모니터링을 설정하고, 클러스터를 종료할 수 있습니다.</block>
+  <block id="d89835bccb80c8a9ab5109de6242c9b6" category="list-text">하나 이상의 클러스터를 추가해야 합니다.</block>
+  <block id="a8312a3fa8b1104212746f41b41b6311" category="inline-link-macro">vCenter 5.0 이상용 Element 플러그인을 사용하여 클러스터를 추가합니다</block>
+  <block id="645ee3f796aa1c252103a2382131b9ac" category="list-text"><block ref="645ee3f796aa1c252103a2382131b9ac" category="inline-link-macro-rx"></block></block>
+  <block id="4ac6862dbdb377d21e6b91031ce6eca5" category="inline-link-macro">Element Plug-in for vCenter 4.10 이하 버전을 사용하여 클러스터를 추가합니다</block>
+  <block id="bac0a3d2890b4c3d8f8ec46ff9dc71bf" category="list-text"><block ref="bac0a3d2890b4c3d8f8ec46ff9dc71bf" category="inline-link-macro-rx"></block></block>
+  <block id="9ace6aefe52e2e7b61b2ba2987bd3932" category="admonition">플러그인 확장 지점 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.</block>
+  <block id="ddb7caa0d7da19325aa1dc4376317463" category="list-text">방화벽 규칙을 사용하면 다음 TCP 포트에서 vCenter와 클러스터 MVIP 간의 개방형 네트워크 통신을 사용할 수 있습니다.</block>
+  <block id="d976f926c490245d10dae594c2af2712" category="list-text">vCenter 5.0용 Element 플러그인, 포트 443, 8333 및 8443부터 시작합니다.</block>
+  <block id="51d73ee3b9aa5bdd2d83b094d69d3e43" category="list-text">vCenter 4.10 이전 버전의 Element Plug-in의 경우 포트 443 및 8443에서</block>
+  <block id="f1fb5ea94c1050ebaa02766312b28f00" category="paragraph">vCenter 플러그인 확장 지점에서 클러스터 세부 정보를 볼 수 있습니다.</block>
+  <block id="3a7230d8065b20f8aca2aaef3962fae1" category="list-text">vSphere Web Client에서 * Clusters * 탭을 엽니다.</block>
+  <block id="16e8713d704389f9e5b9f0ea5a9edd86" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 구성 &gt; 클러스터 * 를 선택합니다.</block>
+  <block id="b1e9b6a242911de4fb08b63f7a82d556" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 구성 &gt; 클러스터 * 를 선택합니다.</block>
+  <block id="2c45be0f6bc70f0d13ba783f669dcbe5" category="paragraph">플러그인 확장 지점에서 클러스터 사용자 ID 및 암호를 변경할 수 있습니다.</block>
+  <block id="27d5b31dab3c0b0d19e86a825f238383" category="paragraph">플러그인 확장 지점을 사용하여 vCenter 플러그인에서 더 이상 관리하지 않으려는 클러스터의 프로필을 제거할 수 있습니다.</block>
+  <block id="8442c749bcc49725455e21b7bf6f6af5" category="list-text">Element vCenter 플러그인 5.0부터 사용할 수 있습니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block>NetApp SolidFire 스토리지 클러스터를 관리하는 각 vCenter Server에 대해 별도의 관리 노드에서 Element 플러그인을 등록합니다.</block>
+  <block id="b398dfdb1790f9801fcd58eb5679247a" category="list-text">Element vCenter 플러그인 4.10 이하 버전을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="0d59d8c82025f672973e2876980b7ce3" category="paragraph">플러그인 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 활성화할 수 있습니다.</block>
+  <block id="0cb57699aef6699a4b4ec7527d51cf60" category="list-text">결과 메뉴에서 * Enable Ear * 를 선택합니다.</block>
+  <block id="817a53a039eb82a82c74b6fd8e35827d" category="paragraph">플러그인 확장 지점을 사용하여 저장된 암호화(EAR) 기능을 수동으로 비활성화할 수 있습니다.</block>
+  <block id="599cb802d62593a662d74d879a4ea7d2" category="list-text">vSphere Web Client에서 * Clusters * 탭 을 엽니다.</block>
+  <block id="2c7e9c9aec418a56f14794f368cf560c" category="list-text">결과 메뉴에서 * Disable Ear * 를 선택합니다.</block>
+  <block id="86d6a38be00eba4ab409f5a977441f23" category="paragraph">플러그인 확장 지점을 사용하여 SSH(Secure Shell) 세션을 수동으로 활성화할 수 있습니다. NetApp 기술 지원 엔지니어는 SSH를 설정하여 결정 기간 동안 스토리지 노드에 액세스하여 문제를 해결할 수 있습니다.</block>
+  <block id="81198632104281eea957be1cab9d81a4" category="paragraph">플러그인 확장 지점을 사용하여 스토리지 클러스터의 노드에 대한 SSH(Secure Shell) 액세스를 수동으로 해제할 수 있습니다.</block>
+  <block id="d202e20d3ddd901020cd8504b8c2a988" category="paragraph">를 수동으로 활성화할 수 있습니다 <block ref="eb2a8f3ad2c177d2352fbc0a14b04656" category="inline-link-macro-rx"></block> 플러그인 확장 지점 사용 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다.</block>
+  <block id="8449d435742ac57d994b5255e5b5fa22" category="paragraph">플러그인 확장 지점을 사용하여 스토리지 클러스터의 모든 활성 노드를 수동으로 종료할 수 있습니다.</block>
+  <block id="3faa159aa964cba41fdd6f004775fb46" category="paragraph">NetApp HCI를 사용하여 노드를 추가하여 NetApp HCI 인프라를 수동으로 확장할 수 있습니다. 플러그인 확장 지점에서 시스템 확장을 위한 NetApp HCI UI에 대한 링크가 제공됩니다.</block>
+  <block id="08f925954eaa7c331aa4024f27c73410" category="paragraph">시작하기 및 클러스터 페이지에서 추가 링크를 제공합니다.</block>
+  <block id="0e3be44e4c46207bf63ede737f18078b" category="list-text">Element vCenter 플러그인 5.0부터 NetApp Element 원격 플러그인 &gt; 관리를 선택합니다.</block>
+  <block id="e548657fb42e8cbef1be99494f820a45" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 NetApp Element 관리 확장 지점을 선택합니다.</block>
+  <block id="99743f19cae906ba996350c449e1c983" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하기 전에 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.</block>
+  <block id="ec039d5a9609896b1378c280f9eb795e" category="paragraph">시스템이 Element vCenter 플러그인 5.0 이상의 사용 요구 사항을 충족하는지 확인합니다.</block>
+  <block id="87e51067c2a7529e01c8fa57d7d29919" category="paragraph">Element vCenter 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 vCenter 및 ESXi가 포함된 VMware vSphere 8.0 및 7.0이 필요합니다.</block>
+  <block id="a293a3d51c53fc838afbc761865ddaa8" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함하는 vSphere 8.0</block>
+  <block id="9cf493ed2f9140046fab3919844fdd27" category="list-text">vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1, 2 및 3</block>
+  <block id="92a2b5cb9c6906035c2864fa225e1940" category="inline-link">기사</block>
+  <block id="1400ae8c17045a12d78fd12af11a1d4c" category="admonition">VMware vSphere 6.5 및 6.7은 2022년 10월 15일에 지원 종료 상태에 도달했습니다. Element Plug-in 5.0부터는 vSphere 6.5 및 6.7이 더 이상 지원되지 않습니다. 자세한 내용은 다음을 참조하십시오<block ref="6a2f70d2ba0033763d7682575dc0f9df" category="inline-link-rx"></block>.</block>
+  <block id="f4bbb6f9fa6c5749dac1df4f2bf8df3e" category="paragraph">시스템이 Element vCenter 플러그인 4.10 이하의 사용 요구 사항을 충족하는지 확인합니다.</block>
+  <block id="eb56b88cdd81d40633d568a23d3857eb" category="paragraph">Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
+  <block id="d97bbd8656e24ccefc431a8efa7d71b1" category="admonition">이 플러그인은 vCenter 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.</block>
+  <block id="2485371e710ec4ea8989c22e13c02067" category="list-text"><block ref="2485371e710ec4ea8989c22e13c02067" category="inline-link-rx"></block></block>
+  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _신규 _</block>
+  <block id="e15eb9592751e0df97c69e856ffc178a" category="list-text"><block ref="e15eb9592751e0df97c69e856ffc178a" category="inline-link-rx"></block></block>
+  <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
+  <block id="bfc8310ead2967e2e87ebf3b95c4457e" category="list-text">vCenter 플러그인에서 * Protection * 탭을 엽니다.</block>
+  <block id="9f6e30da93b129ae703507d1e2e04d6f" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; 보호 * 를 선택합니다.</block>
+  <block id="010e6c2a373b82571afeaf2060330298" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; 보호 * 를 선택합니다.</block>
+  <block id="83cce61746a882e311eece2a3930e13f" category="list-text">vCenter 플러그인의 vCenter 플러그인에서 * Protection * 탭을 엽니다.</block>
+  <block id="17bbda2c10afb3a45455ef892d38e2cc" category="list-text">Management * 탭을 엽니다.</block>
+  <block id="f9d626e7bafda3610d6c757f1e60f548" category="list-text">소스 클러스터가 포함된 vCenter에서 * Protection * 탭을 엽니다.</block>
+  <block id="01782872ab64f41e96e319bfaefc8262" category="paragraph">플러그인 확장 지점을 사용하여 NetApp Element 소프트웨어를 실행하는 클러스터에서 볼륨 스냅샷을 삭제할 수 있습니다. 스냅샷을 삭제하면 시스템에서 즉시 스냅샷을 제거합니다.</block>
+  <block id="ba0075aa8b62d71d95245c5912a935bc" category="paragraph"><block ref="dece502e66b0cc077bc3fbb88481b5ab" category="inline-link-macro-rx"></block> NetApp Element 소프트웨어 기반 네트워크에서 스토리지 리소스에 대한 액세스를 제어하는 데 사용됩니다.</block>
+  <block id="09f1a7a7c1295a24c3e3bf9e67591dd8" category="paragraph">플러그인 확장 지점을 사용하여 사용자 계정을 삭제할 수 있습니다.</block>
+  <block id="c2f2c17f03efbc27379f604eeac16576" category="paragraph">플러그인 확장 지점에서 클러스터 탭의 네트워크 페이지에서 VLAN에 대한 네트워크 정보를 볼 수 있습니다.</block>
+  <block id="762e03751a5bcf1567f9a90b2b32e4b1" category="list-text">데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지의 설정을 구성해야 합니다.</block>
+  <block id="49a89c2b3d21ac7c3ef4a5befe6a50fd" category="inline-link-macro">Element vCenter Plug-in 5.0 이상을 사용하여 설정을 구성합니다</block>
+  <block id="c37db1db50463d31553915a94d91b216" category="list-text"><block ref="c37db1db50463d31553915a94d91b216" category="inline-link-macro-rx"></block></block>
+  <block id="2e3ba5c792fb5fd53271799b7070a484" category="inline-link-macro">Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다</block>
+  <block id="2ba23dfa3b981161d506965cecdb1fce" category="list-text"><block ref="2ba23dfa3b981161d506965cecdb1fce" category="inline-link-macro-rx"></block></block>
+  <block id="e6ef75ce804abb3fafc45fce21292bbe" category="paragraph">플러그인 확장에서 데이터 저장소를 생성할 수 있습니다.</block>
+  <block id="bc9c2f3ff2c152ef9e77821cb6fe2b91" category="list-text">데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지의 설정을 구성해야 합니다.</block>
+  <block id="0478961142438ca908428db5393dbaba" category="paragraph">QoSSIOC 서비스를 사용할 수 없는 경우 먼저 QoSSIOC 설정을 구성해야 합니다.</block>
+  <block id="cde054e3559c1c9f1f57b66c49bfe49e" category="paragraph">플러그인 확장 지점에서 데이터 저장소 페이지에서 사용 가능한 데이터 저장소를 볼 수 있습니다.</block>
+  <block id="58a14f9186318e7d122cfec91400cec5" category="paragraph">플러그인 확장 지점을 사용하여 데이터 저장소를 확장하여 볼륨 크기를 늘릴 수 있습니다. 데이터 저장소를 확장하면 해당 데이터 저장소와 관련된 VMFS 볼륨도 확장됩니다.</block>
+  <block id="0815f30cb9ef732c6b62e8a0eda8ca6a" category="paragraph">QoSSIOC 서비스를 사용할 수 없는 경우 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지에서 설정을 구성해야 합니다.</block>
+  <block id="8ff862509079356450d8655bcee2844d" category="paragraph">플러그인 확장 지점을 사용하여 하나 이상의 호스트와 데이터 저장소를 공유할 수 있습니다.</block>
+  <block id="9468e3241dd32c4b46120733b757b50f" category="paragraph">플러그인 확장 지점을 사용하여 데이터 저장소를 삭제할 수 있습니다. 이 작업을 수행하면 삭제할 데이터 저장소의 VM과 연결된 모든 파일이 영구적으로 삭제됩니다. 플러그인은 등록된 VM이 포함된 데이터 저장소를 삭제하지 않습니다.</block>
+  <block id="788ffeff4edcb8b53b5292e9cbd1ef32" category="list-text">vSphere Web Client에서 * Protection * 탭을 엽니다.</block>
+  <block id="8e9155a0647c2990855309b2276217c0" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 구성 &gt; 보호 * 를 선택합니다.</block>
+  <block id="e4d8a3d460111250f83590417203c8de" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 구성 &gt; 보호 * 를 선택합니다.</block>
+  <block id="8a5139243fd8c5d398af646e28aaa968" category="list-text">(선택 사항) 원격 클러스터에서 Element UI 또는 플러그인 확장 지점을 사용하여 클러스터 쌍이 연결되어 있는지 확인합니다.</block>
+  <block id="d766a07570fa579e0090a8f25ab4b149" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; 보호 &gt; 클러스터 쌍 * 을 선택합니다.</block>
+  <block id="022c8955a74b4e4468cc59c8d97c0ad4" category="list-text">Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 관리 &gt; 보호 &gt; 클러스터 쌍 * 을 선택합니다.</block>
+  <block id="15bc7e92fbbba6d39f3ad435d3e9b29d" category="list-text">로컬 클러스터가 포함된 vCenter에서 * Protection * 탭을 엽니다.</block>
+  <block id="351e499a10622a9d5005948d08b530a4" category="inline-xref">보호 탭을 엽니다</block>
+  <block id="e87e60d3b8eae686f59dad0549e07bb5" category="list-text">원격 클러스터가 포함된 vCenter에서 <block ref="b621f476b0900d938461122db13717e8" category="inline-xref-macro-rx"></block>.</block>
+  <block id="3ddf97b8ba85f55f893e365c0933865a" category="list-text">원격 클러스터에서 클러스터 쌍이 연결되었는지 확인합니다 <block ref="b621f476b0900d938461122db13717e8" category="inline-xref-macro-rx"></block> 또는 Element UI를 사용합니다.</block>
+  <block id="992b5de2f985daf0e15f85a9211086fa" category="list-text">로컬 클러스터가 포함된 vCenter에서 * Management * 탭을 엽니다.</block>
+  <block id="2da341721f94dccdfb79c8733b4590e9" category="inline-xref">관리 탭을 엽니다</block>
+  <block id="df49b105831941550aa260b8faab2748" category="list-text">원격 클러스터가 포함된 vCenter에서 <block ref="a2d7630c00fc5e30b25225082893e325" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e6d513adad672a33e6f6ba0c1553ad98" category="list-text">플러그인 확장 지점에서 복제 소스로 사용할 페어링된 볼륨이 포함된 클러스터를 선택합니다.</block>
+  <block id="d9582314542b7f358eb5cf1fe4740fe5" category="list-text">NetApp 원격 플러그인 &gt; 관리 * 의 Element vCenter 플러그인 5.0부터 시작합니다.</block>
+  <block id="92b157691c5c81440c4d5fb8c1aba631" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 * 를 선택합니다.</block>
+  <block id="78443de6b4affdf44d424f773c05a6fe" category="list-text">vCenter Server용 Element Plug-in 버전의 확장 지점에서 * Management * 탭을 선택합니다.</block>
+  <block id="8906a1cf150bafcbee01a81d8b9c2a1d" category="list-text">복제 대상으로 사용할 페어링된 볼륨이 포함된 클러스터를 선택합니다.</block>
+  <block id="a2287157d7f66ffafd484dbaebb3b9b1" category="list-text">Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 관리 &gt; 관리 &gt; 관리 * 를 선택합니다.</block>
+  <block id="91bcec4348be0116339e240abd4066a5" category="list-text">NetApp 원격 플러그인 &gt; 관리 &gt; 관리 * 의 Element vCenter 플러그인 5.0부터 시작합니다.</block>
+  <block id="04e07a949fb0baae335306a235e59485" category="paragraph">플러그인 확장 지점의 보호 탭에 있는 볼륨 쌍 페이지에서 페어링되었거나 페어링 진행 중인 볼륨에 대한 정보를 볼 수 있습니다. Element vCenter 플러그인 5.0부터 NetApp Element 원격 플러그인 확장 지점에서 관리 탭을 선택합니다. Element vCenter 플러그인 4.10 및 이전 버전의 경우 NetApp Element 관리 확장 지점을 선택합니다.</block>
+  <block id="0bfdfef00db126e69cd48dc5e3756fde" category="paragraph">초기 페어링 프로세스 중에 플러그인 확장 지점의 보호 탭에 있는 볼륨 쌍 페이지에서 메시지를 볼 수 있습니다. 이러한 메시지는 볼륨 상태 열에 표시되며 페어링의 소스 및 대상 끝 모두에 표시될 수 있습니다.</block>
+  <block id="7d0d76bfba0afd9411399a0321b877af" category="paragraph">플러그인 확장 지점에서 보호 탭의 볼륨 쌍 페이지에서 볼륨을 페어링한 후 경고 메시지를 볼 수 있습니다. 이러한 메시지는 볼륨 상태 열에 표시되며 페어링의 소스 및 대상 끝 모두에 표시될 수 있습니다.</block>
+  <block id="a97a3542b274263b998a7e50d4fadb56" category="paragraph">VMware vSphere를 설정할 수 있습니다 <block ref="b2c897dbc9f8f27c64e032c063a4f688" category="inline-link-macro-rx"></block> NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. <block ref="18ac2bdbb323cba4124b1b85ce340ab4" category="inline-link-macro-rx"></block>, <block ref="4bb7989fc64f274d67c358cc77d42197" category="inline-link-macro-rx"></block>및 플러그인 확장 지점의 호스트.</block>
+  <block id="682b4bd17b1197c464e68a9fef0d715f" category="paragraph">플러그인 확장 지점을 사용하여 VVol(vSphere Virtual Volumes) 기능을 수동으로 활성화해야 합니다. Element 시스템에는 VVOL 기능이 기본적으로 비활성화되어 있으며 새 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. VVOL 기능을 활성화하는 것은 일회성 구성 작업입니다.</block>
+  <block id="866fd9232c858c7276b1b4fd4d5cec61" category="list-text">결과 메뉴에서 * VVol * 활성화 를 선택합니다.</block>
+  <block id="f27a8dbce14d6736fb385e27c1d64148" category="list-text">vSphere Client Home에서 * Hosts and Clusters * 를 선택합니다.</block>
+  <block id="b4217a016a7debbe66f70f8749198d9d" category="list-text">스토리지 공급자 * 에서 추가 아이콘을 선택합니다.</block>
+  <block id="d991ee613318408b7843d655014a188b" category="admonition">vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 제공됩니다. 또한 클러스터 세부 정보(* NetApp Element 구성 &gt; 클러스터 * 또는 * NetApp Element 원격 플러그인 &gt; 구성 &gt; 클러스터 *) 또는 요소 UI의 클러스터 설정에서 URL을 찾을 수 있습니다 <block ref="26fb54e902c0348c4db55b7ce2d6cbe4" prefix="(" category="inline-code"></block>)를 클릭합니다.</block>
+  <block id="313e753ce35d955809d1ad442a0276cf" category="admonition">공급자를 처음 등록한 후 필요에 따라 스토리지 공급자를 새로 고쳐 공급자의 현재 상태를 표시합니다. 또한 공급자가 * NetApp Element 구성 &gt; 클러스터 * 또는 * NetApp Element 원격 플러그인 &gt; 구성 &gt; 클러스터 * 에서 활성화되었는지 확인할 수 있습니다. 활성화하려는 클러스터에 대해 * Actions * 를 선택하고 * Details * 를 선택합니다.</block>
+  <block id="75fd12f03862ae9d547181b2705bd654" category="paragraph">플러그인 확장 지점의 VVol 탭에서 저장소 컨테이너를 생성할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다.</block>
+  <block id="37329cf5476139bfb90d2b7b9806f417" category="list-text">vSphere Web Client에서 * VVol * 탭을 엽니다.</block>
+  <block id="da76ee36aa8f24a2bbc5c59c70f11e58" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 관리 &gt; VVol * 을 선택합니다.</block>
+  <block id="174c272ec9902379760161672e6fe609" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; VVol * 을 선택합니다.</block>
+  <block id="d95986e274d588866379129ad3b823ed" category="paragraph">플러그인 확장 지점에서 가상 볼륨 구성 요소의 성능 및 설정을 검토할 수 있습니다.</block>
+  <block id="d1426b5bb9a73a66029b558e202bd80d" category="paragraph">플러그인 확장 지점에서 저장소 컨테이너를 삭제할 수 있습니다.</block>
+  <block id="7def67ab3cfcb3f77657050f8c6dbaec" category="paragraph">vCenter Server용 NetApp Element 플러그인의 플러그인 확장 지점에서 QoSSIOC 이벤트를 볼 수 있습니다.</block>
+  <block id="6d2eee37a5791129fa81d2b32ba01523" category="list-text">vCenter Server 4.10 이전 버전용 NetApp Element 플러그인을 사용하여 를 사용하여 다른 vCenter Server의 클러스터 리소스를 관리합니다 <block ref="dca51ead05041aae3fc819e20576b43e" category="inline-link-macro-rx"></block> 로컬 스토리지 클러스터로만 제한됩니다.</block>
+  <block id="cb70d86f00beeb6827e9995793bef374" category="list-text">vSphere Web Client에서 * QoSSIOC Events * 탭을 엽니다.</block>
+  <block id="9c48c0852d9ddcb9e3b5a40030b8aeb2" category="list-text">Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 &gt; 구성 &gt; QoSSIOC 이벤트 * 를 선택합니다.</block>
+  <block id="e1b91d18ce1722dcbd121c1ee6913aea" category="list-text">Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 구성 &gt; QoSSIOC 이벤트 * 를 선택합니다.</block>
+  <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">관리 서비스 2.22.7 공지(VMware vCenter Server 5.0.37용 NetApp Element 플러그인)</block>
+  <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
+  <block id="f9be099601d4e0c767984f181aa078ea" category="inline-link-macro">관리 서비스 공지 2.19.48(VMware vCenter Server용 NetApp Element 플러그인 4.8.34)</block>
+  <block id="22e76529eafa14e088705c8c2eb51f1a" category="list-text"><block ref="22e76529eafa14e088705c8c2eb51f1a" category="inline-link-macro-rx"></block></block>
+  <block id="25950657a40c97f3a26eadd5a5267fdb" category="inline-link-macro">관리 서비스 공지 2.18.91(VMware vCenter Server 4.7.10용 NetApp Element 플러그인)</block>
+  <block id="3a82672769f4754bb132e4738e99a04a" category="list-text"><block ref="3a82672769f4754bb132e4738e99a04a" category="inline-link-macro-rx"></block></block>
+  <block id="e587166432d2b9af4d01db0f30c62a66" category="inline-link-macro">관리 서비스 공지 2.17.56(VMware vCenter Server용 NetApp Element 플러그인 4.6.32)</block>
+  <block id="11830ef7ca3ac55beb8e48e395c9ce88" category="list-text"><block ref="11830ef7ca3ac55beb8e48e395c9ce88" category="inline-link-macro-rx"></block></block>
+  <block id="8c918f8c84da992411a604e9604e0de2" category="inline-link-macro">관리 서비스 공지 2.17.52(VMware vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
+  <block id="ed4b820b50c17a4fbdba816e79500837" category="list-text"><block ref="ed4b820b50c17a4fbdba816e79500837" category="inline-link-macro-rx"></block></block>
+  <block id="7cc6e9d671cc2cb47f5c3f9d20c7057f" category="inline-link-macro">관리 서비스 참고 사항 2.16(VMware vCenter Server용 NetApp Element 플러그인 4.6.29)</block>
+  <block id="1b72fe1774b978028d65bfdc928580e5" category="list-text"><block ref="1b72fe1774b978028d65bfdc928580e5" category="inline-link-macro-rx"></block></block>
+  <block id="2c5b860cb2b7058782b51f4fcd3e93bc" category="inline-link-macro">관리 서비스 참고 사항 2.14(VMware vCenter Server 4.5.42용 NetApp Element 플러그인)</block>
+  <block id="a17ceee3528cba96b771283242d64aab" category="list-text"><block ref="a17ceee3528cba96b771283242d64aab" category="inline-link-macro-rx"></block></block>
+  <block id="19d286cc7405b099eb203332d788dc5f" category="inline-link-macro">관리 서비스 2.13에 대한 고지 사항(VMware vCenter Server 4.5.42용 NetApp Element 플러그인)</block>
+  <block id="099a8bc4bd6465122a6bdaa8caf314f1" category="list-text"><block ref="099a8bc4bd6465122a6bdaa8caf314f1" category="inline-link-macro-rx"></block></block>
+  <block id="24543c4d48ff85f421165ead301349af" category="inline-link-macro">관리 서비스 참고 사항 2.11(VMware vCenter Server 4.4.72용 NetApp Element 플러그인)</block>
+  <block id="d2b3d7ffe55a21ee9954248dccf4be03" category="list-text"><block ref="d2b3d7ffe55a21ee9954248dccf4be03" category="inline-link-macro-rx"></block></block>
+  <block id="0e9c9eb44ef5108d7204ec64bc76f844" category="sidebar">VMware vCenter Server 5.0 이상용 NetApp Element 플러그인</block>
+  <block id="74f171bb465a49ebcce88fa91d4562d4" category="sidebar">VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인</block>
+  <block id="2abfacd3d0325353cbe289faa9d0d3b1" category="sidebar">vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</block>
 </blocks>

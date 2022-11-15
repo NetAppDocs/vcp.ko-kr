@@ -18,7 +18,12 @@ NetApp Element Plug-in for VMware vCenter Server를 사용하여 Element 볼륨�
 
 .무엇을 &#8217;필요로 할거야
 * 데이터 저장소를 생성하고 관리하려면 먼저 사용자 계정을 하나 이상 생성해야 합니다.
-* 데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 해야 합니다 link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["설정을 구성합니다"] NetApp Element 구성 확장 포인트의 QoSSIOC 설정 페이지
+* 데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지의 설정을 구성해야 합니다.
++
+** link:vcp_task_getstarted_5_0.html#configure-qossioc-settings-using-the-plug-in["Element vCenter Plug-in 5.0 이상을 사용하여 설정을 구성합니다"]
+** link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다"]
+
+
 * 선택한 ESXi 호스트에서 지원하는 가장 높은 VMFS 버전을 사용하여 데이터 저장소를 생성하므로 VMFS 호환성 문제를 방지하려면 모든 클러스터 구성원이 동일한 버전의 vSphere 및 ESXi를 실행해야 합니다.
 
 
@@ -39,7 +44,7 @@ TIP: vSphere에서 작업 모니터링을 사용하여 데이터 저장소 작�
 
 == 데이터 저장소를 생성합니다
 
-NetApp Element 관리 확장에서 데이터 저장소를 생성할 수 있습니다.
+플러그인 확장에서 데이터 저장소를 생성할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
 * vCenter Server에 하나 이상의 호스트가 접속되어 있어야 합니다.
@@ -49,11 +54,21 @@ NetApp Element 관리 확장에서 데이터 저장소를 생성할 수 있습�
 NOTE: vCenter 연결 모드를 사용하는 경우 올바른 vCenter Server에 클러스터를 추가했는지 확인합니다.
 
 * 하나 이상의 사용자 계정을 만들어야 합니다.
-* 데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 해야 합니다 link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["설정을 구성합니다"] NetApp Element 구성 확장 포인트의 QoSSIOC 설정 페이지
+* 데이터 저장소와 함께 QoSSIOC 서비스를 사용하려면 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지의 설정을 구성해야 합니다.
++
+** link:vcp_task_getstarted_5_0.html#configure-qossioc-settings-using-the-plug-in["Element vCenter Plug-in 5.0 이상을 사용하여 설정을 구성합니다"]
+** link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다"]
+
+
 
 
 .단계
-. NetApp Element 관리 * > * 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -129,12 +144,17 @@ TIP: 최대 또는 버스트 IOPS 값이 20,000 IOPS 이상인 볼륨은 단일 
 
 . QoSSIOC 자동화를 활성화하려면 * QoS 및 SIOC 사용 * 을 선택한 다음 QoSSIOC 설정을 구성합니다.
 +
+--
 
 TIP: QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.
 
-+
-QoSSIOC 서비스를 사용할 수 없는 경우 먼저 link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["QoSSIOC 설정을 구성합니다"].
+QoSSIOC 서비스를 사용할 수 없는 경우 먼저 QoSSIOC 설정을 구성해야 합니다.
 
+** link:vcp_task_getstarted_5_0.html#configure-qossioc-settings-using-the-plug-in["Element vCenter Plug-in 5.0 이상을 사용하여 설정을 구성합니다"]
+** link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다"]
+
+
+--
 +
 .. QoS 및 SIOC 사용 * 을 선택합니다.
 .. 버스트 계수 * 를 구성합니다.
@@ -166,9 +186,14 @@ TIP: 기본적으로 최대 SIOC 디스크 공유는 '무제한'으로 설정됩
 
 == 데이터 저장소 목록을 봅니다
 
-NetApp Element 관리 확장 지점에서 데이터 저장소 페이지에서 사용 가능한 데이터 저장소를 볼 수 있습니다.
+플러그인 확장 지점에서 데이터 저장소 페이지에서 사용 가능한 데이터 저장소를 볼 수 있습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.
@@ -203,9 +228,15 @@ NOTE: 여러 볼륨(혼합 데이터 저장소)에 걸쳐 있는 데이터 저�
 
 == 데이터 저장소를 확장합니다
 
-NetApp Element 관리 확장 지점을 사용하여 데이터 저장소를 확장하여 볼륨 크기를 늘릴 수 있습니다. 데이터 저장소를 확장하면 해당 데이터 저장소와 관련된 VMFS 볼륨도 확장됩니다.
+플러그인 확장 지점을 사용하여 데이터 저장소를 확장하여 볼륨 크기를 늘릴 수 있습니다. 데이터 저장소를 확장하면 해당 데이터 저장소와 관련된 VMFS 볼륨도 확장됩니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+.단계
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.
@@ -244,7 +275,12 @@ NOTE: vCenter 연결 모드를 사용하는 경우 올바른 vCenter Server에 �
 
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.
@@ -321,12 +357,17 @@ TIP: 최대 또는 버스트 IOPS 값이 20,000 IOPS 이상인 볼륨은 단일 
 
 . QoSSIOC 자동화를 활성화하려면 * QoS 및 SIOC 사용 * 상자를 선택한 다음 QoSSIOC 설정을 구성합니다.
 +
+--
 
 IMPORTANT: QoS 정책을 사용하는 경우 QoSSIOC를 활성화하지 마십시오. QoSSIOC는 볼륨 QoS 설정에 대한 QoS 값을 재정의하고 조정합니다.
 
-+
-QoSSIOC 서비스를 사용할 수 없는 경우 먼저 NetApp Element 구성 확장 지점에서 QoSSIOC 설정 페이지에서 설정을 구성해야 합니다.
+QoSSIOC 서비스를 사용할 수 없는 경우 먼저 플러그인 확장 지점에서 QoSSIOC 설정 페이지에서 설정을 구성해야 합니다.
 
+** link:vcp_task_getstarted_5_0.html#configure-qossioc-settings-using-the-plug-in["Element vCenter Plug-in 5.0 이상을 사용하여 설정을 구성합니다"]
+** link:vcp_task_getstarted.html#configure-qossioc-settings-using-the-plug-in["Element vCenter 플러그인 4.10 이하를 사용하여 설정을 구성합니다"]
+
+
+--
 +
 .. QoS 및 SIOC 사용 * 을 선택합니다.
 .. 버스트 계수 * 를 구성합니다.
@@ -357,7 +398,7 @@ TIP: 기본적으로 최대 SIOC 디스크 공유는 '무제한'으로 설정됩
 
 == 데이터 저장소를 공유합니다
 
-NetApp Element 관리 확장 지점을 사용하여 하나 이상의 호스트와 데이터 저장소를 공유할 수 있습니다.
+플러그인 확장 지점을 사용하여 하나 이상의 호스트와 데이터 저장소를 공유할 수 있습니다.
 
 데이터 저장소는 동일한 데이터 센터 내의 호스트 사이에서만 공유할 수 있습니다.
 
@@ -371,7 +412,12 @@ NOTE: vCenter 연결 모드를 사용하는 경우 올바른 vCenter Server에 �
 
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.
@@ -436,7 +482,12 @@ NOTE: 새 데이터 저장소를 생성하려면 접속된 호스트가 하나 �
 
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.
@@ -453,9 +504,14 @@ NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용�
 
 == 데이터 저장소를 삭제합니다
 
-NetApp Element 관리 확장 지점을 사용하여 데이터 저장소를 삭제할 수 있습니다. 이 작업을 수행하면 삭제할 데이터 저장소의 VM과 연결된 모든 파일이 영구적으로 삭제됩니다. 플러그인은 등록된 VM이 포함된 데이터 저장소를 삭제하지 않습니다.
+플러그인 확장 지점을 사용하여 데이터 저장소를 삭제할 수 있습니다. 이 작업을 수행하면 삭제할 데이터 저장소의 VM과 연결된 모든 파일이 영구적으로 삭제됩니다. 플러그인은 등록된 VM이 포함된 데이터 저장소를 삭제하지 않습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vSphere Web Client에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 +
 
 NOTE: 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 사용할 클러스터를 선택합니다.

@@ -17,7 +17,12 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, event, log, clust
 발생할 수 있는 클러스터 오류와 함께 선택한 클러스터에서 수행된 작업에 대한 이벤트 로그를 검토할 수 있습니다. 대부분의 오류는 시스템에서 자동으로 해결됩니다. 다른 고장은 수동 개입이 필요할 수 있습니다.
 
 .단계
-. vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . Reporting * > * Event Log * 를 선택합니다.
 . 세부 정보를 검토하려면 이벤트를 선택하고 * Details * 를 클릭합니다.
 . 다음을 포함하는 이벤트 정보를 검토합니다.

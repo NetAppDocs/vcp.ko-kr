@@ -14,7 +14,17 @@ keywords: netapp, vcp, vcenter, plugin, element, new, whats new
 
 
 [role="lead"]
-vCenter Server 4.10용 NetApp Element 플러그인에는 보안 취약점을 비롯한 해결된 문제가 포함되어 있어 업그레이드 중에 발생하는 중단을 크게 줄이고 일부 환경에서 일상적인 운영을 개선할 수 있습니다. 플러그인 버전 4.10에서는 온라인 도움말 링크가 이 링크로 전환되었습니다 link:index.html["설명서 링크"]. 플러그인 내에서 온라인 도움말 링크에 액세스하려면 네트워크에 액세스할 수 있어야 합니다.
+vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. link:vcp_concept_remote_plugin_architecture.html["자세한 정보."]
+
+Element vCenter 플러그인 5.0은 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 VMware vSphere 8.0, 7.0, 7.0 업데이트 1, 2 및 3을 지원합니다.
+
+Element vCenter 플러그인 5.0은 관리 서비스의 2.22.7 릴리즈와 함께 사용할 수 있습니다. 플러그인을 사용하지 않는 경우 다른 모든 서비스와 기능은 버전 21.21.61과 동일하므로 이 업그레이드는 선택 사항입니다. 최신 관리 서비스 업데이트에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2884458["관리 서비스 릴리스 정보 2.21.61"^].
+
+
+
+== vCenter Server 4.10용 NetApp Element 플러그인
+
+Element vCenter 플러그인 4.10에는 보안 취약점을 비롯하여 해결된 문제가 포함되어 있어 업그레이드 중에 발생하는 중단을 크게 줄이고 일부 환경에서 일상적인 운영을 개선할 수 있습니다. 플러그인 버전 4.10에서는 온라인 도움말 링크가 이 링크로 전환되었습니다 link:index.html["설명서 링크"]. 플러그인 내에서 온라인 도움말 링크에 액세스하려면 네트워크에 액세스할 수 있어야 합니다.
 
 Element vCenter 플러그인 4.10은 관리 서비스의 2.21.61 릴리즈와 함께 사용할 수 있습니다.
 
@@ -22,7 +32,7 @@ Element vCenter 플러그인 4.10은 관리 서비스의 2.21.61 릴리즈와 �
 
 == vCenter Server 4.9용 NetApp Element 플러그인
 
-VMware vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5에 대한 복원 지원을 제공합니다.
+vCenter Server 4.9용 NetApp Element 플러그인은 vCenter Server, ESXi 및 vSphere HTML5 웹 클라이언트를 포함하여 vSphere 6.5를 복구합니다.
 
 Element vCenter 플러그인 4.9는 관리 서비스의 2.20.69 릴리즈와 함께 사용할 수 있습니다.
 
@@ -36,7 +46,7 @@ Element vCenter 플러그인 4.8은 관리 서비스의 2.19 릴리즈와 함께
 
 
 
-== VMware vCenter Server 4.7용 NetApp Element 플러그인
+== vCenter Server 4.7용 NetApp Element 플러그인
 
 Element vCenter 플러그인 4.7에는 에서 향상된 기능을 더욱 개발할 수 있는 중요한 보안 개선 사항이 포함되어 있습니다 https://security.netapp.com/advisory/ntap-20210315-0001/["최신 관리 서비스 2.17.56 패치"] 놓습니다.
 
@@ -46,7 +56,7 @@ Element vCenter 플러그인 4.7은 관리 서비스의 2.18 릴리즈와 함께
 
 
 
-== VMware vCenter Server용 NetApp Element 플러그인 4.6
+== vCenter Server용 NetApp Element 플러그인 4.6
 
 버전 4.6을 사용하는 이 플러그인은 이제 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 vSphere 7.0 Update 1의 구성 요소를 지원합니다.
 

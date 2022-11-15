@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: vcp_concept_remote_plugin_architecture.html 
+summary: vCenter Server용 원격 NetApp Element 플러그인 아키텍처에 대해 알아보십시오. 
+keywords: netapp, vcp, vcenter, plugin, element, remote, architecture 
+---
+= 원격 플러그인 아키텍처 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+vCenter Server 5.0용 NetApp Element 플러그인부터 플러그인 아키텍처가 로컬에서 원격으로 변경됩니다. 원격 아키텍처가 도입됨에 따라 플러그인이 더 이상 vCenter 서버 내에 구축되지 않습니다. vCenter Server 4.10 이전 버전용 Element Plug-in의 경우 플러그인 구축은 등록된 vCenter Server에 대해 로컬로 유지됩니다.
+
+이 페이지에서는 vCenter Server용 원격 NetApp Element 플러그인을 구축하는 방법을 설명합니다.
+
+vSphere Client 원격 플러그인 아키텍처는 vCenter Server 내부에서 실행할 필요 없이 vSphere Client에 플러그인 기능을 통합하도록 설계되었습니다. 원격 플러그인 아키텍처는 플러그인 격리를 지원하고, 대규모 vSphere 환경에서 작동하는 플러그인을 스케일 아웃할 수 있도록 하며, 다음과 같은 이점을 제공합니다.
+
+* 플러그인은 동일한 vSphere Client에 로드되어 불안정하거나 손상된 플러그인으로 인해 발생하는 간섭으로부터 보호됩니다.
+* vCenter Server 업그레이드 전체에서 플러그인 호환성이 강력합니다.
+* 호환되지 않는 플러그인은 vCenter Server 작업을 방해하지 않습니다.
+* 동일한 vSphere 환경 내에 다양한 플러그인 버전을 구축할 수 있습니다.
+* 원격 플러그인 사용자 인터페이스는 단일 백엔드 서버와만 통신해야 합니다.
+* 배포된 플러그인 토폴로지는 잘 정의되고 있으며 문제 해결을 지원하는 토폴로지를 쉽게 이해할 수 있습니다.
+
+
+
+
+== vCenter Server 상위 레벨 아키텍처용 Remote Element 플러그인
+
+NetApp 하이브리드 클라우드 제어를 사용하여 관리 서비스와 함께 관리 노드 내부의 Docker 컨테이너에 원격 Element 플러그인을 구축할 수 있습니다.
+
+image:vcp_remote_plugin_high_level_architecture.png["원격 플러그인 고급 아키텍처"]
+
+원격 Element 플러그인 vCenter Server, 등록 서비스 및 스토리지 I/O 제어(SIOC) 서비스는 동일한 Docker 서비스를 공유하지만 다른 포트에서 수신합니다.
+
+[cols="50,25"]
+|===
+| 설명 | 포트 
+
+
+| 원격 요소 플러그인 vCenter Server | 8333 
+
+
+| 등록 서비스 | 9443 
+
+
+| SIOC 서비스 | 8443 
+|===
+
+
+== 원격 요소 플러그인 통신 경로 개요
+
+먼저 관리 노드에서 실행되는 등록 서비스를 사용하여 vCenter Server에 원격 플러그인을 등록해야 합니다 (`https://<mnode-ip>:9443/`)를 클릭합니다. 등록 페이지에서 vCenter Server 사용자 이름, 암호 및 를 확인할 수 있습니다 `plugin.json` 매니페스트 파일 경로입니다.
+
+
+NOTE: 기본 경로는 UI에 채워집니다. 별도의 조치가 필요하지 않습니다.
+
+제공된 세부 정보가 정확하면 등록 서비스가 vCenter Server에 플러그인을 등록하고 플러그인 서버 데이터베이스에 vCenter 세부 정보를 입력합니다.
+
+등록이 완료되면 플러그인 서버가 를 다운로드합니다 `plugin.json` 를 사용하여 원격 플러그인을 확장자로 구성하는 원격 플러그인 배포를 시작하고 매니페스트 파일을 만듭니다 `vsphere-ui` 클라이언트. 배포가 완료되면 에서 * NetApp Element 원격 플러그인 * 확장 지점에 액세스할 수 있습니다 `vsphere-ui` 웹 클라이언트.
+
+플러그인 UI의 모든 통신은 vCenter Server를 통해 발생하며, vCenter Server는 원격 플러그인 서비스에 대한 요청을 전달하는 HTTPS 프로토콜을 사용하여 역방향 프록시 서비스를 실행합니다. 플러그인 서버는 HTTPS 기본 인증을 사용하여 SIOC 서비스와 상호 작용하고 Element Java SDK(소프트웨어 개발 키트)를 사용하는 Element 클러스터는 이러한 서비스와 상호 작용합니다.
+
+
+
+== 자세한 내용을 확인하십시오
+
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 및 요소 리소스 페이지입니다"^]
+

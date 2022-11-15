@@ -41,7 +41,12 @@ VMware는 디스크 리소스에 대해 512e를 요구합니다. 512e가 활성�
 
 
 .단계
-. NetApp Element 관리 * > * 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 * Create Volume * 을 선택합니다.
@@ -77,9 +82,15 @@ IMPORTANT: QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 
 
 == 볼륨 세부 정보를 봅니다
 
-NetApp Element 관리 확장 지점에서 클러스터의 모든 활성 볼륨에 대한 일반 정보를 검토할 수 있습니다. 효율성, 성능, QoS, 관련 스냅샷 등 각 액티브 볼륨의 세부 정보를 확인할 수도 있습니다.
+플러그인 확장 지점에서 클러스터의 모든 활성 볼륨에 대한 일반 정보를 검토할 수 있습니다. 효율성, 성능, QoS, 관련 스냅샷 등 각 액티브 볼륨의 세부 정보를 확인할 수도 있습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+.단계
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 클릭합니다.
 +
@@ -218,7 +229,13 @@ QoS 값, 볼륨 크기 및 바이트 값이 계산되는 측정 단위와 같은
 
 관리 노드에서 영구 볼륨을 사용하는 경우 영구 볼륨의 이름을 수정하지 마십시오.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+.단계
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 클릭합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -246,11 +263,17 @@ NOTE: 볼륨 크기를 늘릴 수 있지만 줄일 수는 없습니다. 복제�
 
 TIP: * 모범 사례 *: IOPS 값을 변경할 때는 수십 또는 수백 단위로 증분값을 사용합니다. 입력 값에는 유효한 정수가 필요합니다. 매우 높은 버스트 값으로 볼륨을 구성합니다. 따라서 시스템에서 가끔 발생하는 대규모 블록 순차적 워크로드를 더 빠르게 처리하는 동시에 볼륨에 대해 일관된 IOPS를 유지할 수 있습니다.
 
-
-
 +
+[IMPORTANT]
+====
+QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 스토리지 액세스가 필요한 데이터베이스, 애플리케이션 또는 인프라 서버와 같은 서비스 환경에 가장 적합합니다. 맞춤형 QoSSIOC 자동화는 가상 데스크톱 또는 특수한 키오스크 유형의 VM과 같이 매일 또는 하루에 여러 번 재부팅, 전원 켜기 또는 전원 끄기와 같은 가벼운 사용 VM에 가장 적합합니다. QoSSIOC 자동화 및 QoS 정책을 함께 사용해서는 안 됩니다.
 
-IMPORTANT: QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 스토리지 액세스가 필요한 데이터베이스, 애플리케이션 또는 인프라 서버와 같은 서비스 환경에 가장 적합합니다. 맞춤형 QoSSIOC 자동화는 가상 데스크톱 또는 특수한 키오스크 유형의 VM과 같이 매일 또는 하루에 여러 번 재부팅, 전원 켜기 또는 전원 끄기와 같은 가벼운 사용 VM에 가장 적합합니다. QoSSIOC 자동화 및 QoS 정책을 함께 사용해서는 안 됩니다. 데이터 저장소 QoSSIOC 설정을 활성화하면 볼륨 레벨의 모든 QoS 설정이 재정의됩니다. 최대 또는 버스트 IOPS 값이 20,000 IOPS 이상인 볼륨은 단일 볼륨에서 이러한 IOPS 수준을 달성하기 위해 큐 길이가 크거나 여러 세션이 필요할 수 있습니다.
+데이터 저장소 QoSSIOC 설정을 활성화하면 볼륨 레벨의 모든 QoS 설정이 재정의됩니다.
+
+최대 또는 버스트 IOPS 값이 20,000 IOPS 이상인 볼륨은 단일 볼륨에서 이러한 IOPS 수준을 달성하기 위해 큐 길이가 크거나 여러 세션이 필요할 수 있습니다.
+
+====
+
 
 . OK * 를 선택합니다.
 
@@ -273,10 +296,15 @@ IMPORTANT: QoS 정책은 예를 들어, 거의 재부팅되지 않고 동일한 
 
 NOTE: 클론 복제된 볼륨은 소스 볼륨에서 볼륨 액세스 그룹 구성원 자격을 상속하지 않습니다.
 
-운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"] 및 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["중복 VMFS 데이터 저장소 관리"].
+운영 체제는 복제된 볼륨을 처리하는 방식에 따라 다릅니다. ESXi는 복제된 볼륨을 볼륨 복사본 또는 스냅샷 볼륨으로 처리합니다. 볼륨은 새 데이터 저장소를 생성하는 데 사용할 수 있는 디바이스가 됩니다. 클론 볼륨을 마운트하고 스냅샷 LUN을 처리하는 방법에 대한 자세한 내용은 VMware 설명서를 참조하십시오 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["VMFS 데이터 저장소 복제본 마운트"^] 및 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["중복 VMFS 데이터 저장소 관리"^].
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 복제할 볼륨을 선택합니다.
 . 작업 * 을 선택합니다.
@@ -338,7 +366,12 @@ NetApp Element 볼륨을 Amazon S3 또는 OpenStack Swift와 호환되는 2차 �
 
 NetApp Element 볼륨을 Amazon S3와 호환되는 외부 오브젝트 저장소에 백업할 수 있습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -366,7 +399,12 @@ NetApp Element 볼륨을 Amazon S3와 호환되는 외부 오브젝트 저장소
 
 NetApp Element 볼륨은 OpenStack Swift와 호환되는 외부 오브젝트 저장소에 백업할 수 있습니다.
 
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -405,7 +443,12 @@ NetApp Element 소프트웨어를 실행하는 클러스터에 있는 볼륨을 
 
 
 .백업 볼륨을 설정합니다
-. 볼륨 백업을 배치하려는 vCenter 및 클러스터에서 * NetApp Element Management > Management * 를 선택합니다.
+. 볼륨 백업을 배치하려는 vCenter 및 클러스터에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -423,7 +466,12 @@ NetApp Element 소프트웨어를 실행하는 클러스터에 있는 볼륨을 
 
 
 .볼륨을 백업합니다
-. 백업에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * NetApp Element 관리 > 관리 * 를 선택합니다.
+. 백업에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -455,7 +503,12 @@ OpenStack Swift 또는 Amazon S3와 같은 오브젝트 저장소의 백업에�
 
 플러그인을 사용하여 Amazon S3 오브젝트 저장소의 백업에서 볼륨을 복원할 수 있습니다.
 
-. NetApp Element 관리 > 보고 * 를 선택합니다.
+. vCenter 플러그인에서 * Reporting * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 보고 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 보고 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 이벤트 로그 * 하위 탭을 선택합니다.
 . 복구할 백업을 생성한 백업 이벤트를 선택합니다.
@@ -487,7 +540,12 @@ OpenStack Swift 또는 Amazon S3와 같은 오브젝트 저장소의 백업에�
 
 플러그인을 사용하여 OpenStack Swift 오브젝트 저장소의 백업에서 볼륨을 복원할 수 있습니다.
 
-. NetApp Element 관리 > 보고 * 를 선택합니다.
+. vCenter 플러그인에서 * Reporting * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 보고 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 보고 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 이벤트 로그 * 하위 탭을 선택합니다.
 . 복구할 백업을 생성한 백업 이벤트를 선택합니다.
@@ -526,7 +584,12 @@ NetApp Element 소프트웨어를 실행하는 클러스터의 백업에서 볼�
 
 
 .복원에 사용할 볼륨을 선택합니다
-. 볼륨을 복원하려는 vCenter 및 클러스터에서 * NetApp Element 관리 > 관리 * 를 선택합니다.
+. 볼륨을 복원하려는 vCenter 및 클러스터에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -544,7 +607,12 @@ NetApp Element 소프트웨어를 실행하는 클러스터의 백업에서 볼�
 
 
 .볼륨을 복원합니다
-. 복구에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * NetApp Element 관리 > 관리 * 를 선택합니다.
+. 복구에 사용할 소스 볼륨이 포함된 vCenter 및 클러스터에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . Active * 뷰에서 볼륨을 확인합니다.
@@ -568,7 +636,7 @@ NetApp Element 소프트웨어를 실행하는 클러스터의 백업에서 볼�
 
 == 볼륨을 삭제합니다
 
-NetApp Element 관리 확장 지점을 사용하여 NetApp Element 클러스터에서 하나 이상의 볼륨을 삭제할 수 있습니다.
+플러그인 확장 지점을 사용하여 NetApp Element 클러스터에서 하나 이상의 볼륨을 삭제할 수 있습니다.
 
 시스템에서 삭제된 볼륨을 즉시 제거하지 않습니다. 삭제된 볼륨은 약 8시간 동안 복원할 수 있습니다.
 
@@ -581,7 +649,12 @@ IMPORTANT: 설치 또는 업그레이드 중에 관리 서비스와 연결된 �
 IMPORTANT: 스냅샷을 생성하는 데 사용된 볼륨이 삭제되면 해당 관련 스냅샷이 보호 > 스냅샷 페이지의 비활성 보기에 나열됩니다. 삭제된 소스 볼륨이 제거되면 비활성 뷰의 스냅샷도 시스템에서 제거됩니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . 하나 이상의 볼륨 삭제:
@@ -613,7 +686,12 @@ NOTE: 플러그인에서는 데이터 저장소가 있는 볼륨을 삭제할 �
 IMPORTANT: 볼륨이 제거되면 즉시 시스템에서 영구적으로 제거됩니다. 볼륨의 모든 데이터가 손실됩니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . 보기 필터를 선택하고 목록에서 * 삭제됨 * 을 선택합니다.
@@ -634,7 +712,12 @@ NetApp Element 시스템에서 볼륨이 삭제되었지만 아직 제거되지 
 NOTE: 볼륨이 삭제되었다가 복구된 경우 ESXi는 복구된 볼륨(및 데이터 저장소가 있는 경우)을 감지하지 않습니다. ESXi iSCSI 어댑터에서 정적 타겟을 제거하고 어댑터를 다시 검색합니다.
 
 .단계
-. NetApp Element 관리 > 관리 * 를 선택합니다.
+. vCenter 플러그인에서 * Management * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 관리 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 관리 * 를 선택합니다.
+
+
 . 둘 이상의 클러스터가 추가된 경우 탐색 모음에서 클러스터를 선택합니다.
 . 볼륨 * 하위 탭을 선택합니다.
 . 보기 필터를 선택하고 목록에서 * 삭제됨 * 을 선택합니다.

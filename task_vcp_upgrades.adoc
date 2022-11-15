@@ -14,8 +14,15 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 
 [role="lead"]
-설치에 설명된 단계에 따라 VMware vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. Element vCenter 플러그인 4.10은 관리 서비스 번들의 일부로 Element 소프트웨어 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.
+설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.0은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.
 
+[NOTE]
+====
+* vCenter 5.0용 Element 플러그인부터 VMware vSphere 8.0 및 7.0만 지원됩니다.
+* Element Plug-in for vCenter 4.x에서 5.0으로 업그레이드하면 vCenter 인스턴스에서 원격 플러그인으로 데이터를 복사할 수 없기 때문에 플러그인으로 이미 구성된 클러스터가 손실됩니다. 원격 플러그인에 클러스터를 다시 추가해야 합니다. 이는 로컬 플러그인에서 원격 플러그인으로 업그레이드할 때 한 번 수행하는 작업입니다.
+
+
+====
 플러그인을 업그레이드하려면 해당 제품의 업그레이드 설명서에 있는 지침을 따르십시오.
 
 * https://docs.netapp.com/us-en/hci/docs/task_vcp_upgrade_plugin.html["NetApp HCI 시스템을 업그레이드합니다"^]
@@ -26,7 +33,7 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 == 자세한 내용을 확인하십시오
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884458["vCenter 플러그인 4.10 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2884992["vCenter Plug-in 5.0 릴리즈 노트"^]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트"^]
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
 * http://mysupport.netapp.com/hci/resources["NetApp HCI 리소스 페이지를 참조하십시오"^]

@@ -17,8 +17,13 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, iscsi, connection
 NetApp Element Plug-in for VMware vCenter Server에서 선택한 클러스터에 연결된 iSCSI 세션에 대한 정보를 볼 수 있습니다.
 
 .단계
-. vCenter 플러그인에서 * NetApp Element Management * 를 선택합니다.
-. Reporting * > * iSCSI Sessions * 를 선택합니다.
+. vCenter 플러그인에서 * Reporting * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 보고 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 보고 * 를 선택합니다.
+
+
+. iSCSI 세션 * 을 선택합니다.
 
 
 

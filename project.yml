@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,fr-fr,de-de
 sidebar:
   entries:
   - title: VMware vCenter Server용 NetApp Element 플러그인 설명서
@@ -21,10 +21,18 @@ sidebar:
       url: "/rn_relatedrn_vcp.html"
   - title: 개념
     entries:
-    - title: NetApp Element 구성 확장점
-      url: "/vcp_concept_config_extension_point.html"
-    - title: NetApp Element 관리 확장 포인트
-      url: "/vcp_concept_management_extension_point.html"
+    - title: VMware vCenter Server 5.0 이상용 NetApp Element 플러그인
+      entries:
+      - title: 원격 플러그인 아키텍처 개요
+        url: "/vcp_concept_remote_plugin_architecture.html"
+      - title: NetApp Element 원격 플러그인 확장 포인트
+        url: "/vcp_concept_remote_plugin_extension_point.html"
+    - title: VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인
+      entries:
+      - title: NetApp Element 구성 확장점
+        url: "/vcp_concept_config_extension_point.html"
+      - title: NetApp Element 관리 확장 포인트
+        url: "/vcp_concept_management_extension_point.html"
     - title: 사용자 계정
       url: "/vcp_concept_accounts.html"
     - title: 보호 도메인
@@ -36,9 +44,13 @@ sidebar:
     - title: 가상 볼륨(VVOL)
       url: "/vcp_concept_vvols.html"
   - title: 구축 전 요구 사항
-    url: reference_requirements_vcp.html
-  - title: VMware vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
-    url: "/vcp_task_getstarted.html"
+    url: "/reference_requirements_vcp.html"
+  - title: vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
+    entries:
+    - title: vCenter Server 7.0 이상에 대해 Element Plug-in 5.0 이상을 설치하고 구성합니다
+      url: "/vcp_task_getstarted_5_0.html"
+    - title: Element 플러그인 4.10 이하를 설치하고 구성합니다
+      url: "/vcp_task_getstarted.html"
   - title: 플러그인을 업그레이드합니다
     url: "/task_vcp_upgrades.html"
   - title: vCenter 플러그인을 사용하여 스토리지를 관리합니다

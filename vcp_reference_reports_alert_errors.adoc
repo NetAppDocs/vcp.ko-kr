@@ -14,7 +14,11 @@ keywords: netapp, hci, vcp, vcenter, element, monitor, report, alert, cluster, p
 
 
 [role="lead"]
-시스템은 NetApp Element 관리 확장 포인트의 * 보고 > 경고 * 페이지에 각 경고와 함께 오류 코드를 보고합니다. 오류 코드를 사용하면 시스템에서 어떤 구성 요소가 경고를 발생했고 경고가 발생한 이유를 확인할 수 있습니다.
+시스템에서 각 알림과 함께 오류 코드를 보고하여 경고를 발생시킨 구성 요소와 그 원인을 확인할 수 있습니다. 플러그인 확장 지점을 사용하여 오류 코드를 볼 수 있습니다.
+
+* Element vCenter 플러그인 5.0부터 * NetApp 원격 플러그인 > 관리 > 보고 > 알림 * 을 선택합니다.
+* Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 관리 > 보고 > 알림 * 을 선택합니다.
+
 
 다음 목록에서는 다양한 유형의 시스템 경고를 간략하게 설명합니다.
 

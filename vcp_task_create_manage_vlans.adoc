@@ -48,7 +48,12 @@ keywords: netapp, VLANs, create, manage, delete, view vcp, vcenter, element
 가상 네트워크가 추가되면 각 노드에 대한 인터페이스가 생성되고 각 노드에 가상 네트워크 IP 주소가 필요합니다. 새 가상 네트워크를 생성할 때 지정하는 IP 주소 수는 클러스터의 노드 수보다 크거나 같아야 합니다. 가상 네트워크 주소는 에서 대량으로 프로비저닝되고 개별 노드에 자동으로 할당됩니다. 클러스터의 노드에 가상 네트워크 주소를 수동으로 할당할 필요는 없습니다.
 
 .단계
-. NetApp Element 관리 > 클러스터 * 를 선택합니다.
+. vSphere Web Client에서 * Cluster * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 클러스터 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 클러스터 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -100,10 +105,15 @@ NOTE: 총 IP 주소 수는 스토리지 클러스터의 노드 수와 일치해�
 
 == 가상 네트워크 세부 정보를 봅니다
 
-NetApp Element 관리 확장 지점에서 클러스터 탭의 네트워크 페이지에서 VLAN에 대한 네트워크 정보를 볼 수 있습니다.
+플러그인 확장 지점에서 클러스터 탭의 네트워크 페이지에서 VLAN에 대한 네트워크 정보를 볼 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 클러스터 * 를 선택합니다.
+. vSphere Web Client에서 * Cluster * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 클러스터 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 클러스터 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -125,7 +135,12 @@ VLAN 이름, 넷마스크, IP 주소 블록의 크기 등과 같은 VLAN 특성�
 VLAN 태그 및 SVIP는 VLAN에 대해 수정할 수 없습니다. 게이트웨이 속성은 VRF VLAN에 대해서만 수정할 수 있습니다. iSCSI, 원격 복제 또는 기타 네트워크 세션이 있으면 수정이 실패할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 클러스터 * 를 선택합니다.
+. vSphere Web Client에서 * Cluster * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 클러스터 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 클러스터 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -146,7 +161,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 VLAN 개체와 해당 IP 블록을 영구적으로 삭제할 수 있습니다. VLAN에 할당된 주소 블록은 가상 네트워크와 연결되어 있지 않고 다른 가상 네트워크에 재할당할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > 클러스터 * 를 선택합니다.
+. vSphere Web Client에서 * Cluster * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > 클러스터 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > 클러스터 * 를 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.

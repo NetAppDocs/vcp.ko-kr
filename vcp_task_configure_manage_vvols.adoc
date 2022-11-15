@@ -14,7 +14,7 @@ keywords: netapp, set up vvol, configure vvol, virtual volume, vcp, vcenter, ele
 
 
 [role="lead"]
-VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상 볼륨(VVol)"] NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. link:vcp_concept_vvols.html#storage-containers["스토리지 컨테이너"], link:vcp_concept_vvols.html#protocol-endpoints["프로토콜 엔드포인트"], 및 NetApp Element 관리 확장 지점의 호스트
+VMware vSphere를 설정할 수 있습니다 link:vcp_concept_vvols.html["가상 볼륨(VVol)"] NetApp Element 스토리지 클러스터에서 가상 볼륨 구성을 설정합니다. vCenter Server용 Element 플러그인은 성능을 모니터링하고 가상 볼륨을 관리할 수 있는 옵션을 제공합니다. link:vcp_concept_vvols.html#storage-containers["스토리지 컨테이너"], link:vcp_concept_vvols.html#protocol-endpoints["프로토콜 엔드포인트"]및 플러그인 확장 지점의 호스트.
 
 .무엇을 &#8217;필요로 할거야
 * VVol 호환성을 가진 ESXi 6.5 이상 환경에 연결된 NetApp Element 10 이상 클러스터를 사용하고 있습니다.
@@ -46,13 +46,18 @@ vCenter Server용 NetApp Element 플러그인에서 가상 볼륨(VVol)을 사�
 
 == NetApp Element 클러스터에서 가상 볼륨 기능을 설정합니다
 
-NetApp Element 구성 확장 지점을 사용하여 VVOL(vSphere 가상 볼륨) 기능을 수동으로 활성화해야 합니다. Element 시스템에는 VVOL 기능이 기본적으로 비활성화되어 있으며 새 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. VVOL 기능을 활성화하는 것은 일회성 구성 작업입니다.
+플러그인 확장 지점을 사용하여 VVol(vSphere Virtual Volumes) 기능을 수동으로 활성화해야 합니다. Element 시스템에는 VVOL 기능이 기본적으로 비활성화되어 있으며 새 설치 또는 업그레이드의 일부로 자동 활성화되지 않습니다. VVOL 기능을 활성화하는 것은 일회성 구성 작업입니다.
 
 .단계
-. NetApp Element 구성 > 클러스터 * 를 선택합니다.
+. vSphere Web Client에서 * Clusters * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 구성 > 클러스터 * 를 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 구성 > 클러스터 * 를 선택합니다.
+
+
 . 목록에서 활성화할 클러스터를 선택합니다.
 . 작업 * 을 선택합니다.
-. 결과 메뉴에서 * Enable VVol * 을 클릭합니다.
+. 결과 메뉴에서 * VVol * 활성화 를 선택합니다.
 +
 
 IMPORTANT: VVOL 기능을 활성화한 후에는 기능을 비활성화할 수 없습니다. vSphere 가상 볼륨 기능을 활성화하면 NetApp Element 소프트웨어 구성이 영구적으로 변경됩니다. 클러스터가 VMware ESXi VVol 호환 환경에 연결된 경우에만 VVol 기능을 활성화해야 합니다. 클러스터를 공장 출하 시 이미지로 되돌리시고 VVOL 기능을 비활성화하고 기본 설정만 복원할 수 있습니다.
@@ -84,23 +89,23 @@ vCenter가 클러스터의 VVol 기능을 인식할 수 있도록 NetApp Element
 IMPORTANT: 둘 이상의 vCenter 인스턴스에 NetApp Element VASA 공급자를 등록하지 마십시오. NetApp Element VASA Provider는 vCenter가 SSL을 처리하는 방식에 제한이 있으므로 단일 vCenter에만 등록할 수 있습니다. 단일 vCenter에는 여러 NetApp Element 클러스터가 있을 수 있지만 vCenter의 두 인스턴스 간에 클러스터를 공유할 수는 없습니다.
 
 
-IMPORTANT: 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
+IMPORTANT: Element 소프트웨어 12.5 및 이전 버전의 경우 단일 vCenter 인스턴스에 둘 이상의 NetApp Element VASA 공급자를 등록하지 마십시오. 두 번째 NetApp Element VASA 공급자를 추가하면 모든 VVOL 데이터 저장소에 액세스할 수 없게 됩니다.
 
 
 NOTE: vCenter에 VASA 공급자를 이미 등록한 경우 최대 10개의 vCenter에 대한 VASA 지원을 업그레이드 패치로 사용할 수 있습니다. 설치하려면 VASA39 매니페스트의 지침에 따라 에서 .tar.gz 파일을 다운로드합니다 link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab/download/62654/vasa39["NetApp 소프트웨어 다운로드"] 사이트. NetApp Element VASA 공급자는 NetApp 인증서를 사용합니다. 이 패치를 사용하면 vCenter에서 인증서를 수정하지 않고 사용하여 VASA 및 VVol 사용을 위한 여러 vCenter를 지원합니다. 인증서를 수정하지 마십시오. 사용자 지정 SSL 인증서는 VASA에서 지원되지 않습니다.
 
 .단계
-. vSphere Client Home에서 * Hosts and Clusters * 를 클릭합니다.
+. vSphere Client Home에서 * Hosts and Clusters * 를 선택합니다.
 . NetApp Element VASA Provider를 등록할 vCenter 인스턴스를 선택합니다.
 . 구성 > 스토리지 공급자 * 를 선택합니다.
-. 스토리지 공급자 * 에서 추가 아이콘을 클릭합니다.
+. 스토리지 공급자 * 에서 추가 아이콘을 선택합니다.
 . New Storage Provider * 대화 상자에 다음 정보를 입력합니다.
 +
 ** VASA 공급자 이름입니다.
 ** VASA 공급자 URL입니다.
 +
 
-NOTE: vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 제공됩니다. 또한 클러스터 세부 정보(* NetApp Element 구성 > 클러스터 *) 또는 요소 UI('https://<MVIP>/cluster`)의 클러스터 설정에서 URL을 찾을 수 있습니다.
+NOTE: vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 제공됩니다. 또한 클러스터 세부 정보(* NetApp Element 구성 > 클러스터 * 또는 * NetApp Element 원격 플러그인 > 구성 > 클러스터 *) 또는 요소 UI의 클러스터 설정에서 URL을 찾을 수 있습니다 (`https://<MVIP>/cluster`)를 클릭합니다.
 
 ** NetApp Element 클러스터의 관리 계정 사용자 이름입니다.
 ** NetApp Element 클러스터의 관리 계정 암호입니다.
@@ -110,7 +115,7 @@ NOTE: vCenter 플러그인에서 VVol을 활성화하면 VASA Provider URL이 �
 . 메시지가 나타나면 SSL 인증서 지문을 승인합니다. 이제 NetApp Element VASA Provider가 'Connected' 상태로 등록되어야 합니다.
 +
 
-NOTE: 공급자를 처음 등록한 후 필요에 따라 스토리지 공급자를 새로 고쳐 공급자의 현재 상태를 표시합니다. 또한 공급자가 * NetApp Element 구성 > 클러스터 * 에서 활성화되어 있는지 확인할 수도 있습니다. 사용 중인 클러스터에 대해 * 작업 * 을 선택하고 * 세부 정보 * 를 클릭합니다.
+NOTE: 공급자를 처음 등록한 후 필요에 따라 스토리지 공급자를 새로 고쳐 공급자의 현재 상태를 표시합니다. 또한 공급자가 * NetApp Element 구성 > 클러스터 * 또는 * NetApp Element 원격 플러그인 > 구성 > 클러스터 * 에서 활성화되었는지 확인할 수 있습니다. 활성화하려는 클러스터에 대해 * Actions * 를 선택하고 * Details * 를 선택합니다.
 
 . 을 참조하십시오  a storage container and associated VVol datastore 다음 단계를 참조하십시오.
 
@@ -119,7 +124,7 @@ NOTE: 공급자를 처음 등록한 후 필요에 따라 스토리지 공급자�
 
 == 스토리지 컨테이너 및 관련 VVOL 데이터 저장소를 생성합니다
 
-NetApp Element 관리 확장 지점의 VVOL 탭에서 스토리지 컨테이너를 생성할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다.
+플러그인 확장 지점의 VVol 탭에서 저장소 컨테이너를 생성할 수 있습니다. VVOL 지원 가상 머신 프로비저닝을 시작하려면 하나 이상의 스토리지 컨테이너를 생성해야 합니다.
 
 .시작하기 전에
 * 클러스터의 VVol 기능을 활성화했습니다.
@@ -127,7 +132,12 @@ NetApp Element 관리 확장 지점의 VVOL 탭에서 스토리지 컨테이너�
 
 
 .단계
-. NetApp Element 관리 > VVol * 을 선택합니다.
+. vSphere Web Client에서 * VVol * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > VVol * 을 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > VVol * 을 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -167,7 +177,7 @@ NOTE: vCenter 연결 모드를 사용하는 경우 클러스터가 할당된 vCe
 
 == 가상 볼륨 리소스를 모니터링합니다
 
-플러그인의 NetApp Element 관리 확장 지점에서 가상 볼륨 구성 요소 성능 및 설정을 검토할 수 있습니다.
+플러그인 확장 지점에서 가상 볼륨 구성 요소의 성능 및 설정을 검토할 수 있습니다.
 
 *  VVols
 *  storage containers
@@ -185,7 +195,12 @@ NOTE: vCenter 연결 모드를 사용하는 경우 클러스터가 할당된 vCe
 
 
 .단계
-. NetApp Element 관리 > VVol * 을 선택합니다.
+. vSphere Web Client에서 * VVol * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > VVol * 을 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > VVol * 을 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -203,7 +218,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 클러스터의 모든 활성 스토리지 컨테이너에 대한 일반 데이터 또는 각 스토리지 컨테이너에 대한 세부 데이터를 검토할 수 있습니다. 플러그인은 스토리지 컨테이너 효율성, 성능 및 관련 가상 볼륨을 추적합니다.
 
 .단계
-. NetApp Element 관리 > VVol * 을 선택합니다.
+. vSphere Web Client에서 * VVol * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > VVol * 을 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > VVol * 을 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -221,7 +241,12 @@ NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작
 클러스터의 모든 프로토콜 엔드포인트에 대한 일반 데이터를 검토할 수 있습니다.
 
 .단계
-. NetApp Element 관리 > VVol * 을 선택합니다.
+. vSphere Web Client에서 * VVol * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > VVol * 을 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > VVol * 을 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
@@ -264,14 +289,19 @@ NOTE: 프로토콜 엔드포인트(PE) LUN을 수동으로 생성할 필요는 �
 
 == 저장소 컨테이너를 삭제합니다
 
-NetApp Element 관리 확장 지점에서 저장소 컨테이너를 삭제할 수 있습니다.
+플러그인 확장 지점에서 저장소 컨테이너를 삭제할 수 있습니다.
 
 .무엇을 &#8217;필요로 할거야
 * 저장소 컨테이너에서 모든 볼륨이 제거되었습니다.
 
 
 .단계
-. NetApp Element 관리 > VVol * 을 선택합니다.
+. vSphere Web Client에서 * VVol * 탭을 엽니다.
++
+** Element vCenter 플러그인 5.0부터 * NetApp Element 원격 플러그인 > 관리 > VVol * 을 선택합니다.
+** Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 > VVol * 을 선택합니다.
+
+
 +
 
 NOTE: 두 개 이상의 클러스터가 추가된 경우 탐색 모음에서 작업에 사용할 클러스터가 선택되었는지 확인합니다.
