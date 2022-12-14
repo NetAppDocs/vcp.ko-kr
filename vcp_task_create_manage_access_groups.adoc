@@ -19,11 +19,11 @@ A link:https://docs.netapp.com/us-en/hci/docs/concept_hci_volume_access_groups.h
 볼륨 컬렉션에 iSCSI 이니시에이터 IQN 또는 FC WWPN을 매핑하여 액세스 그룹을 생성할 수 있습니다. 액세스 그룹에 추가하는 각 IQN은 CHAP 인증 없이 그룹의 각 볼륨에 액세스할 수 있습니다. 액세스 그룹에 추가하는 각 WWPN은 액세스 그룹의 볼륨에 대한 FC 네트워크 액세스를 설정합니다.
 
 .옵션
-*  an access group
-*  an access group
-*  volumes to an access group
-*  volumes from an access group
-*  an access group
+* <<액세스 그룹을 생성합니다>>
+* <<액세스 그룹을 편집합니다>>
+* <<액세스 그룹에 볼륨을 추가합니다>>
+* <<액세스 그룹에서 볼륨을 제거합니다>>
+* <<액세스 그룹을 삭제합니다>>
 
 
 
@@ -98,7 +98,7 @@ NOTE: 이니시에이터를 제거하는 경우 휴지통 아이콘을 클릭하
 
 볼륨 액세스 그룹에 볼륨을 추가할 수 있습니다. 각 볼륨은 둘 이상의 볼륨 액세스 그룹에 속할 수 있습니다. Active volumes(활성 볼륨) 보기에서 각 볼륨이 속한 그룹을 볼 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 하나 이상의 클러스터를 추가하고 실행해야 합니다.
 * 하나 이상의 액세스 그룹이 있습니다.
 * 하나 이상의 활성 볼륨이 있습니다.

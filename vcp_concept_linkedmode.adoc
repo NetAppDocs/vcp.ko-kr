@@ -50,6 +50,7 @@ NOTE: 선택한 vCenter Server와 연결된 스토리지 클러스터만 보고 
 
 
 
+.예
 연결 모드 및 스토리지 클러스터1과 스토리지 클러스터2에 vCenter1 및 vCenter2가 있습니다. vCenter1에서 cluster2를 관리하기 위해 cluster1 및 vCenter2를 관리하려고 합니다.
 
 image:two_vcenter_topology.PNG["에는 vCenter 및 클러스터 토폴로지가 나와 있습니다"]
@@ -83,6 +84,7 @@ vSphere 연결 모드 환경에서 스토리지 클러스터 관리를 설정하
 . 스토리지 클러스터를 Element 플러그인 인벤토리에 추가합니다.
 
 
+.예
 연결 모드 및 스토리지 클러스터1과 스토리지 클러스터2에 vCenter1 및 vCenter2가 있습니다. vCenter1에서 cluster2를 관리하기 위해 cluster1 및 vCenter2를 관리하려고 합니다. 스토리지 클러스터 관리를 설정하려면 각 vCenter Server에 플러그인을 등록한 후 다음 단계를 수행합니다.
 
 . vCenter1 웹 클라이언트에 로그인합니다.

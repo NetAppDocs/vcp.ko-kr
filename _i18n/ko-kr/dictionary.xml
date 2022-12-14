@@ -10,7 +10,6 @@
   <block id="33c3b0461442789969801d342a5a65f1" category="list-text"><block ref="b712be829dacc42c56ac8d7d3feed61a" category="inline-xref-macro-rx"></block></block>
   <block id="ac9f2780925e112e69669120e576e1a8" category="section-title">가상 네트워크를 생성합니다</block>
   <block id="239e76adcac233ed6381fa146bdf1cbb" category="paragraph">새 가상 네트워크를 클러스터 구성에 추가할 수 있습니다.</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">무엇을 &amp;#8217;필요로 할거야</block>
   <block id="f655d6cb70505c3018a41caea2b22108" category="list-text">ESXi 호스트에는 단일 iSCSI 소프트웨어 어댑터가 있습니다.</block>
   <block id="6be62684664b2637fd4800998e7edba6" category="list-text">호스트 또는 스위치는 VLAN에 대해 구성됩니다.</block>
   <block id="bb7cc78891a1489d3137194f918a9d32" category="list-text">클러스터 노드의 가상 네트워크에 할당될 IP 주소 블록을 확인했습니다.</block>
@@ -2645,4 +2644,9 @@
   <block id="74f171bb465a49ebcce88fa91d4562d4" category="sidebar">VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인</block>
   <block id="2abfacd3d0325353cbe289faa9d0d3b1" category="sidebar">vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</block>
   <block id="e97497d0f5938ed35b2e63e89f51bf3c" category="paragraph">A <block ref="e64b216761b70bc0cfda4bc4eab1b43a" category="inline-link-macro-rx"></block> 사용자가 iSCSI 이니시에이터 또는 FC 이니시에이터를 사용하여 액세스할 수 있는 볼륨 모음입니다.</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">필요한 것</block>
+  <block id="65988ccc1e915ab34bd44768f37b0444" category="paragraph-title">Element vCenter 플러그인 5.0 이상에 대한 수정 조치</block>
+  <block id="47c4fb98f272f850da400ba07b3981fa" category="paragraph-title">Element vCenter 플러그인 4.10 이전 버전에 대한 수정 조치</block>
+  <block id="d495047561c1a08074d3afeeb5b5d172" category="paragraph-title">VMware vSphere 사전 요구 사항</block>
+  <block id="3903fd261f224ad8af888f893eb71a5e" category="paragraph-title">플러그인에서 지원하는 VMware vSphere 버전</block>
 </blocks>

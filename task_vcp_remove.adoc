@@ -16,7 +16,7 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 [role="lead"]
 vSphere 6.7 이하와 함께 사용되는 vCenter 플러그인 4.0 ~ 4.10의 경우 vCenter Server에서 플러그인과 연결된 모든 파일을 수동으로 제거하려면 다음 프로세스를 완료해야 합니다. vSphere 7.0 이상의 경우 플러그인을 등록 취소한 후에는 파일을 제거할 필요가 없습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * vCenter 플러그인 4.0 - 4.10
 * vSphere 6.7 이하
 * 있습니다 link:task_vcp_unregister.html["등록되지 않았습니다"] 기존 플러그인이며 vCSA 또는 vCenter Server에 대한 SSH, RDP 또는 기타 적절한 연결이 있습니다.

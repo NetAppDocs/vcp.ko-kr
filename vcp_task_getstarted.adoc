@@ -21,15 +21,15 @@ NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직�
 
 각 단계를 읽고 완료하여 플러그인을 설치하고 사용을 시작합니다.
 
-*  for installation
-*  the management node
-*  the plug-in with vCenter
-*  vCenter properties for a dark site HTTP server
-*  the plug-in and verify successful installation
-*  storage clusters for use with the plug-in
-*  QoSSIOC settings using the plug-in
-*  user accounts
-*  datastores and volumes
+* <<설치 준비>>
+* <<관리 노드를 설치합니다>>
+* <<vCenter에 플러그인을 등록합니다>>
+* <<다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다>>
+* <<플러그인에 액세스하여 성공적으로 설치되었는지 확인합니다>>
+* <<플러그인과 함께 사용할 스토리지 클러스터를 추가합니다>>
+* <<플러그인을 사용하여 QoSSIOC 설정을 구성합니다>>
+* <<사용자 계정을 구성합니다>>
+* <<데이터 저장소 및 볼륨을 생성합니다>>
 
 
 
@@ -52,7 +52,7 @@ NetApp Element Plug-in for VMware vCenter Server 4.10 이하를 vCenter에 직�
 
 vSphere Web Client에 vCenter 플러그인 패키지를 구축하려면 패키지를 vCenter Server에 확장자로 등록해야 합니다. 등록이 완료되면 vSphere 환경에 연결된 vSphere Web Client에서 플러그인을 사용할 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * vSphere 6.5 및 6.7의 경우 vSphere Web Client에서 로그아웃했는지 확인합니다. 이 버전의 웹 클라이언트는 로그아웃하지 않는 경우 이 프로세스 중에 발생한 업데이트를 플러그인으로 인식하지 못합니다. vSphere 7.0의 경우 웹 클라이언트에서 로그아웃할 필요가 없습니다.
 * 플러그인을 등록할 수 있는 vCenter 관리자 역할 권한이 있습니다.
 * Element 소프트웨어 11.3 이상을 실행하는 관리 노드 OVA를 배포했습니다.
@@ -61,6 +61,7 @@ vSphere Web Client에 vCenter 플러그인 패키지를 구축하려면 패키�
 * 방화벽 규칙을 통해 을 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443, 8443 및 9443에서 vCenter와 스토리지 클러스터 MVIP 간 포트 9443은 등록에 사용되며 등록이 완료된 후 닫을 수 있습니다. 클러스터에서 가상 볼륨 기능을 활성화한 경우 VASA 공급자 액세스에도 TCP 포트 8444가 열려 있는지 확인합니다.
 
 
+.이 작업에 대해
 플러그인을 사용해야 하는 모든 vCenter Server에 vCenter 플러그인을 등록해야 합니다.
 
 연결 모드 환경의 경우 MOB 데이터를 동기화하여 플러그인을 업그레이드할 수 있도록 환경의 각 vCenter Server에 플러그인을 등록해야 합니다. vSphere Web Client가 플러그인이 등록되지 않은 vCenter Server에 연결되면 클라이언트에 플러그인이 표시되지 않습니다.
@@ -108,7 +109,7 @@ NOTE: 입력한 사용자 이름과 암호 자격 증명은 vCenter 관리자 �
 ** (사내 서버/다크 사이트의 경우) 플러그인 ZIP에 대한 사용자 지정 URL입니다.
 +
 
-NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 을 참조하십시오  vCenter properties for a dark site HTTP server,다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다.
+NOTE: 대부분의 설치는 기본 경로를 사용합니다. HTTP 또는 HTTPS 서버(다크 사이트)를 사용 중이거나 ZIP 파일 이름 또는 네트워크 설정을 수정한 경우 URL을 사용자 지정하려면 * 사용자 지정 URL * 을 선택합니다. URL을 사용자 지정하려면 을 참조하십시오 <<다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다,다크 사이트 HTTP 서버에 대한 vCenter 속성을 수정합니다>>.
 
 
 
@@ -140,6 +141,7 @@ NOTE: 이 작업은 vSphere Web Client에서 설치를 완료합니다. vSphere�
 
 vCenter 플러그인 등록 중에 사내(다크 사이트) HTTP 서버에 대한 URL을 사용자 지정하려면 vSphere Web Client 속성 파일( webclient.properties` )을 수정해야 합니다. vCSA 또는 Windows를 사용하여 변경할 수 있습니다.
 
+.필요한 것
 NetApp Support 사이트에서 소프트웨어를 다운로드할 수 있는 권한.
 
 .vCSA를 이용한 단계
@@ -262,7 +264,7 @@ NetApp Element 구성 확장 지점을 사용하여 Element 소프트웨어를 �
 
 클러스터에 연결이 설정된 후에는 NetApp Element 관리 확장 지점을 사용하여 클러스터를 관리할 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 하나 이상의 클러스터를 사용할 수 있어야 하며 해당 IP 또는 FQDN 주소를 알고 있어야 합니다.
 * 클러스터에 대한 현재 전체 클러스터 관리자 사용자 자격 증명
 * 방화벽 규칙을 통해 열 수 있습니다 link:reference_requirements_vcp.html["네트워크 통신"] TCP 포트 443 및 8443에서 vCenter와 클러스터 MVIP 간
@@ -271,6 +273,7 @@ NetApp Element 구성 확장 지점을 사용하여 Element 소프트웨어를 �
 
 NOTE: NetApp Element 관리 확장 지점 기능을 사용하려면 클러스터를 하나 이상 추가해야 합니다.
 
+.이 작업에 대해
 이 절차에서는 플러그인이 클러스터를 관리할 수 있도록 클러스터 프로필을 추가하는 방법에 대해 설명합니다. 플러그인을 사용하여 클러스터 관리자 자격 증명을 수정할 수 없습니다.
 
 을 참조하십시오 https://docs.netapp.com/us-en/element-software/storage/concept_system_manage_manage_cluster_administrator_users.html["클러스터 관리자 사용자 계정 관리"^] 클러스터 관리자 계정의 자격 증명을 변경하는 지침은 을 참조하십시오.
@@ -308,6 +311,7 @@ IMPORTANT: vSphere HTML5 웹 클라이언트와 Flash 웹 클라이언트에는 
 
 스토리지 I/O 제어를 기반으로 서비스 품질을 자동으로 설정할 수 있습니다 link:vcp_concept_qossioc.html["(QoSSIOC)"] 플러그인으로 제어되는 개별 볼륨 및 데이터 저장소의 경우 이렇게 하려면 QoSSIOC 서비스가 vCenter와 통신할 수 있도록 QoS 및 vCenter 자격 증명을 구성합니다.
 
+.이 작업에 대해
 관리 노드에 대해 유효한 QoSSIOC 설정을 구성한 후에는 이 설정이 기본값으로 설정됩니다. QoSSIOC 설정은 새 관리 노드에 유효한 QoSSIOC 설정을 제공할 때까지 마지막으로 알려진 유효한 QoSSIOC 설정으로 되돌아갑니다. 새 관리 노드에 대한 QoSSIOC 자격 증명을 설정하기 전에 구성된 관리 노드에 대한 QoSSIOC 설정을 지워야 합니다.
 
 .단계

@@ -16,7 +16,7 @@ keywords: netapp, cluster, vcp, vcenter, element
 [role="lead"]
 Element 소프트웨어를 실행하는 클러스터를 편집하고, SSH 구성을 관리하고, 보호 도메인 모니터링을 설정하고, 클러스터를 종료할 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 하나 이상의 클러스터를 추가해야 합니다.
 +
 ** link:vcp_task_getstarted_5_0.html#add-storage-clusters-for-use-with-the-plug-in["vCenter 5.0 이상용 Element 플러그인을 사용하여 클러스터를 추가합니다"]
@@ -37,17 +37,17 @@ NOTE: 플러그인 확장 지점 기능을 사용하려면 클러스터를 하�
 
 
 .옵션
-*  cluster details
-*  a cluster profile
-*  a cluster profile
-*  Encryption at Rest
-*  Encryption at Rest
-*  SSH
-*  the SSH time limit
-*  SSH
-*  protection domain monitoring
-*  down a cluster
-*  your NetApp HCI infrastructure
+* <<클러스터 세부 정보를 봅니다>>
+* <<클러스터 프로필을 편집합니다>>
+* <<클러스터 프로필을 제거합니다>>
+* <<저장 시 암호화 사용>>
+* <<저장된 암호화 사용 안 함>>
+* <<SSH를 활성화합니다>>
+* <<SSH 시간 제한을 변경합니다>>
+* <<SSH를 해제합니다>>
+* <<보호 도메인 모니터링을 설정합니다>>
+* <<클러스터를 종료합니다>>
+* <<NetApp HCI 인프라를 확장합니다>>
 
 
 
@@ -285,7 +285,7 @@ NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사�
 
 를 수동으로 활성화할 수 있습니다 link:vcp_concept_protection_domains.html["보호 도메인 모니터링"] 플러그인 확장 지점 사용 노드 또는 섀시 도메인에 따라 보호 도메인 임계값을 선택할 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 보호 도메인 모니터링을 사용하려면 선택한 클러스터를 Element 11.0 이상 버전에서 모니터링해야 합니다. 그렇지 않으면 보호 도메인 기능을 사용할 수 없습니다.
 * 보호 도메인 기능을 사용하려면 클러스터에 노드가 2개 이상 있어야 합니다. 2노드 클러스터와의 호환성은 제공되지 않습니다.
 
@@ -322,6 +322,7 @@ NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사�
 
 NOTE: SolidFire 엔터프라이즈 SDS 클러스터에서는 이 기능을 사용할 수 없습니다.
 
+.필요한 것
 I/O를 중지하고 모든 iSCSI 세션의 연결을 끊었습니다.
 
 .단계

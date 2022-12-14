@@ -22,8 +22,10 @@ VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 
 --
 시스템이 Element vCenter 플러그인 5.0 이상의 사용 요구 사항을 충족하는지 확인합니다.
 
+.VMware vSphere 사전 요구 사항
 Element vCenter 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 vCenter 및 ESXi가 포함된 VMware vSphere 8.0 및 7.0이 필요합니다.
 
+.플러그인에서 지원하는 VMware vSphere 버전
 플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
 
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함하는 vSphere 8.0
@@ -38,8 +40,10 @@ IMPORTANT: VMware vSphere 6.5 및 6.7은 2022년 10월 15일에 지원 종료 �
 --
 시스템이 Element vCenter 플러그인 4.10 이하의 사용 요구 사항을 충족하는지 확인합니다.
 
+.VMware vSphere 사전 요구 사항
 Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.
 
+.플러그인에서 지원하는 VMware vSphere 버전
 플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
 
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1 및 2

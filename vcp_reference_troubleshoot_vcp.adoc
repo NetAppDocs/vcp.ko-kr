@@ -17,20 +17,20 @@ keywords: netapp, hci, vcp, vcenter, element, troubleshoot, monitor, report, ale
 [role="lead"]
 VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일반적인 문제와 이러한 문제를 해결하는 단계를 알고 있어야 합니다.
 
-*  registration successful but icons do not appear in web client
-*  after NetApp Element Plug-in for VMware vCenter Server 4.8 or later upgrade with VMware vCenter Server 6.7U1
-*  registering plug-in using Registration UI
-*  updating plug-in using Registration UI
-*  message that NetApp extension cannot be upgraded
-*  plug-in completes successfully but icons remain
-*  cannot be unregistered or removed after admin password change
-*  management tasks fail or volumes are not accessible to ESXi host
-*  occurs during vCenter Plug-in use on Firefox 59.0.2 browsers
-*  datastore operation fails
-*  pair cannot connect using a pairing key
-*  message for QoSSIOC status
-*  service shown as available but is unavailable
-*  is enabled for datastore but unavailable
+* <<플러그인 등록에 성공했지만 웹 클라이언트에 아이콘이 표시되지 않습니다>>
+* <<VMware vCenter Server 6.7U1을 사용하여 VMware vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다>>
+* <<등록 UI를 사용하여 플러그인을 등록하는 동안 오류가 발생했습니다>>
+* <<등록 UI를 사용하여 플러그인을 업데이트하는 동안 오류가 발생했습니다>>
+* <<NetApp 확장을 업그레이드할 수 없다는 오류 메시지가 나타납니다>>
+* <<플러그 인을 제거해도 성공적으로 완료되지만 아이콘은 유지됩니다>>
+* <<관리자 암호를 변경한 후에는 플러그인을 등록 취소 또는 제거할 수 없습니다>>
+* <<플러그인 관리 작업이 실패하거나 ESXi 호스트에서 볼륨에 액세스할 수 없습니다>>
+* <<Firefox 59.0.2 브라우저에서 vCenter 플러그인을 사용하는 동안 오류가 발생했습니다>>
+* <<데이터 저장소 삭제 작업이 실패했습니다>>
+* <<페어링 키를 사용하여 클러스터 쌍을 연결할 수 없습니다>>
+* <<QoSSIOC 상태에 대한 오류 메시지입니다>>
+* <<QoSSIOC 서비스가 사용 가능으로 표시되지만 사용할 수 없습니다>>
+* <<QoSSIOC는 데이터 저장소에 대해 활성화되지만 사용할 수 없습니다>>
 * https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["VMware vSphere 7.0 Update 3으로 업그레이드한 후 vCenter 플러그인 구축이 실패합니다"^]
 
 
@@ -38,6 +38,7 @@ VMware vCenter Server용 NetApp Element 플러그인과 관련된 몇 가지 일
 
 == 플러그인 등록에 성공했지만 웹 클라이언트에 아이콘이 표시되지 않습니다
 
+.설명
 등록이 성공한 것으로 표시되지만 vSphere Web Client에서 플러그인 아이콘이 표시되지 않습니다.
 
 .NetApp Element vCenter 플러그인 4.10 및 그 이전 버전에 대한 수정 조치
@@ -84,12 +85,14 @@ NOTE: 연결할 수 없거나 잘못된 URL을 수정해야 할 수 있습니다
 
 == VMware vCenter Server 6.7U1을 사용하여 VMware vCenter Server 4.8 이상 업그레이드용 NetApp Element 플러그인 후 오류가 발생했습니다
 
+.설명
 VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이상으로 업그레이드한 후 다음과 같은 문제가 발생할 수 있습니다.
 
 * 클러스터는 플러그인 확장 지점의 * 클러스터 * 섹션에 나열되지 않습니다.
 * 클러스터 * 및 * QoSSIOC 설정 * 섹션에 서버 오류가 표시됩니다.
 
 
+.수정 조치
 클러스터 및 QoSSIOC 설정을 복원합니다.
 
 . vCenter에서 로그아웃합니다.
@@ -106,16 +109,20 @@ VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이
 
 == 등록 UI를 사용하여 플러그인을 등록하는 동안 오류가 발생했습니다
 
+.설명
 등록 유틸리티를 사용할 때 vCenter Server에 플러그인을 등록하는 동안 오류가 발생했습니다. com.solidfire 키가 이미 설치되어 있습니다.
 
+.수정 조치
 등록 유틸리티에서 * 플러그인 등록 * 대신 * 플러그인 업데이트 * 를 사용합니다.
 
 
 
 == 등록 UI를 사용하여 플러그인을 업데이트하는 동안 오류가 발생했습니다
 
+.설명
 등록 유틸리티를 사용할 때 vCenter Server에 대한 플러그인을 업데이트하는 동안 오류가 발생했습니다. 이 업데이트에 대해 "com.solidfire" 키가 있는 플러그인이 설치되어 있지 않습니다.
 
+.수정 조치
 등록 유틸리티에서 * 플러그인 업데이트 * 대신 * 플러그인 등록 * 을 사용합니다.
 
 
@@ -127,6 +134,7 @@ VMware vCenter Server 6.7U1을 사용하여 Element vCenter 플러그인 4.8 이
 ----
 org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection.
 ----
+.설명
 Windows vCenter Server를 버전 6.0에서 6.5로 업그레이드하는 동안 NetApp Extension을 업그레이드할 수 없거나 새 vCenter Server와 함께 사용할 수 없다는 경고가 표시됩니다. 업그레이드를 완료하고 vSphere Web Client에 로그인하면 vCenter 플러그인 확장 지점을 선택할 때 오류가 발생합니다. 이 오류는 런타임 데이터베이스를 저장하는 디렉터리가 버전 6.0에서 6.5로 변경되었기 때문에 발생합니다. vCenter 플러그인에서 런타임을 위해 필요한 파일을 생성할 수 없습니다.
 
 .수정 조치
@@ -141,16 +149,20 @@ Windows vCenter Server를 버전 6.0에서 6.5로 업그레이드하는 동안 N
 
 == 플러그 인을 제거해도 성공적으로 완료되지만 아이콘은 유지됩니다
 
+.설명
 vCenter 플러그인 패키지 파일 제거가 성공적으로 완료되었지만 vSphere Web Client에서 플러그인 아이콘이 계속 표시됩니다.
 
+.수정 조치
 vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우저를 닫았다가 다시 열어야 할 수 있습니다. vSphere Web Client에서 로그아웃해도 문제가 해결되지 않으면 vCenter Server 웹 서비스를 재부팅해야 할 수 있습니다. 또한 다른 사용자에게 기존 세션이 있을 수 있습니다. 모든 사용자 세션을 닫아야 합니다.
 
 
 
 == 관리자 암호를 변경한 후에는 플러그인을 등록 취소 또는 제거할 수 없습니다
 
+.설명
 플러그인을 등록하는 데 사용된 vCenter의 관리자 암호가 변경된 후에는 vCenter 플러그인을 등록 또는 제거할 수 없습니다.
 
+.수정 조치
 플러그인 2.6의 경우 vCenter 플러그인 * 등록 * / * 등록 해제 * 페이지로 이동합니다. vCenter IP 주소, 사용자 ID 및 암호를 변경하려면 * Update * 버튼을 클릭합니다.
 
 플러그인 2.7 이상의 경우 플러그인의 mNode 설정에서 vCenter 관리자 암호를 업데이트합니다.
@@ -161,6 +173,7 @@ vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우
 
 == 플러그인 관리 작업이 실패하거나 ESXi 호스트에서 볼륨에 액세스할 수 없습니다
 
+.설명
 데이터 저장소 생성, 클론 생성 및 공유 작업이 실패하거나 ESXi 호스트에서 볼륨에 액세스할 수 없습니다.
 
 .수정 조치
@@ -175,32 +188,40 @@ vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우
 
 == Firefox 59.0.2 브라우저에서 vCenter 플러그인을 사용하는 동안 오류가 발생했습니다
 
+.메시지
 "이름: HttpErrorResponse Raw 메시지: 에 대한 HTTP 실패 응답 https://vc6/ui/solidfire-war-4.2.0-SNAPSHOT/rest/vsphere//servers:[] 500 내부 서버 오류 반환 메시지: 서버 오류. 다시 시도하거나 NetApp Support에 문의하십시오
 
+.설명
 이 문제는 Firefox를 사용하는 vSphere HTML5 웹 클라이언트에서 발생합니다. vSphere Flash 클라이언트는 영향을 받지 않습니다.
 
+.수정 조치
 브라우저 URL에서 전체 FQDN을 사용합니다. VMware는 IP, 짧은 이름 및 FQDN에 대한 전체 정방향 및 역방향 확인을 필요로 합니다.
 
 
 
 == 데이터 저장소 삭제 작업이 실패했습니다
 
+.설명
 데이터 저장소 삭제 작업이 실패합니다.
 
+.수정 조치
 모든 VM이 데이터 저장소에서 삭제되었는지 확인합니다. 데이터 저장소를 삭제하려면 먼저 데이터 저장소에서 VM을 삭제해야 합니다.
 
 
 
 == 페어링 키를 사용하여 클러스터 쌍을 연결할 수 없습니다
 
+.설명
 페어링 키를 사용하여 클러스터를 페어링하는 동안 연결 오류가 발생합니다. 클러스터 페어링 생성 * 대화 상자의 오류 메시지는 호스트에 대한 경로가 없음을 나타냅니다.
 
+.수정 조치
 구성되지 않은 클러스터 쌍을 로컬 클러스터에 생성한 프로세스를 수동으로 삭제하고 클러스터 페어링을 다시 수행하십시오.
 
 
 
 == QoSSIOC 상태에 대한 오류 메시지입니다
 
+.설명
 플러그인의 QoSSIOC 상태는 경고 아이콘 및 오류 메시지를 표시합니다.
 
 .수정 조치
@@ -213,18 +234,23 @@ vSphere Web Client에서 로그아웃하고 다시 로그인합니다. 브라우
 
 == QoSSIOC 서비스가 사용 가능으로 표시되지만 사용할 수 없습니다
 
+.설명
 QoSSIOC 서비스 설정이 UP로 표시되지만 QoSSIOC는 사용할 수 없습니다.
 
+.Element vCenter 플러그인 5.0 이상에 대한 수정 조치
 NetApp Element 원격 플러그인 > 구성 탭의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.
 
+.Element vCenter 플러그인 4.10 이전 버전에 대한 수정 조치
 NetApp Element 구성 확장 지점의 * QoSSIOC 설정 * 탭에서 새로 고침 버튼을 선택합니다. 필요에 따라 IP 주소 또는 사용자 인증 정보를 업데이트합니다.
 
 
 
 == QoSSIOC는 데이터 저장소에 대해 활성화되지만 사용할 수 없습니다
 
+.설명
 데이터 저장소에 QoSSIOC가 활성화되어 있지만 QoSSIOC는 사용할 수 없습니다.
 
+.수정 조치
 VMware SIOC가 데이터 저장소에 설정되어 있는지 확인합니다.
 
 . 관리 노드의 /opt/solidfire/sIOC/data/logs/'에서 'sIOC.log'를 엽니다('/var/log' 또는 이전 관리 노드의 경우 '/var/log/solidfire/').

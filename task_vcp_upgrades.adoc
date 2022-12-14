@@ -23,6 +23,7 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 
 ====
+.단계
 플러그인을 업그레이드하려면 해당 제품의 업그레이드 설명서에 있는 지침을 따르십시오.
 
 * https://docs.netapp.com/us-en/hci/docs/task_vcp_upgrade_plugin.html["NetApp HCI 시스템을 업그레이드합니다"^]
