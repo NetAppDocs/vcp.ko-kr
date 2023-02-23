@@ -1711,16 +1711,9 @@
   <block id="2bee85af6914f0a5879c7c12bf441e01" category="paragraph">QoS 정책이 더 이상 필요하지 않은 경우 삭제할 수 있습니다. QoS 정책을 삭제할 경우 정책에 연결된 모든 볼륨은 정책에 의해 이전에 정의된 QoS 값을 개별 볼륨 QoS로 유지합니다. 삭제된 QoS 정책과의 연결이 제거됩니다.</block>
   <block id="4294f5a888e74bc44950b71dce1c2b12" category="list-text">삭제할 QoS 정책의 확인란을 선택합니다.</block>
   <block id="d93fdf8ab834ec550b9295e94912501e" category="paragraph">다음 목록에서는 다양한 유형의 시스템 경고를 간략하게 설명합니다.</block>
-  <block id="b77a61cd6988e6c08982332968c82546" category="list-text">* authenticationServiceFault *: 하나 이상의 클러스터 노드의 인증 서비스가 예상대로 작동하지 않습니다.</block>
-  <block id="5598b7fb635d67383dc9570babc8e530" category="paragraph">* 해결 방법 *: NetApp 지원 팀에 지원 문의</block>
-  <block id="f4776654d7d51cbcc317206320d6bd7e" category="list-text">* 가용한 VirtualNetworkIPAddressLow *: IP 주소 블록의 가상 네트워크 주소 수가 적습니다.</block>
-  <block id="360d8b7be9d2a6e42c2904ac15a36482" category="paragraph">* 해결 방법 *: 가상 네트워크 주소 블록에 더 많은 IP 주소를 추가합니다.</block>
-  <block id="19044d6710eab3bdd983360bf7266325" category="list-text">* BLOCKClusterFull *: 단일 노드 손실을 지원하기 위한 사용 가능한 블록 스토리지 공간이 부족합니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</block>
   <block id="638768955c5a6f2ab425aae1bce583bc" category="list-text">stage3Low(경고): 사용자 정의 임계값이 초과되었습니다. Cluster Full(클러스터 전체) 설정을 조정하거나 노드를 더 추가합니다.</block>
   <block id="66ee2d060cdf84b1fec9ae435d8f1a81" category="list-text">stage4Critical(오류): 1노드 장애를 복구할 수 있는 공간이 부족합니다. 볼륨, 스냅샷 및 클론을 생성할 수 없습니다.</block>
   <block id="0e9854d5683c94e98eff290cc17a418d" category="list-text">stage5CompletyConsumered (Critical) 1; 쓰기 또는 새 iSCSI 연결이 허용되지 않습니다. 현재 iSCSI 연결이 유지됩니다. 클러스터에 용량을 더 추가할 때까지 쓰기에 실패합니다.</block>
-  <block id="f10b7215fe62e0d4e21c762a36514a0f" category="paragraph">* 해결 방법 *: 볼륨을 제거 또는 삭제하거나 스토리지 클러스터에 다른 스토리지 노드를 추가합니다.</block>
-  <block id="6dbedebfca67a28af1c9192630ebd1b6" category="list-text">* blocksDegraded *: 장애가 발생하여 블록 데이터가 더 이상 완전히 복제되지 않습니다.</block>
   <block id="007cc9547ae8884ad597cd92ba505422" category="cell">심각도입니다</block>
   <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">경고</block>
   <block id="84834e57a39bc236d386994d9a65697f" category="cell">블록 데이터의 전체 복사본을 두 개만 액세스할 수 있습니다.</block>
@@ -1728,216 +1721,78 @@
   <block id="6b4a116390b4264598f38f5095478782" category="cell">블록 데이터의 전체 복사본을 하나만 액세스할 수 있습니다.</block>
   <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">심각</block>
   <block id="1729e2d7bb4830e4590245d964490747" category="cell">블록 데이터의 전체 복사본을 액세스할 수 없습니다.</block>
-  <block id="b139944f8590a78103576799b6748aee" category="admonition">경고 상태는 Triple Helix 시스템에서만 발생할 수 있습니다.</block>
-  <block id="e78884e2852b1df8681d3b38a52336ce" category="paragraph">* 해결 방법 *: 오프라인 노드 또는 블록 서비스를 복원하거나 NetApp Support에 지원을 문의하십시오.</block>
-  <block id="a6d7f0040dda716dddaddabfc6499ce0" category="list-text">* BLOCKServiceTooFull *: 블록 서비스가 너무 많은 공간을 사용하고 있습니다.</block>
-  <block id="d0b983aa0a03f0613ee4318863024796" category="paragraph">* 해결 방법 *: 프로비저닝된 용량을 더 추가합니다.</block>
-  <block id="eead0253ee806cfa178d60d8a7e1f4ff" category="list-text">* blockServiceUnhealthy *: 블록 서비스가 정상 상태가 아닌 것으로 감지되었습니다.</block>
   <block id="43f872680fd424e2b1762db257650751" category="list-text">심각도 = 경고: 작업이 수행되지 않습니다. 이 경고 기간은 cTimeUntilBSIsKilledMSec = 3300ms로 만료됩니다.</block>
   <block id="1243ff1c26bd2b3dd66afd02705039aa" category="list-text">심각도 = 오류: 시스템이 자동으로 데이터를 사용 중지하여 다른 정상 드라이브로 데이터를 재복제합니다.</block>
   <block id="2ae0b813312f2044fb0000c93b743c18" category="list-text">심각도 = 위험: 복제 개수보다 크거나 같은 여러 노드에서 장애가 발생한 블록 서비스가 있습니다(이중 나선형의 경우 2개). 데이터를 사용할 수 없으며 입력 용지함 동기화가 완료되지 않습니다.</block>
-  <block id="64d5b87a0d80106f02ca02a8c2d51e99" category="paragraph">* 해결 방법 *: 네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 이 고장은 블록 서비스에 액세스하거나 서비스를 폐기한 경우 삭제됩니다.</block>
-  <block id="b6c5dd9a9468dadfca14f1e934079fda" category="list-text">* clockSkewExceedsFaultThreshold *: 토큰을 제공하는 노드와 클러스터 마스터 간의 시간 편중이 권장 임계값을 초과합니다. 스토리지 클러스터는 노드 간의 시간 차이를 자동으로 수정할 수 없습니다.</block>
-  <block id="f18971b7665987026d00eed1b94296ce" category="paragraph">* 해결 방법 *: 설치 기본값 대신 네트워크 내부에 있는 NTP 서버를 사용합니다. 내부 NTP 서버를 사용하는 경우 NetApp 지원 팀에 지원을 문의하십시오.</block>
-  <block id="61a796d784575cc4c0eefe3713784b7d" category="list-text">* 클러스터 CannotSync *: 공간 부족 조건이 있으며 오프라인 블록 스토리지 드라이브의 데이터는 활성 상태인 드라이브와 동기화할 수 없습니다.</block>
-  <block id="30a5b6d75199ef2b739e1e49fe5f6d2d" category="paragraph">* 해결 방법 *: 더 많은 스토리지 추가</block>
-  <block id="3c396f7366c1ca2d787a7da62b063c09" category="list-text">* 클러스터 전체 *: 스토리지 클러스터에 사용 가능한 스토리지 공간이 더 이상 없습니다.</block>
-  <block id="57b28d3f4e2a40803441a098a64aeb46" category="list-text">* 클러스터IOPSARREOverProvisioned *: 클러스터 IOPS가 초과 프로비저닝되었습니다. 모든 최소 QoS IOPS의 합이 클러스터의 예상 IOPS보다 큽니다. 모든 볼륨에 대해 최소 QoS를 동시에 유지할 수는 없습니다.</block>
-  <block id="532bae603c79fef518a2f5ba19a230b2" category="paragraph">* 해결 방법 *: 볼륨에 대한 최소 QoS IOPS 설정을 낮춥니다.</block>
-  <block id="59e3be5e8454cb22c84b24a16a0bb516" category="list-text">* disableDriveSecurityFailed *: 클러스터가 드라이브 보안(저장된 암호화)을 사용하도록 구성되지 않았지만 하나 이상의 드라이브에 드라이브 보안이 설정되어 있어 해당 드라이브에서 드라이브 보안을 해제할 수 없습니다. 이 고장은 "경고" 심각도로 기록됩니다.</block>
-  <block id="5e1db2dfa2df960f2ff4e6e6a4e60492" category="paragraph">* 해결 방법 *: 드라이브 보안을 비활성화할 수 없는 이유에 대한 고장 세부 정보를 확인합니다. 가능한 원인은 다음과 같습니다.</block>
   <block id="87c8214c4d624147becc5521d4175136" category="list-text">암호화 키를 가져올 수 없습니다. 키 또는 외부 키 서버에 대한 액세스 문제를 조사하십시오.</block>
   <block id="c12520b146934cca9f0563beb6c4b386" category="list-text">드라이브에서 비활성화 작업이 실패했습니다. 잘못된 키를 획득했을 수 있는지 확인하십시오.</block>
-  <block id="207979df60452480b4cc127e964f2bb3" category="paragraph">두 가지 모두 고장의 원인이 아니라면 드라이브를 교체해야 할 수 있습니다. 올바른 인증 키를 제공하더라도 보안이 비활성화되지 않는 드라이브를 복구할 수 있습니다. 이 작업을 수행하려면 시스템에서 드라이브를 Available(사용 가능) 으로 이동하여 드라이브를 제거하고 드라이브에서 보안 삭제를 수행한 다음 Active(활성) 로 다시 이동합니다.</block>
-  <block id="d113be0f16b670c5c78f0912c7d2af97" category="list-text">* disconnectedClusterPair *: 클러스터 쌍의 연결이 끊어지거나 잘못 구성되었습니다.</block>
-  <block id="4d8ae629f9f7ca6bca311363b1d0cf70" category="paragraph">* 해결 방법 *: 클러스터 간 네트워크 연결을 확인합니다.</block>
-  <block id="67dfbd4a5be1831a5711e0487f3a559c" category="list-text">* disconnectedRemoteNode *: 원격 노드의 연결이 끊어지거나 잘못 구성되었습니다.</block>
-  <block id="c099dbfc11b7a053a45eeea116dd0e24" category="paragraph">* 해결 방법 *: 노드 간 네트워크 연결을 확인합니다.</block>
-  <block id="521fc14366e90d2106568104de9a9bd5" category="list-text">* disconnectedSnapMirrorEndpoint *: 원격 SnapMirror 끝점의 연결이 끊어지거나 잘못 구성되었습니다.</block>
-  <block id="69cc97a986abec94359b1b39371d321d" category="paragraph">* 해결 방법 *: 클러스터와 원격 SnapMirror 끝점 간의 네트워크 연결을 확인합니다.</block>
-  <block id="cfc6773b3a28188406af7be1c4cd505a" category="list-text">* 드라이브 사용 가능 *: 클러스터에서 하나 이상의 드라이브를 사용할 수 있습니다. 일반적으로 모든 클러스터에는 모든 드라이브가 추가되어야 하며 사용 가능한 상태에서는 없어야 합니다. 이 오류가 예기치 않게 나타날 경우 NetApp 지원 팀에 문의하십시오.</block>
-  <block id="5cea426834035f7f53348b0e61d47f27" category="paragraph">* 해결 방법 *: 스토리지 클러스터에 사용 가능한 드라이브를 추가합니다.</block>
-  <block id="9828e9a03d5c50eaac06a00ec578dd34" category="list-text">* 드라이브 오류 *: 하나 이상의 드라이브에 장애가 발생하면 클러스터가 이 오류를 반환하여 다음 조건 중 하나를 표시합니다.</block>
   <block id="95607d1f3bac33fd6ceb0db6eaae24ea" category="list-text">드라이브 관리자가 드라이브에 액세스할 수 없습니다.</block>
   <block id="816b615213a1f571133dbeab11f8be73" category="list-text">슬라이스 또는 블록 서비스가 너무 많은 번 실패했으며, 이는 아마도 드라이브 읽기 또는 쓰기 오류로 인해 발생할 수 있으며 다시 시작할 수 없습니다.</block>
   <block id="fb3e817b0c8795e02aefa4556e7780dc" category="list-text">드라이브가 없습니다.</block>
   <block id="1bbb54812222b3924c6bf4c604fa345c" category="list-text">노드의 마스터 서비스에 액세스할 수 없습니다(노드의 모든 드라이브가 누락/실패로 간주됨).</block>
   <block id="357055579aee5a54ad7a5eeeaff622af" category="list-text">드라이브가 잠겨 있고 드라이브의 인증 키를 가져올 수 없습니다.</block>
   <block id="5b0e7d9573ad0e308cbbcaa692388ffa" category="list-text">드라이브가 잠겨 있고 잠금 해제 작업이 실패합니다.</block>
-  <block id="db6402d510a3f6d1a14d977b90de261a" category="paragraph">해결 *:</block>
   <block id="d573f30ca912851cb2b018b5e162b81e" category="list-text">노드의 네트워크 연결을 확인합니다.</block>
   <block id="eb060d511b605e93f2a2a260b6dbc752" category="list-text">드라이브를 교체합니다.</block>
   <block id="c6a23c02f7b414f5c0f52e9a7a75617a" category="list-text">인증 키를 사용할 수 있는지 확인합니다.</block>
-  <block id="1969b289e35f6700ca2f827de7bd9f81" category="list-text">*드라이브 상태 오류*: 드라이브가 SMART 상태 검사에 실패하여 드라이브의 기능이 저하되었습니다. 이 결함의 심각도는 다음과 같습니다.</block>
   <block id="6b6ada126074585acbda3e3e706375bf" category="list-text">슬롯 &lt;node slot&gt;&lt;drive slot&gt;에 일련 번호 &lt;serial number&gt;이(가) 있는 드라이브가 SMART Overall 상태 검사에 실패했습니다.</block>
-  <block id="21d7505980612859335cd1182eed2f42" category="paragraph">* 해결 방법 *: 드라이브를 교체합니다.</block>
-  <block id="f711a410cfadcd74d3e727bcf29e76ea" category="list-text">* driveWearFault *: 드라이브의 남은 수명이 임계값 이하로 떨어졌지만 여전히 작동하고 있습니다. 이 결함에는 위험 및 경고라는 두 가지 심각도 수준이 있습니다.</block>
   <block id="450f3e44340f787c8a2402d47b9d8839" category="list-text">슬롯이 &lt;node slot&gt;&lt;drive slot&gt;인 일련 번호가 &lt;serial number&gt;인 드라이브의 마모 수준이 매우 중요합니다.</block>
   <block id="bc85c300d6a6164fbbdb72d6f4ad2e6c" category="list-text">슬롯이 &lt;node slot&gt;&lt;drive slot&gt;인 슬롯에 일련 번호 &lt;serial number&gt;가 있는 드라이브의 마모 예비량이 적습니다.</block>
-  <block id="9abb5ddc1addf4d590b5c9fa91e4d43a" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 드라이브를 곧 교체하십시오.</block>
-  <block id="48128ef6d47ecb690871445333b6491b" category="list-text">* duplicateClusterMasterCandidate *: 두 개 이상의 스토리지 클러스터 마스터 후보가 감지되었습니다.</block>
-  <block id="59ab6bdfa6be309755bce41f5d60d462" category="list-text">*enableDriveSecurityFailed*: 클러스터가 드라이브 보안(저장 시 암호화)을 요구하도록 구성되었지만 하나 이상의 드라이브에서 드라이브 보안을 활성화할 수 없습니다. 이 고장은 "경고" 심각도로 기록됩니다.</block>
-  <block id="d54e299a64e6acd0f2bf04514e5eb863" category="paragraph">* 해결 방법 *: 드라이브 보안을 활성화할 수 없는 이유에 대한 고장 세부 정보를 확인합니다. 가능한 원인은 다음과 같습니다.</block>
-  <block id="0bc7b1010ae978b18e75b86c87247b1d" category="list-text">드라이브에서 활성화 작업이 실패했습니다. 잘못된 키를 획득했을 수 있는지 확인하십시오.</block>
   <block id="e8bd7f29873c064c3b0afe30143a9400" category="paragraph">두 가지 모두 고장의 원인이 아니라면 드라이브를 교체해야 할 수 있습니다.</block>
   <block id="2694c60165d17f45292f0e9b5497681e" category="paragraph">올바른 인증 키가 제공되었더라도 보안이 설정되지 않은 드라이브를 복구할 수 있습니다. 이 작업을 수행하려면 시스템에서 드라이브를 Available(사용 가능) 으로 이동하여 드라이브를 제거하고 드라이브에서 보안 삭제를 수행한 다음 Active(활성) 로 다시 이동합니다.</block>
-  <block id="6d0550ff96dcb445984ba8a0707c9074" category="list-text">* ensembleDegraded *: 네트워크 연결 또는 전원이 하나 이상의 앙상블 노드로 손실되었습니다.</block>
-  <block id="44e4e9cfd83c1aa882271efeac350416" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 네트워크 연결 또는 전원을 복원하십시오.</block>
-  <block id="387c82f8e8999ac36c4d631ee3bec019" category="list-text">* 예외 *: 루틴 결함이 아닌 것으로 보고된 고장. 이러한 고장은 오류 대기열에서 자동으로 삭제되지 않습니다.</block>
-  <block id="95fccc70956cc0d9a84d29b81c844be9" category="paragraph">* 해결하려면 * NetApp Support에 문의하십시오.</block>
-  <block id="69c345b3bb2113f968958254a0a27fb6" category="list-text">* failedSpaceTooFull *: 블록 서비스가 데이터 쓰기 요청에 응답하지 않습니다. 이로 인해 슬라이스 서비스의 공간이 부족하여 실패한 쓰기를 저장할 수 없습니다.</block>
-  <block id="57279397a0f23c13827f0886a541321d" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 블록 서비스 기능을 복원하여 쓰기가 정상적으로 계속되고 장애가 발생한 공간이 슬라이스 서비스에서 플러시되도록 합니다.</block>
-  <block id="cda76445fe2c308c747b9c1d6f7d4146" category="list-text">* 팬센서 *: 팬 센서가 고장났거나 없습니다.</block>
-  <block id="9c454c61b7a38c67c5a89c1edf48ece4" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 결함이 있는 하드웨어를 모두 교체하십시오.</block>
-  <block id="00f7721e7b62e96f695375e817d28365" category="list-text">* Fibre ChannelAccessDegraded *: Fibre Channel 노드가 해당 스토리지 IP를 통해 스토리지 클러스터의 다른 노드에 응답하지 않습니다. 이 상태에서는 노드가 응답하지 않는 것으로 간주되어 클러스터 장애가 발생합니다.</block>
-  <block id="5f69b8801c8ef9ca12605d73c17cfbd8" category="paragraph">* 해결 방법 *: 네트워크 연결을 확인하십시오.</block>
-  <block id="4299bc710d3fbceeb54aef2defddd564" category="list-text">*fibrChannelAccessUnavailable*: 모든 파이버 채널 노드가 응답하지 않습니다. 노드 ID가 표시됩니다.</block>
-  <block id="be5229786f60214999488193683de994" category="list-text">* Fibre ChannelActiveIxL *: IxL Nexus 수가 Fibre Channel 노드당 지원되는 활성 세션 8000개 한도에 근접하고 있습니다.</block>
   <block id="afde178f3cdc76e86b358a735370a4ee" category="list-text">모범 사례 제한은 5500입니다.</block>
   <block id="2a89b8bd6f61acaa29e36c53507cdcd9" category="list-text">경고 한계는 7500입니다.</block>
   <block id="87cec377fddbc2b343c523b1f948a6e2" category="list-text">최대 제한(시행되지 않음)은 8192입니다.</block>
-  <block id="06a1ad63d7f3de673d8e3b349ae4deba" category="paragraph">* 해결 방법 *: IxL Nexus 개수를 5500의 모범 사례 한도 미만으로 줄이십시오.</block>
-  <block id="6200ab5a23b5eb4f8e8a795f6b2ef519" category="list-text">* fibreChannelConfig *: 이 클러스터 오류는 다음 조건 중 하나를 나타냅니다.</block>
   <block id="eea8c17dfc94cc47441f5d76cd656589" category="list-text">PCI 슬롯에 예기치 않은 Fibre Channel 포트가 있습니다.</block>
   <block id="77f0a06c22e15fd19ec507cc798e4687" category="list-text">예기치 않은 Fibre Channel HBA 모델이 있습니다.</block>
   <block id="9081496d4343ff2942d3a7ace8927753" category="list-text">Fibre Channel HBA의 펌웨어에 문제가 있습니다.</block>
   <block id="9b6b174ad1439ca86267072c96c6a708" category="list-text">Fibre Channel 포트가 온라인 상태가 아닙니다.</block>
   <block id="1a8b25bc838c0110139358395735d6f5" category="list-text">Fibre Channel 패스스루 구성에 지속적인 문제가 있습니다.</block>
-  <block id="423108a2acc5d064acd9b98422032ec6" category="list-text">* Fibre ChannelIOPS *: 총 IOPS 수가 클러스터의 Fibre Channel 노드에 대한 IOPS 제한에 근접하고 있습니다. 제한 사항은 다음과 같습니다.</block>
   <block id="30df86760d85d6e2bce14a346d935d23" category="list-text">FC0025:450K IOPS는 파이버 채널 노드당 4K 블록 크기로 제한됩니다.</block>
   <block id="0601c36d5a717978b7c215c94c397752" category="list-text">FCN001:625K OPS는 파이버 채널 노드당 4K 블록 크기에서 제한됩니다.</block>
-  <block id="43dd332c491ee26842dccdd95f3d673a" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 사용 가능한 모든 파이버 채널 노드에서 로드 밸런싱을 수행합니다.</block>
-  <block id="08781f97b9a56608e228a926bbe582a4" category="list-text">* Fibre ChannelStaticIxL *: IxL Nexus 수가 Fibre Channel 노드당 지원되는 16000개의 정적 세션 제한에 근접하고 있습니다.</block>
   <block id="d85f1b7e325152ab8b9dc4987156513c" category="list-text">모범 사례 제한은 11000입니다.</block>
   <block id="ecba663b07684c482e30930dbc2c5447" category="list-text">경고 한계는 15000입니다.</block>
   <block id="0164a04bfac1ebbda38a2e22844ed405" category="list-text">최대 제한(강제 적용)은 16384입니다.</block>
-  <block id="7f0f7b3e3c2559bc38fe477912eb7dfd" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 IxL Nexus 개수를 11000의 모범 사례 한도 미만으로 줄이십시오.</block>
-  <block id="dea0db7f2e930824a5b18f6621c75489" category="list-text">*fileSystemCapacityLow*: 파일 시스템 중 하나에 공간이 부족합니다.</block>
-  <block id="d4efa4e40167a713afcbc40e708b3782" category="paragraph">* 해결 방법 *: 파일 시스템에 용량을 더 추가합니다.</block>
-  <block id="c37c122202aff11f627e79fe242167eb" category="list-text">* fipsDrivesMismatch *: FIPS가 아닌 드라이브가 FIPS 지원 스토리지 노드에 물리적으로 삽입되었거나 FIPS 드라이브가 비 FIPS 스토리지 노드에 물리적으로 삽입되었습니다. 노드당 단일 장애가 발생하고 영향을 받는 모든 드라이브가 나열됩니다.</block>
-  <block id="330fd07f17b9d88a5b6c65287d20e2b0" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 문제가 있는 일치하지 않는 드라이브를 제거하거나 교체하십시오.</block>
-  <block id="e1243b17d56e12f3c3df9d665f7b8d9c" category="list-text">* fipsDrivesOutOfCompliance *: 시스템에서 FIPS 드라이브 기능이 활성화된 후 저장된 암호화 기능이 비활성화되었음을 감지했습니다. 이 장애는 FIPS 드라이브 기능이 설정되어 있고 스토리지 클러스터에 비 FIPS 드라이브 또는 노드가 있을 때도 생성됩니다.</block>
-  <block id="b69bdc017b90d1d051c85c6686412351" category="paragraph">* 해결 방법 *: 유휴 데이터 암호화 사용 또는 스토리지 클러스터에서 비 FIPS 하드웨어 제거</block>
-  <block id="fd0d25048f9ac968637a04b3d7bd0654" category="list-text">* fipsSelfTestFailure *: 자체 테스트 중에 FIPS 서브시스템이 오류를 감지했습니다.</block>
-  <block id="1d6ead8b27c12748a8d92837f0c53cc6" category="list-text">*하드웨어 ConfigMismatch*: 이 클러스터 오류는 다음 조건 중 하나를 나타냅니다.</block>
   <block id="bf115db5c03e9e532f2c688460f33073" category="list-text">구성이 노드 정의와 일치하지 않습니다.</block>
   <block id="71af532c4c9766361e01036327838cdd" category="list-text">이 노드 유형에 잘못된 드라이브 크기가 있습니다.</block>
   <block id="f37083c72cc95f714c6dcccbf50fbae6" category="list-text">지원되지 않는 드라이브가 감지되었습니다. 설치된 Element 버전이 이 드라이브를 인식하지 못하는 이유가 있을 수 있습니다. 이 노드에서 Element 소프트웨어를 업데이트할 것을 권장합니다.</block>
   <block id="7adda67a2bab68e6354d45fbda56172d" category="list-text">드라이브 펌웨어가 일치하지 않습니다.</block>
   <block id="84235cc0ee8b4a1704e15c4682efed21" category="list-text">드라이브 암호화 가능 상태가 노드와 일치하지 않습니다.</block>
-  <block id="d5a7f18bd5180856298d9b65b13fb67a" category="list-text">* idPCertificateExpiration*: 타사 ID 공급자(IDP)와 함께 사용할 클러스터의 서비스 공급자 SSL 인증서가 만료되었거나 이미 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
   <block id="76664c0be6648ca07148b71896d0b43f" category="cell">인증서가 30일 이내에 만료됩니다.</block>
   <block id="28465e6d0a7418e305f9cb11dc04a4c1" category="cell">인증서가 7일 이내에 만료됩니다.</block>
   <block id="61993b64115728d8f5ac3de889d7d5cd" category="cell">인증서가 3일 이내에 만료되거나 이미 만료되었습니다.</block>
-  <block id="42a775dbc829e1685b50072b5c687f36" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 SSL 인증서가 만료되기 전에 업데이트하십시오. 업데이트된 SSL 인증서를 제공하려면 "UpdateIdpConfiguration" API 메서드와 RefreshCertificateExpirationTime = true"를 사용합니다.</block>
-  <block id="308f88c7343bcde5928afc202705f02e" category="list-text">* 비일관성 BondModes *: VLAN 장치의 연결 모드가 누락되었습니다. 이 고장은 예상 본드 모드와 현재 사용 중인 본드 모드를 표시합니다.</block>
-  <block id="c4b0c56cdcb13f6eb48c16acd3406015" category="list-text">* 비일관성 *: 이 클러스터 고장은 다음 조건 중 하나를 나타냅니다.</block>
   <block id="9c1485d86c325377a29a8d89037f06b2" category="list-text">Bond1G 불일치: Bond1G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</block>
   <block id="b9c6a0b1df2e02b3cef9f3c2de4ae589" category="list-text">Bond10G 불일치: Bond10G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</block>
   <block id="59634c985623b38ef29cbc5c41cdcd71" category="paragraph">이 장애는 관련된 MTU 값과 함께 문제의 노드나 노드를 표시합니다.</block>
-  <block id="620daeadf483244c04416e434f2e4d13" category="list-text">* 비일관성 RoutingRules *: 이 인터페이스의 라우팅 규칙이 일치하지 않습니다.</block>
-  <block id="6003e673b4f47d2faaa859225da1d825" category="list-text">* inistentSubnetMasks *: VLAN 장치의 네트워크 마스크가 VLAN에 대해 내부적으로 기록된 네트워크 마스크와 일치하지 않습니다. 이 고장은 예상 네트워크 마스크와 현재 사용 중인 네트워크 마스크를 표시합니다.</block>
-  <block id="4473a3fae64fa050af714307a3d7b1aa" category="list-text">* incorrectBondPortCount *: 본드 포트 수가 올바르지 않습니다.</block>
-  <block id="cc5e0286c94c3e6a13bf7d8e041a5504" category="list-text">* invalidConfiguredFiberChannelNodeCount *: 두 개의 예상 Fibre Channel 노드 연결 중 하나가 성능 저하 상태입니다. 이 오류는 하나의 Fibre Channel 노드만 연결되어 있을 때 나타납니다.</block>
-  <block id="4ec9e40a68235575d44c72919c32ed58" category="paragraph">* 해결 방법 *: 클러스터 네트워크 연결 및 네트워크 케이블 연결을 확인하고 실패한 서비스가 있는지 확인합니다. 네트워크 또는 서비스 문제가 없는 경우 NetApp Support에서 파이버 채널 노드 교체를 문의하십시오.</block>
-  <block id="dc5f232ad0b1caa101175e3e4dab8506" category="list-text">* irqBalanceFailed *: 인터럽트의 균형을 조정하는 동안 예외가 발생했습니다.</block>
-  <block id="67e09365eaa9e6552f93e08f7dac1c39" category="list-text">* kmipCertificateFault *:</block>
   <block id="a83063b29bf44cba1572eff98be835ac" category="list-text">루트 인증 기관(CA) 인증서의 만료 시기가 다가오고 있습니다.</block>
-  <block id="73b7366ae126318687a660f1ed3b5278" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 만료 날짜가 30일 이상 지난 루트 CA에서 새 인증서를 얻고 ModifyKeyServerKmip을 사용하여 업데이트된 루트 CA 인증서를 제공하십시오.</block>
   <block id="675218367716da949fbd1f666ae7a0b8" category="list-text">클라이언트 인증서 만료 시기가 다가오고 있습니다.</block>
-  <block id="be01cf17e213530523b7b0ad0205710a" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModifyKeyServerKmip을 사용하여 만료되는 KMIP 클라이언트 인증서를 새 인증서로 교체합니다.</block>
   <block id="c7ba1181d7c73f8ae44eb82564f844e1" category="list-text">루트 인증 기관(CA) 인증서가 만료되었습니다.</block>
   <block id="7bcb86f53cf99e8fee971fd42ab8522c" category="list-text">클라이언트 인증서가 만료되었습니다.</block>
-  <block id="0e55cc7d9c3fbf1fb064368e517acda6" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModfyKeyServerKmip을 사용하여 만료된 클라이언트 인증서를 새 인증서로 교체합니다.</block>
   <block id="c715de23293d88a895e3f9db11924437" category="list-text">루트 인증 기관(CA) 인증서 오류입니다.</block>
-  <block id="cfbcd481e1c862016166f35836afbb55" category="paragraph">* 해결 방법 *: 이 오류를 해결하려면 올바른 인증서가 제공되었는지 확인하고 필요한 경우 루트 CA에서 인증서를 다시 획득합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</block>
   <block id="f177df8fc231b491022233727b0c0050" category="list-text">클라이언트 인증서 오류입니다.</block>
-  <block id="8580fb02572d7828a3c0476e1bf90ec4" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 올바른 KMIP 클라이언트 인증서가 설치되었는지 확인하십시오. 클라이언트 인증서의 루트 CA가 EKS에 설치되어야 합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</block>
-  <block id="cea89a6577e3bd6d3d76b1252a452fdc" category="list-text">* kmipServerFault *:</block>
   <block id="75c3b3bb89bde01f9166a94cbfa98588" category="list-text">연결 실패</block>
-  <block id="eb5df70634c59ed45d3f1f75d81ef6d7" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 외부 키 서버가 활성 상태인지, 네트워크를 통해 연결할 수 있는지 확인하십시오. 연결을 테스트하려면 TestKeyServerKimp와 TestKeyProviderKmip을 사용합니다.</block>
   <block id="986de67b1de46a65e6d7064b31760807" category="list-text">인증에 실패했습니다</block>
-  <block id="0a8df59f6ac0b33d9b36e48646700b89" category="paragraph">* 해결 방법 *: 이 문제를 해결하려면 올바른 루트 CA 및 KMIP 클라이언트 인증서를 사용하고 KMIP 개인 키와 클라이언트 인증서가 일치하는지 확인하십시오.</block>
   <block id="731e024ead4b1b6cdedeb8e74373c451" category="list-text">서버 오류입니다</block>
-  <block id="3a84361bee7613c2f9b32f4fe3d818dd" category="paragraph">* 해결 방법 *: 이 고장을 해결하려면 오류에 대한 세부 정보를 확인하십시오. 반환된 오류에 따라 외부 키 서버의 문제 해결이 필요할 수 있습니다.</block>
-  <block id="bd75d4ced964c295529a509f21f1ca2f" category="list-text">* memoryEcThreshold *: 수정 가능 또는 수정할 수 없는 많은 ECC 오류가 감지되었습니다. 오류 유형의 심각도가 반환되면 이는 DIMM 오류로 인한 것일 수 있습니다.</block>
-  <block id="ea2cfe992f7259d96b132eb68e90b066" category="list-text">* memoryUsageThreshold *: 메모리 사용량이 정상보다 높습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
-  <block id="9b9100297a58b5b6701a8d3cab0b9441" category="admonition">고장에 대한 자세한 내용은 세부 정보 제목을 참조하십시오.</block>
   <block id="c83ee67f36ad5027c76f0cc2d7c1c6b5" category="cell">시스템 메모리가 부족합니다.</block>
   <block id="9b99febffdc6bdc6ad5931f3424b99e7" category="cell">시스템 메모리가 매우 부족합니다.</block>
   <block id="f0c41738998b4e7c8da03ee30be0e125" category="cell">시스템 메모리가 완전히 소모되었습니다.</block>
-  <block id="d6109352c16d0a87b3bffb8a4fd562a7" category="list-text">* metadataClusterFull *: 단일 노드 손실을 지원하기에 충분한 가용 메타데이터 스토리지 공간이 없습니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</block>
   <block id="cb5b46f0ba19f5a116bf29e63d30a1cc" category="list-text">stage5CompletyConsumered (Critical) 1; 쓰기 또는 새 iSCSI 연결이 허용되지 않습니다. 현재 iSCSI 연결이 유지됩니다. 클러스터에 용량을 더 추가할 때까지 쓰기에 실패합니다. 데이터를 삭제 또는 삭제하거나 노드를 더 추가합니다.</block>
-  <block id="f31a9d9d3c0727ac62def022d0bed3dc" category="list-text">* mtuCheckFailure *: 네트워크 장치가 올바른 MTU 크기로 구성되지 않았습니다.</block>
-  <block id="8a2dc0486d7b1ebd541373618bd1e95c" category="paragraph">* 해결 방법 *: 모든 네트워크 인터페이스 및 스위치 포트가 점보 프레임(최대 9000바이트 크기)에 맞게 구성되었는지 확인합니다.</block>
-  <block id="260012cf7c246cd7b2e8546c318d77fc" category="list-text">* networkConfig *: 이 클러스터 오류는 다음 조건 중 하나를 나타냅니다.</block>
   <block id="9f7d0d58efdf92487c79aa73770cf27a" category="list-text">예상된 인터페이스가 존재하지 않습니다.</block>
   <block id="1034f427f692ffaeb3c342ef7af5a6d1" category="list-text">중복된 인터페이스가 있습니다.</block>
   <block id="b8edcaaaa4084c689bfac36d5cb428a6" category="list-text">구성된 인터페이스가 다운되었습니다.</block>
   <block id="e475633cda3cbb184cee43276947ca84" category="list-text">네트워크를 다시 시작해야 합니다.</block>
-  <block id="d2382b214eed0b5437f0d701c5cf1d7d" category="list-text">*nobaableVirtualNetworkIPAddresses*: IP 주소 블록에 사용 가능한 가상 네트워크 주소가 없습니다.</block>
-  <block id="caf33b4965ca5d62bc0006f2de92e23c" category="list-text">*nodeHardwareFault(네트워크 인터페이스 &lt;name&gt;이(가) 다운되었거나 케이블이 뽑혀 있음)*: 네트워크 인터페이스가 다운되었거나 케이블이 뽑혀 있습니다.</block>
-  <block id="a147298dce83816e8fef754e9a019795" category="paragraph">* 해결 방법 *: 노드나 노드의 네트워크 연결을 확인합니다.</block>
-  <block id="dfb229ee4b41e66cf4d93454b3ce28ea" category="list-text">* nodeHardwareFault(드라이브 암호화 가능 상태가 슬롯 &lt;node slot&gt;&lt;drive slot&gt; 에 있는 드라이브의 암호화 가능 상태와 일치하지 않음) *: 드라이브가 설치된 스토리지 노드와 암호화 기능이 일치하지 않습니다.</block>
-  <block id="1f2ff8eb7987e06eed6cae34807c4382" category="list-text">*nodeHardwareFault (이 노드 유형에 대해 슬롯 &lt;node slot&gt;&lt;drive slot&gt;의 드라이브에 대해 &lt;실제 크기&gt;가 잘못되었습니다. 예상 크기&gt;)*: 스토리지 노드에 이 노드의 크기가 잘못된 드라이브가 있습니다.</block>
-  <block id="b5eb7397616afe9154dad6b8ba699aa0" category="list-text">* nodeHardwareFault (지원되지 않는 드라이브가 슬롯 &lt;node slot&gt;&lt;drive slot&gt;에서 감지되었습니다. 드라이브 통계 및 상태 정보를 사용할 수 없습니다.) *: 스토리지 노드에 지원되지 않는 드라이브가 포함되어 있습니다.</block>
-  <block id="3bff90946d5c523cc029a2d3277de0fc" category="list-text">* nodeHardwareFault (슬롯 &lt;node slot&gt;&lt;drive slot&gt;의 드라이브가 펌웨어 버전 &lt;expected version&gt;을(를) 사용해야 하지만 지원되지 않는 버전 &lt;actual version&gt;을 사용) *: 스토리지 노드에 지원되지 않는 펌웨어 버전을 실행하는 드라이브가 포함되어 있습니다.</block>
-  <block id="f44cef85dc1d0fe9f53d7d29edd50d26" category="list-text">* 노드 유지보수 모드 *: 노드가 유지보수 모드에 있습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
   <block id="89acd6f6db6fbcc9df11b53320f0e951" category="cell">노드가 아직 유지보수 모드에 있음을 나타냅니다.</block>
   <block id="c0aace1177c81afddfae94211c14d139" category="cell">장애 발생 또는 활성 스탠바이로 인해 유지보수 모드가 비활성화되지 않았음을 나타냅니다.</block>
-  <block id="ecfcac64cb9e091560a72c9988f838cd" category="paragraph">* 해결 방법 *: 유지 관리가 완료되면 유지 관리 모드를 비활성화합니다. 오류 수준 고장이 지속될 경우 NetApp 지원에 지원을 문의하십시오.</block>
-  <block id="88226ac21c080b6003f57a3a683e5f92" category="list-text">* nodeOffline *: 요소 소프트웨어가 지정된 노드와 통신할 수 없습니다. 네트워크 연결을 확인합니다.</block>
-  <block id="163d7d95d40a785cc0f29c88c21aecd2" category="list-text">* notUsingLCPBondMode *: LACP 결합 모드가 구성되지 않았습니다.</block>
-  <block id="bb7561e0d84aa5ae90420603e7a721e9" category="paragraph">* 해결 방법 *: 스토리지 노드를 구축할 때 LACP 결합을 사용합니다. LACP가 활성화되어 있지 않고 올바르게 구성되어 있지 않으면 클라이언트에서 성능 문제가 발생할 수 있습니다.</block>
-  <block id="3e38c237bbc2a5fdc541d5ed818c0b3d" category="list-text">* ntpServerUnreachable *: 스토리지 클러스터가 지정된 NTP 서버 또는 서버와 통신할 수 없습니다.</block>
-  <block id="92a600ace7dfb6f92283702dce0041cd" category="paragraph">* 해결 방법 *: NTP 서버, 네트워크 및 방화벽에 대한 구성을 확인합니다.</block>
-  <block id="40db72535616e3184e05cd67679aeeae" category="list-text">* ntpTimeNotInSync *: 스토리지 클러스터 시간과 지정된 NTP 서버 시간 간의 차이가 너무 큽니다. 스토리지 클러스터가 자동으로 차이를 수정할 수 없습니다.</block>
-  <block id="3c6d0ac0ec237cac345a19d90713b0a3" category="paragraph">* 해결 방법 *: 설치 기본값 대신 네트워크 내부에 있는 NTP 서버를 사용합니다. 내부 NTP 서버를 사용하고 있고 문제가 지속되면 NetApp 지원 팀에 지원을 문의하십시오.</block>
-  <block id="de63893c8609bb7e56e0dec56ae70eb9" category="list-text">* nvramDeviceStatus *: NVRAM 장치에 오류가 있거나, 오류가 있거나, 오류가 발생했습니다. 이 결함에는 다음과 같은 심각도가 있습니다.</block>
-  <block id="4fce1d4db7770329afd2f91e39e0ce18" category="cell">하드웨어에 의해 경고가 감지되었습니다. 이 조건은 온도 경고와 같이 일시적인 것일 수 있습니다. nvmLifetimeError * nvmLifetimeStatus * energySourceLifetimeStatus * energySourceTemperatureStatus * warningThresholdExceeded</block>
-  <block id="ac79f26b492a5c0d08665f4d558be081" category="cell">하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다. 경고 수준 오류 외에 반환된 오류: * NVRAM 장치 마운트 지점이 없습니다. * NVRAM 장치 파티션이 존재하지 않습니다. * NVRAM 장치 파티션이 있지만 마운트되지 않았습니다.</block>
-  <block id="c2998542a9fb59195193c4fa281a4ea5" category="cell">하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다. * persistenceLost * armStatusSaveNArmed * csaveStatusError</block>
-  <block id="a3abfed3a2ffb64539c0b69c9124deaa" category="paragraph">* 해결 방법 *: 노드에서 장애가 발생한 하드웨어를 모두 교체합니다. 그래도 문제가 해결되지 않으면 NetApp Support에 문의하십시오.</block>
-  <block id="9504a69c88376dc1e6a4d43ff8ac4578" category="list-text">*powerSupplyError*: 이 클러스터 오류는 다음 조건 중 하나를 나타냅니다.</block>
   <block id="1aada3eca1e3ebdad5bf568c00f6618a" category="list-text">전원 공급 장치가 없습니다.</block>
   <block id="e3843a30f99965f6bf0fe2f2727273d3" category="list-text">전원 공급 장치에 장애가 발생했습니다.</block>
   <block id="a23d1fa9eb45a4686b769b2b24c1ad79" category="list-text">전원 공급 장치 입력이 없거나 범위를 벗어났습니다.</block>
-  <block id="d919fc2acd7cfac0636df577c97774c3" category="paragraph">* 해결 방법 *: 중복 전원이 모든 노드에 공급되는지 확인합니다. NetApp 지원 팀에 문의하십시오.</block>
-  <block id="65306cc0919388991ada89e601eceba3" category="list-text">* 프로비저닝됨 SpaceTooFull *: 클러스터의 전체 프로비저닝 용량이 너무 가득 찼습니다.</block>
-  <block id="579331cf6f36846c3088277e08ff6a59" category="paragraph">* 해결 방법 *: 프로비저닝된 공간을 더 추가하거나 볼륨을 삭제 및 제거합니다.</block>
-  <block id="a46406a6cc4c9540981cd49c66c90aea" category="list-text">* remoteRepAsyncDelayExceeded *: 복제에 대해 구성된 비동기 지연을 초과했습니다. 클러스터 간 네트워크 연결을 확인합니다.</block>
-  <block id="3fe884dac4dc35ae958497e1cdb67d99" category="list-text">* remoteRepClusterFull *: 타겟 스토리지 클러스터가 너무 가득 차 볼륨이 원격 복제를 일시 중지했습니다.</block>
-  <block id="e1593645fd1d05b9403fe3940b7fe5ba" category="paragraph">* 해결 방법 *: 타겟 스토리지 클러스터에서 일부 공간을 확보하십시오.</block>
-  <block id="7a61765fa4ec81faae60a35076835fc6" category="list-text">* remoteRepSnapshotClusterFull *: 타겟 스토리지 클러스터가 너무 꽉 찼기 때문에 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</block>
-  <block id="3e567b80ae1f72f86c8f6013655e4e37" category="list-text">* remoteRepSnapshotsExcedLimit *: 타겟 스토리지 클러스터 볼륨이 스냅샷 제한을 초과했기 때문에 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</block>
-  <block id="0bb34439d1cec4a82e7a074a0a8bcd04" category="paragraph">* 해결 방법 *: 타겟 스토리지 클러스터에서 스냅샷 제한을 늘립니다.</block>
-  <block id="ca55763fbc1c344898240d08faefd207" category="list-text">* scheduleActionError *: 하나 이상의 예약된 작업이 실행되었지만 실패했습니다. 예약된 활동이 다시 실행되고 성공하거나, 예약된 활동이 삭제되거나, 활동이 일시 중지되어 재개되면 결함이 지워집니다.</block>
-  <block id="eadcd5d07ba15628707e7892baee7e24" category="list-text">* sensorReadingFailed*: 베이스보드 관리 컨트롤러(BMC) 자체 테스트에 실패했거나 센서가 BMC와 통신할 수 없습니다.</block>
-  <block id="5007bccb447bd749f365258124c14746" category="list-text">* serviceNotRunning *: 필요한 서비스가 실행되고 있지 않습니다.</block>
-  <block id="368faa16b576b6911afcdc773b6af115" category="list-text">* sliceServiceTooFull *: 슬라이스 서비스에 할당된 용량이 너무 적습니다.</block>
-  <block id="f3272af6f360485cdd94dcb40a6a35e0" category="list-text">* sliceServiceUnhealthy *: 시스템에서 슬라이스 서비스가 정상이 아닌 것으로 감지되었으며 자동으로 서비스 해제됩니다.</block>
   <block id="37b556315ca9e4d0bf96bfbb72a90068" category="list-text">심각도 = 경고: 작업이 수행되지 않습니다. 이 경고 기간은 6분 후에 만료됩니다.</block>
-  <block id="5546ecaa357fbd0dfbbc2422d0d9e25e" category="paragraph">* 해결 방법 *: 네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 슬라이스 서비스에 액세스할 수 있거나 서비스가 해체되면 결함이 지워집니다.</block>
-  <block id="952b7fe3b8c0f559b1cf73cf603c9207" category="list-text">* sshEnabled *: SSH 서비스가 스토리지 클러스터의 하나 이상의 노드에서 활성화됩니다.</block>
-  <block id="2299b4932097c60c6b5137a7855698e9" category="paragraph">* 해결 방법 *: 해당 노드나 노드에서 SSH 서비스를 사용하지 않도록 설정하거나 NetApp Support에 지원을 문의하십시오.</block>
-  <block id="18d7157b4f09edafbf336849e92f6e8b" category="list-text">* sslCertificateExpiration *: 이 노드와 관련된 SSL 인증서가 만료되었거나 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
-  <block id="24337d5c53a250380f9f025eabcd877d" category="paragraph">* to Resolve *: SSL 인증서를 갱신합니다. 필요한 경우 NetApp Support에 지원을 요청하십시오.</block>
-  <block id="b10f2f2b7f0de84924c35cf78fe313cb" category="list-text">* strandedCapacity *: 단일 노드는 스토리지 클러스터 용량의 절반 이상을 차지합니다. 시스템은 데이터 이중화를 유지하기 위해 최대 노드의 용량을 줄여 일부 블록 용량이 고립되도록 합니다(미사용).</block>
-  <block id="48f9b130ed193960a70c0842c20c7754" category="paragraph">* 해결 방법 *: 기존 스토리지 노드에 드라이브를 더 추가하거나 클러스터에 스토리지 노드를 추가합니다.</block>
-  <block id="5803726e8d3e39b54f26c2e025925d9c" category="list-text">* tempSensor *: 온도 센서가 정상 온도보다 높은 온도를 보고합니다. 이 고장은 전원 공급 장치 오류 또는 팬센서 오류와 함께 발생할 수 있습니다.</block>
-  <block id="8f5913b1030e06205949819afb5e4b4e" category="paragraph">* 해결 방법 *: 저장소 클러스터 근처의 공기 흐름을 방해하는 물체가 있는지 확인합니다. 필요한 경우 NetApp Support에 지원을 요청하십시오.</block>
-  <block id="cc63e8b7a4dd8a19e39b671cfc9f964f" category="list-text">* 업그레이드 *: 24시간 이상 업그레이드가 진행 중입니다.</block>
-  <block id="b3c8fa9306244bc646dde8f6d37da607" category="paragraph">* 해결 방법 *: 업그레이드를 재개하거나 NetApp 지원에 문의하여 지원을 받으십시오.</block>
-  <block id="5504d9bc03b73838a5ba1b045a71fe98" category="list-text">* 비응답 서비스 *: 서비스가 응답하지 않습니다.</block>
-  <block id="29c84b8dff5f6363d5768dff67270b2f" category="list-text">* virtualNetworkConfig *: 이 클러스터 오류는 다음 조건 중 하나를 나타냅니다.</block>
   <block id="55bf2ffa334770172eb139c1cde366a6" category="list-text">인터페이스가 없습니다.</block>
   <block id="766b86c37ad51ee486163aec0a9fcc9b" category="list-text">인터페이스에 잘못된 네임스페이스가 있습니다.</block>
   <block id="48766e2b79a5b9849011f867e2a4543b" category="list-text">잘못된 넷마스크가 있습니다.</block>
   <block id="9ade69268a715c1a417af433fedcd21e" category="list-text">잘못된 IP 주소가 있습니다.</block>
   <block id="0a2b48020b48f8fbcf311a98dace5d74" category="list-text">인터페이스가 실행되고 있지 않습니다.</block>
   <block id="9672f91e71f82d57d55bef9837c3723c" category="list-text">노드에 불필요한 인터페이스가 있습니다.</block>
-  <block id="555e9b90387cad0f45f64515bdf10601" category="list-text">* 볼륨 성능이 저하됨 *: 보조 볼륨의 복제 및 동기화가 완료되지 않았습니다. 동기화가 완료되면 메시지가 지워집니다.</block>
-  <block id="6420fe8780e3511f4fd0db14a3eb7f23" category="list-text">* volumesOffline *: 스토리지 클러스터에 있는 하나 이상의 볼륨이 오프라인 상태입니다. 볼륨이 저하됨 장애도 나타납니다.</block>
   <block id="dbdd6377389228728e6ab594c50ad011" category="doc">사용자 계정</block>
   <block id="0ffff7a37fbfc4f2d38407e8bb1bc84a" category="paragraph">사용자 계정은 NetApp Element 소프트웨어 기반 네트워크의 스토리지 리소스에 대한 액세스를 제어합니다. 볼륨을 생성하기 전에 최소 하나의 사용자 계정이 필요합니다.</block>
   <block id="89a1e2c5ed36e2253339857240ea7a91" category="paragraph">볼륨을 생성하면 계정에 할당됩니다. 가상 볼륨을 생성한 경우 해당 계정은 스토리지 컨테이너입니다. 이 계정에는 할당된 볼륨에 액세스하는 데 필요한 CHAP 인증이 포함되어 있습니다.</block>
@@ -2649,4 +2504,261 @@
   <block id="47c4fb98f272f850da400ba07b3981fa" category="paragraph-title">Element vCenter 플러그인 4.10 이전 버전에 대한 수정 조치</block>
   <block id="d495047561c1a08074d3afeeb5b5d172" category="paragraph-title">VMware vSphere 사전 요구 사항</block>
   <block id="3903fd261f224ad8af888f893eb71a5e" category="paragraph-title">플러그인에서 지원하는 VMware vSphere 버전</block>
+  <block id="b329e1366594104100e84e0fe2d3e122" category="list-text">* authenticationServiceFault *</block>
+  <block id="3d4a279e1c8f0e33967406751cad4d98" category="paragraph">하나 이상의 클러스터 노드에서 인증 서비스가 예상대로 작동하지 않습니다.</block>
+  <block id="0ff1ab125d3221f1a56e3d2e6d4d386d" category="paragraph">NetApp 지원 팀에 문의하십시오.</block>
+  <block id="d3f3bc83a262e647c0ad5aef78184380" category="list-text">* 가용한 VirtualNetworkIPAddressLow *</block>
+  <block id="06d462fe4791521583aa1bf7b83f92a3" category="paragraph">IP 주소 블록의 가상 네트워크 주소 수가 적습니다.</block>
+  <block id="8f5617c015bbe493df6b7e19808435ea" category="paragraph">이 오류를 해결하려면 가상 네트워크 주소 블록에 더 많은 IP 주소를 추가하십시오.</block>
+  <block id="aecf304b365c556b9a8747ab26167ed4" category="list-text">* 블록클러스터풀 *</block>
+  <block id="1b3b2f72f429aa6470095a49affa4ebc" category="paragraph">단일 노드 손실을 지원하기에 충분한 여유 블록 스토리지 공간이 없습니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</block>
+  <block id="3db1b2b278c0d698957be3ed18d42de5" category="paragraph">이 오류를 해결하려면 볼륨을 제거 또는 삭제하거나 스토리지 클러스터에 다른 스토리지 노드를 추가하십시오.</block>
+  <block id="d224dcc4acfd1590ca54fc5fcc706716" category="list-text">* 블록성능이 저하됨 *</block>
+  <block id="4121923b447abdbd7a192a5ef89111dc" category="paragraph">장애로 인해 블록 데이터가 더 이상 완전히 복제되지 않습니다.</block>
+  <block id="a88586630cec9d0f71da40e80ad27de9" category="paragraph">* 참고: * 경고 상태는 Triple Helix 시스템에서만 발생할 수 있습니다.</block>
+  <block id="51a501fd73ea9d25413ddaac25474218" category="paragraph">이 오류를 해결하려면 오프라인 노드 또는 블록 서비스를 복원하거나 NetApp Support에 지원을 문의하십시오.</block>
+  <block id="458e92b0146b80dcf940c4767572c87a" category="list-text">* BLOCKServiceTooFull *</block>
+  <block id="4aa346025bbf13f024d8c2a129322102" category="paragraph">블록 서비스가 너무 많은 공간을 사용하고 있습니다.</block>
+  <block id="c3e08cc4728f0335f4e0126487555186" category="paragraph">이 오류를 해결하려면 프로비저닝된 용량을 더 추가합니다.</block>
+  <block id="440a9a79248761de7d7303ea47a0c2ca" category="list-text">* blockServiceUnhealthy *</block>
+  <block id="76c3f3974c0bb69705ba25d138d9a599" category="paragraph">블록 서비스가 정상 상태가 아닌 것으로 감지되었습니다.</block>
+  <block id="5f0cbed0ef8a3bd7e904fa0b7d66df2a" category="paragraph">네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 이 고장은 블록 서비스에 액세스하거나 서비스를 폐기한 경우 삭제됩니다.</block>
+  <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed *</block>
+  <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">베이스보드 관리 컨트롤러(BMC)가 자체 테스트에 실패했습니다.</block>
+  <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">도움이 필요하면 NetApp 지원에 문의하십시오.</block>
+  <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">Element 12.5 이상으로 업그레이드하는 동안<block ref="e481e4f410d1414c62832507e5ec787b" prefix=" " category="inline-code"></block> 장애가 이미 발생한 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해서는 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 를 실행합니다<block ref="e481e4f410d1414c62832507e5ec787b" prefix=" " category="inline-code"></block> 전체 클러스터에서 업그레이드가 완료된 후 경고 장애 발생.</block>
+  <block id="799dde904a69e8b3fcf523b6166fba1f" category="list-text">* ClockSkewExceedsFaultThreshold *</block>
+  <block id="e81a409bc10ef4f9e8f7f0a560b3a8df" category="paragraph">클러스터 마스터와 토큰을 제공하는 노드 간의 시간 차이가 권장 임계값을 초과합니다. 스토리지 클러스터는 노드 간의 시간 차이를 자동으로 수정할 수 없습니다.</block>
+  <block id="735738d3bd7e45f7b009dc755262bf43" category="paragraph">이 오류를 해결하려면 설치 기본값이 아닌 네트워크 내부의 NTP 서버를 사용하십시오. 내부 NTP 서버를 사용하는 경우 NetApp 지원 팀에 지원을 문의하십시오.</block>
+  <block id="b5a7f7143405043d487707705c781e73" category="list-text">* 클러스터 동기화 *</block>
+  <block id="37fe998b916de03392c1aadbf0c82317" category="paragraph">공간 부족 상태가 있으며 오프라인 블록 저장소 드라이브의 데이터를 아직 활성 상태인 드라이브와 동기화할 수 없습니다.</block>
+  <block id="d75057c89facefaff72318b33c8ce093" category="paragraph">이 오류를 해결하려면 스토리지를 더 추가하십시오.</block>
+  <block id="a8de45c5e7348a2069c0e71dd8cf55bd" category="list-text">* 클러스터풀 *</block>
+  <block id="ca7e4275e7d79d35a3873ca295254e8f" category="paragraph">스토리지 클러스터에 사용 가능한 스토리지 공간이 더 이상 없습니다.</block>
+  <block id="5a010e945d70de19b50f1707de988f80" category="list-text">* 클러스터로IOPSARREOverProvisioned *</block>
+  <block id="adf652dfe07aab8085b7a01d174cf9e0" category="paragraph">클러스터 IOPS가 초과 프로비저닝됩니다. 모든 최소 QoS IOPS의 합이 클러스터의 예상 IOPS보다 큽니다. 모든 볼륨에 대해 최소 QoS를 동시에 유지할 수는 없습니다.</block>
+  <block id="44572f314d1ad2072acfc6a26b1e91ca" category="paragraph">이 문제를 해결하려면 볼륨에 대한 최소 QoS IOPS 설정을 낮추십시오.</block>
+  <block id="45a258c05276cacb5b1d7863b0d316e4" category="list-text">* CpuThermalEventThreshold *</block>
+  <block id="2e83559dc365c7e917e7fba7009ec948" category="paragraph">하나 이상의 CPU에 대한 CPU 열 이벤트 수가 구성된 임계값을 초과합니다.</block>
+  <block id="b045aebb370ef7c237c48505464a66fe" category="paragraph">10분 내에 새 CPU 열 이벤트가 감지되지 않으면 경고가 자동으로 해결됩니다.</block>
+  <block id="733bd1b33340bdd3eab07dabd26ad1eb" category="list-text">* disableDriveSecurityFailed *</block>
+  <block id="550957ff4e127baf9356e53acd6bec29" category="paragraph">클러스터가 드라이브 보안(저장 시 암호화)을 사용하도록 구성되지 않았지만 하나 이상의 드라이브에 드라이브 보안이 설정되어 있습니다. 즉, 해당 드라이브에서 드라이브 보안을 해제하지 못했습니다. 이 고장은 "경고" 심각도로 기록됩니다.</block>
+  <block id="9b7fe003823e01b6d191cd130cac6e23" category="paragraph">이 고장을 해결하려면 드라이브 보안을 비활성화할 수 없는 이유에 대한 고장 세부 정보를 확인하십시오. 가능한 원인은 다음과 같습니다.</block>
+  <block id="c7dbd3edb899d383f271fbaddff857c9" category="paragraph">올바른 인증 키를 제공하더라도 보안이 비활성화되지 않는 드라이브를 복구할 수 있습니다. 이 작업을 수행하려면 시스템에서 드라이브를 Available(사용 가능) 으로 이동하여 드라이브를 제거하고 드라이브에서 보안 삭제를 수행한 다음 Active(활성) 로 다시 이동합니다.</block>
+  <block id="5f195070878aa77d5ab08b4ac4a54f3d" category="list-text">* 연결 해제 클러스터 쌍 *</block>
+  <block id="ca505a259b750fe5a33a46d3a0b1380e" category="paragraph">클러스터 쌍의 연결이 끊어지거나 잘못 구성되었습니다.</block>
+  <block id="0e5226fbc6080c457c2049fae2c59580" category="paragraph">클러스터 간의 네트워크 연결을 확인합니다.</block>
+  <block id="3fd928a4db83d2fce8a6a22ae18c96e5" category="list-text">* 연결 해제 RemoteNode *</block>
+  <block id="19fc4b6eefc66be47a1245164a1e0a30" category="paragraph">원격 노드의 연결이 끊겼거나 잘못 구성되었습니다.</block>
+  <block id="bda8d7e202992031643b7f0dd34f95b6" category="paragraph">노드 간 네트워크 연결을 확인합니다.</block>
+  <block id="c0ab26c4daa61064202eea521001fd78" category="list-text">* 연결 해제 SnapMirror 엔드포인트 *</block>
+  <block id="d295ddb65575ec2f7c53600c865abb3f" category="paragraph">원격 SnapMirror 엔드포인트의 연결이 끊어지거나 잘못 구성되었습니다.</block>
+  <block id="20d0ab0df11b1d6b1906d3ba602b7a60" category="paragraph">클러스터와 원격 SnapMirrorEndpoint 간의 네트워크 연결을 확인합니다.</block>
+  <block id="306920e20dd0fe16e804aba58ddd2916" category="list-text">* 드라이브 사용 가능 *</block>
+  <block id="ae53472bfa7653cba79cb2a0c97df1b7" category="paragraph">클러스터에서 하나 이상의 드라이브를 사용할 수 있습니다. 일반적으로 모든 클러스터에는 모든 드라이브가 추가되어야 하며 사용 가능한 상태에서는 없어야 합니다. 이 오류가 예기치 않게 나타날 경우 NetApp 지원 팀에 문의하십시오.</block>
+  <block id="931adb816c53335ac4fa33d4806e546b" category="paragraph">이 오류를 해결하려면 사용 가능한 드라이브를 스토리지 클러스터에 추가하십시오.</block>
+  <block id="e44d27844a03d47017ba17a39a9b084b" category="list-text">* 드라이브 실패 *</block>
+  <block id="8de5bd92861e635fcf73e7132320b13e" category="paragraph">하나 이상의 드라이브에 장애가 발생하면 클러스터가 이 오류를 반환하고 다음 조건 중 하나를 표시합니다.</block>
+  <block id="4d76376d1fdfa802843702a2b8cfb46f" category="paragraph">이 문제를 해결하려면:</block>
+  <block id="e9d2d415045856f2ca7f232b17779252" category="list-text">* 드라이브 상태 결함 *</block>
+  <block id="ed77497765047a5cf8d5a44d362b2e87" category="paragraph">드라이브가 SMART 상태 점검에 실패하여 드라이브의 기능이 저하되었습니다. 이 결함의 심각도는 다음과 같습니다.</block>
+  <block id="58b8e7725ad2228baeb985d92f7b7d73" category="paragraph">이 고장을 해결하려면 드라이브를 교체하십시오.</block>
+  <block id="56b8d37bfe2dd64bbdf23e1e3f2f7ea7" category="list-text">* driveWearFault *</block>
+  <block id="e675bb0d238256c785eec015e9bb8114" category="paragraph">드라이브의 남은 수명이 임계값 아래로 떨어졌지만 여전히 작동하고 있습니다. 이 결함에는 위험 및 경고라는 두 가지 심각도 수준이 있을 수 있습니다.</block>
+  <block id="8f0cd9a07c4f987dbf40bc8ac46d0623" category="paragraph">이 고장을 해결하려면 드라이브를 곧 교체하십시오.</block>
+  <block id="6bb4a8aa55442d93640dd64e3af9591b" category="list-text">* duplicateClusterMasterCandidate *</block>
+  <block id="6c6cd406a169110c850887e787bf23b5" category="paragraph">둘 이상의 스토리지 클러스터 마스터 후보가 감지되었습니다.</block>
+  <block id="3f881480536a97ff08a0d4e8479d95f8" category="list-text">* enableDriveSecurityFailed *</block>
+  <block id="6fade1bd2a365206b6a213e2b5b00c62" category="paragraph">클러스터가 드라이브 보안(저장된 암호화)을 요구하도록 구성되었지만 하나 이상의 드라이브에서 드라이브 보안을 활성화할 수 없습니다. 이 고장은 "경고" 심각도로 기록됩니다.</block>
+  <block id="8019ecfd9e8dbe87d5f5d4dc8e47f11d" category="paragraph">이 고장을 해결하려면 드라이브 보안을 활성화할 수 없는 이유에 대한 고장 세부 정보를 확인하십시오. 가능한 원인은 다음과 같습니다.</block>
+  <block id="764076ccbd76ed5a3cfb4019ee6c76a3" category="list-text">드라이브에서 활성화 작업이 실패했습니다. 잘못된 키를 획득했을 수 있는지 확인하십시오. 두 가지 모두 고장의 원인이 아니라면 드라이브를 교체해야 할 수 있습니다.</block>
+  <block id="5aa2818b67b277b20181651d7f984bac" category="list-text">* EnembleDegraded *</block>
+  <block id="3b3e099ccd971f57b43b46533613607d" category="paragraph">하나 이상의 앙상블 노드에 대한 네트워크 연결 또는 전원이 손실되었습니다.</block>
+  <block id="56c3dd0e50c6cf4993350d6aeac7f9bd" category="paragraph">이 오류를 해결하려면 네트워크 연결 또는 전원을 복원하십시오.</block>
+  <block id="9a7ee3317b3f58ab912aa398126464fc" category="list-text">* 예외 *</block>
+  <block id="f876d0eee683cd78e680d10a4e6544ac" category="paragraph">고장이 루틴 고장을 제외한 것으로 보고되었습니다. 이러한 고장은 오류 대기열에서 자동으로 삭제되지 않습니다.</block>
+  <block id="1252af204b6a81b333395f05ae66d195" category="list-text">* failedSpaceTooFull *</block>
+  <block id="2fd17e6f1ee2875e5116bdddb35a4bdb" category="paragraph">블록 서비스가 데이터 쓰기 요청에 응답하지 않습니다. 이로 인해 슬라이스 서비스의 공간이 부족하여 실패한 쓰기를 저장할 수 없습니다.</block>
+  <block id="7d5092acb3ccf2843e39faff0e6f93c8" category="paragraph">이 오류를 해결하려면 블록 서비스 기능을 복원하여 쓰기가 정상적으로 계속되고 장애가 발생한 공간이 슬라이스 서비스에서 플러시되도록 합니다.</block>
+  <block id="cdf72a6b22d3388918f3843825a6e821" category="list-text">* 팬센서 *</block>
+  <block id="f027e93cb191c3a34b63d2380336aa2f" category="paragraph">팬 센서가 고장났거나 없습니다.</block>
+  <block id="7820c1d9ad4697a94c323676b62aef9c" category="paragraph">이 고장을 해결하려면 장애가 발생한 하드웨어를 모두 교체하십시오.</block>
+  <block id="d46186bf1074b548dc7e656292fe9d79" category="list-text">* 광섬유 채널 액세스 저하됨 *</block>
+  <block id="c1dbe321100df10efa6ed1cb882091dc" category="paragraph">Fibre Channel 노드가 스토리지 IP를 통해 스토리지 클러스터의 다른 노드에 일정 기간 응답하지 않습니다. 이 상태에서는 노드가 응답하지 않는 것으로 간주되어 클러스터 장애가 발생합니다.</block>
+  <block id="92f4ebeef8956a175af4d3e1ec7b1c15" category="paragraph">네트워크 연결을 확인합니다.</block>
+  <block id="010012bcf587a096a5299b7b1a55e19e" category="list-text">* 광섬유 채널 액세스사용할 수 없음 *</block>
+  <block id="bf67c87d37b9233d02e142302836fd57" category="paragraph">모든 Fibre Channel 노드가 응답하지 않습니다. 노드 ID가 표시됩니다.</block>
+  <block id="9a239bb37b76456edd6beae3f86996bf" category="list-text">* 광섬유 채널 ActiveIxL *</block>
+  <block id="7b1e90f542ce632a3d53bd8584b6d818" category="paragraph">IxL Nexus 수가 Fibre Channel 노드당 지원되는 활성 세션 8000개 한도에 근접하고 있습니다.</block>
+  <block id="7d8bc88f1f8ee937dacd85baa429de19" category="paragraph">이 고장을 해결하려면 IxL Nexus 수를 Best Practice Limit 인 5500 미만으로 줄이십시오.</block>
+  <block id="bb8e93e925fd43a4aea012f3ee50c111" category="list-text">* 광섬유 채널 구성 *</block>
+  <block id="6894d61b116b1aed9a5f537bbf47060f" category="paragraph">이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</block>
+  <block id="b9e3ca72a9c87848342ca9f2c269ea2d" category="list-text">* 광섬유 채널 IOPS *</block>
+  <block id="1920210ab5977cb3b8fbce0d869553e7" category="paragraph">총 IOPS 수가 클러스터의 파이버 채널 노드에 대한 IOPS 제한에 근접하고 있습니다. 제한 사항은 다음과 같습니다.</block>
+  <block id="0bcb81681e0f1dd4a80519a70edf9f0e" category="paragraph">이 오류를 해결하려면 사용 가능한 모든 Fibre Channel 노드에서 로드 밸런싱을 조정합니다.</block>
+  <block id="6675d019f3da60337f04e5cbade63637" category="list-text">* 광섬유 채널 StaticIxL *</block>
+  <block id="fcebb97bf64928933388bc235f02631d" category="paragraph">IxL Nexus 수가 Fibre Channel 노드당 지원되는 16000개의 정적 세션 제한에 근접하고 있습니다.</block>
+  <block id="2d89e20951d3587ba7465143c06aaed8" category="paragraph">이 고장을 해결하려면 IxL Nexus 개수를 11000의 모범 사례 한도 미만으로 줄이십시오.</block>
+  <block id="1732cf9a398a21acc054d31275c3e4bb" category="list-text">파일시스템 용량 낮음*</block>
+  <block id="813d286021d5006aabfe635f27b246a1" category="paragraph">파일 시스템 중 하나에 공간이 부족합니다.</block>
+  <block id="fe98c55781fece742fe24f76102b689e" category="paragraph">이 오류를 해결하려면 파일 시스템에 용량을 더 추가하십시오.</block>
+  <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">FileSystemIsReadOnly * 를 참조하십시오</block>
+  <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">파일 시스템이 읽기 전용 모드로 이동되었습니다.</block>
+  <block id="5f1fcf528df0559c0c163e896dc72660" category="list-text">* fipsDrivesMismatch *</block>
+  <block id="96ed4629ccb5564ac27ae76d12178e30" category="paragraph">FIPS가 아닌 드라이브가 FIPS가 지원되는 스토리지 노드에 물리적으로 삽입되었거나 FIPS 드라이브가 아닌 스토리지 노드에 물리적으로 삽입되었습니다. 노드당 단일 장애가 발생하고 영향을 받는 모든 드라이브가 나열됩니다.</block>
+  <block id="082f13006de0717f192a481c84b22cbc" category="paragraph">이 고장을 해결하려면 문제가 있는 일치하지 않는 드라이브를 제거하거나 교체합니다.</block>
+  <block id="49df85c8f45ea1b4767845c5d3f3d75a" category="list-text">* fipsDrivesOutOfCompliance * 를 참조하십시오</block>
+  <block id="110730347629920aa950558bf5dce6c1" category="paragraph">시스템에서 FIPS 드라이브 기능이 활성화된 후 저장된 암호화 기능이 비활성화되었음을 감지했습니다. 이 장애는 FIPS 드라이브 기능이 설정되어 있고 스토리지 클러스터에 비 FIPS 드라이브 또는 노드가 있을 때도 생성됩니다.</block>
+  <block id="bb748fce4f28e679df6a1f3042e69e11" category="paragraph">이 오류를 해결하려면 저장 시 암호화 를 설정하거나 스토리지 클러스터에서 비 FIPS 하드웨어를 제거합니다.</block>
+  <block id="96ec70b38290cc8fc3a07d4bd0c90905" category="list-text">* fipsSelfTestFailure *</block>
+  <block id="4c0799c572d6eac1532665b1049b4ea9" category="paragraph">자체 테스트 중에 FIPS 서브시스템에서 오류가 감지되었습니다.</block>
+  <block id="5f9f64c586668d8ddd863f77bba4c987" category="list-text">* 하드웨어 구성 불일치 *</block>
+  <block id="f333ac88b43f31babae53274c15bc06a" category="list-text">* idPCertificateExpiration *</block>
+  <block id="a17d48e8302e765f05d40934bd23fb08" category="paragraph">타사 ID 공급자(IDP)와 함께 사용할 클러스터의 서비스 공급자 SSL 인증서가 만료되었거나 이미 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
+  <block id="70bcdf013a13b0190ab271d9007ad2aa" category="paragraph">이 오류를 해결하려면 SSL 인증서가 만료되기 전에 업데이트하십시오. 에서 UpdateIdpConfiguration API 메서드를 사용합니다<block ref="06bb6d2580744ecfa0d59d6bf1cdec6d" prefix=" " category="inline-code"></block> 업데이트된 SSL 인증서를 제공합니다.</block>
+  <block id="08e26e7bfc701688316e0238370278ee" category="list-text">* 비일관성 모델 *</block>
+  <block id="b475deeed44bd779162bd430e996d375" category="paragraph">VLAN 장치의 연결 모드가 누락되었습니다. 이 고장은 예상 본드 모드와 현재 사용 중인 본드 모드를 표시합니다.</block>
+  <block id="fda27fd12d2000d1a0b9936573376fa0" category="list-text">* 불일치 *</block>
+  <block id="c11e78a17f64007d25b6de5ae396d1d4" category="list-text">* 비일관성 RoutingRules *</block>
+  <block id="af06857975f05b4ba140f81c535ca3ca" category="paragraph">이 인터페이스의 라우팅 규칙이 일치하지 않습니다.</block>
+  <block id="926a2c4cb3cf87fae9e13dfa3e2caa73" category="list-text">* 불일관된 SubnetMasks *</block>
+  <block id="7d1e9c594e53a8f43fd2e85f37ade107" category="paragraph">VLAN 장치의 네트워크 마스크가 VLAN에 대해 내부적으로 기록된 네트워크 마스크와 일치하지 않습니다. 이 고장은 예상 네트워크 마스크와 현재 사용 중인 네트워크 마스크를 표시합니다.</block>
+  <block id="b7936e3535e0b5f9eaeeb75006994355" category="list-text">* incorrectBondPortCount *</block>
+  <block id="292bed6bf2c62fc06abbb69ceb5c05e5" category="paragraph">연결 포트 수가 올바르지 않습니다.</block>
+  <block id="f2c2819b516d693d039a7aa32af8d3dc" category="list-text">* invalidConfiguredFiberChannelNodeCount * 입니다</block>
+  <block id="402a374a3248e0f96e09fc2d10cebe37" category="paragraph">두 예상 Fibre Channel 노드 연결 중 하나의 성능이 저하되었습니다. 이 오류는 하나의 Fibre Channel 노드만 연결되어 있을 때 나타납니다.</block>
+  <block id="eb04be0e68b7d63ff43f8385efd1fb3d" category="paragraph">이 오류를 해결하려면 클러스터 네트워크 연결 및 네트워크 케이블을 확인하고 실패한 서비스가 있는지 확인합니다. 네트워크 또는 서비스 문제가 없는 경우 NetApp Support에서 파이버 채널 노드 교체를 문의하십시오.</block>
+  <block id="197ea048759cf2a3c28fe1b3ad5922dc" category="list-text">* irqBalancepFailed *</block>
+  <block id="75cb1f37fd7e04e43857a812aa410867" category="paragraph">인터럽트의 균형을 맞추는 동안 예외가 발생했습니다.</block>
+  <block id="cf537f1b6bdcbe2e937d858c2ad9a440" category="list-text">* kmipCertificateFault *</block>
+  <block id="21fcdd098f6b0aaa9762573a47aed4be" category="paragraph">이 오류를 해결하려면 만료 날짜가 30일 이상 지난 루트 CA에서 새 인증서를 얻고 ModifyKeyServerKmip을 사용하여 업데이트된 루트 CA 인증서를 제공하십시오.</block>
+  <block id="e4382147a31ec107999ed17309321c22" category="paragraph">이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModifyKeyServerKmip을 사용하여 만료되는 KMIP 클라이언트 인증서를 새 인증서로 교체합니다.</block>
+  <block id="692efdc83e3f60469159d3d2a4f23801" category="paragraph">이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModifyKeyServerKmip을 사용하여 만료된 KMIP 클라이언트 인증서를 새 인증서로 교체합니다.</block>
+  <block id="aca824d91fb33344ae485f3f13f440e3" category="paragraph">이 오류를 해결하려면 올바른 인증서가 제공되었는지 확인하고 필요한 경우 루트 CA에서 인증서를 다시 획득합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</block>
+  <block id="d861038fc3060d1bbabcf494d478b761" category="paragraph">이 고장을 해결하려면 올바른 KMIP 클라이언트 인증서가 설치되었는지 확인하십시오. 클라이언트 인증서의 루트 CA가 EKS에 설치되어야 합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</block>
+  <block id="68be3e3cd70668c002c914e87fae724a" category="list-text">* kmipServerFault *</block>
+  <block id="298ae445d03338ffd36d24840568df53" category="paragraph">이 고장을 해결하려면 외부 키 서버가 활성 상태인지, 네트워크를 통해 연결할 수 있는지 확인하십시오. 연결을 테스트하려면 TestKeyServerKimp 및 TestKeyProviderKmip 을 사용합니다.</block>
+  <block id="75ad399b81baf329f32312a75248f39d" category="paragraph">이 문제를 해결하려면 올바른 루트 CA 및 KMIP 클라이언트 인증서를 사용하고 있고 개인 키와 KMIP 클라이언트 인증서가 일치하는지 확인하십시오.</block>
+  <block id="0a7826f994a67c3fe12ec1cc7549b660" category="paragraph">이 고장을 해결하려면 오류에 대한 세부 정보를 확인하십시오. 반환된 오류에 따라 외부 키 서버의 문제 해결이 필요할 수 있습니다.</block>
+  <block id="430f6ca7f8269bc443b8e6baabf2aa91" category="list-text">* 암기편임계값 *</block>
+  <block id="bc12408d2cd3de02ad50a7b6841e78cc" category="paragraph">수정 가능 또는 수정할 수 없는 많은 ECC 오류가 감지되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
+  <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">이벤트</block>
+  <block id="2e92b13906d0b8919ccbb1b6f5ce9381" category="paragraph">단일 DIMM cErrorCount는 cDimmCorrectableErrWarnThreshold에 도달합니다.</block>
+  <block id="94d5076dcfede299eae04854a590c2da" category="paragraph">DIMM:&lt;프로세서&gt;&lt;DIMM 슬롯&gt;에서 수정 가능한 ECC 메모리 오류가 임계값보다 높습니다</block>
+  <block id="5733fc5b1aa809f593fc2c1525d86aa1" category="paragraph">단일 DIMM cErrorCount는 cErrorFaultTimer 가 DIMM에 대해 만료될 때까지 immCorrectableErrWarnThreshold 를 유지합니다.</block>
+  <block id="172720f00aa034be8a4594c7a801a19d" category="paragraph">DIMM:&lt;프로세서&gt;&lt;DIMM&gt;에서 수정 가능한 ECC 메모리 오류가 임계값보다 높습니다</block>
+  <block id="95da3b1a384dc32cc42e33ce7add2650" category="paragraph">메모리 컨트롤러는 cErrorCount above cMemCtlCorrectableErrWarnThreshold 를 보고하고 cMemCtlrCorrectableErrWarnDuration 을 지정합니다.</block>
+  <block id="15d070ed1ae552e2416fe3e1fead2b86" category="paragraph">수정 가능한 ECC 메모리 오류가 메모리 컨트롤러의 임계값보다 높음:&lt;프로세서&gt;&lt;메모리 컨트롤러&gt;</block>
+  <block id="4bc2dc6d2162475920644ed5103d6abd" category="paragraph">메모리 컨트롤러는 메모리 컨트롤러에 대해 cErrorFaultTimer 가 만료될 때까지 cErrorCount 를 cMemCtlCorrectableErrWarnThreshold 보다 높게 보고합니다.</block>
+  <block id="b7e06a925e58265e0342bc68a0273de1" category="paragraph">단일 DIMM은 0보다 큰 uErrorCount를 보고하지만 cDimmUncorrectableErrFaultThreshold보다 작습니다.</block>
+  <block id="eae81a94445a3f0188634b97f58deede" category="paragraph">DIMM:&lt;프로세서&gt;&lt;DIMM 슬롯&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</block>
+  <block id="fe651ebe06fb5bea1a06190580520eda" category="paragraph">단일 DIMM은 적어도 cDimmUncorrectableErrFaultThreshold의 uErrorCount를 보고합니다.</block>
+  <block id="dd5743b468d1c3cf195f7bf4870fb10c" category="paragraph">메모리 컨트롤러는 uErrorCount 가 0보다 크지만 cMemCtlrUncorrectableErrFaultThreshold 보다 작다는 것을 보고합니다.</block>
+  <block id="3358a6f07cbdbed280775b6c335ee35f" category="paragraph">메모리 컨트롤러 &lt;Processor&gt;&lt;Memory Controller&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</block>
+  <block id="b6eaf833a71a38e16510efe6d7ac28fd" category="paragraph">메모리 컨트롤러는 cMemCtlrUncorrectableErrFaultThreshold의 uErrorCount를 보고합니다.</block>
+  <block id="b536f12749487252151429f05be5bce4" category="paragraph">이 고장을 해결하려면 NetApp 지원에 문의하여 지원을 받으십시오.</block>
+  <block id="a357eae814cc326f4898ab86efcbed71" category="list-text">* 메모리 사용 임계값 *</block>
+  <block id="bcfae02b8180b40c78fc229d8645b34e" category="paragraph">메모리 사용량이 정상보다 높습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
+  <block id="0b8ba1f933203a827db5d85f3e613d70" category="admonition">고장 유형에 대한 자세한 내용은 오류 결함의 * 세부 정보 * 표제를 참조하십시오.</block>
+  <block id="de54af49388227db08b3aed3c76f21b2" category="list-text">* 메타 클러스터풀 *</block>
+  <block id="a6e65ad071757627d1787887e0f732ed" category="paragraph">단일 노드 손실을 지원하기에 충분한 여유 메타데이터 스토리지 공간이 없습니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</block>
+  <block id="e71f12b026ae4fcf06c49eb9f0469a1f" category="list-text">* mbuCheckFailure *</block>
+  <block id="ac9e3e7c4730a02619836ba5e86f7e87" category="paragraph">네트워크 디바이스가 적절한 MTU 크기로 구성되지 않았습니다.</block>
+  <block id="6b5c51f1e1330cd58c5c189b5c3cd67a" category="paragraph">이 고장을 해결하려면 모든 네트워크 인터페이스 및 스위치 포트가 점보 프레임(최대 9000바이트 크기)에 맞게 구성되었는지 확인하십시오.</block>
+  <block id="ce18b56e3c254dc5f0cd45590a351b23" category="list-text">* 네트워크 구성 *</block>
+  <block id="c8dfa7e973e5dfd88b07c9ea8f39d5c1" category="list-text">* nobaableVirtualNetworkIPAddresses *</block>
+  <block id="5a1b0770161278deb085c70d18081459" category="paragraph">IP 주소 블록에 사용 가능한 가상 네트워크 주소가 없습니다.</block>
+  <block id="4eda4adc3d0ab81d7babf172a3dff251" category="list-text">virtualNetworkID# 태그(\###)에 사용 가능한 스토리지 IP 주소가 없습니다. 클러스터에 노드를 추가할 수 없습니다.</block>
+  <block id="2c351c3e6b16ecda4ee3c5b07bf92f86" category="list-text">* nodeHardwareFault(네트워크 인터페이스 &lt;name&gt;이(가) 다운되었거나 케이블이 뽑혀 있음) *</block>
+  <block id="550b9a0d94cd045f1d5953d97983f335" category="paragraph">네트워크 인터페이스가 다운되었거나 케이블이 분리되었습니다.</block>
+  <block id="6cc9733e0e3716a18c7fe043f52abced" category="paragraph">이 고장을 해결하려면 노드나 노드의 네트워크 연결을 확인하십시오.</block>
+  <block id="ad620b4dca446130f6593e9988ea8f30" category="list-text">* nodeHardwareFault(드라이브 암호화 가능 상태가 슬롯 &lt;node slot&gt;&lt;drive slot&gt;) * 의 드라이브에 대한 노드의 암호화 가능 상태와 일치하지 않습니다</block>
+  <block id="6a91a1d787918f3f9ae1c543b91f9466" category="paragraph">드라이브가 설치된 스토리지 노드의 암호화 기능과 일치하지 않습니다.</block>
+  <block id="bd1b6aa0d6833fd4ec321303f56d8f41" category="list-text">* nodeHardwareFault(이 노드 유형에 대해 슬롯 &lt;node slot&gt;&lt;drive slot&gt;의 드라이브에 대해 &lt;드라이브 유형&gt; 드라이브 크기 &lt;실제 크기&gt;가 올바르지 않음 - 예상 크기&gt;) *</block>
+  <block id="397b2c4b3b61273d746bcf27ad61ab57" category="paragraph">스토리지 노드에는 이 노드의 크기가 잘못된 드라이브가 포함되어 있습니다.</block>
+  <block id="de485633c36c8e047bac927eddd40fdc" category="list-text">* nodeHardwareFault(슬롯 &lt;node slot&gt;&lt;drive slot&gt;에서 지원되지 않는 드라이브가 감지되었습니다. 드라이브 통계 및 상태 정보를 사용할 수 없습니다.) *</block>
+  <block id="248f552af5446435c1bfc5abafbd029f" category="paragraph">스토리지 노드에 지원되지 않는 드라이브가 포함되어 있습니다.</block>
+  <block id="a12a44924b74fedf111c5122bb4d34cd" category="list-text">* nodeHardwareFault(슬롯 &lt;node slot&gt;&lt;드라이브 슬롯&gt;의 드라이브가 펌웨어 버전 &lt;예상 버전&gt;을(를) 사용해야 하지만 지원되지 않는 버전 &lt;실제 버전&gt;을(를) 사용하고 있음) *</block>
+  <block id="957a13390c9db28634c574b933171a4e" category="paragraph">스토리지 노드에는 지원되지 않는 펌웨어 버전을 실행하는 드라이브가 포함되어 있습니다.</block>
+  <block id="7e46cff334a9ec2bafbf21e945eb274e" category="list-text">* 노드 유지보수모드 *</block>
+  <block id="afc8a5749d33a041342563816b445d53" category="paragraph">노드가 유지보수 모드로 전환되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
+  <block id="f4b9c51c9c4bdf5ce1b7692c99ac1280" category="paragraph">이 고장을 해결하려면 유지보수가 완료된 후 유지보수 모드를 비활성화하십시오. 오류 수준 고장이 지속될 경우 NetApp 지원에 지원을 문의하십시오.</block>
+  <block id="3306167889beac8fadae76b0ce2e0510" category="list-text">* 노드 오프라인 *</block>
+  <block id="192392da56cb9b90231b5d31829c6588" category="paragraph">Element 소프트웨어가 지정된 노드와 통신할 수 없습니다. 네트워크 연결을 확인합니다.</block>
+  <block id="837c7c3f00ecba44ec7b4f2f0492998d" category="list-text">* notUsingLCPBondMode *</block>
+  <block id="8b29d5bb02a9e10275109982b80461bd" category="paragraph">LACP 결합 모드가 구성되지 않았습니다.</block>
+  <block id="ad1785e671add94e452d4824bb5914ea" category="paragraph">이 오류를 해결하려면 스토리지 노드를 구축할 때 LACP 결합을 사용합니다. LACP가 활성화되어 있지 않고 올바르게 구성되지 않은 경우 클라이언트에서 성능 문제를 겪을 수 있습니다.</block>
+  <block id="f495dc5aca33718ad5cdf71c2dbd93b0" category="list-text">* ntpServerUnreachable *</block>
+  <block id="a763c9980ecb885ba27727bb75f436d0" category="paragraph">스토리지 클러스터가 지정된 NTP 서버 또는 서버와 통신할 수 없습니다.</block>
+  <block id="7849b37c0365a04085bcdf54379c97cf" category="paragraph">이 오류를 해결하려면 NTP 서버, 네트워크 및 방화벽에 대한 구성을 확인하십시오.</block>
+  <block id="85c997bac8323416225b1a226e3ac461" category="list-text">* ntpTimeNotInSync * 를 선택합니다</block>
+  <block id="48e71317d93284937648a039774ad795" category="paragraph">스토리지 클러스터 시간과 지정된 NTP 서버 시간 간의 차이가 너무 큽니다. 스토리지 클러스터가 자동으로 차이를 수정할 수 없습니다.</block>
+  <block id="860cd4684266af39daa708d75d845dd9" category="paragraph">이 오류를 해결하려면 설치 기본값이 아닌 네트워크 내부의 NTP 서버를 사용하십시오. 내부 NTP 서버를 사용하고 있고 문제가 지속되면 NetApp 지원 팀에 지원을 문의하십시오.</block>
+  <block id="b9bedd870ccf4150494291727c531d4b" category="list-text">nvramDeviceStatus *</block>
+  <block id="4222ced73e37d6b5c3e63f3be7a4ccb8" category="paragraph">NVRAM 장치에 오류가 있거나, 오류가 발생했거나, 오류가 발생했습니다. 이 결함에는 다음과 같은 심각도가 있습니다.</block>
+  <block id="a8b1f1e0aaba442d75ccdb8cf03670d1" category="paragraph">하드웨어에 의해 경고가 감지되었습니다. 이 조건은 온도 경고와 같이 일시적인 것일 수 있습니다.</block>
+  <block id="69e42b773555f263f8cc61feb3e7b8ab" category="list-text">nvmLifetimeError 를 참조하십시오</block>
+  <block id="08eeb0c76a0a1dba001d5454fdb07a4d" category="list-text">nvmLifetimeStatus를 참조하십시오</block>
+  <block id="a29de22938d6ded784ad9112dee45e83" category="list-text">energySourceLifetimeStatus를 참조하십시오</block>
+  <block id="f326b407f910d926b3effaac709c558b" category="list-text">energySourceTemperatureStatus를 참조하십시오</block>
+  <block id="85d9729a5663a87d2018275e5cafc656" category="list-text">WarningThresholdExceeded(경고 임계홀더제외)</block>
+  <block id="29d4e52a540789c74a37cfc9f72fbe99" category="paragraph">하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다. 경고 수준 오류와 함께 반환된 오류:</block>
+  <block id="1577b77477f62fbf298211d66ee3a2b7" category="list-text">NVRAM 디바이스 마운트 지점이 없습니다.</block>
+  <block id="53c460ccb9f73148bb3b6f9783cba892" category="list-text">NVRAM 장치 파티션이 존재하지 않습니다.</block>
+  <block id="11b7ec6555cf84f3841a790160657271" category="list-text">NVRAM 장치 파티션이 있지만 마운트되지 않았습니다.</block>
+  <block id="91d3748dd71fe45ee53217f1232d1f2b" category="paragraph">하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다.</block>
+  <block id="c376c17ace572f50fa4df1ab7220da7c" category="list-text">지속</block>
+  <block id="074f89aefeed9da0dd83a7ea169576de" category="list-text">팔StatusSaveNArmed 를 선택합니다</block>
+  <block id="3f86ac702bc2b2979ddc90fa39368220" category="list-text">csaveStatusError입니다</block>
+  <block id="3e5bf931970ddc7a022fe00a2e283df9" category="paragraph">노드에서 장애가 발생한 하드웨어를 교체합니다. 그래도 문제가 해결되지 않으면 NetApp Support에 문의하십시오.</block>
+  <block id="106147765d484e9d580a4ffb4aecd320" category="list-text">*전원 공급 장치 오류*</block>
+  <block id="9fe5420d18a5c8643739c1442185b688" category="paragraph">이 오류를 해결하려면 중복 전원이 모든 노드에 공급되는지 확인합니다. NetApp 지원 팀에 문의하십시오.</block>
+  <block id="173645bdc5529260f13137fc1a0b972e" category="list-text">* 프로비저닝됨 스페이스투풀 *</block>
+  <block id="64c6b1920eb7741d6bfcc0679fbd5ad6" category="paragraph">클러스터의 전체 프로비저닝 용량이 너무 가득 찼습니다.</block>
+  <block id="3412e2f46d96ab7c4a5565eaf7540202" category="paragraph">이 오류를 해결하려면 프로비저닝된 공간을 추가하거나 볼륨을 삭제 및 퍼지합니다.</block>
+  <block id="dcb1be32c338463a0810defeb11ad54c" category="list-text">* remoteRepAsyncDelayExceeded *</block>
+  <block id="be6e4c0701757ae3bb6b5ac34074bd8d" category="paragraph">복제에 대해 구성된 비동기 지연을 초과했습니다. 클러스터 간 네트워크 연결을 확인합니다.</block>
+  <block id="64a1a7780e8cf27fb3187031269b62a1" category="list-text">* remoteRepClusterFull *</block>
+  <block id="eddf4f28e084e8a6fc31187db18565b0" category="paragraph">타겟 스토리지 클러스터가 너무 가득 차 볼륨이 원격 복제를 일시 중지했습니다.</block>
+  <block id="33e1069d22be73f1abba84d9f1cd3a3d" category="paragraph">이 오류를 해결하려면 타겟 스토리지 클러스터에서 공간을 확보하십시오.</block>
+  <block id="9eed23ab29e54febcc6dcc3ac78d0865" category="list-text">* remoteRepSnapshotClusterFull *</block>
+  <block id="db297a7639cf474a957759440be40f1f" category="paragraph">타겟 스토리지 클러스터가 너무 가득 차 있어 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</block>
+  <block id="f3d38c9f3135c44b0b21923ea08f25d3" category="list-text">* remoteRepSnapshotsExcedLimit *</block>
+  <block id="b2c481163da8ba85a387dcc0235d2894" category="paragraph">타겟 스토리지 클러스터 볼륨이 스냅샷 제한을 초과했기 때문에 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</block>
+  <block id="493d9544d54ab782dd6844edfd4231a5" category="paragraph">이 오류를 해결하려면 타겟 스토리지 클러스터에서 스냅샷 제한을 늘리십시오.</block>
+  <block id="5628a01df224cf0fb92647e1d80a3852" category="list-text">별표(* scheduleActionError*)</block>
+  <block id="9500ebd19c4da1257cd28e00477de660" category="paragraph">하나 이상의 예약된 작업이 실행되었지만 실패했습니다.</block>
+  <block id="9de6e03c9f8d0ba909a57aef2119c7d7" category="paragraph">예약된 활동이 다시 실행되고 성공하거나, 예약된 활동이 삭제되거나, 활동이 일시 중지되어 재개되면 결함이 지워집니다.</block>
+  <block id="ac94a0d9b18bc5b75c35adcecdfe387b" category="list-text">* sensorReadingFailed *</block>
+  <block id="fe4a2f5b3e95e18b53005e6372e24cb3" category="paragraph">센서가 베이스보드 관리 컨트롤러(BMC)와 통신할 수 없습니다.</block>
+  <block id="36132f09cafa0470dccbcaaf7c59c33f" category="list-text">* serviceNotRunning *</block>
+  <block id="ac64cbfb9f707df1f32da61bec8d7a71" category="paragraph">필요한 서비스가 실행되고 있지 않습니다.</block>
+  <block id="8a5b1e9990a7cc7d457a1d9e261d373b" category="list-text">* 슬라이서 서비스전체 *</block>
+  <block id="40f1007f3b4c8d69593980c8384f0775" category="paragraph">슬라이스 서비스에 할당된 프로비저닝 용량이 너무 적습니다.</block>
+  <block id="b0537d36b3091b7e8e1d1a8f59a8f8eb" category="list-text">* 슬라이슬리서비스건강하지 않음 *</block>
+  <block id="abe34aeb4fb1207c0198415cbbaa59f2" category="paragraph">시스템에서 슬라이스 서비스가 정상 상태가 아닌 것을 감지하여 자동으로 서비스 해제를 합니다.</block>
+  <block id="2f2028a01cc26368c3f4daa01753e427" category="paragraph">네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 슬라이스 서비스에 액세스할 수 있거나 서비스가 해체되면 결함이 지워집니다.</block>
+  <block id="77a9bdbc36212768a8fa68cd2fa5b2df" category="list-text">* sshEnabled *</block>
+  <block id="c0dcf8bdd514b88aa2f4e08c9146ee43" category="paragraph">SSH 서비스는 스토리지 클러스터의 하나 이상의 노드에서 설정됩니다.</block>
+  <block id="08859561c22bfd25c836ab28ea73e205" category="paragraph">이 오류를 해결하려면 해당 노드에서 SSH 서비스를 비활성화하거나 NetApp 지원에 연락하여 지원을 받으십시오.</block>
+  <block id="6fa452a48ae3e5199d91b33a8f65eb28" category="list-text">* sslCertificateExpiration *</block>
+  <block id="d9f6904ddbb9c19e8370acbe8c58e32e" category="paragraph">이 노드와 연결된 SSL 인증서가 만료되었거나 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</block>
+  <block id="647df7046e2f128b4110e4e39a5c8675" category="paragraph">이 고장을 해결하려면 SSL 인증서를 갱신하십시오. 필요한 경우 NetApp Support에 지원을 요청하십시오.</block>
+  <block id="8f9822d686babb0303596fbaf521da4b" category="list-text">* 용량 *</block>
+  <block id="7b4a10014d03b8bda5b03c1e89a8460b" category="paragraph">단일 노드는 스토리지 클러스터 용량의 절반 이상을 차지합니다.</block>
+  <block id="43209525998ebedf376a99d3c089406b" category="paragraph">시스템은 데이터 이중화를 유지하기 위해 최대 노드의 용량을 줄여 일부 블록 용량이 고립되도록 합니다(미사용).</block>
+  <block id="d7e0e607a6b5422c4de6d6b520ada79f" category="paragraph">이 오류를 해결하려면 기존 스토리지 노드에 드라이브를 추가하거나 클러스터에 스토리지 노드를 추가합니다.</block>
+  <block id="f32c360a8e8805a23db9e9503541e353" category="list-text">* tempSensor *</block>
+  <block id="9c2a373e9db5f2db337160f2bb1f699e" category="paragraph">온도 센서가 정상 온도보다 높은 온도를 보고하고 있습니다. 이 고장은 전원 공급 장치 오류 또는 팬센서 오류와 함께 발생할 수 있습니다.</block>
+  <block id="c4db6be37f68c3d45398133d7edc70d0" category="paragraph">이 고장을 해결하려면 저장소 클러스터 근처의 공기 흐름을 방해하는 물체가 있는지 확인하십시오. 필요한 경우 NetApp Support에 지원을 요청하십시오.</block>
+  <block id="92018782133eb660d9128d1342172fb9" category="list-text">* 업그레이드 *</block>
+  <block id="fd406b4623b781b31f258a0879276c93" category="paragraph">24시간 이상 업그레이드가 진행 중입니다.</block>
+  <block id="19ea2f91b3ae961be9e609088755c628" category="paragraph">이 고장을 해결하려면 업그레이드를 재개하거나 NetApp 지원에 지원을 문의하십시오.</block>
+  <block id="ee6e3166109a6358fc272981bf9bd6cb" category="list-text">* 무응답 서비스 *</block>
+  <block id="5e4d14c3be61157b20827e4a7845df94" category="paragraph">서비스가 응답하지 않습니다.</block>
+  <block id="732cb524681f74d8b6ed83b31dd8fdfb" category="list-text">* virtualNetworkConfig *</block>
+  <block id="85a491c87fd77350bc3bd38a726fd168" category="list-text">* 볼륨이 저하됨 *</block>
+  <block id="9451a3dfb762350c7cbcbe9ee518b8af" category="paragraph">보조 볼륨의 복제 및 동기화가 완료되지 않았습니다. 동기화가 완료되면 메시지가 지워집니다.</block>
+  <block id="f18e735235d5a307ceb3e60d3161fa15" category="list-text">* volumesOffline *</block>
+  <block id="bd0e78ee6b3a04179ae19c5baa7233f3" category="paragraph">스토리지 클러스터에 있는 하나 이상의 볼륨이 오프라인 상태입니다. 볼륨 디그레이드 * 오류도 나타납니다.</block>
 </blocks>
