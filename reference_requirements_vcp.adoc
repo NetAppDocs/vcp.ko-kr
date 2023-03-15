@@ -10,11 +10,13 @@ keywords: netapp, hci, kubernetes, on premise, cloud services
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
 VMware vCenter Server용 NetApp Element 플러그인을 사용하여 NetApp HCI 또는 SolidFire All-Flash 어레이 스토리지를 관리하기 전에 먼저 시스템이 플러그인 사용 요구사항을 충족하는지 확인해야 합니다.
+
+vCenter Server 8.0 및 7.0의 경우 가능합니다 <<create_vcp_role,vCenter에서 "VCP 역할"을 생성합니다>> Element 플러그인 사용자 계정의 경우 및 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당합니다.
 
 [role="tabbed-block"]
 ====
@@ -96,6 +98,90 @@ IMPORTANT: VMware vSphere 6.0은 2020년 3월 12일에 지원 종료 상태에 �
 == 네트워크 포트 요구 사항
 
 시스템을 원격으로 관리하고 데이터 센터 외부의 클라이언트가 리소스에 연결할 수 있도록 데이터 센터의 에지 방화벽을 통해 일부 TCP 포트를 허용해야 합니다. NetApp HCI 및 SolidFire 시스템에서 사용되는 포트의 전체 목록은 다음을 참조하십시오 link:https://docs.netapp.com/us-en/hci/docs/hci_prereqs_required_network_ports.html["페이지"].
+
+
+
+== (선택 사항) vCenter에서 "VCP 역할"을 생성합니다
+
+vCenter Server 8.0 및 7.0의 경우 vCenter에서 Element 플러그인 사용자 계정에 대한 "VCP 역할"을 생성하고 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당할 수 있습니다.
+
+.단계
+. vSphere Web Client에 관리자로 로그인합니다.
+. Administration * 을 선택합니다.
+. 단일 사인온 * > * 사용자 및 그룹 * 을 선택합니다.
+. 사용자 * 탭을 선택하고 * 도메인 * 목록에서 대상 도메인을 선택합니다.
+. 추가 * 를 선택합니다.
+. 사용자 추가 * 화면에서 필드를 작성하고 * 추가 * 를 선택합니다.
++
+image:vcp_add_user.PNG["사용자 추가 필드의 스크린샷"]
+
+. 액세스 제어 * > * 역할 * 을 선택하고 * 새로 만들기 * 를 선택합니다.
+. 새 역할 * 화면에서 다음 단계를 완료합니다.
++
+.. 역할 이름 * 에 "VCProle"을 입력합니다.
+.. 설명을 기입합니다.
+.. Show * 목록에서 vCenter Server 버전에 대한 권한을 선택합니다.
++
+... vCenter Server 8.0에 대한 권한을 선택합니다.
++
+**** 암호화 작업 > VM 등록 을 선택합니다
+**** 데이터 저장소 > 모두 선택 을 클릭합니다
+**** 확장 > 모두 선택 을 누릅니다
+**** 호스트 > 구성 > 설정 변경 을 클릭합니다
+**** 호스트 > 구성 > 연결 을 선택합니다
+**** 호스트 > 구성 > 유지 관리 를 선택합니다
+**** 호스트 > 구성 > 스토리지 파티션 구성
+**** 호스트 > 구성 > 시스템 관리 를 선택합니다
+**** 호스트 > 구성 > 시스템 리소스 를 선택합니다
+**** Privilege.Task.Update.Task.Update.label>Privilege.Task.Update.Task.Update.label
+**** 작업 > 모두 선택 을 누릅니다
+**** 가상 머신 > 인벤토리 편집 > 등록 을 클릭합니다
+**** VM 스토리지 정책 > VM 스토리지 정책 보기 권한 > VM 스토리지 정책 보기
+
+
+... vCenter Server 7.x에 대한 권한을 선택합니다.
++
+**** 암호화 작업 > VM 등록 을 선택합니다
+**** 데이터 저장소 > 모두 선택 을 클릭합니다
+**** 확장 > 모두 선택 을 누릅니다
+**** 호스트 > 구성 > 설정 변경 을 클릭합니다
+**** 호스트 > 구성 > 연결 을 선택합니다
+**** 호스트 > 구성 > 유지 관리 를 선택합니다
+**** 호스트 > 구성 > 스토리지 파티션 구성
+**** 호스트 > 구성 > 시스템 관리 를 선택합니다
+**** 호스트 > 구성 > 시스템 리소스 를 선택합니다
+**** 플러그인 > 모두 선택 을 클릭합니다
+**** 예약된 작업 > 모두 선택 을 선택합니다
+**** 스토리지 보기 > 모두 선택 을 클릭합니다
+**** 작업 > 모두 선택 을 누릅니다
+
+
+
+
+.. Create * 를 선택합니다.
+
+
++
+image:vcp_create_vcprole.PNG["새 역할 필드의 스크린샷"]
+
+. 전역 권한 * 을 선택하고 * 추가 * 를 선택합니다.
+. 권한 추가 * 화면에서 다음 단계를 완료합니다.
++
+--
+.. 도메인 * 목록에서 대상 도메인을 선택합니다.
+.. 사용자/그룹 * 필드에 요소 플러그인 사용자 ID를 입력합니다.
+.. 역할 * 목록에서 * VCProle * 을 선택합니다.
+.. Propagate to Children * 을 선택하고 * OK * 를 선택합니다.
+
+
+--
++
+image:vcp_assign_vcprole.PNG["권한 추가 필드의 스크린샷"]
+
++
+이제 "vcpuser" 계정을 사용하여 vSphere Web Client에 로그인할 수 있습니다.
+
+
 
 
 

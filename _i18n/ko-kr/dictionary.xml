@@ -2761,4 +2761,52 @@
   <block id="9451a3dfb762350c7cbcbe9ee518b8af" category="paragraph">보조 볼륨의 복제 및 동기화가 완료되지 않았습니다. 동기화가 완료되면 메시지가 지워집니다.</block>
   <block id="f18e735235d5a307ceb3e60d3161fa15" category="list-text">* volumesOffline *</block>
   <block id="bd0e78ee6b3a04179ae19c5baa7233f3" category="paragraph">스토리지 클러스터에 있는 하나 이상의 볼륨이 오프라인 상태입니다. 볼륨 디그레이드 * 오류도 나타납니다.</block>
+  <block id="644c5c3e42ab1df305052c80680df2ca" category="inline-xref">vCenter에서 "VCP 역할"을 생성합니다</block>
+  <block id="d64a2b92e4ea6060988dc03f5e5113fa" category="paragraph">vCenter Server 8.0 및 7.0의 경우 가능합니다 <block ref="80e1b054839423dbd44653f6cd7557e3" category="inline-xref-macro-rx"></block> Element 플러그인 사용자 계정의 경우 및 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당합니다.</block>
+  <block id="7cc7fd4493e163c595e2dabf484d9c9a" category="section-title">(선택 사항) vCenter에서 "VCP 역할"을 생성합니다</block>
+  <block id="050119bbf4fa875736755d8256c34fed" category="paragraph">vCenter Server 8.0 및 7.0의 경우 vCenter에서 Element 플러그인 사용자 계정에 대한 "VCP 역할"을 생성하고 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당할 수 있습니다.</block>
+  <block id="d5bb073b6bd682a668721b757a9e61de" category="list-text">vSphere Web Client에 관리자로 로그인합니다.</block>
+  <block id="8524fc8052d7c8f5a5557839d96cd0f7" category="list-text">Administration * 을 선택합니다.</block>
+  <block id="bc729d3b22ea3e08238255fb733b75e4" category="list-text">단일 사인온 * &gt; * 사용자 및 그룹 * 을 선택합니다.</block>
+  <block id="ebd11e76c0b736dd6dc24addd8e6608f" category="list-text">사용자 * 탭을 선택하고 * 도메인 * 목록에서 대상 도메인을 선택합니다.</block>
+  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">추가 * 를 선택합니다.</block>
+  <block id="09166198be13ed464f3dba33744e2b11" category="list-text">사용자 추가 * 화면에서 필드를 작성하고 * 추가 * 를 선택합니다.</block>
+  <block id="7f0e45b2a7b37d33b8e5ec6012c42841" category="inline-image-macro">사용자 추가 필드의 스크린샷</block>
+  <block id="e0cecd6609fe5cb500562692e5b44586" category="paragraph"><block ref="e0cecd6609fe5cb500562692e5b44586" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbf6f433c2146e5cb893afde836b7584" category="list-text">액세스 제어 * &gt; * 역할 * 을 선택하고 * 새로 만들기 * 를 선택합니다.</block>
+  <block id="f34080b41d0f41a6c1144b3336935b25" category="list-text">새 역할 * 화면에서 다음 단계를 완료합니다.</block>
+  <block id="23a1a1c1bda77f4c3673f7fbe4ca2878" category="list-text">역할 이름 * 에 "VCProle"을 입력합니다.</block>
+  <block id="8051682eea92ae27fbd88fda94829d22" category="list-text">설명을 기입합니다.</block>
+  <block id="cbef7f3bcab72196c6bc5c548e2ed7f7" category="list-text">Show * 목록에서 vCenter Server 버전에 대한 권한을 선택합니다.</block>
+  <block id="45db17c966a6c26ef47a4ba1c610215f" category="list-text">vCenter Server 8.0에 대한 권한을 선택합니다.</block>
+  <block id="74f62e29bec771603bb7251042c8ded8" category="list-text">암호화 작업 &gt; VM 등록 을 선택합니다</block>
+  <block id="5014a958f399385be4f44a0520625edd" category="list-text">데이터 저장소 &gt; 모두 선택 을 클릭합니다</block>
+  <block id="bd14c779d6a491d4992aebb056db7d55" category="list-text">확장 &gt; 모두 선택 을 누릅니다</block>
+  <block id="61249cd3896c13e946979764cc0c9063" category="list-text">호스트 &gt; 구성 &gt; 설정 변경 을 클릭합니다</block>
+  <block id="0b23b0d39406a9b3915a59b194bf63e5" category="list-text">호스트 &gt; 구성 &gt; 연결 을 선택합니다</block>
+  <block id="256d33dbb5c1c290b364b11571a9d57f" category="list-text">호스트 &gt; 구성 &gt; 유지 관리 를 선택합니다</block>
+  <block id="092c601502be0f60d8c97c58fe469f3f" category="list-text">호스트 &gt; 구성 &gt; 스토리지 파티션 구성</block>
+  <block id="e722e18169e2f876c6e8b936c2ee4c57" category="list-text">호스트 &gt; 구성 &gt; 시스템 관리 를 선택합니다</block>
+  <block id="1ec37c60f04ba576cbdb4dc7597a3a62" category="list-text">호스트 &gt; 구성 &gt; 시스템 리소스 를 선택합니다</block>
+  <block id="d79c90f48cef0babeb322f302fa6191f" category="list-text">Privilege.Task.Update.Task.Update.label&gt;Privilege.Task.Update.Task.Update.label</block>
+  <block id="294ef7232b74c7e7748074ee0e298862" category="list-text">작업 &gt; 모두 선택 을 누릅니다</block>
+  <block id="7de295a163b1ed913ab7bcbcfee0029a" category="list-text">가상 머신 &gt; 인벤토리 편집 &gt; 등록 을 클릭합니다</block>
+  <block id="c1165f36f2062c025c4da87ce3b31703" category="list-text">VM 스토리지 정책 &gt; VM 스토리지 정책 보기 권한 &gt; VM 스토리지 정책 보기</block>
+  <block id="77cd5b8cd461de562694a99ba9dee580" category="list-text">vCenter Server 7.x에 대한 권한을 선택합니다.</block>
+  <block id="cb63c230d719fa24116203b496dee10d" category="list-text">호스트 &gt; 구성 &gt; 시스템 리소스 를 선택합니다</block>
+  <block id="5dc59e217df09f6415678f6607f5df72" category="list-text">플러그인 &gt; 모두 선택 을 클릭합니다</block>
+  <block id="9af128212a39b4bf7fbdef0570e64c29" category="list-text">예약된 작업 &gt; 모두 선택 을 선택합니다</block>
+  <block id="117fe7a1900288d871a49853a8b64f59" category="list-text">스토리지 보기 &gt; 모두 선택 을 클릭합니다</block>
+  <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">Create * 를 선택합니다.</block>
+  <block id="138f8f5d73de2cb5fb20f743a7f5dc45" category="inline-image-macro">새 역할 필드의 스크린샷</block>
+  <block id="f45b7593c255832f87fd8eff35a580ac" category="paragraph"><block ref="f45b7593c255832f87fd8eff35a580ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f7d1490dda99e395678a3cf9e7c62a8" category="list-text">전역 권한 * 을 선택하고 * 추가 * 를 선택합니다.</block>
+  <block id="fdd8b6bb99fb0bd050cf23d180fa409d" category="list-text">권한 추가 * 화면에서 다음 단계를 완료합니다.</block>
+  <block id="91c619d30319a7c8737a0afb04770a94" category="list-text">도메인 * 목록에서 대상 도메인을 선택합니다.</block>
+  <block id="e63d96af7b54d58a62c992b3f3beea69" category="list-text">사용자/그룹 * 필드에 요소 플러그인 사용자 ID를 입력합니다.</block>
+  <block id="37518f126d566dda3513459fc2d4a601" category="list-text">역할 * 목록에서 * VCProle * 을 선택합니다.</block>
+  <block id="b1b266d490da6f5aec9dc67b1ef044d7" category="list-text">Propagate to Children * 을 선택하고 * OK * 를 선택합니다.</block>
+  <block id="94ca762adece646829ae29b252ee07c1" category="inline-image-macro">권한 추가 필드의 스크린샷</block>
+  <block id="5e636586f9af12688faa4fc928306db1" category="paragraph"><block ref="5e636586f9af12688faa4fc928306db1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="091b350d4631df39f5b5dc80970dd512" category="paragraph">이제 "vcpuser" 계정을 사용하여 vSphere Web Client에 로그인할 수 있습니다.</block>
 </blocks>
