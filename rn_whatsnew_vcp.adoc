@@ -14,7 +14,13 @@ keywords: netapp, vcp, vcenter, plugin, element, new, whats new
 
 
 [role="lead"]
-vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. link:vcp_concept_remote_plugin_architecture.html["자세한 정보."]
+vCenter Server 5.1용 NetApp Element 플러그인은 향상된 보안 및 성능을 제공합니다. https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["자세한 정보"^].
+
+
+
+== vCenter Server 5.0용 NetApp Element 플러그인
+
+vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. link:vcp_concept_remote_plugin_architecture.html["자세한 정보"].
 
 Element vCenter 플러그인 5.0은 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 VMware vSphere 8.0, 7.0, 7.0 업데이트 1, 2 및 3을 지원합니다.
 

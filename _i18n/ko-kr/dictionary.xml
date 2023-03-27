@@ -884,7 +884,6 @@
   <block id="2ec6f218bc83c2a96b3b46b4129035ce" category="list-text">관리 노드의 IP 주소입니다.</block>
   <block id="fed10c03fd9268ddc7b341e40d9c715c" category="list-text">플러그인의 등록을 취소하는 vCenter의 URL 및 자격 증명</block>
   <block id="5617def599e541c405b22ef75873704d" category="inline-link-macro">플러그 인을 제거하는 중입니다</block>
-  <block id="cd708195daf8513502a5c6123fefd3c6" category="paragraph">vSphere 6.7 이전 버전의 경우 플러그인 등록 해제는 비활성화와 같은 효과가 있지만 로컬에 설치된 모든 관련 파일 및 폴더는 제거하지 않습니다. 모든 플러그인 파일을 제거하려면 의 지침을 참조하십시오 <block ref="fa2a18d6b355d33b924c5f0014a5db48" category="inline-link-macro-rx"></block>.</block>
   <block id="813c5122bf2d07b9b768db0d36befa54" category="paragraph">vSphere 7.0의 경우 플러그인을 등록 해제하면 모든 파일이 자동으로 제거됩니다.</block>
   <block id="784cf7d40eae83cddfd178b52d838922" category="list-text">플러그 인을 등록 취소하려면 설치된 버전에 대한 절차를 따르십시오.</block>
   <block id="e1d6ab3742be1ecd22328a3e8fd20c7d" category="list-text">vCenter Plug-in 3.0 이상의 경우 vCenter 플러그인 등록 유틸리티를 사용하여 플러그인을 등록 취소합니다.</block>
@@ -2203,8 +2202,6 @@
   <block id="abf7eef6bed0197895c3bf534495b705" category="list-text">Element vCenter 플러그인 4.10 및 이전 버전의 경우 * NetApp Element 관리 &gt; 클러스터 * 를 선택합니다.</block>
   <block id="cffb1f002f64dfacc3e64e76675874ca" category="paragraph">플러그인 확장 지점에서 클러스터 탭의 드라이브 페이지에 있는 활성 보기를 사용하여 클러스터의 활성 드라이브 목록을 볼 수 있습니다. 드롭다운 필터를 사용하여 사용 가능한 옵션을 선택하여 보기를 변경할 수 있습니다.</block>
   <block id="fbde2570c577c83970a1770f2bbb6b86" category="paragraph">플러그인 확장 지점을 사용하여 클러스터에서 드라이브를 제거할 수 있습니다. 클러스터 용량을 줄이거나 서비스 수명이 거의 다 된 드라이브를 교체할 준비를 할 때 이 작업을 수행할 수 있습니다. 드라이브를 제거하면 드라이브가 오프라인 상태가 됩니다. 드라이브에서 데이터가 제거되기 전에 클러스터의 다른 드라이브로 마이그레이션됩니다. 시스템의 다른 활성 드라이브로 데이터를 마이그레이션하는 데는 용량 활용률과 클러스터의 활성 I/O에 따라 몇 분에서 한 시간까지 걸릴 수 있습니다.</block>
-  <block id="abb08438372677f826c66c2cf08946ee" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인 5.0 이전 버전에도 설명서가 제공됩니다.</block>
-  <block id="aa6c9b02197698bcb50fa64860739d2c" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 5.0의 경우 버전 4.6, 4.7, 4.8, 4.9 및 4.10도 포함됩니다.</block>
   <block id="30dcb9c22f4d8eee8411cf243edfe0c6" category="cell">4.10</block>
   <block id="d4b8b3b5c408146a8aaffd739bb70e85" category="cell"><block ref="d4b8b3b5c408146a8aaffd739bb70e85" category="inline-link-rx"></block></block>
   <block id="cdac12e8444404de524af6aed2665f45" category="inline-link">2.21.61</block>
@@ -2284,9 +2281,7 @@
   <block id="41850a9e782a9a5deffba88f60da5f86" category="paragraph">플러그인 확장 지점을 사용하여 NetApp Element 클러스터에서 하나 이상의 볼륨을 삭제할 수 있습니다.</block>
   <block id="11e419c2947b7d06f69508696bb8366b" category="summary">vCenter 플러그인 확장 지점을 사용하여 스토리지 클러스터를 관리할 수 있습니다.</block>
   <block id="3b0772681519f05a669fc19a78db2094" category="paragraph">플러그인 확장 포인트의 클러스터 탭에서 클러스터 전체 설정을 확인 및 변경하고 드라이브, 노드 및 VLAN에 대한 클러스터별 작업을 수행할 수 있습니다.</block>
-  <block id="f4c3b5c3b03a03813a4efc0d9b5c4948" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.0은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
   <block id="9a4f689e4a76aad8186d3bc65ad401fb" category="list-text">vCenter 5.0용 Element 플러그인부터 VMware vSphere 8.0 및 7.0만 지원됩니다.</block>
-  <block id="8ca6efece2cd741765d7545cfba33f66" category="list-text">Element Plug-in for vCenter 4.x에서 5.0으로 업그레이드하면 vCenter 인스턴스에서 원격 플러그인으로 데이터를 복사할 수 없기 때문에 플러그인으로 이미 구성된 클러스터가 손실됩니다. 원격 플러그인에 클러스터를 다시 추가해야 합니다. 이는 로컬 플러그인에서 원격 플러그인으로 업그레이드할 때 한 번 수행하는 작업입니다.</block>
   <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter Plug-in 5.0 릴리즈 노트</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="c1117ceebc72342e257fe6e0c4bc9865" category="paragraph">플러그인을 사용하여 를 추가할 수 있습니다<block ref="63488b15d8c0b0f8bf9dc0423b45e226" category="inline-link-rx"></block> 클러스터가 생성되거나 추가 스토리지가 필요한 경우 Element 소프트웨어를 실행하는 스토리지 노드를 추가할 수도 있습니다. vSphere의 플러그인 외부에 NetApp HCI 컴퓨팅 노드를 추가해야 합니다.</block>
@@ -2301,7 +2296,6 @@
   <block id="703b4a90cb83eeedcd9f21fb666993cf" category="list-text">vCenter 플러그인 4.0 - 4.10</block>
   <block id="13730b6c187c8aa8f92956aeb6cd01e2" category="paragraph">플러그인 확장 지점을 사용하여 다음 작업을 완료하여 QoSSIOC를 구성 및 관리할 수 있습니다.</block>
   <block id="15829086740e5d8d6ada7649920234b9" category="list-text">개요 * 페이지의 데이터를 모니터링합니다.</block>
-  <block id="1e001803864a5eeb813e6a85e53f7e2b" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. <block ref="2629dee4a3682efc27bf42f47699460e" category="inline-link-macro-rx"></block></block>
   <block id="c5d233b22f0e1d750ac78f2bfaa4bf45" category="paragraph">Element vCenter 플러그인 5.0은 vCenter Server, ESXi 및 vSphere HTML5 Web Client를 비롯한 VMware vSphere 8.0, 7.0, 7.0 업데이트 1, 2 및 3을 지원합니다.</block>
   <block id="ceec7b007b80cc66468eacb4ee0fa069" category="inline-link">관리 서비스 릴리스 정보 2.21.61</block>
   <block id="e0527e4365aa99f086c41c1e111702c3" category="paragraph">Element vCenter 플러그인 5.0은 관리 서비스의 2.22.7 릴리즈와 함께 사용할 수 있습니다. 플러그인을 사용하지 않는 경우 다른 모든 서비스와 기능은 버전 21.21.61과 동일하므로 이 업그레이드는 선택 사항입니다. 최신 관리 서비스 업데이트에 대한 자세한 내용은 를 참조하십시오<block ref="f3a45f13dd8f4769c4d441aacd935790" category="inline-link-rx"></block>.</block>
@@ -2410,7 +2404,6 @@
   <block id="eb56b88cdd81d40633d568a23d3857eb" category="paragraph">Element vCenter 플러그인을 사용하려면 vCenter 및 ESXi와 소프트웨어 iSCSI 어댑터 및 iSCSI 네트워킹이 구성된 VMware vSphere 7.0, 6.7 또는 6.5가 필요합니다.</block>
   <block id="d97bbd8656e24ccefc431a8efa7d71b1" category="admonition">이 플러그인은 vCenter 4.6, 4.7 및 4.8용 Element Plug-in용 버전 6.5와 호환되지 않습니다.</block>
   <block id="2485371e710ec4ea8989c22e13c02067" category="list-text"><block ref="2485371e710ec4ea8989c22e13c02067" category="inline-link-rx"></block></block>
-  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _신규 _</block>
   <block id="e15eb9592751e0df97c69e856ffc178a" category="list-text"><block ref="e15eb9592751e0df97c69e856ffc178a" category="inline-link-rx"></block></block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="bfc8310ead2967e2e87ebf3b95c4457e" category="list-text">vCenter 플러그인에서 * Protection * 탭을 엽니다.</block>
@@ -2762,9 +2755,7 @@
   <block id="f18e735235d5a307ceb3e60d3161fa15" category="list-text">* volumesOffline *</block>
   <block id="bd0e78ee6b3a04179ae19c5baa7233f3" category="paragraph">스토리지 클러스터에 있는 하나 이상의 볼륨이 오프라인 상태입니다. 볼륨 디그레이드 * 오류도 나타납니다.</block>
   <block id="644c5c3e42ab1df305052c80680df2ca" category="inline-xref">vCenter에서 "VCP 역할"을 생성합니다</block>
-  <block id="d64a2b92e4ea6060988dc03f5e5113fa" category="paragraph">vCenter Server 8.0 및 7.0의 경우 가능합니다 <block ref="80e1b054839423dbd44653f6cd7557e3" category="inline-xref-macro-rx"></block> Element 플러그인 사용자 계정의 경우 및 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당합니다.</block>
   <block id="7cc7fd4493e163c595e2dabf484d9c9a" category="section-title">(선택 사항) vCenter에서 "VCP 역할"을 생성합니다</block>
-  <block id="050119bbf4fa875736755d8256c34fed" category="paragraph">vCenter Server 8.0 및 7.0의 경우 vCenter에서 Element 플러그인 사용자 계정에 대한 "VCP 역할"을 생성하고 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당할 수 있습니다.</block>
   <block id="d5bb073b6bd682a668721b757a9e61de" category="list-text">vSphere Web Client에 관리자로 로그인합니다.</block>
   <block id="8524fc8052d7c8f5a5557839d96cd0f7" category="list-text">Administration * 을 선택합니다.</block>
   <block id="bc729d3b22ea3e08238255fb733b75e4" category="list-text">단일 사인온 * &gt; * 사용자 및 그룹 * 을 선택합니다.</block>
@@ -2809,4 +2800,21 @@
   <block id="94ca762adece646829ae29b252ee07c1" category="inline-image-macro">권한 추가 필드의 스크린샷</block>
   <block id="5e636586f9af12688faa4fc928306db1" category="paragraph"><block ref="5e636586f9af12688faa4fc928306db1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="091b350d4631df39f5b5dc80970dd512" category="paragraph">이제 "vcpuser" 계정을 사용하여 vSphere Web Client에 로그인할 수 있습니다.</block>
+  <block id="b66c8a9d68bd0aeaa399e0f8ae04a674" category="paragraph">설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.1은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.</block>
+  <block id="9fbd9fb1c98fdc3b7aeb8cf30510365b" category="list-text">Element Plug-in for vCenter 4.x에서 5.x로 업그레이드하면 vCenter 인스턴스에서 원격 플러그인으로 데이터를 복사할 수 없기 때문에 플러그인으로 이미 구성된 클러스터가 손실됩니다. 원격 플러그인에 클러스터를 다시 추가해야 합니다. 이는 로컬 플러그인에서 원격 플러그인으로 업그레이드할 때 한 번 수행하는 작업입니다.</block>
+  <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">vCenter Plug-in 5.1 릴리즈 노트</block>
+  <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
+  <block id="a03e0fc189a20ac61004659572cb08f7" category="paragraph">vSphere 6.7 이전 버전의 경우 플러그인 등록 해제는 비활성화와 같은 효과가 있지만 로컬에 설치된 모든 관련 파일 및 폴더는 제거하지 않습니다. 모든 플러그인 파일을 제거하려면 의 지침을 참조하십시오 <block ref="fa2a18d6b355d33b924c5f0014a5db48" category="inline-link-macro-rx"></block>.</block>
+  <block id="892ff8e8ba8a88084fa51c3657a81ab8" category="paragraph">VMware vCenter Server용 NetApp Element 플러그인 버전 5.1 이전의 릴리즈에도 설명서가 제공됩니다.</block>
+  <block id="5fd41756fdaa6f29377e51f411e6ef7b" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 5.1의 경우 버전 4.6, 4.7, 4.8, 4.9, 4.10, 및 5.0.</block>
+  <block id="336669dbe720233ed5577ddf81b653d3" category="cell">5.0</block>
+  <block id="ccdedb9c7dac93213366653d125b0ffe" category="cell"><block ref="ccdedb9c7dac93213366653d125b0ffe" category="inline-link-rx"></block></block>
+  <block id="33417a1ff438d871e2168ee3476b8b19" category="cell"><block ref="33417a1ff438d871e2168ee3476b8b19" category="inline-link-rx"></block></block>
+  <block id="db26a1619b3544de39b9ae935f1f5853" category="paragraph">vCenter Server 8.0 및 7.0의 경우 가능합니다 <block ref="80e1b054839423dbd44653f6cd7557e3" category="inline-xref-macro-rx"></block> Element 플러그인 사용자 계정의 경우 및 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당합니다.</block>
+  <block id="905117ce83c2d95fd055b77e296e775c" category="paragraph">vCenter Server 8.0 및 7.0의 경우 vCenter에서 Element 플러그인 사용자 계정에 대한 "VCP 역할"을 생성하고 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당할 수 있습니다.</block>
+  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _신규 _</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
+  <block id="29d500d8439e3dd944e651a8cafac013" category="paragraph">vCenter Server 5.1용 NetApp Element 플러그인은 향상된 보안 및 성능을 제공합니다.<block ref="8f4569e0d2bf7d4026fc97d3aaa16f27" category="inline-link-rx"></block>.</block>
+  <block id="91b1f6d002234f22dafb0acd912c78a9" category="section-title">vCenter Server 5.0용 NetApp Element 플러그인</block>
+  <block id="1f9b4aab4a12232cc23a810bf4cafc23" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. <block ref="87219cf69889d249e3cece46c871efe3" category="inline-link-macro-rx"></block>.</block>
 </blocks>
