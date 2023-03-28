@@ -2817,4 +2817,6 @@
   <block id="29d500d8439e3dd944e651a8cafac013" category="paragraph">vCenter Server 5.1용 NetApp Element 플러그인은 향상된 보안 및 성능을 제공합니다.<block ref="8f4569e0d2bf7d4026fc97d3aaa16f27" category="inline-link-rx"></block>.</block>
   <block id="91b1f6d002234f22dafb0acd912c78a9" category="section-title">vCenter Server 5.0용 NetApp Element 플러그인</block>
   <block id="1f9b4aab4a12232cc23a810bf4cafc23" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. <block ref="87219cf69889d249e3cece46c871efe3" category="inline-link-macro-rx"></block>.</block>
+  <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">관리 서비스 공지 2.23.64(VMware vCenter Server 5.1.12용 NetApp Element 플러그인)</block>
+  <block id="c427a8a16f088c999b45d089d225b2dc" category="list-text"><block ref="c427a8a16f088c999b45d089d225b2dc" category="inline-link-macro-rx"></block></block>
 </blocks>
