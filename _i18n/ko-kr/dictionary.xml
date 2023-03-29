@@ -2809,7 +2809,6 @@
   <block id="5fd41756fdaa6f29377e51f411e6ef7b" category="admonition">여기 <block ref="f85d5f4f47d1b49f55d365d260fa53d2" category="inline-link-macro-rx"></block> Element vCenter 플러그인 5.1의 경우 버전 4.6, 4.7, 4.8, 4.9, 4.10, 및 5.0.</block>
   <block id="336669dbe720233ed5577ddf81b653d3" category="cell">5.0</block>
   <block id="ccdedb9c7dac93213366653d125b0ffe" category="cell"><block ref="ccdedb9c7dac93213366653d125b0ffe" category="inline-link-rx"></block></block>
-  <block id="33417a1ff438d871e2168ee3476b8b19" category="cell"><block ref="33417a1ff438d871e2168ee3476b8b19" category="inline-link-rx"></block></block>
   <block id="db26a1619b3544de39b9ae935f1f5853" category="paragraph">vCenter Server 8.0 및 7.0의 경우 가능합니다 <block ref="80e1b054839423dbd44653f6cd7557e3" category="inline-xref-macro-rx"></block> Element 플러그인 사용자 계정의 경우 및 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당합니다.</block>
   <block id="905117ce83c2d95fd055b77e296e775c" category="paragraph">vCenter Server 8.0 및 7.0의 경우 vCenter에서 Element 플러그인 사용자 계정에 대한 "VCP 역할"을 생성하고 vCenter Server용 Element 플러그인을 등록 또는 업그레이드하고 Element 플러그인 관리 작업을 수행할 수 있는 권한을 할당할 수 있습니다.</block>
   <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _신규 _</block>
@@ -2819,4 +2818,6 @@
   <block id="1f9b4aab4a12232cc23a810bf4cafc23" category="paragraph">vCenter Server 5.0용 NetApp Element 플러그인에는 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계된 원격 플러그인 아키텍처가 포함되어 있습니다. 원격 아키텍처는 플러그인 격리를 지원하며 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다. 원격 요소 플러그인은 관리 서비스와 함께 관리 노드 내의 Docker 컨테이너에 구축됩니다. <block ref="87219cf69889d249e3cece46c871efe3" category="inline-link-macro-rx"></block>.</block>
   <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">관리 서비스 공지 2.23.64(VMware vCenter Server 5.1.12용 NetApp Element 플러그인)</block>
   <block id="c427a8a16f088c999b45d089d225b2dc" category="list-text"><block ref="c427a8a16f088c999b45d089d225b2dc" category="inline-link-macro-rx"></block></block>
+  <block id="ad41aa2859a132db9cf718e61c22ab93" category="inline-link">2.22.7</block>
+  <block id="36a97520aa8ddf67c082684be7bcb6be" category="cell"><block ref="36a97520aa8ddf67c082684be7bcb6be" category="inline-link-rx"></block></block>
 </blocks>
