@@ -14,7 +14,7 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 
 [role="lead"]
-설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.1은 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.
+설치에 설명된 단계에 따라 vCenter Server용 NetApp Element 플러그인을 업그레이드할 수 있습니다. NetApp Element vCenter 플러그인 5.2는 관리 서비스 번들의 일부로 Element 및 NetApp HCI 릴리즈 외부에서 사용할 수 있습니다.
 
 [NOTE]
 ====
@@ -34,7 +34,7 @@ keywords: netapp, vcp, vcenter, plugin, element, upgrade
 
 == 자세한 내용을 확인하십시오
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["vCenter Plug-in 5.1 릴리즈 노트"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2 릴리즈 노트"^]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트"^]
 * https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 문서"^]
 * http://mysupport.netapp.com/hci/resources["NetApp HCI 리소스 페이지를 참조하십시오"^]

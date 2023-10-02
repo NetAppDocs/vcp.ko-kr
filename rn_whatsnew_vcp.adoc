@@ -14,6 +14,16 @@ keywords: netapp, vcp, vcenter, plugin, element, new, whats new
 
 
 [role="lead"]
+vCenter Server 5.2용 NetApp Element 플러그인에는 지원 기능 향상 및 사용자 지정 보호 도메인 표시 기능이 포함되어 있습니다.
+
+버전 5.2에서는 사용자 지정 보호 도메인이 Element 소프트웨어 클러스터에 구성되어 있을 때 플러그인에 사용자 지정 보호 도메인 상태 정보가 표시됩니다. link:vcp_task_reports_overview.html#reporting-overview-page-data["자세한 정보"].
+
+Element vCenter 플러그인 5.2는 관리 서비스의 2.24.40 릴리즈에서 사용할 수 있습니다.
+
+
+
+== vCenter Server 5.1용 NetApp Element 플러그인
+
 vCenter Server 5.1용 NetApp Element 플러그인은 향상된 보안 및 성능을 제공합니다. https://library.netapp.com/ecm/ecm_download_file/ECMLP2885734["자세한 정보"^].
 
 

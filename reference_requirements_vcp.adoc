@@ -30,7 +30,7 @@ Element vCenter 플러그인을 사용하려면 소프트웨어 iSCSI 어댑터 
 .플러그인에서 지원하는 VMware vSphere 버전
 플러그인은 다음과 같은 주요 버전의 VMware 소프트웨어를 지원합니다.
 
-* vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함하는 vSphere 8.0
+* vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 8.0 업데이트 1
 * vCenter Server, ESXi, VMFS5 및 VMFS6 데이터 저장소를 포함한 vSphere 7.0 및 7.0 업데이트 1, 2 및 3
 
 
