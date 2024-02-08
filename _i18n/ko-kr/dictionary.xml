@@ -2845,4 +2845,5 @@
   <block id="cc3e6fea6638b2b1b2791804af52ec8c" category="paragraph">Element vCenter 플러그인 5.2는 관리 서비스의 2.24.40 릴리즈에서 사용할 수 있습니다.</block>
   <block id="910e8449099d39f06d7f2cd8d6feea1c" category="section-title">vCenter Server 5.1용 NetApp Element 플러그인</block>
   <block id="6b51db420393cbff0d9f09dfeb229ecb" category="sidebar">NetApp HCI의 새로운 기능</block>
+  <block id="bf2765efb2720c4592beeec5c6bf386c" category="sidebar">VMware vCenter Server용 NetApp Element 플러그인은 VMware vSphere 인터페이스에 플러그인을 제공하므로 NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리 및 모니터링할 수 있습니다. 이 문서 사이트에서 플러그인에 대해 알아보고 사용할 수 있습니다. 이 문서 사이트에서는 vCenter 5.0 이상용 원격 Element 플러그인 및 vCenter 4.6~4.10용 로컬 Element 플러그인의 주소를 지정합니다.</block>
 </blocks>

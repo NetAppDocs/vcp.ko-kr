@@ -1,0 +1,47 @@
+---
+indexpage:
+  lead: VMware vCenter Server용 NetApp Element 플러그인은 VMware vSphere 인터페이스에 플러그인을 제공하므로
+    NetApp Element 소프트웨어를 실행하는 스토리지 클러스터를 관리 및 모니터링할 수 있습니다. 이 문서 사이트에서 플러그인에 대해 알아보고
+    사용할 수 있습니다. 이 문서 사이트에서는 vCenter 5.0 이상용 원격 Element 플러그인 및 vCenter 4.6~4.10용 로컬
+    Element 플러그인의 주소를 지정합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리스 정보
+      url: "/rn_relatedrn_vcp.html"
+    - title: 새로운 소식
+      url: "/rn_whatsnew_vcp.html"
+    - title: 제품 개요
+      url: "/concept_vcp_product_overview.html"
+    - title: 플러그인을 설치하고 구축합니다
+      url: "/vcp_task_getstarted_5_0.html"
+  - title: SolidFire All-Flash 스토리지 시스템을 활용할 수 있습니다
+    links:
+    - title: NetApp Element 소프트웨어의 새로운 기능
+      url: https://docs.netapp.com/us-en/element-software/concepts/concept_rn_whats_new_element.html
+    - title: Element 플러그인을 업그레이드합니다
+      url: https://docs.netapp.com/us-en/element-software/upgrade/task_vcp_upgrade_plugin.html
+    - title: vSphere 구성 요소를 업그레이드합니다
+      url: https://docs.netapp.com/us-en/element-software/upgrade/task_sf_upgrade_all_vsphere.html
+  - title: NetApp HCI 시스템
+    links:
+    - title: NetApp HCI의 새로운 기능
+      url: https://docs.netapp.com/us-en/hci/docs/rn_whatsnew.html
+    - title: Element 플러그인을 업그레이드합니다
+      url: https://docs.netapp.com/us-en/hci/docs/task_vcp_upgrade_plugin.html
+    - title: vSphere 구성 요소를 업그레이드합니다
+      url: https://docs.netapp.com/us-en/hci/docs/task_hci_upgrade_all_vsphere.html
+  - title: 이전 버전
+    links:
+    - title: NetApp Element 플러그인 설명서 4.5 이전 버전
+      url: "/reference_earlier_versions.html"
+  - title: 더 많은 리소스
+    links:
+    - title: SolidFire 및 요소 문서 리소스
+      url: https://www.netapp.com/data-storage/solidfire/documentation
+    - title: NetApp HCI 문서 리소스
+      url: https://www.netapp.com/hybrid-cloud/hci-documentation/
+    - title: NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes
+    - title: NetApp 제품 설명서
+      url: https://www.netapp.com/support-and-training/documentation/
