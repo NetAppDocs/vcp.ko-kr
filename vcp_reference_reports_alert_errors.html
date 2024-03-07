@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>시스템 알림 목록</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="시스템 알림 목록" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/vcp/vcp_reference_reports_alert_errors.html" />
+	<meta property="og:description" content="다음은 VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/vcp/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="다음은 VMware vCenter Server용 NetApp Element 플러그인의 보고 페이지를 사용하여 클러스터가 얼마나 잘 실행되고 있는지 나타내는 정보, 경고 또는 오류 목록입니다.">
+  <meta name="keywords" content=" netapp, hci, vcp, vcenter, element, monitor, report, alert, cluster, performance"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/vcp/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/vcp/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ko-kr/vcp/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/vcp/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/vcp/vcp_reference_reports_alert_errors.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/vcp/vcp_reference_reports_alert_errors.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/vcp/js/na-search.js'></script><script src='/ko-kr/vcp/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ko-kr/vcp/js/custom-dropdown.js'></script>
+  <script src='/ko-kr/vcp/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/vcp/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/vcp/js/jszip.min.js'></script><script src='/ko-kr/vcp/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ko-kr/vcp/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/kr">
+                <image id="ie-header-logo" src="/ko-kr/vcp/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">문서</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ko-kr/vcp/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">한국어</span>
+                    <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ko-kr/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/vcp/vcp_reference_reports_alert_errors.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ko-kr/vcp/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">모든 NetApp</span>
+                    <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">지원</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">기술 자료</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/ko/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">교육</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ko-kr/vcp/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ko-kr/vcp/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">모든 문서</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ko-kr/vcp/">-->
+      VCP
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ko-kr/vcp/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ko-kr/vcp/search.html" 
+        data-type="widget"
+        data-placeholder="설명서 검색"
+        data-no-results-found="{query}에 대한 결과를 찾을 수 없습니다"
+        data-did-you-mean="{suggestion}을(를) 검색하십시오."
+        data-no-results-found-did-you-mean="{query}에 대한 결과가 없습니다. {suggestion}을(를) 찾고 계시는 건가요?"
+        data-results-found="{hitCount}개의 결과를 찾았습니다"
+        data-error-message="오류가 발생했습니다. 다시 시도해 주십시오."
+        data-error-reset="검색 재설정"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vCenter Server용 NetApp Element 플러그인 설명서"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/index.html">
+        VMware vCenter Server용 NetApp Element 플러그인 설명서
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vCenter Server용 NetApp Element 플러그인 제품 개요"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/concept_vcp_product_overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/concept_vcp_product_overview.html">
+        VMware vCenter Server용 NetApp Element 플러그인 제품 개요
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="릴리즈 노트"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 릴리즈 노트</div>-->
+         릴리즈 노트
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/rn_whatsnew_vcp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/rn_whatsnew_vcp.html">
+        VMware vCenter Server용 NetApp Element 플러그인의 새로운 기능
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="추가 릴리스 정보"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/rn_relatedrn_vcp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/rn_relatedrn_vcp.html">
+        추가 릴리스 정보
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개념"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 개념</div>-->
+         개념
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vCenter Server 5.0 이상용 NetApp Element 플러그인"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> VMware vCenter Server 5.0 이상용 NetApp Element 플러그인</div>-->
+         VMware vCenter Server 5.0 이상용 NetApp Element 플러그인
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="원격 플러그인 아키텍처 개요"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_remote_plugin_architecture.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/vcp/vcp_concept_remote_plugin_architecture.html">
+        원격 플러그인 아키텍처 개요
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Element 원격 플러그인 확장 포인트"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_remote_plugin_extension_point.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/vcp/vcp_concept_remote_plugin_extension_point.html">
+        NetApp Element 원격 플러그인 확장 포인트
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인</div>-->
+         VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Element 구성 확장점"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_config_extension_point.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/vcp/vcp_concept_config_extension_point.html">
+        NetApp Element 구성 확장점
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Element 관리 확장 포인트"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_management_extension_point.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/vcp/vcp_concept_management_extension_point.html">
+        NetApp Element 관리 확장 포인트
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="사용자 계정"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_accounts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_concept_accounts.html">
+        사용자 계정
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보호 도메인"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_protection_domains.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_concept_protection_domains.html">
+        보호 도메인
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="연결 모드 및 vCenter 플러그인"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_linkedmode.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_concept_linkedmode.html">
+        연결 모드 및 vCenter 플러그인
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="QoSSIOC를 참조하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_qossioc.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_concept_qossioc.html">
+        QoSSIOC를 참조하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="가상 볼륨(VVOL)"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_concept_vvols.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_concept_vvols.html">
+        가상 볼륨(VVOL)
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="구축 전 요구 사항"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/reference_requirements_vcp.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/reference_requirements_vcp.html">
+        구축 전 요구 사항
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다</div>-->
+         vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter Server 7.0 이상에 대해 Element Plug-in 5.0 이상을 설치하고 구성합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_getstarted_5_0.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_getstarted_5_0.html">
+        vCenter Server 7.0 이상에 대해 Element Plug-in 5.0 이상을 설치하고 구성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Element 플러그인 4.10 이하를 설치하고 구성합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_getstarted.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_getstarted.html">
+        Element 플러그인 4.10 이하를 설치하고 구성합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="플러그인을 업그레이드합니다"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/task_vcp_upgrades.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/task_vcp_upgrades.html">
+        플러그인을 업그레이드합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter 플러그인을 사용하여 스토리지를 관리합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> vCenter 플러그인을 사용하여 스토리지를 관리합니다</div>-->
+         vCenter 플러그인을 사용하여 스토리지를 관리합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클러스터 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_clusters_manage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_clusters_manage.html">
+        클러스터 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 저장소를 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_datastores_manage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_datastores_manage.html">
+        데이터 저장소를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_volumes_manage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_volumes_manage.html">
+        볼륨 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="사용자 계정을 만들고 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_create_manage_user_accounts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_create_manage_user_accounts.html">
+        사용자 계정을 만들고 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="액세스 그룹을 생성하고 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_create_manage_access_groups.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_create_manage_access_groups.html">
+        액세스 그룹을 생성하고 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="이니시에이터를 생성 및 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_create_manage_initiators.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_create_manage_initiators.html">
+        이니시에이터를 생성 및 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Element 볼륨 및 VMware 데이터 저장소에 대한 QoSSIOC를 설정 및 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_qossioc.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_qossioc.html">
+        Element 볼륨 및 VMware 데이터 저장소에 대한 QoSSIOC를 설정 및 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 QoS 정책 생성 및 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_qos_policies.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_qos_policies.html">
+        볼륨 QoS 정책 생성 및 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클러스터 하드웨어 및 가상 네트워크를 관리합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 클러스터 하드웨어 및 가상 네트워크를 관리합니다</div>-->
+         클러스터 하드웨어 및 가상 네트워크를 관리합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클러스터 하드웨어 및 가상 네트워크 관리 개요"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_manage_cluster_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_manage_cluster_overview.html">
+        클러스터 하드웨어 및 가상 네트워크 관리 개요
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="드라이브 추가 및 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_add_manage_drive.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_add_manage_drive.html">
+        드라이브 추가 및 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="노드 추가 및 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_add_manage_nodes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_add_manage_nodes.html">
+        노드 추가 및 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="가상 네트워크 생성 및 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_create_manage_vlans.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_create_manage_vlans.html">
+        가상 네트워크 생성 및 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 성능을 모니터링합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 성능을 모니터링합니다</div>-->
+         시스템 성능을 모니터링합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보고서 옵션을 사용하여 시스템 성능을 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_intro.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_intro.html">
+        보고서 옵션을 사용하여 시스템 성능을 모니터링합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개요 페이지에서 전체 클러스터 상태를 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_overview.html">
+        개요 페이지에서 전체 클러스터 상태를 모니터링합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 경고를 모니터링합니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_alerts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_alerts.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 경고를 모니터링합니다</div>-->
+         시스템 경고를 모니터링합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 알림 목록"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_reference_reports_alert_errors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/vcp/vcp_reference_reports_alert_errors.html">
+        시스템 알림 목록
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="문제 해결을 위해 이벤트 로그를 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_event_logs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_event_logs.html">
+        문제 해결을 위해 이벤트 로그를 모니터링합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 성능을 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_volume_performance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_volume_performance.html">
+        볼륨 성능을 모니터링합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="iSCSI 세션을 모니터링하여 연결 상태를 확인합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_iscsi.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_iscsi.html">
+        iSCSI 세션을 모니터링하여 연결 상태를 확인합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="QOSSIOC 이벤트를 사용하여 VM 성능을 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_reports_qossioc.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_reports_qossioc.html">
+        QOSSIOC 이벤트를 사용하여 VM 성능을 모니터링합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter 플러그인을 사용하여 데이터 보호"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/vcp/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/vcp/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> vCenter 플러그인을 사용하여 데이터 보호</div>-->
+         vCenter 플러그인을 사용하여 데이터 보호
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter 플러그인을 통한 데이터 보호 개요"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_protect_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_protect_overview.html">
+        vCenter 플러그인을 통한 데이터 보호 개요
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 스냅샷을 생성하고 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_protect_snapshots_volume.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_protect_snapshots_volume.html">
+        볼륨 스냅샷을 생성하고 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="그룹 스냅샷을 생성하고 관리합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_protect_snapshots_group.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_protect_snapshots_group.html">
+        그룹 스냅샷을 생성하고 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스냅샷 스케줄을 생성합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_protect_snapshots_schedules.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_protect_snapshots_schedules.html">
+        스냅샷 스케줄을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클러스터 간에 원격 복제를 수행합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_protect_remote_replication.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/vcp/vcp_task_protect_remote_replication.html">
+        클러스터 간에 원격 복제를 수행합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="vCenter 플러그인을 사용하여 가상 볼륨을 설정하고 관리합니다"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_task_configure_manage_vvols.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/vcp_task_configure_manage_vvols.html">
+        vCenter 플러그인을 사용하여 가상 볼륨을 설정하고 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="플러그 인 등록을 취소합니다"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/task_vcp_unregister.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/task_vcp_unregister.html">
+        플러그 인 등록을 취소합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="플러그인을 제거합니다"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/task_vcp_remove.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/task_vcp_remove.html">
+        플러그인을 제거합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="플러그인 문제를 해결합니다"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/vcp_reference_troubleshoot_vcp.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/vcp_reference_troubleshoot_vcp.html">
+        플러그인 문제를 해결합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="이전 버전의 NetApp Element 플러그인 설명서"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/reference_earlier_versions.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/reference_earlier_versions.html">
+        이전 버전의 NetApp Element 플러그인 설명서
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="법적 고지"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/vcp_reference_reports_alert_errors.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/vcp/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ko-kr/vcp"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ko-kr/vcp"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ko-kr/vcp/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">시스템 알림 목록</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-02-23 19:54:38 +0000">02/23/2023</time>
+        
+    
+    
+        <span>기여자
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ko-kr/vcp/images/discuss-sm.svg" alt="" class="github-icon" />변경 제안</span>
+        <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ko-kr/vcp/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/vcp.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/vcp/vcp_reference_reports_alert_errors.html&page-title=시스템 알림 목록" class="page-nav-contribute-link" role="button">문서 변경사항 요청</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/vcp/blob/main/vcp_reference_reports_alert_errors.adoc" class="page-nav-contribute-link" role="button">이 페이지 편집</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >기여하는 방법 알아보기</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ko-kr/vcp/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ko-kr/vcp/pdfs/fullsite-sidebar/VMware_vCenter_Server용_NetApp_Element_플러그인_설명서.pdf" >
+                    <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/릴리즈_노트.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            릴리즈 노트
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/개념.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            개념
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/VMware_vCenter_Server_5_0_이상용_NetApp_Element_플러그인.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            VMware vCenter Server 5.0 이상용 NetApp Element 플러그인
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/VMware_vCenter_Server_4_10_이하_버전용_NetApp_Element_플러그인.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            VMware vCenter Server 4.10 이하 버전용 NetApp Element 플러그인
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/vCenter_Server용_NetApp_Element_플러그인을_설치하고_구성합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            vCenter Server용 NetApp Element 플러그인을 설치하고 구성합니다
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/vCenter_플러그인을_사용하여_스토리지를_관리합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            vCenter 플러그인을 사용하여 스토리지를 관리합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/클러스터_하드웨어_및_가상_네트워크를_관리합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            클러스터 하드웨어 및 가상 네트워크를 관리합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/시스템_성능을_모니터링합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 성능을 모니터링합니다
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/시스템_경고를_모니터링합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 경고를 모니터링합니다
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/vcp/pdfs/sidebar/vCenter_플러그인을_사용하여_데이터_보호.pdf" 
+            
+          >
+            <img src="/ko-kr/vcp/images/pdf-icon.png" alt="" width="16" height="16"/>
+            vCenter 플러그인을 사용하여 데이터 보호
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ko-kr/vcp/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>시스템에서 각 알림과 함께 오류 코드를 보고하여 경고를 발생시킨 구성 요소와 그 원인을 확인할 수 있습니다. 플러그인 확장 지점을 사용하여 오류 코드를 볼 수 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Element vCenter 플러그인 5.0부터 * NetApp 원격 플러그인 &gt; 관리 &gt; 보고 &gt; 알림 * 을 선택합니다.</p>
+</li>
+<li>
+<p>Element vCenter 플러그인 4.10 이전 버전의 경우 * NetApp Element 관리 &gt; 보고 &gt; 알림 * 을 선택합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>다음 목록에서는 다양한 유형의 시스템 경고를 간략하게 설명합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* authenticationServiceFault *</p>
+<div class="paragraph">
+<p>하나 이상의 클러스터 노드에서 인증 서비스가 예상대로 작동하지 않습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 가용한 VirtualNetworkIPAddressLow *</p>
+<div class="paragraph">
+<p>IP 주소 블록의 가상 네트워크 주소 수가 적습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 가상 네트워크 주소 블록에 더 많은 IP 주소를 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 블록클러스터풀 *</p>
+<div class="paragraph">
+<p>단일 노드 손실을 지원하기에 충분한 여유 블록 스토리지 공간이 없습니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>stage3Low(경고): 사용자 정의 임계값이 초과되었습니다. Cluster Full(클러스터 전체) 설정을 조정하거나 노드를 더 추가합니다.</p>
+</li>
+<li>
+<p>stage4Critical(오류): 1노드 장애를 복구할 수 있는 공간이 부족합니다. 볼륨, 스냅샷 및 클론을 생성할 수 없습니다.</p>
+</li>
+<li>
+<p>stage5CompletyConsumered (Critical) 1; 쓰기 또는 새 iSCSI 연결이 허용되지 않습니다. 현재 iSCSI 연결이 유지됩니다. 클러스터에 용량을 더 추가할 때까지 쓰기에 실패합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 볼륨을 제거 또는 삭제하거나 스토리지 클러스터에 다른 스토리지 노드를 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 블록성능이 저하됨 *</p>
+<div class="paragraph">
+<p>장애로 인해 블록 데이터가 더 이상 완전히 복제되지 않습니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>블록 데이터의 전체 복사본을 두 개만 액세스할 수 있습니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>블록 데이터의 전체 복사본을 하나만 액세스할 수 있습니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>심각</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>블록 데이터의 전체 복사본을 액세스할 수 없습니다.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>참고: * 경고 상태는 Triple Helix 시스템에서만 발생할 수 있습니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 오프라인 노드 또는 블록 서비스를 복원하거나 NetApp Support에 지원을 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* BLOCKServiceTooFull *</p>
+<div class="paragraph">
+<p>블록 서비스가 너무 많은 공간을 사용하고 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 프로비저닝된 용량을 더 추가합니다.</p>
+</div>
+</li>
+<li>
+<p>* blockServiceUnhealthy *</p>
+<div class="paragraph">
+<p>블록 서비스가 정상 상태가 아닌 것으로 감지되었습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>심각도 = 경고: 작업이 수행되지 않습니다. 이 경고 기간은 cTimeUntilBSIsKilledMSec = 3300ms로 만료됩니다.</p>
+</li>
+<li>
+<p>심각도 = 오류: 시스템이 자동으로 데이터를 사용 중지하여 다른 정상 드라이브로 데이터를 재복제합니다.</p>
+</li>
+<li>
+<p>심각도 = 위험: 복제 개수보다 크거나 같은 여러 노드에서 장애가 발생한 블록 서비스가 있습니다(이중 나선형의 경우 2개). 데이터를 사용할 수 없으며 입력 용지함 동기화가 완료되지 않습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 이 고장은 블록 서비스에 액세스하거나 서비스를 폐기한 경우 삭제됩니다.</p>
+</div>
+</li>
+<li>
+<p>* BmcSelfTestFailed *</p>
+<div class="paragraph">
+<p>베이스보드 관리 컨트롤러(BMC)가 자체 테스트에 실패했습니다.</p>
+</div>
+<div class="paragraph">
+<p>도움이 필요하면 NetApp 지원에 문의하십시오.</p>
+</div>
+<div class="paragraph">
+<p>Element 12.5 이상으로 업그레이드하는 동안 <code>BmcSelfTestFailed</code> 장애가 이미 발생한 BMC가 있거나 업그레이드 중에 노드의 BMC에 장애가 발생한 노드에 대해서는 장애가 생성되지 않습니다. 업그레이드 중 자체 테스트에 실패한 BMC는 를 실행합니다 <code>BmcSelfTestFailed</code> 전체 클러스터에서 업그레이드가 완료된 후 경고 장애 발생.</p>
+</div>
+</li>
+<li>
+<p>* ClockSkewExceedsFaultThreshold *</p>
+<div class="paragraph">
+<p>클러스터 마스터와 토큰을 제공하는 노드 간의 시간 차이가 권장 임계값을 초과합니다. 스토리지 클러스터는 노드 간의 시간 차이를 자동으로 수정할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 설치 기본값이 아닌 네트워크 내부의 NTP 서버를 사용하십시오. 내부 NTP 서버를 사용하는 경우 NetApp 지원 팀에 지원을 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 클러스터 동기화 *</p>
+<div class="paragraph">
+<p>공간 부족 상태가 있으며 오프라인 블록 저장소 드라이브의 데이터를 아직 활성 상태인 드라이브와 동기화할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 스토리지를 더 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 클러스터풀 *</p>
+<div class="paragraph">
+<p>스토리지 클러스터에 사용 가능한 스토리지 공간이 더 이상 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 스토리지를 더 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 클러스터로IOPSARREOverProvisioned *</p>
+<div class="paragraph">
+<p>클러스터 IOPS가 초과 프로비저닝됩니다. 모든 최소 QoS IOPS의 합이 클러스터의 예상 IOPS보다 큽니다. 모든 볼륨에 대해 최소 QoS를 동시에 유지할 수는 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 문제를 해결하려면 볼륨에 대한 최소 QoS IOPS 설정을 낮추십시오.</p>
+</div>
+</li>
+<li>
+<p>* CpuThermalEventThreshold *</p>
+<div class="paragraph">
+<p>하나 이상의 CPU에 대한 CPU 열 이벤트 수가 구성된 임계값을 초과합니다.</p>
+</div>
+<div class="paragraph">
+<p>10분 내에 새 CPU 열 이벤트가 감지되지 않으면 경고가 자동으로 해결됩니다.</p>
+</div>
+</li>
+<li>
+<p>* disableDriveSecurityFailed *</p>
+<div class="paragraph">
+<p>클러스터가 드라이브 보안(저장 시 암호화)을 사용하도록 구성되지 않았지만 하나 이상의 드라이브에 드라이브 보안이 설정되어 있습니다. 즉, 해당 드라이브에서 드라이브 보안을 해제하지 못했습니다. 이 고장은 "경고" 심각도로 기록됩니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 드라이브 보안을 비활성화할 수 없는 이유에 대한 고장 세부 정보를 확인하십시오. 가능한 원인은 다음과 같습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>암호화 키를 가져올 수 없습니다. 키 또는 외부 키 서버에 대한 액세스 문제를 조사하십시오.</p>
+</li>
+<li>
+<p>드라이브에서 비활성화 작업이 실패했습니다. 잘못된 키를 획득했을 수 있는지 확인하십시오.</p>
+<div class="paragraph">
+<p>두 가지 모두 고장의 원인이 아니라면 드라이브를 교체해야 할 수 있습니다.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>올바른 인증 키를 제공하더라도 보안이 비활성화되지 않는 드라이브를 복구할 수 있습니다. 이 작업을 수행하려면 시스템에서 드라이브를 Available(사용 가능) 으로 이동하여 드라이브를 제거하고 드라이브에서 보안 삭제를 수행한 다음 Active(활성) 로 다시 이동합니다.</p>
+</div>
+</li>
+<li>
+<p>* 연결 해제 클러스터 쌍 *</p>
+<div class="paragraph">
+<p>클러스터 쌍의 연결이 끊어지거나 잘못 구성되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>클러스터 간의 네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* 연결 해제 RemoteNode *</p>
+<div class="paragraph">
+<p>원격 노드의 연결이 끊겼거나 잘못 구성되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>노드 간 네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* 연결 해제 SnapMirror 엔드포인트 *</p>
+<div class="paragraph">
+<p>원격 SnapMirror 엔드포인트의 연결이 끊어지거나 잘못 구성되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>클러스터와 원격 SnapMirrorEndpoint 간의 네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* 드라이브 사용 가능 *</p>
+<div class="paragraph">
+<p>클러스터에서 하나 이상의 드라이브를 사용할 수 있습니다. 일반적으로 모든 클러스터에는 모든 드라이브가 추가되어야 하며 사용 가능한 상태에서는 없어야 합니다. 이 오류가 예기치 않게 나타날 경우 NetApp 지원 팀에 문의하십시오.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 사용 가능한 드라이브를 스토리지 클러스터에 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 드라이브 실패 *</p>
+<div class="paragraph">
+<p>하나 이상의 드라이브에 장애가 발생하면 클러스터가 이 오류를 반환하고 다음 조건 중 하나를 표시합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>드라이브 관리자가 드라이브에 액세스할 수 없습니다.</p>
+</li>
+<li>
+<p>슬라이스 또는 블록 서비스가 너무 많은 번 실패했으며, 이는 아마도 드라이브 읽기 또는 쓰기 오류로 인해 발생할 수 있으며 다시 시작할 수 없습니다.</p>
+</li>
+<li>
+<p>드라이브가 없습니다.</p>
+</li>
+<li>
+<p>노드의 마스터 서비스에 액세스할 수 없습니다(노드의 모든 드라이브가 누락/실패로 간주됨).</p>
+</li>
+<li>
+<p>드라이브가 잠겨 있고 드라이브의 인증 키를 가져올 수 없습니다.</p>
+</li>
+<li>
+<p>드라이브가 잠겨 있고 잠금 해제 작업이 실패합니다.</p>
+<div class="paragraph">
+<p>이 문제를 해결하려면:</p>
+</div>
+</li>
+<li>
+<p>노드의 네트워크 연결을 확인합니다.</p>
+</li>
+<li>
+<p>드라이브를 교체합니다.</p>
+</li>
+<li>
+<p>인증 키를 사용할 수 있는지 확인합니다.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* 드라이브 상태 결함 *</p>
+<div class="paragraph">
+<p>드라이브가 SMART 상태 점검에 실패하여 드라이브의 기능이 저하되었습니다. 이 결함의 심각도는 다음과 같습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>슬롯 &lt;node slot&gt;&lt;drive slot&gt;에 일련 번호 &lt;serial number&gt;이(가) 있는 드라이브가 SMART Overall 상태 검사에 실패했습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 드라이브를 교체하십시오.</p>
+</div>
+</li>
+<li>
+<p>* driveWearFault *</p>
+<div class="paragraph">
+<p>드라이브의 남은 수명이 임계값 아래로 떨어졌지만 여전히 작동하고 있습니다. 이 결함에는 위험 및 경고라는 두 가지 심각도 수준이 있을 수 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>슬롯이 &lt;node slot&gt;&lt;drive slot&gt;인 일련 번호가 &lt;serial number&gt;인 드라이브의 마모 수준이 매우 중요합니다.</p>
+</li>
+<li>
+<p>슬롯이 &lt;node slot&gt;&lt;drive slot&gt;인 슬롯에 일련 번호 &lt;serial number&gt;가 있는 드라이브의 마모 예비량이 적습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 드라이브를 곧 교체하십시오.</p>
+</div>
+</li>
+<li>
+<p>* duplicateClusterMasterCandidate *</p>
+<div class="paragraph">
+<p>둘 이상의 스토리지 클러스터 마스터 후보가 감지되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* enableDriveSecurityFailed *</p>
+<div class="paragraph">
+<p>클러스터가 드라이브 보안(저장된 암호화)을 요구하도록 구성되었지만 하나 이상의 드라이브에서 드라이브 보안을 활성화할 수 없습니다. 이 고장은 "경고" 심각도로 기록됩니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 드라이브 보안을 활성화할 수 없는 이유에 대한 고장 세부 정보를 확인하십시오. 가능한 원인은 다음과 같습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>암호화 키를 가져올 수 없습니다. 키 또는 외부 키 서버에 대한 액세스 문제를 조사하십시오.</p>
+</li>
+<li>
+<p>드라이브에서 활성화 작업이 실패했습니다. 잘못된 키를 획득했을 수 있는지 확인하십시오. 두 가지 모두 고장의 원인이 아니라면 드라이브를 교체해야 할 수 있습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>올바른 인증 키가 제공되었더라도 보안이 설정되지 않은 드라이브를 복구할 수 있습니다. 이 작업을 수행하려면 시스템에서 드라이브를 Available(사용 가능) 으로 이동하여 드라이브를 제거하고 드라이브에서 보안 삭제를 수행한 다음 Active(활성) 로 다시 이동합니다.</p>
+</div>
+</li>
+<li>
+<p>* EnembleDegraded *</p>
+<div class="paragraph">
+<p>하나 이상의 앙상블 노드에 대한 네트워크 연결 또는 전원이 손실되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 네트워크 연결 또는 전원을 복원하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 예외 *</p>
+<div class="paragraph">
+<p>고장이 루틴 고장을 제외한 것으로 보고되었습니다. 이러한 고장은 오류 대기열에서 자동으로 삭제되지 않습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* failedSpaceTooFull *</p>
+<div class="paragraph">
+<p>블록 서비스가 데이터 쓰기 요청에 응답하지 않습니다. 이로 인해 슬라이스 서비스의 공간이 부족하여 실패한 쓰기를 저장할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 블록 서비스 기능을 복원하여 쓰기가 정상적으로 계속되고 장애가 발생한 공간이 슬라이스 서비스에서 플러시되도록 합니다.</p>
+</div>
+</li>
+<li>
+<p>* 팬센서 *</p>
+<div class="paragraph">
+<p>팬 센서가 고장났거나 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 장애가 발생한 하드웨어를 모두 교체하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 액세스 저하됨 *</p>
+<div class="paragraph">
+<p>Fibre Channel 노드가 스토리지 IP를 통해 스토리지 클러스터의 다른 노드에 일정 기간 응답하지 않습니다. 이 상태에서는 노드가 응답하지 않는 것으로 간주되어 클러스터 장애가 발생합니다.</p>
+</div>
+<div class="paragraph">
+<p>네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 액세스사용할 수 없음 *</p>
+<div class="paragraph">
+<p>모든 Fibre Channel 노드가 응답하지 않습니다. 노드 ID가 표시됩니다.</p>
+</div>
+<div class="paragraph">
+<p>네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 ActiveIxL *</p>
+<div class="paragraph">
+<p>IxL Nexus 수가 Fibre Channel 노드당 지원되는 활성 세션 8000개 한도에 근접하고 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>모범 사례 제한은 5500입니다.</p>
+</li>
+<li>
+<p>경고 한계는 7500입니다.</p>
+</li>
+<li>
+<p>최대 제한(시행되지 않음)은 8192입니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 IxL Nexus 수를 Best Practice Limit 인 5500 미만으로 줄이십시오.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 구성 *</p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>PCI 슬롯에 예기치 않은 Fibre Channel 포트가 있습니다.</p>
+</li>
+<li>
+<p>예기치 않은 Fibre Channel HBA 모델이 있습니다.</p>
+</li>
+<li>
+<p>Fibre Channel HBA의 펌웨어에 문제가 있습니다.</p>
+</li>
+<li>
+<p>Fibre Channel 포트가 온라인 상태가 아닙니다.</p>
+</li>
+<li>
+<p>Fibre Channel 패스스루 구성에 지속적인 문제가 있습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 IOPS *</p>
+<div class="paragraph">
+<p>총 IOPS 수가 클러스터의 파이버 채널 노드에 대한 IOPS 제한에 근접하고 있습니다. 제한 사항은 다음과 같습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>FC0025:450K IOPS는 파이버 채널 노드당 4K 블록 크기로 제한됩니다.</p>
+</li>
+<li>
+<p>FCN001:625K OPS는 파이버 채널 노드당 4K 블록 크기에서 제한됩니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 사용 가능한 모든 Fibre Channel 노드에서 로드 밸런싱을 조정합니다.</p>
+</div>
+</li>
+<li>
+<p>* 광섬유 채널 StaticIxL *</p>
+<div class="paragraph">
+<p>IxL Nexus 수가 Fibre Channel 노드당 지원되는 16000개의 정적 세션 제한에 근접하고 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>모범 사례 제한은 11000입니다.</p>
+</li>
+<li>
+<p>경고 한계는 15000입니다.</p>
+</li>
+<li>
+<p>최대 제한(강제 적용)은 16384입니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 IxL Nexus 개수를 11000의 모범 사례 한도 미만으로 줄이십시오.</p>
+</div>
+</li>
+<li>
+<p>파일시스템 용량 낮음*</p>
+<div class="paragraph">
+<p>파일 시스템 중 하나에 공간이 부족합니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 파일 시스템에 용량을 더 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>FileSystemIsReadOnly * 를 참조하십시오</p>
+<div class="paragraph">
+<p>파일 시스템이 읽기 전용 모드로 이동되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* fipsDrivesMismatch *</p>
+<div class="paragraph">
+<p>FIPS가 아닌 드라이브가 FIPS가 지원되는 스토리지 노드에 물리적으로 삽입되었거나 FIPS 드라이브가 아닌 스토리지 노드에 물리적으로 삽입되었습니다. 노드당 단일 장애가 발생하고 영향을 받는 모든 드라이브가 나열됩니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 문제가 있는 일치하지 않는 드라이브를 제거하거나 교체합니다.</p>
+</div>
+</li>
+<li>
+<p>* fipsDrivesOutOfCompliance * 를 참조하십시오</p>
+<div class="paragraph">
+<p>시스템에서 FIPS 드라이브 기능이 활성화된 후 저장된 암호화 기능이 비활성화되었음을 감지했습니다. 이 장애는 FIPS 드라이브 기능이 설정되어 있고 스토리지 클러스터에 비 FIPS 드라이브 또는 노드가 있을 때도 생성됩니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 저장 시 암호화 를 설정하거나 스토리지 클러스터에서 비 FIPS 하드웨어를 제거합니다.</p>
+</div>
+</li>
+<li>
+<p>* fipsSelfTestFailure *</p>
+<div class="paragraph">
+<p>자체 테스트 중에 FIPS 서브시스템에서 오류가 감지되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 하드웨어 구성 불일치 *</p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>구성이 노드 정의와 일치하지 않습니다.</p>
+</li>
+<li>
+<p>이 노드 유형에 잘못된 드라이브 크기가 있습니다.</p>
+</li>
+<li>
+<p>지원되지 않는 드라이브가 감지되었습니다. 설치된 Element 버전이 이 드라이브를 인식하지 못하는 이유가 있을 수 있습니다. 이 노드에서 Element 소프트웨어를 업데이트할 것을 권장합니다.</p>
+</li>
+<li>
+<p>드라이브 펌웨어가 일치하지 않습니다.</p>
+</li>
+<li>
+<p>드라이브 암호화 가능 상태가 노드와 일치하지 않습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* idPCertificateExpiration *</p>
+<div class="paragraph">
+<p>타사 ID 공급자(IDP)와 함께 사용할 클러스터의 서비스 공급자 SSL 인증서가 만료되었거나 이미 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 30일 이내에 만료됩니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 7일 이내에 만료됩니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>심각</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 3일 이내에 만료되거나 이미 만료되었습니다.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이 오류를 해결하려면 SSL 인증서가 만료되기 전에 업데이트하십시오. 에서 UpdateIdpConfiguration API 메서드를 사용합니다 <code>refreshCertificateExpirationTime=true</code> 업데이트된 SSL 인증서를 제공합니다.</p>
+</div>
+</li>
+<li>
+<p>* 비일관성 모델 *</p>
+<div class="paragraph">
+<p>VLAN 장치의 연결 모드가 누락되었습니다. 이 고장은 예상 본드 모드와 현재 사용 중인 본드 모드를 표시합니다.</p>
+</div>
+</li>
+<li>
+<p>* 불일치 *</p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bond1G 불일치: Bond1G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</p>
+</li>
+<li>
+<p>Bond10G 불일치: Bond10G 인터페이스에서 일치하지 않는 MTU가 감지되었습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 장애는 관련된 MTU 값과 함께 문제의 노드나 노드를 표시합니다.</p>
+</div>
+</li>
+<li>
+<p>* 비일관성 RoutingRules *</p>
+<div class="paragraph">
+<p>이 인터페이스의 라우팅 규칙이 일치하지 않습니다.</p>
+</div>
+</li>
+<li>
+<p>* 불일관된 SubnetMasks *</p>
+<div class="paragraph">
+<p>VLAN 장치의 네트워크 마스크가 VLAN에 대해 내부적으로 기록된 네트워크 마스크와 일치하지 않습니다. 이 고장은 예상 네트워크 마스크와 현재 사용 중인 네트워크 마스크를 표시합니다.</p>
+</div>
+</li>
+<li>
+<p>* incorrectBondPortCount *</p>
+<div class="paragraph">
+<p>연결 포트 수가 올바르지 않습니다.</p>
+</div>
+</li>
+<li>
+<p>* invalidConfiguredFiberChannelNodeCount * 입니다</p>
+<div class="paragraph">
+<p>두 예상 Fibre Channel 노드 연결 중 하나의 성능이 저하되었습니다. 이 오류는 하나의 Fibre Channel 노드만 연결되어 있을 때 나타납니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 클러스터 네트워크 연결 및 네트워크 케이블을 확인하고 실패한 서비스가 있는지 확인합니다. 네트워크 또는 서비스 문제가 없는 경우 NetApp Support에서 파이버 채널 노드 교체를 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* irqBalancepFailed *</p>
+<div class="paragraph">
+<p>인터럽트의 균형을 맞추는 동안 예외가 발생했습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* kmipCertificateFault *</p>
+<div class="ulist">
+<ul>
+<li>
+<p>루트 인증 기관(CA) 인증서의 만료 시기가 다가오고 있습니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 만료 날짜가 30일 이상 지난 루트 CA에서 새 인증서를 얻고 ModifyKeyServerKmip을 사용하여 업데이트된 루트 CA 인증서를 제공하십시오.</p>
+</div>
+</li>
+<li>
+<p>클라이언트 인증서 만료 시기가 다가오고 있습니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModifyKeyServerKmip을 사용하여 만료되는 KMIP 클라이언트 인증서를 새 인증서로 교체합니다.</p>
+</div>
+</li>
+<li>
+<p>루트 인증 기관(CA) 인증서가 만료되었습니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 만료 날짜가 30일 이상 지난 루트 CA에서 새 인증서를 얻고 ModifyKeyServerKmip을 사용하여 업데이트된 루트 CA 인증서를 제공하십시오.</p>
+</div>
+</li>
+<li>
+<p>클라이언트 인증서가 만료되었습니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 GetClientCertificateSigningRequest를 사용하여 새 CSR을 생성하고 새 만료 날짜가 30일 이상 경과되도록 서명한 후 ModifyKeyServerKmip을 사용하여 만료된 KMIP 클라이언트 인증서를 새 인증서로 교체합니다.</p>
+</div>
+</li>
+<li>
+<p>루트 인증 기관(CA) 인증서 오류입니다.</p>
+<div class="paragraph">
+<p>이 오류를 해결하려면 올바른 인증서가 제공되었는지 확인하고 필요한 경우 루트 CA에서 인증서를 다시 획득합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</p>
+</div>
+</li>
+<li>
+<p>클라이언트 인증서 오류입니다.</p>
+<div class="paragraph">
+<p>이 고장을 해결하려면 올바른 KMIP 클라이언트 인증서가 설치되었는지 확인하십시오. 클라이언트 인증서의 루트 CA가 EKS에 설치되어야 합니다. ModifyKeyServerKmip을 사용하여 올바른 KMIP 클라이언트 인증서를 설치합니다.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* kmipServerFault *</p>
+<div class="ulist">
+<ul>
+<li>
+<p>연결 실패</p>
+<div class="paragraph">
+<p>이 고장을 해결하려면 외부 키 서버가 활성 상태인지, 네트워크를 통해 연결할 수 있는지 확인하십시오. 연결을 테스트하려면 TestKeyServerKimp 및 TestKeyProviderKmip 을 사용합니다.</p>
+</div>
+</li>
+<li>
+<p>인증에 실패했습니다</p>
+<div class="paragraph">
+<p>이 문제를 해결하려면 올바른 루트 CA 및 KMIP 클라이언트 인증서를 사용하고 있고 개인 키와 KMIP 클라이언트 인증서가 일치하는지 확인하십시오.</p>
+</div>
+</li>
+<li>
+<p>서버 오류입니다</p>
+<div class="paragraph">
+<p>이 고장을 해결하려면 오류에 대한 세부 정보를 확인하십시오. 반환된 오류에 따라 외부 키 서버의 문제 해결이 필요할 수 있습니다.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* 암기편임계값 *</p>
+<div class="paragraph">
+<p>수정 가능 또는 수정할 수 없는 많은 ECC 오류가 감지되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">이벤트</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>단일 DIMM cErrorCount는 cDimmCorrectableErrWarnThreshold에 도달합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM:&lt;프로세서&gt;&lt;DIMM 슬롯&gt;에서 수정 가능한 ECC 메모리 오류가 임계값보다 높습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>단일 DIMM cErrorCount는 cErrorFaultTimer 가 DIMM에 대해 만료될 때까지 immCorrectableErrWarnThreshold 를 유지합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM:&lt;프로세서&gt;&lt;DIMM&gt;에서 수정 가능한 ECC 메모리 오류가 임계값보다 높습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러는 cErrorCount above cMemCtlCorrectableErrWarnThreshold 를 보고하고 cMemCtlrCorrectableErrWarnDuration 을 지정합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>수정 가능한 ECC 메모리 오류가 메모리 컨트롤러의 임계값보다 높음:&lt;프로세서&gt;&lt;메모리 컨트롤러&gt;</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러는 메모리 컨트롤러에 대해 cErrorFaultTimer 가 만료될 때까지 cErrorCount 를 cMemCtlCorrectableErrWarnThreshold 보다 높게 보고합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM:&lt;프로세서&gt;&lt;DIMM&gt;에서 수정 가능한 ECC 메모리 오류가 임계값보다 높습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>단일 DIMM은 0보다 큰 uErrorCount를 보고하지만 cDimmUncorrectableErrFaultThreshold보다 작습니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM:&lt;프로세서&gt;&lt;DIMM 슬롯&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>단일 DIMM은 적어도 cDimmUncorrectableErrFaultThreshold의 uErrorCount를 보고합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DIMM:&lt;프로세서&gt;&lt;DIMM 슬롯&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러는 uErrorCount 가 0보다 크지만 cMemCtlrUncorrectableErrFaultThreshold 보다 작다는 것을 보고합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러 &lt;Processor&gt;&lt;Memory Controller&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러는 cMemCtlrUncorrectableErrFaultThreshold의 uErrorCount를 보고합니다.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>메모리 컨트롤러 &lt;Processor&gt;&lt;Memory Controller&gt;에서 수정할 수 없는 ECC 메모리 오류가 감지되었습니다</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이 고장을 해결하려면 NetApp 지원에 문의하여 지원을 받으십시오.</p>
+</div>
+</li>
+<li>
+<p>* 메모리 사용 임계값 *</p>
+<div class="paragraph">
+<p>메모리 사용량이 정상보다 높습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/vcp/images/note.svg" alt="참고">
+</td>
+<td class="content">
+고장 유형에 대한 자세한 내용은 오류 결함의 * 세부 정보 * 표제를 참조하십시오.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>시스템 메모리가 부족합니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>시스템 메모리가 매우 부족합니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>심각</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>시스템 메모리가 완전히 소모되었습니다.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이 고장을 해결하려면 NetApp 지원에 문의하여 지원을 받으십시오.</p>
+</div>
+</li>
+<li>
+<p>* 메타 클러스터풀 *</p>
+<div class="paragraph">
+<p>단일 노드 손실을 지원하기에 충분한 여유 메타데이터 스토리지 공간이 없습니다. 클러스터 충만 수준에 대한 자세한 내용은 GetClusterFullThreshold API 메서드를 참조하십시오. 이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>stage3Low(경고): 사용자 정의 임계값이 초과되었습니다. Cluster Full(클러스터 전체) 설정을 조정하거나 노드를 더 추가합니다.</p>
+</li>
+<li>
+<p>stage4Critical(오류): 1노드 장애를 복구할 수 있는 공간이 부족합니다. 볼륨, 스냅샷 및 클론을 생성할 수 없습니다.</p>
+</li>
+<li>
+<p>stage5CompletyConsumered (Critical) 1; 쓰기 또는 새 iSCSI 연결이 허용되지 않습니다. 현재 iSCSI 연결이 유지됩니다. 클러스터에 용량을 더 추가할 때까지 쓰기에 실패합니다. 데이터를 삭제 또는 삭제하거나 노드를 더 추가합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 볼륨을 제거 또는 삭제하거나 스토리지 클러스터에 다른 스토리지 노드를 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* mbuCheckFailure *</p>
+<div class="paragraph">
+<p>네트워크 디바이스가 적절한 MTU 크기로 구성되지 않았습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 모든 네트워크 인터페이스 및 스위치 포트가 점보 프레임(최대 9000바이트 크기)에 맞게 구성되었는지 확인하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 네트워크 구성 *</p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>예상된 인터페이스가 존재하지 않습니다.</p>
+</li>
+<li>
+<p>중복된 인터페이스가 있습니다.</p>
+</li>
+<li>
+<p>구성된 인터페이스가 다운되었습니다.</p>
+</li>
+<li>
+<p>네트워크를 다시 시작해야 합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* nobaableVirtualNetworkIPAddresses *</p>
+<div class="paragraph">
+<p>IP 주소 블록에 사용 가능한 가상 네트워크 주소가 없습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>virtualNetworkID# 태그(###)에 사용 가능한 스토리지 IP 주소가 없습니다. 클러스터에 노드를 추가할 수 없습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 가상 네트워크 주소 블록에 더 많은 IP 주소를 추가하십시오.</p>
+</div>
+</li>
+<li>
+<p>* nodeHardwareFault(네트워크 인터페이스 &lt;name&gt;이(가) 다운되었거나 케이블이 뽑혀 있음) *</p>
+<div class="paragraph">
+<p>네트워크 인터페이스가 다운되었거나 케이블이 분리되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 노드나 노드의 네트워크 연결을 확인하십시오.</p>
+</div>
+</li>
+<li>
+<p>* nodeHardwareFault(드라이브 암호화 가능 상태가 슬롯 &lt;node slot&gt;&lt;drive slot&gt;) * 의 드라이브에 대한 노드의 암호화 가능 상태와 일치하지 않습니다</p>
+<div class="paragraph">
+<p>드라이브가 설치된 스토리지 노드의 암호화 기능과 일치하지 않습니다.</p>
+</div>
+</li>
+<li>
+<p>* nodeHardwareFault(이 노드 유형에 대해 슬롯 &lt;node slot&gt;&lt;drive slot&gt;의 드라이브에 대해 &lt;드라이브 유형&gt; 드라이브 크기 &lt;실제 크기&gt;가 올바르지 않음 - 예상 크기&gt;) *</p>
+<div class="paragraph">
+<p>스토리지 노드에는 이 노드의 크기가 잘못된 드라이브가 포함되어 있습니다.</p>
+</div>
+</li>
+<li>
+<p>* nodeHardwareFault(슬롯 &lt;node slot&gt;&lt;drive slot&gt;에서 지원되지 않는 드라이브가 감지되었습니다. 드라이브 통계 및 상태 정보를 사용할 수 없습니다.) *</p>
+<div class="paragraph">
+<p>스토리지 노드에 지원되지 않는 드라이브가 포함되어 있습니다.</p>
+</div>
+</li>
+<li>
+<p>* nodeHardwareFault(슬롯 &lt;node slot&gt;&lt;드라이브 슬롯&gt;의 드라이브가 펌웨어 버전 &lt;예상 버전&gt;을(를) 사용해야 하지만 지원되지 않는 버전 &lt;실제 버전&gt;을(를) 사용하고 있음) *</p>
+<div class="paragraph">
+<p>스토리지 노드에는 지원되지 않는 펌웨어 버전을 실행하는 드라이브가 포함되어 있습니다.</p>
+</div>
+</li>
+<li>
+<p>* 노드 유지보수모드 *</p>
+<div class="paragraph">
+<p>노드가 유지보수 모드로 전환되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>노드가 아직 유지보수 모드에 있음을 나타냅니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>장애 발생 또는 활성 스탠바이로 인해 유지보수 모드가 비활성화되지 않았음을 나타냅니다.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이 고장을 해결하려면 유지보수가 완료된 후 유지보수 모드를 비활성화하십시오. 오류 수준 고장이 지속될 경우 NetApp 지원에 지원을 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 노드 오프라인 *</p>
+<div class="paragraph">
+<p>Element 소프트웨어가 지정된 노드와 통신할 수 없습니다. 네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* notUsingLCPBondMode *</p>
+<div class="paragraph">
+<p>LACP 결합 모드가 구성되지 않았습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 스토리지 노드를 구축할 때 LACP 결합을 사용합니다. LACP가 활성화되어 있지 않고 올바르게 구성되지 않은 경우 클라이언트에서 성능 문제를 겪을 수 있습니다.</p>
+</div>
+</li>
+<li>
+<p>* ntpServerUnreachable *</p>
+<div class="paragraph">
+<p>스토리지 클러스터가 지정된 NTP 서버 또는 서버와 통신할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 NTP 서버, 네트워크 및 방화벽에 대한 구성을 확인하십시오.</p>
+</div>
+</li>
+<li>
+<p>* ntpTimeNotInSync * 를 선택합니다</p>
+<div class="paragraph">
+<p>스토리지 클러스터 시간과 지정된 NTP 서버 시간 간의 차이가 너무 큽니다. 스토리지 클러스터가 자동으로 차이를 수정할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 설치 기본값이 아닌 네트워크 내부의 NTP 서버를 사용하십시오. 내부 NTP 서버를 사용하고 있고 문제가 지속되면 NetApp 지원 팀에 지원을 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>nvramDeviceStatus *</p>
+<div class="paragraph">
+<p>NVRAM 장치에 오류가 있거나, 오류가 발생했거나, 오류가 발생했습니다. 이 결함에는 다음과 같은 심각도가 있습니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>하드웨어에 의해 경고가 감지되었습니다. 이 조건은 온도 경고와 같이 일시적인 것일 수 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>nvmLifetimeError 를 참조하십시오</p>
+</li>
+<li>
+<p>nvmLifetimeStatus를 참조하십시오</p>
+</li>
+<li>
+<p>energySourceLifetimeStatus를 참조하십시오</p>
+</li>
+<li>
+<p>energySourceTemperatureStatus를 참조하십시오</p>
+</li>
+<li>
+<p>WarningThresholdExceeded(경고 임계홀더제외)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다. 경고 수준 오류와 함께 반환된 오류:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NVRAM 디바이스 마운트 지점이 없습니다.</p>
+</li>
+<li>
+<p>NVRAM 장치 파티션이 존재하지 않습니다.</p>
+</li>
+<li>
+<p>NVRAM 장치 파티션이 있지만 마운트되지 않았습니다.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>심각</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>하드웨어에서 오류 또는 위험 상태가 감지되었습니다. 클러스터 마스터가 슬라이스 드라이브를 작업에서 제거하려고 합니다. 이렇게 하면 드라이브 제거 이벤트가 생성됩니다. 보조 슬라이스 서비스를 사용할 수 없는 경우 드라이브가 제거되지 않습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>지속</p>
+</li>
+<li>
+<p>팔StatusSaveNArmed 를 선택합니다</p>
+</li>
+<li>
+<p>csaveStatusError입니다</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>노드에서 장애가 발생한 하드웨어를 교체합니다. 그래도 문제가 해결되지 않으면 NetApp Support에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p><strong>전원 공급 장치 오류</strong></p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>전원 공급 장치가 없습니다.</p>
+</li>
+<li>
+<p>전원 공급 장치에 장애가 발생했습니다.</p>
+</li>
+<li>
+<p>전원 공급 장치 입력이 없거나 범위를 벗어났습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 중복 전원이 모든 노드에 공급되는지 확인합니다. NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 프로비저닝됨 스페이스투풀 *</p>
+<div class="paragraph">
+<p>클러스터의 전체 프로비저닝 용량이 너무 가득 찼습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 프로비저닝된 공간을 추가하거나 볼륨을 삭제 및 퍼지합니다.</p>
+</div>
+</li>
+<li>
+<p>* remoteRepAsyncDelayExceeded *</p>
+<div class="paragraph">
+<p>복제에 대해 구성된 비동기 지연을 초과했습니다. 클러스터 간 네트워크 연결을 확인합니다.</p>
+</div>
+</li>
+<li>
+<p>* remoteRepClusterFull *</p>
+<div class="paragraph">
+<p>타겟 스토리지 클러스터가 너무 가득 차 볼륨이 원격 복제를 일시 중지했습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 타겟 스토리지 클러스터에서 공간을 확보하십시오.</p>
+</div>
+</li>
+<li>
+<p>* remoteRepSnapshotClusterFull *</p>
+<div class="paragraph">
+<p>타겟 스토리지 클러스터가 너무 가득 차 있어 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 타겟 스토리지 클러스터에서 공간을 확보하십시오.</p>
+</div>
+</li>
+<li>
+<p>* remoteRepSnapshotsExcedLimit *</p>
+<div class="paragraph">
+<p>타겟 스토리지 클러스터 볼륨이 스냅샷 제한을 초과했기 때문에 볼륨이 스냅샷의 원격 복제를 일시 중지했습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 타겟 스토리지 클러스터에서 스냅샷 제한을 늘리십시오.</p>
+</div>
+</li>
+<li>
+<p>별표(* scheduleActionError*)</p>
+<div class="paragraph">
+<p>하나 이상의 예약된 작업이 실행되었지만 실패했습니다.</p>
+</div>
+<div class="paragraph">
+<p>예약된 활동이 다시 실행되고 성공하거나, 예약된 활동이 삭제되거나, 활동이 일시 중지되어 재개되면 결함이 지워집니다.</p>
+</div>
+</li>
+<li>
+<p>* sensorReadingFailed *</p>
+<div class="paragraph">
+<p>센서가 베이스보드 관리 컨트롤러(BMC)와 통신할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* serviceNotRunning *</p>
+<div class="paragraph">
+<p>필요한 서비스가 실행되고 있지 않습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 슬라이서 서비스전체 *</p>
+<div class="paragraph">
+<p>슬라이스 서비스에 할당된 프로비저닝 용량이 너무 적습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 프로비저닝된 용량을 더 추가합니다.</p>
+</div>
+</li>
+<li>
+<p>* 슬라이슬리서비스건강하지 않음 *</p>
+<div class="paragraph">
+<p>시스템에서 슬라이스 서비스가 정상 상태가 아닌 것을 감지하여 자동으로 서비스 해제를 합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>심각도 = 경고: 작업이 수행되지 않습니다. 이 경고 기간은 6분 후에 만료됩니다.</p>
+</li>
+<li>
+<p>심각도 = 오류: 시스템이 자동으로 데이터를 사용 중지하여 다른 정상 드라이브로 데이터를 재복제합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>네트워크 연결 문제 및 하드웨어 오류를 확인합니다. 특정 하드웨어 구성 요소에 장애가 발생한 경우 다른 장애가 발생할 수 있습니다. 슬라이스 서비스에 액세스할 수 있거나 서비스가 해체되면 결함이 지워집니다.</p>
+</div>
+</li>
+<li>
+<p>* sshEnabled *</p>
+<div class="paragraph">
+<p>SSH 서비스는 스토리지 클러스터의 하나 이상의 노드에서 설정됩니다.</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 해당 노드에서 SSH 서비스를 비활성화하거나 NetApp 지원에 연락하여 지원을 받으십시오.</p>
+</div>
+</li>
+<li>
+<p>* sslCertificateExpiration *</p>
+<div class="paragraph">
+<p>이 노드와 연결된 SSL 인증서가 만료되었거나 만료되었습니다. 이 결함은 긴급도에 따라 다음과 같은 심각도를 사용합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">심각도입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>경고</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 30일 이내에 만료됩니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>오류</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 7일 이내에 만료됩니다.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>심각</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>인증서가 3일 이내에 만료되거나 이미 만료되었습니다.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>이 고장을 해결하려면 SSL 인증서를 갱신하십시오. 필요한 경우 NetApp Support에 지원을 요청하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 용량 *</p>
+<div class="paragraph">
+<p>단일 노드는 스토리지 클러스터 용량의 절반 이상을 차지합니다.</p>
+</div>
+<div class="paragraph">
+<p>시스템은 데이터 이중화를 유지하기 위해 최대 노드의 용량을 줄여 일부 블록 용량이 고립되도록 합니다(미사용).</p>
+</div>
+<div class="paragraph">
+<p>이 오류를 해결하려면 기존 스토리지 노드에 드라이브를 추가하거나 클러스터에 스토리지 노드를 추가합니다.</p>
+</div>
+</li>
+<li>
+<p>* tempSensor *</p>
+<div class="paragraph">
+<p>온도 센서가 정상 온도보다 높은 온도를 보고하고 있습니다. 이 고장은 전원 공급 장치 오류 또는 팬센서 오류와 함께 발생할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 저장소 클러스터 근처의 공기 흐름을 방해하는 물체가 있는지 확인하십시오. 필요한 경우 NetApp Support에 지원을 요청하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 업그레이드 *</p>
+<div class="paragraph">
+<p>24시간 이상 업그레이드가 진행 중입니다.</p>
+</div>
+<div class="paragraph">
+<p>이 고장을 해결하려면 업그레이드를 재개하거나 NetApp 지원에 지원을 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 무응답 서비스 *</p>
+<div class="paragraph">
+<p>서비스가 응답하지 않습니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* virtualNetworkConfig *</p>
+<div class="paragraph">
+<p>이 클러스터 고장은 다음 상태 중 하나를 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>인터페이스가 없습니다.</p>
+</li>
+<li>
+<p>인터페이스에 잘못된 네임스페이스가 있습니다.</p>
+</li>
+<li>
+<p>잘못된 넷마스크가 있습니다.</p>
+</li>
+<li>
+<p>잘못된 IP 주소가 있습니다.</p>
+</li>
+<li>
+<p>인터페이스가 실행되고 있지 않습니다.</p>
+</li>
+<li>
+<p>노드에 불필요한 인터페이스가 있습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+<li>
+<p>* 볼륨이 저하됨 *</p>
+<div class="paragraph">
+<p>보조 볼륨의 복제 및 동기화가 완료되지 않았습니다. 동기화가 완료되면 메시지가 지워집니다.</p>
+</div>
+</li>
+<li>
+<p>* volumesOffline *</p>
+<div class="paragraph">
+<p>스토리지 클러스터에 있는 하나 이상의 볼륨이 오프라인 상태입니다. 볼륨 디그레이드 * 오류도 나타납니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp 지원 팀에 문의하십시오.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ko-kr/vcp/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ko-kr/vcp/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">이 페이지에서</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/vcp/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/vcp/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/vcp/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/vcp/js/ie-tabbed-blocks.js'></script>
+    <script src='/ko-kr/vcp/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
