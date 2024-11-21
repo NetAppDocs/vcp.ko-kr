@@ -47,6 +47,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
+* link:media/mgmt_svcs_2.26_notice.pdf["관리 서비스 2.26.30 알림(VMware vCenter Server 5.4.1용 NetApp Element 플러그인)"^]
 * link:media/mgmt_svcs_2.25_notice.pdf["관리 서비스 2.25.42 알림(VMware vCenter Server 5.3.9용 NetApp Element 플러그인)"^]
 * link:media/mgmt_svcs_2.24_notice.pdf["관리 서비스 2.24.40 알림(VMware vCenter Server 5.2.12용 NetApp Element 플러그인)"^]
 * link:media/mgmt_svcs_2.23_notice.pdf["관리 서비스 공지 2.23.64(VMware vCenter Server 5.1.12용 NetApp Element 플러그인)"^]
