@@ -35,6 +35,7 @@ NOTE: NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 
 
 == NetApp Element 소프트웨어
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2886996["NetApp Element 소프트웨어 12.8 릴리스 정보"^] _신규_
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["NetApp Element 소프트웨어 12.7 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["NetApp Element 소프트웨어 12.5 릴리스 정보"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2881056["NetApp Element 소프트웨어 12.3.2 릴리스 정보"^]
