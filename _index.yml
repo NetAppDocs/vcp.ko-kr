@@ -38,9 +38,9 @@ indexpage:
   - title: 더 많은 리소스
     links:
     - title: SolidFire 및 요소 문서 리소스
-      url: https://www.netapp.com/data-storage/solidfire/documentation
+      url: https://docs.netapp.com/us-en/element-software/index.html
     - title: NetApp HCI 문서 리소스
-      url: https://www.netapp.com/hybrid-cloud/hci-documentation/
+      url: https://docs.netapp.com/us-en/hci/index.html
     - title: NetApp 하이브리드 클라우드 제어 및 관리 서비스 릴리즈 노트 KB
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes
     - title: NetApp 제품 설명서

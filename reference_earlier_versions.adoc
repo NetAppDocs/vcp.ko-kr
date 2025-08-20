@@ -14,14 +14,17 @@ summary: 문서는 VMware vCenter Server용 NetApp Element 플러그인 버전 4
 
 
 [role="lead"]
-또한 VMware vCenter Server용 NetApp Element 플러그인 5.4 이전 버전의 릴리즈에 대한 설명서도 제공됩니다.
+VMware vCenter Server용 NetApp Element 플러그인 버전 5.5 이전 릴리스에 대한 설명서도 제공됩니다.
 
 
-NOTE: link:index.html["설명서 링크"]Element vCenter 플러그인 5.4용 버전 5.3, 5.2, 5.1, 5.0, 4.10, 4.9, 4.8, 4.7 및 4.6 버전도 포함됩니다.
+NOTE: 이것link:index.html["설명서 링크"] Element vCenter 플러그인 5.5에는 버전 5.4, 5.3, 5.2, 5.1, 5.0, 4.10, 4.9, 4.8, 4.7, 4.6도 포함되어 있습니다.
 
 [cols="4*"]
 |===
 | 버전 | 플러그인 릴리즈 노트 | 관리 서비스 릴리스 정보 | 사용 설명서 
+
+
+| 5.4 | https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["PDF를 참조하십시오"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["2.26.30"^] | link:index.html["링크"] 
 
 
 | 5.3 | https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["PDF를 참조하십시오"^] | https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["2.25.42"^] | link:index.html["링크"] 

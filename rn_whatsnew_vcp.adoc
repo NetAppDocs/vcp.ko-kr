@@ -14,15 +14,25 @@ keywords: netapp, vcp, vcenter, plugin, element, new, whats new
 
 
 [role="lead"]
-Element vCenter 플러그인 5.4 릴리즈에는 새로운 개선 사항이 없습니다.
+vCenter Server 5.5 릴리스용 NetApp Element 플러그인은 보안 강화 기능을 제공하며, 관리 서비스 2.27.40 릴리스와 함께 사용할 수 있습니다.
 
-Element vCenter 플러그인 5.4는 관리 서비스의 2.26.30 릴리스와 함께 사용할 수 있습니다. link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["자세한 정보"^]
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter Server 5.5 릴리스용 Element 플러그인에 대해 알아보세요."^]
+
+
+
+== vCenter Server 5.4용 NetApp Element 플러그인
+
+Element vCenter 플러그인 5.4는 관리 서비스 2.26.30 릴리스와 함께 제공됩니다.
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["vCenter Server 5.4 릴리스용 Element 플러그인에 대해 알아보세요."^]
 
 
 
 == vCenter Server 5.3용 NetApp Element 플러그인
 
-vCenter Server 5.3용 NetApp Element 플러그인은 보안 및 성능 향상을 제공합니다. https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["자세한 정보"^].
+vCenter Server 5.3용 NetApp Element 플러그인은 보안 및 성능을 개선합니다.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Server 5.3 릴리스용 Element 플러그인에 대해 알아보세요."^] .
 
 Element vCenter 플러그인 5.3은 관리 서비스의 2.25.42 릴리즈에서 사용할 수 있습니다.
 
